@@ -1,0 +1,68 @@
+
+
+.logo {
+    height: 74px;
+    width: 113px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo svg {
+    width: 59.82px;
+    height: 42.69px;
+}
+
+.logo.dark svg .feather {
+    fill: inherit;
+}
+
+.logo.light svg .feather {
+    fill: inherit;
+}
+
+.logo.white svg .feather {
+    fill: white !important;
+}
+
+.logo h1 {
+    font-family: var(--Roboto);
+    /* font-family: 'Roboto Slab'; */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.logo.white h1 { color: white !important; }
+.logo.light h1 { color: inherit; }
+.logo.dark h1 { color: inherit; }
+
+
+/**************************
+    [ Movil Logo ]
+***************************/
+
+@media (max-width: 600px) {
+    .logo {
+        width: 84px;
+        height: 63px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .logo svg {
+        width: 45px;
+        height: 33px;
+    }
+
+    .logo h1 {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

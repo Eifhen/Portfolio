@@ -1,0 +1,301 @@
+
+@media (max-width: 990px){
+
+    .home-page .hero .container .info .info-wrapper {
+        top: 65px;
+        right: -190px;
+    }
+    
+    .home-page .hero .container .info .info-wrapper .intro h3 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .home-page .hero .container .info .info-wrapper .intro h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .home-page .hero .container .info .info-wrapper .intro .job {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 1rem;
+    }
+    
+    .home-page .hero .container .info .info-wrapper .intro p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    
+    .home-page .hero .container .info .info-wrapper .intro .btn-download {
+        height: 50px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 840px) {
+
+    .home-page .hero-movil {
+        grid-area: hero;
+    }
+    
+    .home-page .hero-movil .services {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .home-page .hero-movil .hero-movil-container {
+    
+        display: grid;
+        grid-template-columns: 35% 25% 40%;
+        grid-template-rows: 300px 300px;
+        grid-template-areas: 
+            "intro intro intro"
+            "media user user"
+        ;
+    }
+
+    .home-page  .hero-movil .hero-movil-container .intro {
+        grid-area: intro;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 3rem;
+    }
+
+    .home-page  .hero-movil .hero-movil-container .intro .intro-wrapper {
+        width: 50%;
+        border-bottom: 1px solid var(--gray-loyal);
+        padding-bottom: 1.5rem;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper h3 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper  h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper .job {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0.2em;
+        color: var(--gray);
+        margin-bottom: 1rem;
+    }
+    
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0.1em;
+        width: 60%;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper .btn-download {
+        margin-top: 1rem;
+    
+        height: 50px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.3em;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+    
+        cursor: pointer;
+    }
+ 
+    .home-page .hero-movil .hero-movil-container .media {
+        grid-area: media;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 2;
+        padding-top: 1rem;
+    }
+
+    .home-page .hero-movil .hero-movil-container .user {
+        grid-area: user;
+        padding-left: 5rem;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    
+}
+
+@media (max-width: 750px) {
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper {
+        width: 60%;
+    }
+}
+
+@media (max-width: 625px){ 
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper {
+        width: 70%;
+    }
+
+    .home-page .hero-movil .hero-movil-container .media {
+        grid-area: media;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 2;
+        padding-top: 1rem;
+    
+    }
+
+    .home-page .hero-movil .hero-movil-container .user {
+        grid-area: user;
+        padding-left: 2rem;
+        display: flex;
+        align-items: flex-end;
+
+    }
+}
+
+@media (max-width: 540px){ 
+
+    .home-page .hero-movil .hero-movil-container {
+        grid-area: hero;
+        display: grid;
+        grid-template-columns: 25% 35% 40%;
+        grid-template-rows: 250px 300px;
+        grid-template-areas: 
+            "intro intro intro"
+            "media user user"
+        ;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro {
+        padding-top: 0rem;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper {
+        width: 80%;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper h3 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper  h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper .job {
+        font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+        color: var(--gray);
+        margin-bottom: 1rem;
+    }
+    
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        width: 80%;
+    }
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper .btn-download {
+        margin-top: 1rem;
+    
+        height: 50px;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.3em;
+        background-color: black;
+        color: white;
+        border-radius: 50px;
+    
+        cursor: pointer;
+    }
+
+    .home-page .hero-movil .hero-movil-container .media {
+        grid-area: media;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 2;
+    }
+
+    .home-page .hero-movil .hero-movil-container .user {
+        grid-area: user;
+        padding-left: 2rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 410px) {
+
+    .home-page .hero-movil .hero-movil-container .intro .intro-wrapper {
+        width: 90%;
+    }
+    
+    .home-page .hero-movil .hero-movil-container .user {
+        grid-area: user;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .home-page .hero-movil .hero-movil-container .media {
+        justify-content: flex-end;
+    }
+}

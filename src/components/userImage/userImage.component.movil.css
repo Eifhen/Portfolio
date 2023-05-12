@@ -1,0 +1,76 @@
+
+
+/****************************************
+    Image Circle
+*****************************************/
+
+
+@media(max-width: 990px){
+
+    .big-circle {
+        width: 250px; 
+        height: 250px;
+        border-width: 16px !important;
+    }
+
+    .big-circle .blanck-circle {
+        width: 190px;
+        height: 190px;
+        left: -100px;
+     
+    }
+
+    .big-circle .blanck-circle.right {
+        right: -80px;
+        left:initial;
+    }
+
+    .big-circle .inner-circle {
+        width: 200px;
+        height: 200px;
+     
+    }
+
+    .big-circle .inner-circle .img-container {
+        top: -30%;
+    }
+
+    .big-circle .inner-circle .img-container img {
+        width: 150px !important;
+        height: 320px !important;
+    }
+
+}
+
+
+/****************************************
+    Image Square
+*****************************************/
+
+
+@media (max-width: 600px){
+
+    .square-image {
+        width: 370px;
+        height: 322 px;
+    }
+
+    .square-image .square {
+        transform: rotate(-24deg);
+    }
+
+    .square-image .square .square-line {
+        width: 310px;
+        height: 60px;
+    }
+
+    .square-image .image {
+
+    }
+
+    .square-image .image img {
+        width: 150px !important;
+        height: 320px !important;
+    }
+
+}

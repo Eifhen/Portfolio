@@ -1,0 +1,98 @@
+.translate-action {
+    position:relative;
+}
+
+
+.btn-translate {
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-translate i {
+    font-size: 20px;
+}
+
+.btn-translate.light {
+    border: 1px solid var(--grayD9);
+}
+
+.btn-translate.dark {
+    border: 2px solid var(--whiteF5);
+}
+
+.btn-translate.dark .icon {
+    color: inherit;
+}
+
+.btn-translate.light .icon {
+    color: inherit;
+}
+
+
+.translate-panel {
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+    border-radius: 25px;
+    background-color: white;
+    padding: 1rem !important;
+    box-shadow: var(--shadow);
+    width: 150px;
+    pointer-events: none;
+    opacity: 0;
+    font-family: var(--Nunito);
+}
+
+.translate-panel.dark {
+    background-color: black;
+    box-shadow: var(--shadow-bright);
+}
+
+.translate-panel.light {
+    background-color: white;
+}
+
+.translate-panel.active {
+    animation: fadeIn 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.translate-panel li {
+    cursor: pointer;
+    padding: 0.5rem !important;
+    border-radius: 50px;
+}
+
+.translate-panel.dark li:hover {
+    background-color: var(--gray);
+}
+
+.translate-panel.light li:hover {
+    background-color: var(--grayE5);
+}
+
+
+
+/* @media(max-width: 1100px){
+    .translate-action {
+        position:initial !important;
+    }
+    
+} */

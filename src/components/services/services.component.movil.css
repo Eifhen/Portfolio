@@ -1,0 +1,285 @@
+
+@media (max-width: 1120px){
+
+    .services-section {
+        width:90%;
+    }
+
+    .services-section .title {
+        padding: 1rem 0;
+    }
+    
+    .services-section .title h1{
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1em;
+    }
+
+    .services-section .service-card-movil {
+        border-radius: 35px;
+        min-height: 300px;
+        width: 100%;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% minmax(70%, auto);
+        grid-template-areas: "tabs" "tabs-content";
+        background-color: white;
+    }
+
+    .services-section .service-card-movil.light {
+        box-shadow: var(--shadow-lg);
+    }
+
+    .services-section .service-card-movil.dark {
+        box-shadow: var(--shadow-bright);
+    }
+                     
+    .services-section .service-card-movil .service-tabs {
+        grid-area: tabs;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        overflow: hidden;
+        display:flex;
+        background-color: white;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab {
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab:hover {
+        opacity: 0.7;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab i {
+        font-size: 35px !important;
+    }
+
+    .services-section .service-card-movil.light .service-tabs .service-tab.gray {
+        width: 35%;
+        color: black;
+        background-color: var(--whiteF5);
+    }
+
+    .services-section .service-card-movil.dark .service-tabs .service-tab.gray {
+        width: 35%;
+        color: white;
+        background-color: var(--dark0F);
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab.black{
+        width: 35%;
+        color: white !important;
+        background-color: black;
+    }
+
+    .services-section .service-card-movil.light .service-tabs .service-tab.white {
+        width: 30%;
+        color: black;
+    }
+
+    .services-section .service-card-movil.dark .service-tabs .service-tab.white {
+        width: 30%;
+        color: white;
+        background-color: var(--dark1E);
+    }
+
+    .services-section .service-card-movil .service-tabs-content {
+        grid-area: tabs-content;
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content {
+        width: 100%;
+        height: 100%;
+        padding: 1rem 2rem !important;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
+        font-size: 20px;
+        font-family: var(--Roboto);
+        display:flex;
+        align-items: center;
+        opacity: 0;
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content.black{
+        background-color: black;
+        color: white;
+        animation-delay: 500ms;
+        animation: tab-content-black 500ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .services-section .service-card-movil.dark .service-tabs-content .service-tab-content.gray{
+        color: white;
+        background-color: var(--dark0F);
+        animation-delay: 500ms;
+        animation: tab-content-gray 500ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .services-section .service-card-movil.light .service-tabs-content .service-tab-content.gray{
+        background-color: var(--whiteF5);
+        animation-delay: 500ms;
+        animation: tab-content-gray 500ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .services-section .service-card-movil.dark .service-tabs-content .service-tab-content.white {
+        color: white;
+        background-color: var(--dark1E);
+        animation-delay: 500ms;
+        animation: tab-content-white 500ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    .services-section .service-card-movil.light .service-tabs-content .service-tab-content.white{
+        background-color: var(--pure);
+        animation-delay: 500ms;
+        animation: tab-content-white 500ms ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes tab-content-black {
+        from {opacity: 0;} to {opacity: 1;}
+    }
+
+    @keyframes tab-content-gray {
+        from {opacity: 0;} to {opacity: 1;}
+    }
+
+    @keyframes tab-content-white {
+        from {opacity: 0;} to {opacity: 1;}
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content p {
+        line-height: 1.6rem;
+        letter-spacing: 0.07rem;
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 990px){
+    .services-section {
+        width: 90%;
+    }
+
+    .services-section .title h1 {
+        font-size: 20px !important;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab {
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab i {
+        font-size: 25px !important;
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content p  {
+        line-height: 1.8rem;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 840px){
+    .services-section {
+        padding-top:0;
+        width: 90%;
+    }
+
+    .services-section .title h1 {
+        font-size: 20px !important;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab {
+        font-size: 10px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab i {
+        font-size: 25px !important;
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content p  {
+        line-height: 1.8rem;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 665px){
+
+    .services-section {
+        width: 95%;
+    }
+
+    .services-section .title h1{
+        font-size: 16px;
+        padding-left: 5px;
+    }
+
+    .services-section .service-card-movil {
+        grid-template-rows: 30% 70%;
+        min-height: 200px;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab {
+        font-size: 7px;
+        line-height: 12px;
+        letter-spacing: 0.1em;
+        gap: 0.5rem;
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content {
+        font-size: 12px;
+        font-family: var(--Roboto);
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content p {
+        line-height: 1.2rem;
+        letter-spacing: 0.07rem;
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab h1 {
+        font-weight: 900 !important;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab i {
+        font-size: 20px !important;
+    }
+   
+}
+
+
+@media (max-width: 320px){
+    .services-section .service-card-movil .service-tabs .service-tab i {
+        font-size: 20px;
+    }
+
+    .services-section .service-card-movil .service-tabs .service-tab .info {
+        display:none;
+    }
+
+    .services-section .service-card-movil .service-tabs-content .service-tab-content p {
+        font-size: 10px;
+    }
+}

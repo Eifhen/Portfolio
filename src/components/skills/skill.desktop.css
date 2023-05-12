@@ -1,0 +1,166 @@
+
+
+
+
+.skillset-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/******************************
+    Tab Headers
+******************************/
+
+.skillset-container .skillset-tab-header {
+    width: 600px;
+    height: 73px;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 0.5rem;
+}
+
+.skillset-container.light .skillset-tab-header {
+    background-color: var(--whiteF5);
+}
+
+.skillset-container.dark .skillset-tab-header {
+    background-color: var(--dark3A);
+}
+
+
+.skillset-container .skillset-tab-header .skill-category {
+    width: 185px;
+    height: 53px;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 400ms ease-in;
+}
+
+.skillset-container .skillset-tab-header .skill-category .skill-category-info {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.skillset-container .skillset-tab-header .skill-category.active {
+    background-color: black;
+    color: white;
+}
+
+.skillset-container.dark .skillset-tab-header .skill-category.active {
+    box-shadow: var(--shadow-bright);
+}
+
+.skillset-container .skillset-tab-header .skill-category:hover {
+    opacity: 0.7;
+}
+
+.skillset-container .skillset-tab-header .skill-category .skill-category-info h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+.skillset-container .skillset-tab-header .skill-category .skill-category-info i {
+    font-size: 20px;
+}
+
+/******************************
+    Tab Content Cards
+******************************/
+
+.skillset-container .skillset-tab-content {
+    margin-top: 2rem;
+    width: 771px;
+    min-height: 486px;
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skillset-container .skillset-tab-content .skillset-tab-item {
+    border-radius: 25px;
+    width: 241px;
+    min-height: 216px;
+    padding: 1rem;
+}
+
+.skillset-container.dark .skillset-tab-content .skillset-tab-item {
+    background-color: var(--dark3A);
+}
+
+.skillset-container.light .skillset-tab-content .skillset-tab-item {
+    background-color: var(--whiteFC);
+    border: 2px solid var(--whiteF5);
+}
+
+.skillset-container .skillset-tab-content .skillset-tab-item .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+
+.skillset-container.light .skillset-tab-content .skillset-tab-item .header {
+    color: var(--dark1F2);
+}
+
+.skillset-container.dark .skillset-tab-content .skillset-tab-item .header {
+    color: white;
+}
+
+.skillset-container .skillset-tab-content .skillset-tab-item .header h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+}
+
+.skillset-container .skillset-tab-content .skillset-tab-item .header i {
+    font-size: 30px !important;
+}
+
+.skillset-container .skillset-tab-content .skillset-tab-item .header img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.skillset-container .skillset-tab-content .skillset-tab-item .content {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+    padding: 0.5rem 0.3rem 0.5rem 0.3rem;
+}
+
+.skillset-container.dark .skillset-tab-content .skillset-tab-item .content {
+    color: white;
+}
+
+.skillset-container.light .skillset-tab-content .skillset-tab-item .content {
+    color: var(--dark37);
+}

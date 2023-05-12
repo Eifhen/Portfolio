@@ -1,0 +1,37 @@
+
+
+
+.home-page {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        minmax(100vh, auto)  
+        minmax(70vh, auto) 
+        minmax(100vh, auto) 
+        minmax(110vh, auto);
+    grid-template-areas: 
+        "hero"
+        "about"
+        "portfolio"
+        "contact"
+    ;
+}
+
+@media (max-width: 840px){
+    .home-page {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            minmax(100vh, auto)  
+            minmax(70vh, auto) 
+            minmax(100vh, auto) 
+            minmax(110vh, auto);
+        grid-template-areas: 
+            "hero"
+            "about"
+            "portfolio"
+            "contact"
+        ;
+    }
+}
+

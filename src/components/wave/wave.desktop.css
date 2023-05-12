@@ -1,0 +1,38 @@
+
+
+
+.wave {
+    display:flex;
+    align-items: flex-end;
+    margin-bottom: -1%;
+}
+
+.wave svg {
+    width: 100%;
+}
+
+/*********************
+    Wave White
+**********************/
+.wave.white svg {
+    fill: white !important;
+}
+
+/*********************
+    Wave Black
+**********************/
+.wave.black svg {
+    fill: black !important;
+}
+
+/*********************
+    Wave Gray
+**********************/
+
+.wave.gray svg {
+    fill: var(--whiteF5) !important;
+}
+
+.wave.gray.dark svg {
+    fill: var(--dark0F)  !important;
+}

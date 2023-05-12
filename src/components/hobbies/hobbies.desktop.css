@@ -1,0 +1,275 @@
+
+
+
+.hobbies {
+    width: 970px;
+    height: 250px;
+    border-radius: 35px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+        "title"
+        "hobbies"
+    ;
+    overflow: hidden;
+    background-color: black;
+}
+
+.hobbies.light {
+    box-shadow: var(--shadow-lg);
+}
+
+.hobbies.dark {
+    box-shadow: var(--shadow-bright);
+}
+
+
+.hobbies .title {
+    grid-area: title;
+    padding: 2rem;
+}
+
+.hobbies .title h1 {
+    color:white;
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.2em;
+}
+
+.hobbies .title p {
+    font-family: var(--nunito);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    color: var(--gray-loyal);
+}
+
+.hobbies .title .underline {
+    width: 45px;
+    height: 8px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 0.4rem;
+}
+
+.hobbies .title .underline:after {
+    content: " ";
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    position: absolute;
+    top:0;
+    right: -15px;
+    border-radius: 50%;
+}
+
+.hobbies .content {
+    grid-area: hobbies !important;
+    padding: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.hobbies .content .item {
+    width: 30%;
+    height: 78px;
+    background-color: white;
+    border-radius: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--dark37);
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+.hobbies .content .item .title {
+    
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    padding:0;
+    min-width: 120px;
+    text-align: center;
+}
+
+.hobbies .content .item .icon {
+    font-size: 1.7rem;
+    font-weight: normal;
+    border-radius: 50%;
+    border: 1px solid var(--grayD9);
+    height: 50px;
+    width:  50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies .content .item .open {
+    font-size: 25px;
+}
+
+.hobbies .content .item:hover {
+    background-color: var(--grayD9);
+}
+
+
+
+
+/*******************************
+    Hobbies Modal
+*******************************/
+
+.hobbies-modal-mask {
+    background: var(--mask);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity:0;
+}
+
+.hobbies-modal-mask.active {
+    pointer-events: all !important;
+    animation: openModalHobbies 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hobbies-modal-mask.inactive {
+    animation: closeModalHobbies 500ms ease-in-out;
+    animation-fill-mode: forwards;
+    pointer-events: none !important;
+}
+
+@keyframes openModalHobbies {
+    from{ opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes closeModalHobbies {
+    from{ opacity: 1; }
+    to { opacity: 0; }
+}
+
+.hobbies-modal-mask .hobbies-modal {
+    height: 400px;
+    width: 700px;
+    border-radius: 35px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 60% 20%;
+    grid-template-areas: 
+        "header" 
+        "mainContent"
+        "footer"
+    ;
+}
+
+
+.hobbies-modal-mask .hobbies-modal .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor:pointer;
+    font-size: 25px;
+}
+
+.hobbies-modal-mask .hobbies-modal .header {
+    width: 100%;
+    grid-area: header;
+    display:flex;
+    align-items: center;
+}
+
+.hobbies-modal-mask .hobbies-modal .header .title {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hobbies-modal-mask .hobbies-modal .header .title h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    color: var(--dark37);
+}
+
+.hobbies-modal-mask .hobbies-modal .header .title .icon {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+.hobbies-modal-mask .hobbies-modal .content {
+    grid-area: mainContent !important;
+    padding:0;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "description image" 
+    ;
+}
+
+.hobbies-modal-mask .hobbies-modal .content .description {
+    grid-area: description;
+    height: 100%;
+    width: 100%;
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: var(--dark37);
+    padding: 1rem 2rem 1rem 3rem;
+    display: flex;
+ 
+}
+
+.hobbies-modal-mask .hobbies-modal .content .image {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+}
+
+.hobbies-modal-mask .hobbies-modal .content .image img {
+    display:block;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+    height: 210px;
+    background-color: var(--dark37);
+    border-radius: 35px;
+}

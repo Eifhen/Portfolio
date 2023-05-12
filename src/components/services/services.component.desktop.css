@@ -1,0 +1,123 @@
+
+.services-section {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.services-section .title {
+    padding: 0 0 1rem 0;
+}
+
+.services-section .title h1{
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+}
+
+
+.services-section .my-services-card {
+    width: 1100px;
+    height: 305px;
+    border-radius: 35px;
+    display:flex;
+    flex-wrap: wrap;
+    transition-delay: 1s;
+    transition: box-shadow 500ms ease-in-out;
+    background-color: white;
+}
+
+.services-section .my-services-card.dark {
+    box-shadow: var(--shadow-bright);
+    background-color: var(--dark1E);
+}
+
+.services-section .my-services-card.light {
+    box-shadow: var(--shadow);
+}
+
+.services-section .my-services-card .service {
+    height: 100%;
+    transition-delay: 2s;
+    transition: background-color 1s ease-in-out;
+   
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+        "header"
+        "description"
+    ;
+}
+
+.services-section .my-services-card .service.black {
+    background-color: black;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    width: 382px;
+    color: white !important;
+}
+
+.services-section .my-services-card .service.gray {
+    background-color: var(--whiteF5);
+    width: 364px;
+}
+
+.services-section .my-services-card.dark .service.gray {
+    background-color: var(--dark0F);
+}
+
+.services-section .my-services-card .service.white {
+    background-color: white;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 353px;
+}
+
+.services-section .my-services-card.dark .service.white {
+    background-color: var(--dark1E);
+}
+
+
+.services-section .my-services-card .service .header {
+    grid-area: "header";
+    width: 100%;
+    display:flex;
+    align-items: flex-end;
+    padding-left: 3rem;
+}
+
+.services-section .my-services-card .service .header .title {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.services-section .my-services-card .service .header .title h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+}
+
+.services-section .my-services-card .service .header .title i {
+    font-size: 40px;
+}
+
+.services-section .my-services-card .service .description {
+    grid-area: description;
+    width: 100%;
+    padding: 0rem 3rem  !important; 
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+}

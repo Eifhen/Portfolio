@@ -1,0 +1,111 @@
+
+
+
+@media (max-width: 1285px){
+
+    .project-card-vertical {
+    
+    }
+
+    .project-card-vertical .mask .info {
+       
+    }
+    
+    .project-card-vertical .mask .info h2 {
+        width: 70% !important;
+    }
+    
+    .project-card-vertical .mask .info .date {
+        width: 40%;
+    }
+    
+    .project-card-vertical .mask .info .description {
+        width: 70%;
+    }
+    
+}
+
+
+@media (max-width: 1115px){
+    .project-card-vertical {
+        width: 80%;
+    }
+    
+    .project-card-vertical .mask .info h2 {
+        width: 80% !important;
+    }
+    
+    .project-card-vertical .mask .info .date {
+        width: 50%;
+    }
+    
+    .project-card-vertical .mask .info .description {
+        width: 70%;
+    }
+    
+}
+
+@media (max-width: 890px){
+    .project-card-vertical {
+        width: 90%;
+    }
+
+    .project-card-vertical .mask .info h2 {
+        width: 90% !important;
+    }
+    
+    .project-card-vertical .mask .info .date {
+        width: 60%;
+    }
+    
+    .project-card-vertical .mask .info .description {
+        width: 90%;
+    }
+}
+
+@media (max-width: 630px){ 
+    .project-card-vertical {
+        height: 450px;
+        width:80%;
+    }
+
+
+    .project-card-vertical .mask {
+        background: linear-gradient( 0.4deg, rgba(31,41,55,1) 22.5%, rgba(66,4,151,0) 129.5% );
+        padding: 1rem;
+        justify-content: flex-end;
+    }
+
+    .project-card-vertical:hover .mask {
+        background: linear-gradient( 0.4deg, rgba(31,41,55,1) 22.5%, rgba(66,4,151,0) 129.5% );
+        background-color: #1F2937 !important;
+    }
+
+    .project-card-vertical .mask .info {
+        margin-bottom: 2.9rem;
+    }
+    
+    .project-card-vertical .mask .info h2 {
+        font-size: 34px;
+        line-height: 35px;
+        width: 100%;
+    }
+    .project-card-vertical .mask .info .date {
+        width: 90%;
+    }
+
+    .project-card-vertical .mask .info .description {
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.1em;
+    }
+
+    .project-card-vertical .mask .technologies {
+        bottom: 20px;
+        right: 10px;
+        left:0;
+    }
+}

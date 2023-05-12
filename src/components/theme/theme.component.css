@@ -1,0 +1,22 @@
+
+.btn-theme {
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-theme i {
+    font-size: 20px;
+}
+
+.btn-theme.light {
+    border: 1px solid var(--grayD9);
+}
+
+.btn-theme.dark {
+    border: 2px solid var(--whiteF5);
+}

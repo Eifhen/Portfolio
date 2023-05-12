@@ -1,0 +1,27 @@
+
+
+@media (max-width: 1183px) {
+    .project-card { width: 40%; }
+}
+
+
+@media (max-width: 977px) {
+    .project-card { width: 45%; }
+}
+
+@media (max-width: 870px) {
+    .project-card { width: 60%; }
+}
+
+@media (max-width: 650px) {
+    .project-card { width: 80%; }
+}
+
+@media (max-width: 500px) {
+    .project-card { width: 90%; height:200px; padding-bottom: 0;}
+    .project-card .mask { padding: 0 0 0 1rem;}
+    .project-card .mask .technologies { position: relative !important;}
+    .project-card .mask .info { justify-content: center; height: 100%;}
+    .project-card .mask .info .title { width: 90%; font-size: 26px; line-height: 34px !important;}
+    .project-card .mask .info .date { width: 70%; }
+}

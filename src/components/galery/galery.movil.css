@@ -1,0 +1,110 @@
+
+
+@media (max-width: 1100px){
+
+    .galery-container {
+        display:grid;
+        grid-template-columns: 345px;
+        grid-template-rows: minmax(230px, auto) 20%;
+        grid-template-areas: 
+            "mainImage" 
+            "galery"
+        ;
+    }
+
+    .galery-container .galery .item {
+        width: 30px;
+        height: 30px;
+    }
+
+    .galery-modal-mask .galery-modal {
+        width: 90%;
+        height: 555px;
+    }
+
+}
+
+@media(max-width: 850px){
+    .galery-modal-mask .galery-modal {
+        width: 70%;
+        flex-direction: column;
+    }
+
+    .galery-modal-mask .galery-modal .modal-close {
+        background-color: white;
+        border-radius: 50%;
+        font-size: 1.5rem !important;
+        height: 30px;
+        width: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 15px !important;
+        box-shadow: var(--shadow-bright);
+    }
+
+    .galery-modal-mask .galery-modal .modal-image {
+        order: 1;
+        width: 100%;
+        height: 50% !important;
+    }
+
+    .galery-modal-mask .galery-modal .modal-content {
+        order:2;
+        width: 100%;
+        height: 50%;
+    }
+
+    .galery-modal-mask .galery-modal .modal-content .info {
+        padding: 2rem 2rem 1rem 2rem !important;
+    }
+
+    .galery-modal-mask .galery-modal .modal-content .info header {
+        margin-bottom: 1rem;
+    }
+
+    
+}
+
+@media (max-width: 600px){
+    .galery-container {
+        display:grid;
+        grid-template-columns: 300px;
+        grid-template-rows: minmax(200px, auto) 20%;
+        grid-template-areas: 
+            "mainImage" 
+            "galery"
+        ;
+    }
+
+    .galery-container .galery {
+        margin-top: 0.5rem;
+    }
+
+    .galery-container .galery .item {
+        width: 26px;
+        height: 26px;
+    }
+        
+    @keyframes borderf {
+        from {border: 1px solid var(--grayD9); }
+        to { 
+            border: 3px solid var(--dark37); 
+            transform: scale(1.3); 
+            box-shadow: var(--shadow-lg);
+        }
+    }
+
+    @keyframes borderDark {
+        from {border: 1px solid var(--grayD9); }
+        to { 
+            border: 3px solid var(--pure); 
+            transform: scale(1.3); 
+            box-shadow: var(--shadow-bright); 
+        }
+    }
+
+    .galery-modal-mask .galery-modal {
+        width: 90%;
+    }
+}

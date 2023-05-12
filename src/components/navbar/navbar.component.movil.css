@@ -1,0 +1,329 @@
+
+
+.navbar-movil {
+    height: 90px;
+    width: 100vw;
+    margin: 0 auto !important;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 20px !important;
+    position: relative;
+}
+
+.navbar-movil.dark {
+    color: inherit !important;
+}
+
+.navbar-movil.light {
+    color: inherit !important;
+}
+
+.navbar-menu-btn {
+    cursor:pointer;
+    font-size: 24px;
+    line-height: 1;
+    margin-top: 10px;
+}
+
+.nav-menu-movil-mask {
+    background-color: var(--mask);
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 11;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav-menu-movil-mask .nav-menu-panel-movil {
+    position:absolute;
+    right:0;
+    width: 0;
+    height: 100vh;
+    z-index: 12;
+    background-color: white;
+    box-shadow: var(--shadow-lg);
+    border-top-left-radius: 35px;
+    overflow-y:auto;
+    overflow-x: hidden;
+
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        20vh minmax(60vh, auto) 20vh
+    ;
+    grid-template-areas: 
+        "header"
+        "container"
+        "footer"
+    ;
+
+}
+
+.nav-menu-movil-mask.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.nav-menu-movil-mask.inactive {
+    animation: hideMask 700ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.nav-menu-movil-mask .nav-menu-panel-movil.active {
+    animation: displayModal 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.nav-menu-movil-mask .nav-menu-panel-movil.inactive {
+    animation: hideModal 300ms ease-out;
+    animation-fill-mode: forwards;
+}
+
+.nav-menu-panel-movil .header {
+    grid-area: header;
+    position: relative;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-menu-panel-movil .header h1 {
+    font-family: var(--Nunito);
+    font-size: 1.5rem;  
+}
+
+.nav-menu-panel-movil .header p {
+    font-family: var(--Nunito);
+    color: var(--dark37);
+    padding-left: 0.5rem !important;
+    line-height: 2;
+}
+
+.nav-menu-panel-movil .header .btn-close {
+    position: absolute;
+    top: 45px;
+    right: 29px;
+    font-size: 1.6rem;
+    cursor:pointer;
+}
+
+.nav-menu-panel-movil .container {
+    grid-area: container;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5rem;
+    position:relative;
+}
+
+.nav-menu-panel-movil .container .navbar-menu-movil {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.07em;
+    font-family: var(--Roboto);
+}
+
+.nav-menu-panel-movil .container .navbar-menu-movil li a.active {
+    position: relative;
+    display:block;
+} 
+
+.nav-menu-panel-movil .container .navbar-menu-movil li a.active::after {
+    content: " ";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right:0;
+    margin:0 auto;
+    height: 5px;
+    width: 100%;
+    border-radius: 50px;
+}
+
+.nav-menu-panel-movil .container .navbar-menu-movil li a.active::after {
+    background-color: black;
+}
+
+.nav-menu-panel-movil .container .navbar-menu-movil li a.active::after {
+    background-color: gray;
+}
+
+.nav-menu-panel-movil .container .navbar-actions {
+    display:flex;
+    gap: 1rem;
+}
+
+.nav-menu-panel-movil .container .navbar-actions .translate-action .translate-panel {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: -20px;
+    box-shadow: var(--shadow-lg);
+}
+
+.nav-menu-panel-movil .container .navbar-actions .translate-action .translate-panel li {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+.nav-menu-panel-movil .footer {
+    grid-area: footer;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.nav-menu-movil-mask .nav-menu-panel-movil.inactive .container .navbar-menu-movil,
+.nav-menu-panel-movil .container .navbar-actions,
+.nav-menu-movil-mask .nav-menu-panel-movil.inactive .header,
+.nav-menu-movil-mask .nav-menu-panel-movil.inactive .footer {
+    opacity:0;
+    transition: opacity 100ms ease-in-out;
+}
+
+.nav-menu-movil-mask .nav-menu-panel-movil.active .container .navbar-menu-movil,
+.nav-menu-movil-mask .nav-menu-panel-movil.active .container .navbar-actions,
+.nav-menu-movil-mask .nav-menu-panel-movil.active .header,
+.nav-menu-movil-mask .nav-menu-panel-movil.active .footer {
+    animation: showText 1.2s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.nav-menu-panel-movil.dark {
+    background-color: black !important;
+    box-shadow: var(--shadow-bright);
+    transition: background-color 1s ease-in-out;
+}
+
+.nav-menu-movil-mask .nav-menu-panel-movil.dark .header p {
+    color: var(--grayDE) !important;
+    line-height: 2;
+}
+
+.nav-menu-panel-movil.light .container .navbar-menu-movil li a.active::after {
+    background-color: black;
+}
+
+.nav-menu-panel-movil.dark .container .navbar-menu-movil li a.active::after {
+    background-color: gray;
+}
+
+@media (max-width: 600px) {
+    .layout-page .layout-content header {
+       padding: 0 !important;
+    }
+
+    .navbar-movil {
+        height: 90px;
+        padding: 0 30px 0 10px !important;
+    }
+
+    .navbar-menu-btn {
+        margin-top: 5px;
+    }
+
+    .nav-menu-panel-movil {
+        grid-template-rows: 25vh max-content 300px;
+    }
+
+    .nav-menu-panel-movil .header .btn-close {
+        top: 33px;
+        right: 29px;
+    }
+
+    .nav-menu-panel-movil .header h1 {
+        font-size: 18px;
+    }
+
+    .nav-menu-panel-movil .header p {
+        font-size: 14px;
+    }
+
+    .navbar-menu-movil {
+        font-family: var(--Roboto) !important;
+        font-weight: 400 !important;
+    }
+
+    .nav-menu-panel-movil .footer {
+        padding-top: 1rem;
+        align-items: center;
+    }
+}
+
+
+
+/****************************
+    Animations
+*****************************/
+
+@keyframes hideMask {
+    from {
+        opacity:1;
+        pointer-events: all;
+    }
+    to {
+        opacity:0;
+        pointer-events: none;
+    }
+}
+
+@keyframes displayModal {
+    from {
+        width:0;
+    }
+    to {
+        width: 40vw;
+    }
+}
+
+@keyframes hideModal {
+    from {
+        width: 40vw;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes showText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    @keyframes displayModal {
+        from {
+            width:0;
+        }
+        to {
+            width: 75vw;
+        }
+    }
+
+    @keyframes hideModal {
+        from {
+            width: 75vw;
+        }
+        to {
+            width: 0;
+        }
+    }
+}

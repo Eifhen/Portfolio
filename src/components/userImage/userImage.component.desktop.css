@@ -1,0 +1,167 @@
+
+/***************************************
+    Image Circle
+****************************************/
+
+.big-circle {
+    width: 411px; /*411*/
+    height: 411px;
+    background: inherit;
+    border-radius: 50%;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border: 19px solid transparent;
+    opacity:0;
+}
+
+.big-circle.light {
+    border: 19px solid var(--grayD9);
+    animation: ImgLight 1s ease-in-out;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.big-circle.dark {
+    border: 19px solid var(--dark3A);
+    animation: ImgDark 1s ease-in-out;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes ImgLight {
+    0% { opacity:0; }  100% { opacity:1;}
+}
+
+@keyframes ImgDark {
+    0% { opacity:0; } 100% { opacity:1; }
+}
+
+
+.blanck-circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    left: -100px;
+    top: -50px;
+    bottom:0;
+    margin: auto 0;
+}
+
+.big-circle.dark .blanck-circle {
+    background-color: var(--dark1E) ;
+}
+
+.big-circle.light .blanck-circle {
+    background-color: white ;
+}
+
+.blanck-circle.right {
+    right: -125px;
+    left:initial;
+}
+
+.inner-circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.big-circle.light .inner-circle {
+    background-color: var(--grayD9);
+}
+
+.big-circle.dark .inner-circle {
+    background-color: var(--dark3A);
+}
+
+.inner-circle .img-container {
+
+    position: absolute;
+    top: -25%;
+    left: 2%;
+    right:0;
+    margin:0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.inner-circle .img-container img{
+    object-fit: cover;
+    height: 490px;
+    width: 250px;
+}
+
+/***************************************
+    Image Square
+****************************************/
+
+
+.square-image {
+    width: 474px;
+    height:434px;
+    position:relative;
+    z-index:2;
+    opacity:0;
+}
+
+.square-image.light {
+    animation: ImgLight 1s ease-in-out;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
+}
+
+.square-image.dark {
+    animation: ImgDark 1s ease-in-out;
+    animation-delay: 600ms;
+    animation-fill-mode: forwards;
+}
+
+.square-image .square {
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    transform: rotate(-28deg);
+    z-index:2;
+}
+
+.square-image .square .square-line {    
+    width: 400px;
+    height: 77px;
+    border-radius: 50px;
+}
+
+.square-image.light .square .square-line {
+    background-color: var(--whiteF5);
+}
+
+.square-image.dark .square .square-line {
+    background-color: var(--dark3A);
+}
+
+.square-image .image {
+    position: absolute;
+    top:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+}
+
+.square-image .image img {
+    object-fit: cover;
+    height: 490px;
+    width: 250px;
+}

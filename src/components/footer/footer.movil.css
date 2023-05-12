@@ -1,0 +1,32 @@
+
+
+@media (max-width: 1000px){
+    .footer-container .footer-section {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 630px){
+
+    .footer-container {
+        height: auto;
+        padding-top: 6rem;
+    }
+
+    .footer-container .footer-section {
+        width: 80%;
+        gap: 4rem;
+    }
+
+    .footer-container .footer-section .content .navegation ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-container .footer-section .media {
+        position: relative;
+        
+    }
+}

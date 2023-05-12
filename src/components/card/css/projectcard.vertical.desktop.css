@@ -1,0 +1,150 @@
+
+
+
+.project-card-vertical {
+    position: relative;
+    min-height: 355px;
+    width: 960px;
+    border-radius: 35px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: none !important; 
+}
+
+.project-card-vertical:hover {
+    opacity: 1;
+}
+
+.project-card-vertical.light {
+    box-shadow: var(--shadow-lg);
+}
+.project-card-vertical.dark {
+    box-shadow: var(--shadow-bright);
+}
+
+.project-card-vertical img {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    margin: 0 auto !important;
+    display:block !important;
+    z-index: 1;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.project-card-vertical .mask {
+    top:0;
+    right:0;
+    bottom:0;
+    margin:0 auto !important;
+    z-index:2;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+    background:  linear-gradient( 91.2deg, rgba(31,41,55,1) 46.7%, rgba(66,4,151,0) 108% );
+    padding: 1rem 4rem;
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-color 1s ease-in-out;
+}
+
+.project-card-vertical:hover .mask {
+      background:  linear-gradient( 91.2deg, rgba(31,41,55,1) 46.7%, rgba(66,4,151,0) 108% );
+    background-color: #1F2937 !important;
+}
+
+.project-card-vertical .mask .info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 1rem;
+}
+
+.project-card-vertical .mask .info h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.1em;
+    width: 60%;
+    text-shadow: var(--text-shadow);
+}
+
+.project-card-vertical .mask .info .date {
+    width: 50%;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 50px;
+    background-color: var(--dark11);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: 0.2rem;
+    font-family: var(--Roboto);
+    box-shadow: var(--shadow);
+    transition: background-color 500ms ease-in-out;
+    width: 30%;
+}
+
+.project-card-vertical:hover .mask .info .date {
+    background-color: white;
+    color: var(--dark11);
+    font-weight: 600;
+}
+
+.project-card-vertical .mask .info .description {
+    color: white;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.2rem;
+    font-family: var(--Nunito);
+    width: 70%;
+    text-shadow: var(--text-shadow);
+}
+
+.project-card-vertical .mask .technologies {
+    position:absolute;
+    bottom: 20px;
+    left: 240px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.project-card-vertical .mask .technologies .technologie {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;
+    top: -35px !important;
+    border: 3px solid var(--dark1F2);
+    box-shadow: var(--shadow-bright);
+}
+
+.project-card-vertical .mask .technologies .technologie img {
+    object-fit: contain;
+    object-position: center;
+    padding: 0.1rem;
+}
+
+.project-card-vertical .mask .technologies .technologie.more {
+    background-color: var(--grayD9) !important;
+    color: black !important;
+}

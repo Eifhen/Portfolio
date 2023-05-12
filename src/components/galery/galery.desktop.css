@@ -1,0 +1,212 @@
+
+
+.galery-container {
+    display:grid;
+    grid-template-columns: 415px;
+    grid-template-rows: minmax(271px, auto) 20%;
+    grid-template-areas: 
+        "mainImage" 
+        "galery"
+    ;
+}
+
+.galery-container .main-image {
+    grid-area: mainImage;
+    cursor: pointer;
+}
+
+.galery-container .main-image:hover {
+    opacity: .7;
+}
+
+.galery-container .main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 35px;
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+}
+
+.galery-container.dark .main-image img {
+    box-shadow: var(--shadow-bright);
+} 
+
+.galery-container .galery {
+    grid-area: galery;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    padding-right: 1rem;
+}
+
+.galery-container .galery .item {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--grayD9);
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer !important;
+    transition: border 500ms ease-in-out
+}
+
+.galery-container .galery .item.active {
+    animation: borderf 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.galery-container.dark .galery .item.active {
+    animation: borderDark 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes borderf {
+    from {border: 1px solid var(--grayD9); }
+    to { 
+        border: 5px solid var(--dark37); 
+        transform: scale(1.3); 
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+@keyframes borderDark {
+    from {border: 1px solid var(--grayD9); }
+    to { 
+        border: 5px solid var(--pure); 
+        transform: scale(1.3); 
+        box-shadow: var(--shadow-bright); 
+    }
+}
+
+.galery-container .galery .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer !important;
+}
+
+/*********************************
+    Modal
+**********************************/
+
+.galery-modal-mask {
+    background: var(--mask);
+    position:fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity:0;
+}
+
+.galery-modal-mask.active {
+    pointer-events: all !important;
+    animation: openModalGalery 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.galery-modal-mask.inactive {
+    animation: closeModalGalery 500ms ease-in-out;
+    animation-fill-mode: forwards;
+    pointer-events: none !important;
+}
+
+@keyframes openModalGalery {
+    from{ opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes closeModalGalery {
+    from{ opacity: 1; }
+    to { opacity: 0; }
+}
+
+.galery-modal-mask .galery-modal {
+    width: 1100px;
+    height: 555px;
+    background-color: white;
+    display:flex;
+    border-radius: 35px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: var(--shadow-bright);
+}
+
+.galery-modal-mask .galery-modal .modal-close {
+    position: absolute;
+    top:10px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black !important;
+}
+
+.galery-modal-mask .galery-modal .modal-image {
+    background-color: black;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    width: 70%;
+}
+
+.galery-modal-mask .galery-modal .modal-image img {
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.galery-modal-mask .galery-modal .modal-content {
+    height: 100%;
+    width: 30%;
+}
+
+.galery-modal-mask .galery-modal .modal-content .info {
+    padding: 4rem 2rem 1rem 2rem;
+}
+
+.galery-modal-mask .galery-modal .modal-content .info header {
+    margin-bottom: 2rem;
+}
+
+.galery-modal-mask .galery-modal .modal-content .info header h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.3rem;
+    color: black !important;
+}
+
+.galery-modal-mask .galery-modal .modal-content .info header p {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    color: var(--gray);
+}
+
+.galery-modal-mask .galery-modal .modal-content .info .description {
+    border-radius: 25px;
+    background-color: var(--whiteF5);
+    padding: 2rem 1rem;
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #000000;
+}

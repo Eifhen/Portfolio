@@ -1,0 +1,175 @@
+
+/******************************
+    Hero Section
+********************************/
+
+.home-page .hero {
+    grid-area: hero;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-page .hero .container {
+    height: auto; 
+    width: 1100px !important;
+    display:grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "info user"
+    !important;
+}
+
+.home-page .hero .container .user {
+    grid-area: user;
+    padding-top: 3.5rem;
+    display:flex;
+    justify-content: center;
+    margin-left: -4%;
+
+}
+
+.home-page .hero .container .info {
+    grid-area: info;
+    justify-content: center;
+    display:flex;
+    position: relative;
+
+}
+
+.home-page .hero .container .info .info-wrapper {
+    height: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: absolute;
+    top: 65px;
+    right: -170px;
+    z-index:2;
+}
+
+.home-page .hero .container .info .info-wrapper .media {
+    align-self: flex-start !important;
+}
+
+.home-page .hero .container .info .info-wrapper .intro {
+    border-left: 1px solid var(--gray-loyal);
+    padding-left: 2rem;
+    height: 100%;
+}
+
+.home-page .hero .container .info .info-wrapper .intro h3 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 0.3em;
+}
+
+.home-page .hero .container .info .info-wrapper .intro h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    letter-spacing: 0.3em;
+}
+
+.home-page .hero .container .info .info-wrapper .intro .job {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.2em;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+.home-page .hero .container .info .info-wrapper .intro p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    width: 60%;
+}
+
+.home-page .hero .container .info .info-wrapper .intro .btn-download {
+    margin-top: 1rem;
+    height: 60px;
+    width: 213px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.3em;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/******************************
+    My Services Section
+********************************/
+
+.home-page .hero .services, 
+.home-page .hero-movil .services {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.home-page .hero .services .bg-container,
+.home-page .hero-movil .services .bg-container {
+    position: absolute;
+    top:0;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+        "wave"
+        "white-space"
+    ;
+}
+
+.home-page .hero .services .bg-container .white-space,
+.home-page .hero-movil .services .bg-container .white-space{
+    grid-area: white-space;
+}
+
+.home-page.light .hero .services .bg-container .white-space,
+.home-page.light .hero-movil .services .bg-container .white-space {
+    background-color: var(--whiteF5);
+}
+
+.home-page.dark .hero .services .bg-container .white-space,
+.home-page.dark .hero-movil .services .bg-container .white-space {
+    background-color: var(--dark0F);
+}
+
+.home-page .hero .services .bg-container .wave-container,
+.home-page .hero-movil .services .bg-container .wave-container {
+    grid-area: wave;
+    display: flex;
+    align-items: flex-end;
+}
+
+.home-page .hero .services .bg-container .wave-container  > *,
+.home-page .hero-movil .services .bg-container .wave-container > *{
+    width: 100%;
+}
+
