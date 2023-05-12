@@ -17,6 +17,16 @@
     ;
 }
 
+.btn {
+    transition-delay: 400ms !important;
+    transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+}
+
+.home-page.dark .btn {
+    background-color: var(--grayDE) !important;
+    color: var(--dark1E) !important;
+}
+
 @media (max-width: 600px){
     .home-page {
         display:grid;

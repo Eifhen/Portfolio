@@ -58,7 +58,7 @@ function AboutDesktop (props:IAboutSize) {
                                 )}
                             </For>
                         </div>
-                        <A href="/about" class="btn-see-more">
+                        <A href="/about" class="btn btn-see-more">
                             {translate("see-more")}
                         </A>
                     </div>
@@ -93,7 +93,7 @@ function AboutMovil (props:IAboutSize) {
                             )}
                         </For>
                     </div>
-                    <A href="/about" class="btn-see-more">
+                    <A href="/about" class="btn btn-see-more">
                         {translate("see-more")}
                     </A>
                 </div>

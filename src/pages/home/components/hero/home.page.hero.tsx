@@ -59,7 +59,7 @@ function HeroDesktop (props: IHero) {
                             <h2>Gabriel Jiménez</h2>
                             <h3 class="job">FullStack Software Developer</h3>
                             <p>{translate('take-a-look')}</p>
-                            <button class="btn-download">{translate("download-cv")}</button>
+                            <button class="btn btn-download">{translate("download-cv")}</button>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@ function HeroMovil (props: IHero) {
                         <h2>Gabriel Jiménez</h2>
                         <h3 class="job">FullStack Software Developer</h3>
                         <p>{translate('take-a-look')}</p>
-                        <button class="btn-download">{translate("download-cv")}</button>
+                        <button class="btn btn-download">{translate("download-cv")}</button>
                 </div>
                 </div>
                 <div class="media">
