@@ -24,7 +24,7 @@ export default function UserImage(props:IUserImage){
 
 function CircleImage (props:IUserImage) {
     return(
-        <div class={`big-circle ${props.color.theme}`}>
+        <div class={`big-circle ${props.color.theme} ${props.type}`}>
             <div class={`blanck-circle ${props.type}`}></div>
             <div class="inner-circle">
                 <div class="img-container">

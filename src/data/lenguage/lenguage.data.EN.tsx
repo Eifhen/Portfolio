@@ -20,4 +20,13 @@ export const lenguageDataEN:ILenguageData = {
     "hi-im" : "Hi i'm",
     "take-a-look": "Take a look  to my portfolio and learn a little more about my journey.",
     "download-cv" : "Download CV",
+    "about-me" : "About Me",
+    "about-intro" : `
+        I am a very passionate software developer. \n
+        I have focused my work on the development of web applications. \n 
+        I am an enthusiast of web layouts and design.`,
+
+    "my-interests" : "My Interests",
+    "see-more": "See More",
+    
 }

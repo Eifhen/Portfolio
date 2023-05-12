@@ -26,7 +26,7 @@
 .big-circle.dark {
     border: 19px solid var(--dark3A);
     animation: ImgDark 1s ease-in-out;
-    animation-delay: 500ms;
+    animation-delay: 600ms;
     animation-fill-mode: forwards;
 }
 
@@ -61,6 +61,14 @@
 .blanck-circle.right {
     right: -125px;
     left:initial;
+}
+
+.big-circle.dark .blanck-circle.right {
+    background-color: var(--dark0F) ;
+}
+
+.big-circle.light .blanck-circle.right {
+    background-color: var(--whiteF5) ;
 }
 
 .inner-circle {

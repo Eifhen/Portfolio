@@ -42,6 +42,39 @@
 
 }
 
+@media (max-width: 600px){
+    .big-circle.right {
+        width:  180px; 
+        height: 180px;
+        border-width: 16px !important;
+    }
+
+    .big-circle.right .blanck-circle {
+        width: 130px;
+        height: 130px;
+        left: -100px;
+    }
+
+    .big-circle.right .blanck-circle.right {
+        right: -80px;
+        left:initial;
+    }
+
+    .big-circle.right .inner-circle {
+        width: 130px;
+        height: 130px;
+    }
+
+    .big-circle.right .inner-circle .img-container {
+        top: -30%;
+    }
+
+    .big-circle.right .inner-circle .img-container img {
+        width: 150px !important;
+        height: 250px !important;
+    }
+}
+
 
 /****************************************
     Image Square

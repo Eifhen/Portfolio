@@ -166,9 +166,10 @@
     }
 
     .services-section .service-card-movil .service-tabs-content .service-tab-content p {
-        line-height: 1.6rem;
+        line-height: 1.5rem;
         letter-spacing: 0.07rem;
-        width: 80%;
+        font-size: 16px;
+        width: 60%;
     }
 }
 

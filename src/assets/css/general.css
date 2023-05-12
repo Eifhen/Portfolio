@@ -78,9 +78,13 @@ html {
   background-color: white;
 }
 
+a, button {
+  transition: opacity 200ms ease-in;
+}
+
 a:hover,
 button:hover {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 ul { list-style: none;} 

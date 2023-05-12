@@ -27,14 +27,14 @@ const obj = {
 export const HobbiesData : IHobbiesDataManager = {
     EN: [ 
         {
-            icon:"ri-palette-line",
-            title:"Web Design",
+            icon:"ri-music-2-line",
+            title:"Music",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             img: ""
         }, 
         {
-            icon:"ri-music-2-line",
-            title:"Music",
+            icon:"ri-palette-line",
+            title:"Web Design",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
             img: ""
         }, 

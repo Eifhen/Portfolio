@@ -5,8 +5,8 @@
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 
-        minmax(100vh, auto)  
-        minmax(70vh, auto) 
+        auto
+        minmax(50vh, auto) 
         minmax(100vh, auto) 
         minmax(110vh, auto);
     grid-template-areas: 
@@ -17,13 +17,13 @@
     ;
 }
 
-@media (max-width: 840px){
+@media (max-width: 600px){
     .home-page {
         display:grid;
         grid-template-columns: 100%;
         grid-template-rows: 
-            minmax(100vh, auto)  
-            minmax(70vh, auto) 
+            auto
+            auto
             minmax(100vh, auto) 
             minmax(110vh, auto);
         grid-template-areas: 

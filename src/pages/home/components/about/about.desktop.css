@@ -1,0 +1,151 @@
+
+
+.home-page .about {
+    grid-area: about;
+    padding-top: 8rem;
+    display:flex;
+    justify-content: center;
+}
+
+.home-page.light .about {
+    background-color: var(--whiteF5);
+}
+
+.home-page.dark .about {
+    background-color: var(--dark0F);
+}
+
+.home-page .about .content {
+    width: 1100px;
+    height: auto;
+    display:grid;
+    grid-template-columns: 43% 57%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+        "user--image content--info"
+    ;
+}
+
+.home-page .about .content .user--image {
+    grid-area: user--image;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-page .about .content .content--info {
+    grid-area: content--info;
+    z-index: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem; 
+}
+
+/********************************************
+   Title
+*********************************************/
+
+.home-page .about .content .content--info .title {
+    margin-bottom: 2rem;
+}
+
+.home-page .about .content .content--info .title h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+}
+
+.home-page .about .content .content--info .title p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.07em;
+    color: var(--dark37);
+    width: 560px;
+}
+
+.home-page.dark .about .content .content--info .title p {
+    color: var(--whiteF5);
+}
+
+/********************************************
+   Interest
+*********************************************/
+
+.home-page .about .content .content--info .interests {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home-page .about .content .content--info .interests h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5rem;
+}
+
+.home-page .about .content .content--info .interests .list {
+    display: flex;
+    gap: 2rem;
+}
+
+.home-page .about .content .content--info .interests .list .list--item {
+    display:flex;
+    gap: 0.5rem;
+    align-items: center;
+    
+}
+
+.home-page .about .content .content--info .interests .list .list--item h3 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+}
+
+.home-page .about .content .content--info .interests .list .list--item .icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--dark37);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/********************************************
+   See More Btn
+*********************************************/
+
+.btn-see-more {
+    margin-top: 2rem;
+    height: 49px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.3em;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+}
