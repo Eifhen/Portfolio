@@ -7,12 +7,14 @@
     grid-template-rows: 
         auto
         minmax(50vh, auto) 
-        minmax(100vh, auto) 
+        minmax(100vh, auto)
+        minmax(70vh, auto) 
         minmax(110vh, auto);
     grid-template-areas: 
         "hero"
         "about"
         "portfolio"
+        "testimonials"
         "contact"
     ;
 }
@@ -35,11 +37,13 @@
             auto
             auto
             minmax(100vh, auto) 
+            minmax(70vh, auto) 
             minmax(110vh, auto);
         grid-template-areas: 
             "hero"
             "about"
             "portfolio"
+            "testimonials"
             "contact"
         ;
     }

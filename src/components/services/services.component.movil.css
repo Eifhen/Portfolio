@@ -254,10 +254,10 @@
     }
 
     .services-section .service-card-movil .service-tabs-content .service-tab-content p {
-        line-height: 1.2rem;
         letter-spacing: 0.07rem;
-        width: 80%;
-        font-size: 10px;
+        width: 90%;
+        font-size: 13px;
+        line-height: 20px;
     }
 
     .services-section .service-card-movil .service-tabs .service-tab h1 {

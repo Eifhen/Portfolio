@@ -6,6 +6,8 @@ import Hero from './components/hero/home.page.hero';
 import { ServicesData } from '../../data/services/services.data';
 import { HobbiesData } from '../../data/hobbies/hobbies.data';
 import About from './components/about/home.page.about';
+import Portfolio from './components/portfolio/hero.page.portfolio';
+import { ProjectData } from '../../data/projects/project.data';
 
 
 
@@ -14,6 +16,7 @@ export default function HomePage() {
     const socialMedia = SocialMediaData;
     const services = ServicesData;
     const hobbies = HobbiesData;
+    const portfolio = ProjectData;
 
     return (
         <div class={`home-page ${context.themeManager.themeStore.theme}`}>
@@ -31,11 +34,15 @@ export default function HomePage() {
                 hobbies={ hobbies[context.lenguageManager.lenguageStore.lenguage] }
             />
 
-            <div class="portfolio">
+            <Portfolio
+                screen={ context.screenWidth }
+                theme= { context.themeManager.themeStore}
+                data= { portfolio[context.lenguageManager.lenguageStore.lenguage] }
+            />
 
-                <div class="testimonials">
-                </div>
+            <div class="testimonials">
             </div>
+            
             <div class="contact">
 
             </div>

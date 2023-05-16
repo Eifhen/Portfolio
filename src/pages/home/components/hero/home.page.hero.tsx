@@ -64,7 +64,7 @@ function HeroDesktop (props: IHero) {
                     </div>
                 </div>
                 <div class="user">
-                    <UserImage img={Images.Black} color={props.theme} type="left"  />
+                    <UserImage img={Images.user.foto_turtle_neck} color={props.theme} type="left"  />
                 </div>
             </div>
             <div class="services">
@@ -97,7 +97,7 @@ function HeroMovil (props: IHero) {
                     <SocialMedia iconSize="size45" data={props.media} orientation='vertical'/>
                 </div>
                 <div class="user">
-                    <UserImage img={Images.Black} color={props.theme} type="left"  />
+                    <UserImage img={Images.user.foto_turtle_neck} color={props.theme} type="left"  />
                 </div>
             </div>
             <div class="services">

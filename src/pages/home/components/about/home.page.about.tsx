@@ -37,7 +37,7 @@ function AboutDesktop (props:IAboutSize) {
         <div class="about">
             <div class="content">
                 <div class="user--image">
-                    <UserImage img={Images.Pajon} color={props.theme} type="right" />
+                    <UserImage img={Images.user.foto_pajon} color={props.theme} type="right" />
                 </div>
                 <div class="content--info">
                     <div class="title">
@@ -77,7 +77,7 @@ function AboutMovil (props:IAboutSize) {
                     <p>{ translate("about-intro") }</p>
                 </div>
                 <div class="user--image">
-                    <UserImage img={Images.Pajon} color={props.theme} type="right" />
+                    <UserImage img={Images.user.foto_pajon} color={props.theme} type="right" />
                 </div>
                 <div class="interests">
                     <h2>{ translate("my-interests") }</h2>
