@@ -12,7 +12,7 @@ export default function RouterManager(){
         <Router>
             <Routes>
                 <Route path="" component={ Layout }>
-                    <Route path="/" component={ TestPage }/>
+                    <Route path="/" component={ HomePage }/>
                     <Route path="/test" component={ TestPage }/>
                     <Route path="/home" component={ HomePage }/>
                 </Route>

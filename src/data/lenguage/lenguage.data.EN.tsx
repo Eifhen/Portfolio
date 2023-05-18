@@ -28,5 +28,9 @@ export const lenguageDataEN:ILenguageData = {
 
     "my-interests" : "My Interests",
     "see-more": "See More",
-    
+    "recent-works": "Recent Works",
+    "my-portfolio" : "My Portfolio",
+    "see-all-projects" : "See All Projects",
+    "web-designs" : "Web Designs",
+    "view-all": "View All",
 }

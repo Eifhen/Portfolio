@@ -15,12 +15,11 @@ export const TenziesEN: IProjectData = {
     title: "Tenzies",
     description: "Dice game made using React and Bootstrap 5",
     date: "22 / 06 / 2022",
-    img:"",
+    img:Images.projects.tenzies.cover,
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-        { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -73,7 +72,7 @@ export const TenziesEN: IProjectData = {
                 id: 3,
             },
             {
-                img:Images.projects.tenzies.img_2,
+                img:Images.projects.tenzies.img_3,
                 page: "Game Completed", // name of the page
                 project: "Tenzies", // name of the project
                 description: "when all the dice are equal you will win the game",
@@ -94,12 +93,11 @@ export const TenziesES: IProjectData = {
     title: "Tenzies",
     description: "Juego de dados hecho mediante React y Boostrap5",
     date: "22 / 06 / 2022",
-    img:"",
+    img:Images.projects.tenzies.cover,
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-        { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -152,7 +150,7 @@ export const TenziesES: IProjectData = {
                 id: 3,
             },
             {
-                img:Images.projects.tenzies.img_2,
+                img:Images.projects.tenzies.img_3,
                 page: "Juego Completado", // name of the page
                 project: "Tenzies", // name of the project
                 description: "cuando todos los dados sean iguales ganaras el juego",

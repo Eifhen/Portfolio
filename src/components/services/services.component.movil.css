@@ -26,15 +26,18 @@
         grid-template-columns: 100%;
         grid-template-rows: 30% minmax(70%, auto);
         grid-template-areas: "tabs" "tabs-content";
-        background-color: white;
+
     }
+    
 
     .services-section .service-card-movil.light {
         box-shadow: var(--shadow-lg);
+        background-color: white;
     }
 
     .services-section .service-card-movil.dark {
         box-shadow: var(--shadow-bright);
+        background-color: black;
     }
                      
     .services-section .service-card-movil .service-tabs {

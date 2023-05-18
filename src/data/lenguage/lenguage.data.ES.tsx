@@ -21,4 +21,9 @@ export const lenguageDataES:ILenguageData = {
     "about-intro" : "Soy un desarrollador de software muy apasionado. \n He centrado mi trabajo en el desarrollo de aplicaciones web, soy un entusiasta de maquetaciones y diseño web.",
     "my-interests" : "Cosas que me interesan",
     "see-more": "Ver Más",
+    "recent-works": "Trabajos Recientes",
+    "my-portfolio": "Mi Portafolio",
+    "web-designs" : "Ver diseños & templates",
+    "see-all-projects": "Ver otros projectos",
+    "view-all": "Ver todo",
 };

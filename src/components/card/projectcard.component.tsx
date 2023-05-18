@@ -1,5 +1,4 @@
 import { For, Show } from 'solid-js';
-import { IProjectData, IProjectTechnologies } from '../../data/projects/project.data';
 import './css/projectcard.desktop.css';
 import './css/projectcard.movil.css';
 import './css/projectcard.vertical.desktop.css';
@@ -7,6 +6,7 @@ import './css/projectcard.vertical.movil.css';
 import translate from '../../hooks/translate.hook';
 import { ITheme } from '../../hooks/theme.hook';
 import { A } from '@solidjs/router';
+import { IProjectData, IProjectTechnologies } from '../../data/projects/project.data.interfaces';
 
 
 interface IProjectCard {

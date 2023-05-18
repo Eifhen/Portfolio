@@ -2,13 +2,21 @@
 
 
 .project-card {
-    width: 33%;
-    height: 250px;
+    width: 32%;
+    height: 220px;
     border-radius: 35px;
-    box-shadow: var(--shadow);
     position: relative;
-    overflow: hidden;
+    background-color: inherit;
     cursor: pointer;
+
+}
+
+.project-card.light {
+    box-shadow: var(--shadow);
+}
+
+.project-card.dark {
+    box-shadow: var(--shadow-bright-low);
 }
 
 .project-card:hover {
@@ -23,10 +31,11 @@
     margin: 0 auto !important;
     display:block !important;
     z-index: 1;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
     width: 100%;
     height: 100%;
+    border-radius: 35px;
 }
 
 .project-card .mask {
@@ -56,6 +65,7 @@
     display:flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: hidden;
 }
 
 .project-card .mask .info .title {
@@ -66,13 +76,13 @@
     font-size: 24px;
     line-height: 26px;
     letter-spacing: 0.1em;
-    width: 65%;
+    width: 75%;
     text-shadow: var(--text-shadow);
     margin-bottom: 0.5rem;
 }
 
 .project-card .mask .info .date {
-    width: 50%;
+    width: 58%;
     color:white;
     padding: 0.3rem;
     border-radius: 50px;
@@ -98,15 +108,15 @@
     color: white;
     font-style: normal;
     font-weight: 500;
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 0.2rem;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.1rem;
     font-family: var(--Nunito);
-    width: 70%;
+    width: 85%;
     display:grid;
     grid-template-rows: 0fr;    
     transition: grid-template-rows 600ms ease-in, padding 300ms ease-in;
-
+    text-shadow: var(--text-shadow);
 }
 
 .project-card .mask .info .description > div {
@@ -136,6 +146,7 @@
     align-items: center;
     justify-content: center;
     font-size: 24px;
+    font-weight: bolder;
     position: absolute;
     top: -35px !important;
     border: 3px solid var(--dark1F2);
@@ -149,6 +160,6 @@
 }
 
 .project-card .mask .technologies .technologie.more {
-    background-color: var(--grayD9);
-    color: black !important;
+    background-color: var(--pure);
+    color: var(--dark37) !important;
 }

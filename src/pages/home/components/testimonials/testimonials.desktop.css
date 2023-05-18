@@ -1,0 +1,6 @@
+
+
+.home-page .testimonials {
+    grid-area: testimonials;
+    background-color: yellow;
+}

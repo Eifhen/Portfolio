@@ -6,21 +6,20 @@ import { IProjectData } from "../project.data.interfaces";
 
 
 /************************************
-    [ ProjectManager English ]
+    [ ProductManager English ]
 *************************************/
 
-export const ProjectManagerEN: IProjectData =  {
+export const ProductManagerEN: IProjectData =  {
     id:2,
     pin:true,
     title: "Product Manager",
-    description: "The Product Manager app is a project in which i display my skills in the development of web application using modern javascript frameworks like SolidJS",
+    description: "Project in which i display my skills in the development of web application using modern javascript frameworks like SolidJS",
     date: "01 / 05 / 2023",
     img:Images.projects.product_manager.cover,
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-        { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
         { name: "SolidJS", icon: Images.tecnologies.solidjs_icon, type: "image" },
     ],
     detail:{
@@ -39,7 +38,6 @@ export const ProjectManagerEN: IProjectData =  {
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-            { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "SolidJS", icon: Images.tecnologies.solidjs_icon, type: "image" },
         ],
         references: [],
@@ -114,28 +112,34 @@ export const ProjectManagerEN: IProjectData =  {
 
 
 /************************************
-    [ ProjectManager Spanish ]
+    [ ProductManager Spanish ]
 *************************************/
 
-export const ProjectManagerES: IProjectData =  {
+export const ProductManagerES: IProjectData =  {
     id:2,
     pin: true,
     title: "Product Manager",
-    description: "La aplicación Product Manager es un proyecto en el que muestro mis habilidades en el desarrollo de aplicaciones web utilizando marcos de JavaScript modernos como SolidJS.",
+    description: "Proyecto en el que muestro mis habilidades en el desarrollo de aplicaciones web utilizando frameworks de JavaScript modernos como SolidJS.",
     date: "01 / 05 / 2023",
     img: Images.projects.product_manager.cover,
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-        { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
         { name: "SolidJS", icon: Images.tecnologies.solidjs_icon, type: "image" },
     ],
     detail:{
         about: [                    
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+            `Hice este proyecto como una práctica para SolidJS, la idea de este proyecto es
+            imitar el comportamiento de una aplicación de compras básica.`,
+
+            `
+            Esta aplicación se divide en 3 secciones. El número uno es una sección de administración en la que puede agregar,
+            editar y eliminar productos de nuestro catálogo, en la sección número dos tenemos
+            podemos encontrar todos los productos que existen en nuestro catálogo, podemos ir a sus
+            detalle y añádelos a nuestro carrito. en la sección número tres vamos a
+            encontrar nuestro carrito de compras, podemos ver el monto total de nuestra compra
+            y podemos eliminar cualquier artículo de nuestro carrito de compras`,
         ],
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },

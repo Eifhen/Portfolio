@@ -8,6 +8,8 @@ import { HobbiesData } from '../../data/hobbies/hobbies.data';
 import About from './components/about/home.page.about';
 import Portfolio from './components/portfolio/hero.page.portfolio';
 import { ProjectData } from '../../data/projects/project.data';
+import Testimonials from './components/testimonials/home.page.testimonials';
+import { TestimonialsData } from '../../data/testimonials/testimonials.data';
 
 
 
@@ -16,7 +18,11 @@ export default function HomePage() {
     const socialMedia = SocialMediaData;
     const services = ServicesData;
     const hobbies = HobbiesData;
-    const portfolio = ProjectData;
+    const projects = ProjectData;
+    const testimonies = TestimonialsData;
+
+    const portfolio = ()=> projects[context.lenguageManager.lenguageStore.lenguage].filter(item => item.pin);
+    const testimonials = () => testimonies[context.lenguageManager.lenguageStore.lenguage];
 
     return (
         <div class={`home-page ${context.themeManager.themeStore.theme}`}>
@@ -37,11 +43,15 @@ export default function HomePage() {
             <Portfolio
                 screen={ context.screenWidth }
                 theme= { context.themeManager.themeStore}
-                data= { portfolio[context.lenguageManager.lenguageStore.lenguage] }
+                data= { portfolio() }
             />
 
-            <div class="testimonials">
-            </div>
+            <Testimonials
+                theme={ context.themeManager.themeStore }
+                data= { testimonials() }
+            />
+
+          
             
             <div class="contact">
 

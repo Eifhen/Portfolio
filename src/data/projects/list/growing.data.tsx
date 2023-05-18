@@ -16,8 +16,7 @@ export const GrowingEN: IProjectData = {
     date: "12 / 2020 | 04 / 2022",
     img:Images.projects.growing.cover,
     mainTechnologies: [
-        { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
-        { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+        { name: "JQuery", icon: Images.tecnologies.jquery_icon, type: "image" },
         { name: "C#", icon: Images.tecnologies.c_icon, type: "image" },
         { name: "ASP.NET", icon: Images.tecnologies.asp_icon, type:"image" },
     ],
@@ -152,8 +151,7 @@ export const GrowingES: IProjectData =  {
     date: "12 / 2020 | 04 / 2022",
     img:Images.projects.growing.cover,
     mainTechnologies: [
-        { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
-        { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+        { name: "JQuery", icon: Images.tecnologies.jquery_icon, type: "image" },
         { name: "C#", icon: Images.tecnologies.c_icon, type: "image" },
         { name: "ASP.NET", icon: Images.tecnologies.asp_icon, type:"image" },
     ],

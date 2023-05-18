@@ -17,7 +17,6 @@ export const QuizzicalEN:IProjectData =    {
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-        { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -87,12 +86,11 @@ export const QuizzicalES: IProjectData =
     title: "Quizzical",
     description: "Juego de trivia hecho con React y Bootstrap 5",
     date: "21 / 06 / 2022",
-    img:"",
+    img:Images.projects.quizzical.cover,
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-        { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{

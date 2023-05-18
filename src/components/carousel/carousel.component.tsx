@@ -1,24 +1,37 @@
-
+import './carousel.config.css';
 import '@splidejs/splide/css';
 import Splide from '@splidejs/splide';
-import { onMount } from 'solid-js';
+import { JSX, onMount } from 'solid-js';
 
+interface CarouselItem {
+    children: JSX.Element;
+}
 
-export default function Carousel(){
+export default function Carousel(props: CarouselItem){
 
     onMount(()=>{
-        const slider = new Splide( '.splide' ).mount();  
+        new Splide('.splide',{
+            type   : 'loop',
+            perPage: 3,
+            focus  : 'center',
+            height: "auto",
+        }).mount();  
     })
 
     return (
-        <section class="splide" aria-label="Splide Basic HTML Example">
+        <section class="splide" aria-label="Carousel">
             <div class="splide__track">
                 <ul class="splide__list">
-                    <li class="splide__slide slide-ts">Slide 01</li>
-                    <li class="splide__slide slide-ts">Slide 02</li>
-                    <li class="splide__slide slide-ts">Slide 03</li>
+                    {props.children}
                 </ul>
             </div>
         </section>
     )
 }
+
+
+export const CarouselItem = (props: CarouselItem) => (
+    <li class="splide__slide slide-ts">
+        {props.children}
+    </li>
+)
