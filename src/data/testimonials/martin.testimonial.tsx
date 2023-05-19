@@ -1,3 +1,4 @@
+import { Images } from "../../assets/img/images"
 import { ITestimonialsData } from "./testimonials.data"
 
 
@@ -5,6 +6,7 @@ import { ITestimonialsData } from "./testimonials.data"
     Martin Testimonial EN
 *********************************/
 export const MartinTestimonialEN: ITestimonialsData =    {
+    img: Images.user.martin_foto,
     fullname: "Martinsito Brito Diaz",
     info: "Coworker | Software Developer",
     message: [
@@ -40,6 +42,7 @@ export const MartinTestimonialEN: ITestimonialsData =    {
     Martin Testimonial ES
 *********************************/
 export const MartinTestimonialES: ITestimonialsData =  {
+    img: Images.user.martin_foto,
     fullname: "Martinsito Brito Diaz",
     info: "Compañero de Trabajo | Software Developer",
     message: [

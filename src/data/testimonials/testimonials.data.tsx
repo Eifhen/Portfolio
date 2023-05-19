@@ -19,6 +19,7 @@ export interface ITestimonialsData {
     info: string;
     message: string[];
     links: ITestimonialLink[];
+    img: string;
 }
 
 export interface ITestimonialLink {
@@ -30,7 +31,10 @@ export interface ITestimonialLink {
 
 export const TestimonialsData: ITestimonialManager = {
     EN: [
-        MartinTestimonialEN
+        MartinTestimonialEN,
+        MartinTestimonialEN,
+        MartinTestimonialEN,
+        MartinTestimonialEN,
     ],
 
     ES: [

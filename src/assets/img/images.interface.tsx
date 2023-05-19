@@ -31,6 +31,8 @@ export interface ITecnologiesIconCollector {
 export interface IUserImagesCollector {
     foto_pajon: string;
     foto_turtle_neck: string;
+    martin_foto: string;
+    elian_foto: string;
     [key:string]:string
 }
 

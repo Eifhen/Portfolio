@@ -1,0 +1,41 @@
+
+
+.splide__list.carousel-config {
+   align-items: center;
+   background-color: inherit !important;
+   padding: 2rem 0 !important;
+}
+
+.splide__track {
+    height: 650px !important;
+}
+
+.splide__slide {
+    width: 333px !important;
+    height: 418px;
+    border-radius: 35px;
+}
+
+.splide__slide.is-active {
+    width: 394px !important;
+    height: 527px !important;
+}
+
+.splide__pagination__page {
+    height: 13px !important;
+    width: 13px !important;
+    background-color: var(--grayD9);
+}
+
+.splide__pagination__page.is-active {
+    transform: none !important;
+    background-color: var(--dark37) !important;
+    opacity:1;
+}
+
+.splide__pagination {
+    bottom: initial !important;
+    right: initial !important;
+    top:0;
+    left: 10px !important;
+} 
