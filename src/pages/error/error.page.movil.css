@@ -1,0 +1,20 @@
+
+
+
+@media (max-width: 600px){
+    .error-page .error-content h1 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 100px;
+    }
+    
+    .error-page .error-content p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 27px;
+    }
+}

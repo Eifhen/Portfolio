@@ -111,14 +111,14 @@
     .home-page .portfolio .content .header .title h2 {
         font-style: normal;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 20px;
         line-height: 20px;
     }
 
     .home-page .portfolio .content .header .title p {
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 16px;
     }
 
@@ -127,7 +127,7 @@
         height: 14px;
         border-radius: 50px;
         position: relative;
-        margin-top: 0.2rem;
+        margin-top: 0.4rem;
     }
     
     .home-page .portfolio .content .header .title .underline:after {
@@ -143,13 +143,13 @@
     .home-page .portfolio .content .header .links {
         display:flex;
         align-items: center;
-        gap: 1.5rem;
-        padding-left: 1rem;
+        gap: 1rem;
+        padding-left: 0.7rem;
         padding-top: 0.2rem;
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
+        font-weight: 600;
+        font-size: 12px;
         line-height: 14px;
         letter-spacing: 0.1em;
         width: 60%;

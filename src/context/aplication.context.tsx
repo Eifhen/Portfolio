@@ -1,4 +1,4 @@
-import { Accessor, JSX, createContext, useContext } from "solid-js";
+import { Accessor, JSX, Setter, createContext, createSignal, useContext } from "solid-js";
 import useTheme, { ITheme, IThemeHook } from "../hooks/theme.hook";
 import useLenguage, { ILenguageHook } from "../hooks/lenguage.hook";
 import useScreenWidth from "../hooks/screenWidth.hook";
@@ -32,7 +32,7 @@ export function AplicationContextProvider(props:IAplicationContextProps){
         themeManager,
         lenguageManager,
         screenWidth,
-        socialMedia
+        socialMedia,
     }
 
     return (

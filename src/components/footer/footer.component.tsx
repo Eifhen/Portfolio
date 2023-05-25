@@ -33,7 +33,7 @@ export default function Footer(props:IFooter){
                                     <A activeClass="active" href="/templates">{translate("Designs & Templates")}</A>
                                 </li>
                                 <li>
-                                    <A href="/home #contact">{translate("Contact")}</A>
+                                    <A activeClass="none" href="/home#contact">{translate("Contact")}</A>
                                 </li>
                                 <li>
                                     <A activeClass="active" href="/about">{translate("About")}</A>

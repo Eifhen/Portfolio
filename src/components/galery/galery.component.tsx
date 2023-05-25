@@ -1,10 +1,10 @@
 
 import { Accessor, For, Setter, createEffect, createSignal, onMount } from 'solid-js';
-import { IProjectData, IProjectGalery } from '../../data/projects/project.data';
 import './galery.desktop.css';
 import "./galery.movil.css";
 import { ITheme } from '../../hooks/theme.hook';
 import useHideOnOutsideClick from '../../hooks/outsideClick';
+import { IProjectData, IProjectGalery } from '../../data/projects/project.data.interfaces';
 
 
 
@@ -24,37 +24,37 @@ interface IGaleryModal {
 export default function Galery (props:IGalery){
 
     let btnRef:HTMLDivElement;
-    const images:IProjectGalery[] = props.data.detail.galery; 
+    const images= () :IProjectGalery[]  => props.data.detail.galery; 
     const [selected ,setSelected] = createSignal({} as IProjectGalery);
-    const [img ,setImg] = createSignal('');
+    const [img ,setImg] = createSignal<string | undefined>('');
     const [id, setID] = createSignal(0);
     const [count, setCount] = createSignal(0);
     const [modal, setModal] = createSignal(false);
 
     const SelectImage = (item:IProjectGalery) =>{
-        const index = images.findIndex(img => img.id == item.id);
+        const index = images().findIndex(img => img.id == item.id);
         setID(item.id);
         setCount(index);
-        setImg(images[count()].img)
+        setImg(images()[count()].img);
     }
 
     const OpenModal = () => {
-        setSelected(images[count()]);
+        setSelected(images()[count()]);
         setModal(true);
     }
 
     onMount(()=>{
-        setImg(images[count()].img)
-        setID(images[count()].id);
+        setImg(images()[count()].img)
+        setID(images()[count()].id);
         setInterval(()=>{
-            const total_items = images.length;
+            const total_items = images().length;
             if(count() < total_items){
                 setCount(count() + 1);
                 count() === total_items && setCount(0);
-                setImg(images[count()].img)
+                setImg(images()[count()].img)
             }
-            setID(images[count()].id);
-        }, 4000);
+            setID(images()[count()].id);
+        }, 6000);
     })
 
     return (
@@ -97,7 +97,6 @@ function GaleryModal (props:IGaleryModal) {
     })
     
     onMount(()=>{
-        console.log("here =>", props.btnRef);
         useHideOnOutsideClick<HTMLDivElement, HTMLDivElement>({
             ref1:modalRef, 
             ref2:props.btnRef, 

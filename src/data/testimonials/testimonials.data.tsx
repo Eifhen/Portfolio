@@ -38,6 +38,9 @@ export const TestimonialsData: ITestimonialManager = {
     ],
 
     ES: [
-        MartinTestimonialES
+        MartinTestimonialES,
+        MartinTestimonialES,
+        MartinTestimonialES,
+        MartinTestimonialES,
     ]
 }

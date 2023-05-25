@@ -18,7 +18,6 @@ interface IPortfolio {
 
 export default function Portfolio (props:IPortfolio) {
     
-
     return (
         <div class={`portfolio ${props.theme.theme}`}>
             <div class="content">
@@ -38,6 +37,7 @@ export default function Portfolio (props:IPortfolio) {
                         <For each={ props.data }>
                             {(item)=>(
                                 <ProjectCard
+                                    url={`/projects/detail/${item.id}`}
                                     type='horizontal'
                                     theme={props.theme}
                                     data={item}
@@ -47,7 +47,7 @@ export default function Portfolio (props:IPortfolio) {
                     </div>
                 </div>
                 <div class="view--more">
-                    <A class="btn btn-view-more" href="#">
+                    <A class="btn btn-view-more" href="/projects">
                         {translate("view-all")}
                     </A>
                 </div>

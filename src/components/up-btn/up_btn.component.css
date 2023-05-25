@@ -1,0 +1,37 @@
+
+
+
+
+
+
+.up_btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 10;
+    opacity: 1 !important;
+    display:none;
+    background-color: white;
+    color: black;
+    box-shadow: var(--shadow-bright);
+}   
+
+/* .up_btn.light {
+    background-color: black;
+    color: white;
+    box-shadow: var(--shadow-bright);
+}
+
+.up_btn.dark {
+    background-color: white;
+    color: black;
+    box-shadow: var(--shadow-bright);
+} */

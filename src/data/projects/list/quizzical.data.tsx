@@ -16,7 +16,7 @@ export const QuizzicalEN:IProjectData =    {
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
-        { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+        { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -30,6 +30,7 @@ export const QuizzicalEN:IProjectData =    {
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+            { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
             { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
         ],
@@ -90,7 +91,7 @@ export const QuizzicalES: IProjectData =
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
-        { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+        { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -103,6 +104,7 @@ export const QuizzicalES: IProjectData =
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+            { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
             { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
         ],

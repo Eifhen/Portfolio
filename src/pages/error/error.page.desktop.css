@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+.error-page {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    padding-top: 7rem;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.error-page .error-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-page .error-content h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 140px;
+}
+
+.error-page .error-content p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 27px;
+}

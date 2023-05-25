@@ -1,0 +1,102 @@
+
+
+.project-page .header {
+    grid-area: header;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project-page.light .header {
+    animation: projectHeaderThemeLight 1s ease-in;
+    animation-fill-mode: forwards;
+
+}
+
+.project-page.dark .header {
+    animation: projectHeaderThemeDark 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes projectHeaderThemeLight {
+    0% {
+        background-color: var(--dark3A);
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+@keyframes projectHeaderThemeDark {
+    0% {
+        background-color: black;
+    }
+    100% {
+        background-color: var(--dark3A);
+    }
+}
+
+
+.project-page .header .content {
+    width: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+    animation: intro 2s ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes intro {
+    from {
+        width: 0;
+        opacity:0;
+    }
+    to {
+        width: 1100px;
+        opacity: 1;
+    }
+}
+
+
+.project-page .header .content .icon {
+    font-size: 150px;
+    display:flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.project-page .header .content .info {
+    border-left: 2px solid white;
+    height: 235px;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity:0;
+    animation-delay: 1.4s !important;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.project-page .header .content .info h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 100px;
+
+}
+
+.project-page .header .content .info p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    width: 50%;
+}

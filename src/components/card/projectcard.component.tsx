@@ -13,6 +13,7 @@ interface IProjectCard {
   data: IProjectData;
   type: 'horizontal' | 'vertical';
   theme: ITheme;
+  url?: string;
 }
 
 interface IProjectCardData {
@@ -23,6 +24,7 @@ interface IProjectCardData {
     description:string;
     mainTechnologies:IProjectTechnologies[];
     theme?:ITheme;
+    url?:string;
 }
 
 
@@ -32,6 +34,7 @@ export default function ProjectCard(props:IProjectCard){
         <Show when={ props.type === "horizontal" } 
             fallback= {
                 <ProjectCardVertical 
+                    url={props.url}
                     theme={props.theme}
                     id={props.data.id}
                     date={props.data.date}
@@ -43,6 +46,7 @@ export default function ProjectCard(props:IProjectCard){
             }
         >
             <ProjectCardHorizontal 
+                url={props.url}
                 theme={props.theme}
                 id={props.data.id}
                 date={props.data.date}
@@ -59,7 +63,7 @@ export default function ProjectCard(props:IProjectCard){
 function ProjectCardHorizontal(props:IProjectCardData) {
     
     return (
-        <A href="#" class={`project-card ${props.theme?.theme}`}>
+        <A href={props.url? props.url : "#"} class={`project-card ${props.theme?.theme}`}>
             <img src={props.img} alt="" elementtiming={''} fetchpriority={'high'} />
             <div class="mask">
                 <div class="info">
@@ -94,35 +98,40 @@ function ProjectCardHorizontal(props:IProjectCardData) {
 
 function ProjectCardVertical(props:IProjectCardData){
     return (
-        <A href="#" class={`project-card-vertical ${props.theme?.theme}`}>
-            <img src={props.img} alt="" elementtiming={''} fetchpriority={'high'} />
-            <div class="mask">
-                <div class="info">
-                    <h2 class="title">{ props.title }</h2>
-                    <p class="date">{ props.date }</p>
-                    <div class="description">
-                        <div> { props.description } </div>
-                    </div>
-                </div>
-                <div class="technologies">
-                    <For each={props.mainTechnologies} fallback={<>error while loading the card</>}>
-                        {(tecnologie, index)=>(
-                            <div class="technologie" title={tecnologie.name} 
-                                style={{right: `${(index()+1) * 35}px`, "z-index": 2}}
-                            >
-                                {
-                                    tecnologie.type === "icon" ? 
-                                    <i class={tecnologie.icon}></i>
-                                    : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
-                                }
+        <A href={props.url? props.url : "#"} class={`project-card-vertical ${props.theme?.theme}`}>
+            <div class="card-image">
+                <img src={props.img} alt="" elementtiming={''} fetchpriority={'high'} />
+            </div>
+            <div class="card-info">
+                <div class="card-info-container">
+                    <div class="info">
+                        <h2>{props.title}</h2>
+                        <time>{props.date}</time>
+                        <p>{props.description}</p>
+                        <div class="technologies">
+                            <For each={props.mainTechnologies} fallback={<>error while loading the card</>}>
+                                {(tecnologie, index)=>(
+                                    <div class="technologie" title={tecnologie.name} 
+                                        style={{right: `${(index()+1) * 35}px`, "z-index": 2}}
+                                    >
+                                        {
+                                            tecnologie.type === "icon" ? 
+                                            <i class={tecnologie.icon}></i>
+                                            : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
+                                        }
+                                    </div>
+                                )}
+                            </For>
+                            <div class="technologie more" title={translate("more")}>
+                                <i class="ri-add-line"></i>
                             </div>
-                        )}
-                    </For>
-                    <div class="technologie more" title={translate("more")}>
-                        <i class="ri-add-line"></i>
+                        </div>
                     </div>
                 </div>
             </div>
         </A>
     )
 }
+
+
+

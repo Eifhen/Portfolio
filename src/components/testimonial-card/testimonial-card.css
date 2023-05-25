@@ -121,8 +121,8 @@
     font-family: var(--Nunito);
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
+    font-size: 12px;
+    line-height: 18px;
     text-align: center;
     width: 250px;
 }
@@ -135,6 +135,7 @@
     grid-area: links;
     display:flex;
     justify-content: center;
+    align-items: center;
     gap: 0.4rem;
 }
 
@@ -154,12 +155,10 @@
 /***********************
     Slide Active
 ***********************/
-
 .splide__slide.is-active .testimonial-card .quote--icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--whiteF5);
     display:flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +214,7 @@
 .splide__slide.is-active .testimonial-card .testimonial-card-content .title p {
     font-family: var(--Nunito);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.07em;
@@ -226,10 +225,10 @@
     font-family: var(--Nunito);
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
     text-align: center;
-    width: 320px;
+    width: 80%;
   
 }
 
@@ -242,4 +241,106 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+@media (max-width: 610px){
+
+    .splide__slide .testimonial-card .testimonial-card-content {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            140px
+            15%
+            max-content
+            10%
+        ;
+    
+        grid-template-areas: 
+            "header"
+            "title"
+            "message"
+            "links"
+        ;
+    }
+
+    .splide__slide.is-active .testimonial-card .testimonial-card-content {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            150px
+            15%
+            max-content
+            10%
+        ;
+    
+        grid-template-areas: 
+            "header"
+            "title"
+            "message"
+            "links"
+        ;
+    }
+
+    .splide__slide {
+        width: 315px !important;
+        height: 380px;
+        border-radius: 35px;
+    }
+
+    .splide__slide.is-active {
+        width: 320px !important;
+        height: 450px !important;
+    }
+
+    .splide__slide.is-active .testimonial-card .testimonial-card-content .img img {
+        border-radius: 50%;
+        height: 115px;
+        width: 115px;
+        display:block;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .splide__slide.is-active .testimonial-card .testimonial-card-content .title h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.07em;
+    }
+
+    .splide__slide.is-active .testimonial-card .testimonial-card-content .title p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 17px;
+        letter-spacing: 0.07em;
+    }
+
+    .splide__slide.is-active .testimonial-card .testimonial-card-content .message p {
+        margin-bottom: 0.5rem;
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        width: 80%;
+      
+    }
+
+    .splide__slide.is-active .testimonial-card .testimonial-card-content .links .link {
+        font-size: 16px;
+        border-radius: 50%;
+        width: 34px;
+        height: 34px;
+        border: 1px solid var(--gray-loyal);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

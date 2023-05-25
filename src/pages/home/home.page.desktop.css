@@ -8,7 +8,7 @@
         auto /* hero */
         minmax(50vh, auto) /* about */ 
         minmax(100vh, max-content) /* portfolio */
-        minmax(70vh, max-content)  /* textimonials */
+        minmax(100vh, max-content)  /* textimonials */
         minmax(110vh, auto) /* contact */
     ;
     grid-template-areas: 

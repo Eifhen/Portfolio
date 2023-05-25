@@ -92,11 +92,11 @@ export const Camsoft03EN: IProjectData =  {
                 id: 6,
             },
             {
-                img:Images.projects.camsoft03.img_5,
+                img:Images.projects.camsoft03.img_6,
                 page: "Payroll Detail", // name of the page
                 project: "Camsoft03", // name of the project
                 description: "In this page we can see the detail of a given payroll.",
-                id: 6,
+                id: 7,
             },
         ],
     }
@@ -191,11 +191,11 @@ export const Camsoft03ES: IProjectData =  {
                 id: 6,
             },
             {
-                img:Images.projects.camsoft03.img_5,
+                img:Images.projects.camsoft03.img_6,
                 page: "Detalle de Nómina", // name of the page
                 project: "Camsoft03", // name of the project
                 description: "En esta página podemos ver el detalle de una determinada nómina.",
-                id: 6,
+                id: 7,
             },
         ],
     }

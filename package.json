@@ -17,6 +17,7 @@
   "dependencies": {
     "@solidjs/router": "^0.8.2",
     "@splidejs/splide": "^4.1.4",
+    "axios": "^1.4.0",
     "remixicon": "^3.2.0",
     "solid-js": "^1.6.10"
   }

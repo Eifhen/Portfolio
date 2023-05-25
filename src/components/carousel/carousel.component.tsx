@@ -3,22 +3,31 @@ import '@splidejs/splide/css';
 
 
 import { JSX, onMount } from 'solid-js';
-import { useSlider } from '../../hooks/slider.hook';
+import { ISliderOptions, useSlider } from '../../hooks/slider.hook';
 
 interface CarouselItem {
     children: JSX.Element;
 }
 
-export default function Carousel(props: CarouselItem){
-   
-   
-    onMount(()=>{
-        useSlider();
-        console.log("slider is mounted");
-    });
+interface ICarousel {
+    children: JSX.Element;
+    options:ISliderOptions;
+}
+
+export default function Carousel(props: ICarousel){
+    
+    useSlider({options:props.options});
   
     return (
-        <section class="splide" aria-label="Splide Basic HTML Example">
+        <section id={props.options.slider_id} class="splide" aria-label="Splide Basic HTML Example">
+             <div class="splide__arrows">
+                <button class="splide__arrow splide__arrow--prev">
+                    <i class="ri-arrow-left-circle-fill"></i>
+                </button>
+                <button class="splide__arrow splide__arrow--next">
+                    <i class="ri-arrow-right-circle-fill"></i>
+                </button>
+            </div>
             <div class="splide__track">
                 <ul class="splide__list carousel-config">
                     {props.children}

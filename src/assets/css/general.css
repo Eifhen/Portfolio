@@ -38,6 +38,7 @@
     --green:#27AE60 ;
     --green-leaf:#71AE21;
     --wine:rgb(247, 10, 61);
+    --red: #E11D48;
     
     --night-gradient: linear-gradient(90deg, rgba(14,43,55,1) 0%, rgba(8,32,42,1) 12%, rgba(11,11,11,1) 100%);
     --orange-gradient: linear-gradient(90deg, rgba(251,225,141,1) 0%, rgba(254,151,0,1) 64%, rgba(238,141,0,1) 99%);
@@ -50,6 +51,9 @@
     --shadow-lg: 0 1rem 3rem rgba(0,0,0, .175) !important;
     --shadow-bright: 0px 0px 20px 1px #666;
     --shadow-bright-low: 0px 0.5rem 1rem 1px #666;
+    --shadow-bright-lg: 0 1rem 3rem #666 !important;
+    --shadow-bright-sm: 0 .5rem 1rem #666 !important;
+    --shadow-card: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
 
     --text-shadow:0px 0px 3px black;
     
@@ -78,6 +82,7 @@
 
 html {
   background-color: white;
+  scroll-behavior: smooth;
 }
 
 a, button {
@@ -128,6 +133,10 @@ ul { list-style: none;}
 .color-yellow { color: #F8E913; }
 .color-react { color: #61DBFB;}
 .color-purple { color: #9933CC; }
+
+.d-block { display: block !important; }
+.d-none { display: none !important; }
+.d-flex { display: flex !important; }
 
 .tradient {
 

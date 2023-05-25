@@ -1,0 +1,82 @@
+@media(max-width: 850px){
+    /******************************************
+    Testimonial Content
+*******************************************/
+
+    .home-page .testimonials .content .testimonials-carousel .splide__pagination {
+        bottom: initial !important;
+        right: initial !important;
+        top:  10px;
+        left: 24px !important;
+    } 
+
+    .home-page .testimonials .content {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .home-page .testimonials .content .header {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home-page .testimonials .content .header p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .home-page .testimonials.light .content .header p {
+        color: var(--dark37)
+    }
+
+    .home-page .testimonials .content .header h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 47px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-page .testimonials .content .header  .underline,
+    .home-page .testimonials .content .header  .underline:after {
+        display:none;
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    .home-page .testimonials .content .testimonials-carousel .splide__pagination {
+        bottom: initial !important;
+        right: initial !important;
+        top:  10px;
+        left: 5px !important;
+    } 
+
+    .home-page .testimonials .content .header p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .home-page .testimonials .content .header h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.3em;
+    }
+
+    .home-page .testimonials .content .testimonials-carousel .splide__slide.is-active {
+        width: 333px !important;
+        height: 527px !important;
+    }
+}

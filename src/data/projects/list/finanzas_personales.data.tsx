@@ -85,7 +85,7 @@ export const FinanzasPersonalesEN: IProjectData =  {
                 page: "Income Detail", // name of the page
                 project: "Finanzas Personales", // name of the project.
                 description: "On this page we can see the detail of an income",
-                id: 6,
+                id: 7,
             },
         ],
     }
@@ -173,7 +173,7 @@ export const FinanzasPersonalesES: IProjectData =  {
                 page: "Detalle de Ingreso", // name of the page
                 project: "Finanzas Personales", // name of the project.
                 description: "En esta página podemos ver el detalle de un ingreso determinado",
-                id: 6,
+                id: 7,
             },
         ],
     }

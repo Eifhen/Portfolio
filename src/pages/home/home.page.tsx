@@ -1,7 +1,7 @@
 
 import useAplicationContext from '../../context/aplication.context';
 import { SocialMediaData } from '../../data/social-media/social-media.data';
-import './css/home.page.desktop.css';
+import './home.page.desktop.css';
 import Hero from './components/hero/home.page.hero';
 import { ServicesData } from '../../data/services/services.data';
 import { HobbiesData } from '../../data/hobbies/hobbies.data';
@@ -10,6 +10,7 @@ import Portfolio from './components/portfolio/hero.page.portfolio';
 import { ProjectData } from '../../data/projects/project.data';
 import Testimonials from './components/testimonials/home.page.testimonials';
 import { TestimonialsData } from '../../data/testimonials/testimonials.data';
+import Contact from './components/contact/home.page.contact';
 
 
 
@@ -33,7 +34,7 @@ export default function HomePage() {
                 media={ socialMedia } 
                 theme={ context.themeManager.themeStore } 
             />
-            
+
             <About
                 screen={ context.screenWidth }
                 theme={ context.themeManager.themeStore }
@@ -51,11 +52,8 @@ export default function HomePage() {
                 data= { testimonials() }
             />
 
-          
+            <Contact />
             
-            <div class="contact">
-
-            </div>
         </div>
     )
 }

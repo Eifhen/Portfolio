@@ -4,6 +4,7 @@ import Navbar from "../navbar/navbar.component"
 import './layout.component.css';
 import useScreenWidth from "../../hooks/screenWidth.hook";
 import Footer from "../footer/footer.component";
+import UpBtn from "../up-btn/up_btn.component";
 
 
 
@@ -22,13 +23,14 @@ function LayoutContent () {
         <div class="layout-page">
             <div class={`layout-theme ${context.themeManager.themeStore.theme}`}></div>
             <div class={`layout-content ${context.themeManager.themeStore.theme}`}>
-                <header class="header">
+                <header id="main-header" class="header">
                     <Navbar screenWidth={context.screenWidth} color={context.themeManager.themeStore}/>
                 </header>
-                <main class="content">
+                <main id="main-content" class="content">
                     <Outlet />
                 </main>
-                <footer class="footer">
+                <footer id="main-footer" class="footer">
+                    <UpBtn theme={ context.themeManager.themeStore } />
                     <Footer data={ context.socialMedia } />
                 </footer>
             </div>

@@ -1,0 +1,21 @@
+
+
+.project-detail-page {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        minmax(500px, auto)
+        minmax(100vh, auto)
+        minmax(500px, auto)
+        minmax(400px, auto)
+    ;
+
+    grid-template-areas: 
+        "hero"
+        "about"
+        "technologies"
+        "references"
+        "other_projects"
+    ;
+
+}

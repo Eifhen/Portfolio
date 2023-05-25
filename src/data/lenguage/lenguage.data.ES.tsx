@@ -1,6 +1,7 @@
 import { ILenguageData } from "./lenguage.data.EN";
 
 export const lenguageDataES:ILenguageData = {
+    "not-found": "Recurso No Encontrado",
     "english": "Inglés",
     "spanish": "Español",
     "home":    "Inicio",
@@ -26,4 +27,20 @@ export const lenguageDataES:ILenguageData = {
     "web-designs" : "Ver diseños & templates",
     "see-all-projects": "Ver otros projectos",
     "view-all": "Ver todo",
+    "testimonials": "Testimonios",
+    "what-others-say": "Lo que otros dicen de mi",
+    "contact-me": "Contáctame",
+    "get-in-touch": "Ponte en Contacto",
+    "form-name": "Nombre",
+    "form-email": "Email",
+    "form-subject": "Asunto",
+    "form-message": "Mensaje",
+    "send-message": "Enviar Mensaje",
+    "toast-success-msg": "El formulario fue enviado correctamente.",
+    "toast-error-msg": "Completa el formulario correctamente.",
+    "my-projects" : "Mis Proyectos",
+    "projects-intro" : "En esta página encontrarás los proyectos, prácticas y trabajos más relevantes que he realizado.",
+    "featured" : "Destacados",
+    "other" : "Otros",
+    "main-tech": "Tecnologías principales"
 };

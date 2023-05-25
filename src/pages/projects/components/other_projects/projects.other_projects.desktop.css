@@ -1,0 +1,154 @@
+
+
+.project-page .other-projects {
+    grid-area: other__projects;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        200px
+        minmax(700px, auto)
+        300px
+    ;
+    grid-template-areas: 
+        "header"
+        "other_projects"
+        "other_project_wave"
+    ;
+ 
+}
+
+.project-page.dark .other-projects {
+    background-color: var(--dark0F);
+}
+
+.project-page.light .other-projects {
+    background-color: var(--whiteF5);
+}
+
+/*******************************
+    Title
+********************************/
+
+.project-page .other-projects header {
+    grid-area: header;
+    display:flex;
+    align-items: center;
+}
+
+.project-page .other-projects header .title {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.project-page .other-projects header .title h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.project-page .other-projects header .title p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 17px;
+}
+
+.project-page .other-projects.light header .title p {
+    color: var(--dark37);
+}
+
+.project-page .other-projects.dark header .title p {
+    color: var(--grayD9);
+}
+
+/*******************************
+    Title Underline
+********************************/
+.project-page .other-projects header .title  .underline {
+    width: 80px;
+    height: 12px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 0.3rem;
+}
+
+.project-page .other-projects header .title .underline:after {
+    content: " ";
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    top:0;
+    right: -20px;
+    border-radius: 50%;
+}
+
+.project-page .other-projects.dark  header .title .underline:after,
+.project-page .other-projects.dark  header .title .underline {
+    background-color: white;
+}
+
+.project-page .other-projects.light  header .title .underline:after,
+.project-page .other-projects.light  header .title .underline {
+    background-color: black;
+}
+
+
+/*******************************
+    Content
+********************************/
+.project-page .other-projects .projects-content {
+    grid-area: other_projects;
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+/*******************************
+    Wave
+********************************/
+.project-page .other-projects .other-project-wave {
+    grid-area: other_project_wave;
+    height: 100%;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas: 
+        "blank_space"
+        "other_project_wave"
+    ;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.project-page .other-projects .other-project-wave .t-wave {
+    grid-area: other_project_wave;
+    display:flex;
+    align-items: flex-end;
+}
+
+.project-page .other-projects .other-project-wave .t-wave > * {
+    width: 100%;
+}
+
+.project-page .other-projects .other-project-wave .t-space {
+    grid-area: blank_space;
+ 
+}
+
+.project-page .other-projects.light .other-project-wave .t-space {
+    background-color: var(--whiteF5);
+}
+
+.project-page .other-projects.dark .other-project-wave .t-space {
+    background-color: var(--dark0F);
+}

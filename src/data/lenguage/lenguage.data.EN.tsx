@@ -4,6 +4,7 @@ export interface ILenguageData {
 } 
 
 export const lenguageDataEN:ILenguageData = {
+    "not-found":"Not Found",
     "english": "English",
     "spanish": "Spanish",
     "home": "Home",
@@ -33,4 +34,20 @@ export const lenguageDataEN:ILenguageData = {
     "see-all-projects" : "See All Projects",
     "web-designs" : "Web Designs",
     "view-all": "View All",
+    "testimonials": "Testimonials",
+    "what-others-say": "What others say about me",
+    "contact-me": "Contact me",
+    "get-in-touch": "Get in Touch",
+    "form-name": "Name",
+    "form-email": "Email",
+    "form-subject": "Subject",
+    "form-message": "Message",
+    "send-message": "Send Message",
+    "toast-success-msg": "The form was sent successfully",
+    "toast-error-msg": "Fill in the form data correctly",
+    "my-projects" : "My Projects",
+    "projects-intro" : "On this page you will find the most relevant projects, practices and work that I have done.",
+    "featured" : "Featured",
+    "other" : "Other",
+    "main-tech": "Main Technologies"
 }

@@ -2,23 +2,18 @@
 
 .splide__list.carousel-config {
    align-items: center;
-   background-color: inherit !important;
+   background-color: transparent !important;
    padding: 2rem 0 !important;
+
+}
+
+.splide__list.carousel-config * {
+    background-color: transparent;
 }
 
 .splide__track {
     height: 650px !important;
-}
-
-.splide__slide {
-    width: 333px !important;
-    height: 418px;
-    border-radius: 35px;
-}
-
-.splide__slide.is-active {
-    width: 394px !important;
-    height: 527px !important;
+    background-color: transparent !important;
 }
 
 .splide__pagination__page {
@@ -28,14 +23,35 @@
 }
 
 .splide__pagination__page.is-active {
-    transform: none !important;
     background-color: var(--dark37) !important;
     opacity:1;
 }
 
 .splide__pagination {
-    bottom: initial !important;
-    right: initial !important;
-    top:0;
-    left: 10px !important;
+    
 } 
+
+
+
+
+.splide__arrow.splide__arrow--next,
+.splide__arrow.splide__arrow--prev {
+    padding:0 !important;
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    box-shadow: var(--shadow-bright);
+    color: white;
+    background:black;
+}
+
+@media (max-width: 600px){
+
+    /* .splide__slide {
+        width: 250px !important;
+        height: 320px;
+        border-radius: 35px;
+    } */
+
+   
+}

@@ -127,7 +127,7 @@ export const GrowingEN: IProjectData = {
                 id: 7,
             },
             {
-                img:Images.projects.growing?.img_7,
+                img:Images.projects.growing?.img_8,
                 page: "Administration Page (Login Screen)", // name of the page
                 project: "Growing Business School", // name of the project
                 description: "This is the login screen to the system administration section.",
@@ -267,7 +267,7 @@ export const GrowingES: IProjectData =  {
                 id: 7,
             },
             {
-                img:Images.projects.growing?.img_7,
+                img:Images.projects.growing?.img_8,
                 page: "Plataforma de Administración (Inicio de Sessión)", // name of the page
                 project: "Growing Business School", // name of the project
                 description: "Esta es la pantalla de ingreso a la sección de administración del sistema.",

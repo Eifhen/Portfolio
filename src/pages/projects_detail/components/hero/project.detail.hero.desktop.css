@@ -1,0 +1,233 @@
+
+
+.project-detail-page .hero {
+    grid-area:hero;
+    display:flex;
+    align-items: flex-start;
+}
+
+.project-detail-page .hero .wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.project-detail-page .hero .container {
+    width: 1090px;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    margin:0 auto;
+    overflow: visible;
+}
+
+.project-detail-page .hero .container .info-container {
+    height: auto;
+    width: 60%;
+    padding-top: 4rem;
+}
+
+.project-detail-page .hero .container .info-container .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 1rem;
+}
+
+.project-detail-page .hero .container .info-container .info h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 68px;
+    width: 90%;
+}
+
+.project-detail-page .hero .container .info-container .info p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    width: 90%;
+    transition: color 2s ease-in;
+}
+
+.project-detail-page.light .hero .container .info-container .info p {
+    color: var(--gray);
+}
+
+.project-detail-page.dark .hero .container .info-container .info p {
+    color: var(--whiteF5);
+}
+
+/***************************
+    Live Info
+****************************/
+
+.project-detail-page .hero .container .info-container .info .live-info {
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+ 
+    width: 85%;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--grayD9);
+}
+
+.project-detail-page .hero .container .info-container .info .live-info time {
+    border-radius: 50px;
+    border: 1px solid var(--grayD9);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 30px;
+
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+}
+
+.project-detail-page .hero .container .info-container .info .live-info .live-item {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.project-detail-page .hero .container .info-container .info .live-info .live-item .info-img {
+    height: 30px;
+    width: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid var(--grayD9);
+    font-size: 20px;
+    padding:0.5rem;
+}
+
+.project-detail-page .hero .container .info-container .info .live-info .live-item .info-img.demo {
+    border: none;
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.project-detail-page .hero .container .info-container .info .live-info .live-item .info-img.demo .live-demo {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: var(--red);
+    position: absolute;
+    right:0;
+}
+
+.project-detail-page .hero .container .info-container .info .live-info .live-item  p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    display:block;
+    width:auto;
+}
+
+/***************************
+    Galery
+****************************/
+.project-detail-page .hero .container .project-detail-galery {
+    display: flex;
+    width: 40%;
+    padding-top: 4rem;
+    overflow: visible;
+    height: 200px;
+}
+/***************************
+    Main Technologies
+****************************/
+
+.project-detail-page .hero .main-technologies {
+    /* position: absolute;
+    left:0;
+    bottom: -90px; */
+    margin-top: 1.5rem;
+    position: relative;
+    width: 45%;
+    height: 66px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: background-color 2s ease-in-out;
+}
+
+.project-detail-page.dark .hero .main-technologies {
+    background-color: white;
+    color: black;
+}
+
+.project-detail-page.light .hero .main-technologies {
+    background-color: black;
+    color: white;
+}
+
+.project-detail-page .hero .main-technologies .title {
+    width: 480px;
+}
+
+.project-detail-page .hero .main-technologies .title h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 68px;
+}
+
+/***************************
+    Main Technologies -Icons
+****************************/
+.project-detail-page .hero .main-technologies .technologies {
+    position:absolute;
+    bottom: 19px;
+    right: 14px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.project-detail-page .hero .main-technologies .technologies .technologie {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;
+    top: -35px !important;
+    border: 3px solid var(--dark0F);
+    overflow: hidden;
+    
+}
+
+.project-detail-page .hero .main-technologies .technologies .technologie img {
+    object-fit: contain;
+    object-position: center;
+    padding: 0.3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.project-detail-page .hero .main-technologies .technologies .technologie.more {
+    background-color: var(--whiteF5) !important;
+    color: black !important;
+}

@@ -2,5 +2,140 @@
 
 .home-page .testimonials {
     grid-area: testimonials;
+    padding-top: 6rem !important;
+    position: relative;
+    background-color: green !important;
+}
+
+
+.home-page .testimonials.light {
+    background-color: var(--whiteF5) !important;
+}
+
+.home-page .testimonials.dark {
+    background-color: var(--dark0F) !important;
+}
+
+
+
+/******************************************
+    Testimonial Content
+*******************************************/
+
+.home-page .testimonials .content {
+    display:flex;
+    flex-direction: column;
+}
+
+.home-page .testimonials .content .header {
+    width: 1100px;
+    margin: 0 auto;
+    position:relative;
+}
+
+.home-page .testimonials .content .header p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.home-page .testimonials.light .content .header p {
+    color: var(--dark37)
+}
+
+.home-page .testimonials .content .header h2 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+    letter-spacing: 0.3em;
+}
+
+.home-page .testimonials .content .header  .underline {
+    width: 150px;
+    height: 18px;
+    border-radius: 50px;
+    position: relative;
+    margin-top: 0.4rem;
+}
+
+.home-page .testimonials .content .header .underline:after {
+    content: " ";
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top:0;
+    right: -26px;
+    border-radius: 50%;
+}
+
+.home-page .testimonials.dark .content .header .underline:after,
+.home-page .testimonials.dark .content .header .underline {
+    background-color: white;
+}
+
+.home-page .testimonials.light .content .header .underline:after,
+.home-page .testimonials.light .content .header .underline {
+    background-color: black;
+}
+
+
+/******************************************
+    Testimonial Carousel
+*******************************************/
+.home-page .testimonials .content .testimonials-carousel {
  
+}
+
+.home-page .testimonials .content .testimonials-carousel .splide__slide {
+    width: 333px !important;
+    height: 418px;
+    border-radius: 35px;
+}
+
+.home-page .testimonials .content .testimonials-carousel .splide__slide.is-active {
+    width: 394px !important;
+    height: 527px !important;
+}
+
+.home-page .testimonials .content .testimonials-carousel .splide {
+    z-index: 4 !important;
+}
+
+/******************************************
+    Testimonial Wave
+*******************************************/
+.home-page .testimonials .content .testimonials-carousel .overflow .testimonial-wave {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 65% 35%;
+    grid-template-areas: 
+        "testimonial_wave"
+        "blank_space"
+    ;
+    z-index: 1;
+    pointer-events: none;
+   
+}
+
+.home-page .testimonials .content .testimonials-carousel .overflow .testimonial-wave .t-wave {
+    grid-area: testimonial_wave;
+    display:flex;
+    align-items: flex-end;
+}
+
+.home-page .testimonials .content .testimonials-carousel .overflow .testimonial-wave .t-wave > * {
+    width: 100%;
+}
+
+.home-page .testimonials .content .testimonials-carousel .overflow .testimonial-wave .t-space{
+    grid-area: blank_space;
+    background-color: black;
 }

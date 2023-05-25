@@ -1,0 +1,59 @@
+
+
+
+
+@media(max-width: 870px){
+
+    .project-page .featured-projects  .content .title {
+        width: 82vw;
+    }
+
+    /***************************
+        Carousel
+    ****************************/
+    .project-page .featured-projects .content .featured-projects-carousel {
+        grid-area: carousel;
+        position: relative;
+    
+    }
+
+    .project-page .featured-projects .content .featured-projects-carousel .splide {
+        z-index: 4 !important;
+    }
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__slide {
+        width: 450px !important;
+        height: 560px !important;
+        border-radius: 35px;
+    
+    }
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__slide.is-active {
+        width: 450px !important;
+        height: 644px !important;
+    }
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__track {
+        height: 800px !important;
+    }
+}
+
+
+@media(max-width: 600px){
+    
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__track {
+        height: 650px !important;
+    }
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__slide {
+        width: 85vw !important;
+        height: 450px !important;
+        border-radius: 35px;
+    
+    }
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__slide.is-active {
+        width: 85vw !important;
+        height: 500px !important;
+    }
+}

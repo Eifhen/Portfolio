@@ -1,0 +1,45 @@
+
+
+@media(max-width: 700px){
+    .project-page .header .content {
+        flex-direction: column;
+     
+        gap: 0;
+        width: 80% !important;
+    }
+
+    .project-page .header .content .icon {
+        font-size: 60px;
+        height: 50%;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start !important;
+   
+    }
+
+    
+    .project-page .header .content .info  {
+        border-left: none;
+        border-top: 2px solid white;
+        padding: 0.5rem 0 0 0;
+        justify-content: flex-start ;
+    }
+
+    .project-page .header .content .info h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 70px;
+    
+    }
+    
+    .project-page .header .content .info p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        width: 90%;
+    }
+}

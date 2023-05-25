@@ -9,7 +9,6 @@ import ButtonTheme from "../theme/theme.component";
 import { Accessor, Show, createEffect, createSignal, onMount } from "solid-js";
 import useHideOnOutsideClick from "../../hooks/outsideClick";
 
-
 interface INavbar {
     color:ITheme;
     screenWidth?:Accessor<Number>;
@@ -31,16 +30,18 @@ export default function Navbar (props:INavbar) {
     })
 
     return (
-        <Show when={desktop()} fallback={<NavbarMovil color={props.color} />}>
-            <NavbarDesktop color={props.color}/>
-        </Show>
+        <>
+            <Show when={desktop()} fallback={<NavbarMovil color={props.color} />}>
+                <NavbarDesktop color={props.color}/>
+            </Show>
+        </>
     )
 }
 
 
 function NavbarDesktop(props:INavbar){
     return (
-        <nav class={`navbar ${props.color.theme}`}>
+        <nav id="navbar" class={`navbar ${props.color.theme}`}>
             <div class="navbar-brand">
                 <Logo color={props.color} />
             </div>
@@ -55,7 +56,7 @@ function NavbarDesktop(props:INavbar){
                     <A activeClass="active" href="/templates">{translate("Designs & Templates")}</A>
                 </li>
                 <li>
-                    <A href="/home #contact">{translate("Contact")}</A>
+                    <A activeClass="none" href="/home#contact">{translate("Contact")}</A>
                 </li>
                 <li>
                     <A activeClass="active" href="/about">{translate("About")}</A>
@@ -99,7 +100,7 @@ function NavbarMovil(props:INavbar){
     })
 
     return (
-        <div class="navbar-movil">
+        <div id="navbar" class="navbar-movil">
              <div class="navbar-brand-movil">
                 <Logo color={props.color} />
              </div>
@@ -130,7 +131,7 @@ function NavbarMovil(props:INavbar){
                                     <A activeClass="active" href="/templates">{translate("Designs & Templates")}</A>
                                 </li>
                                 <li>
-                                    <A href="/home #contact">{translate("Contact")}</A>
+                                    <A activeClass="none" href="/home#contact">{translate("Contact")}</A>
                                 </li>
                                 <li>
                                     <A activeClass="active" href="/about">{translate("About")}</A>

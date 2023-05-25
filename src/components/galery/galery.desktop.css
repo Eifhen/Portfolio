@@ -3,7 +3,7 @@
 .galery-container {
     display:grid;
     grid-template-columns: 415px;
-    grid-template-rows: minmax(271px, auto) 20%;
+    grid-template-rows: minmax(271px, auto) 60%;
     grid-template-areas: 
         "mainImage" 
         "galery"
@@ -13,6 +13,7 @@
 .galery-container .main-image {
     grid-area: mainImage;
     cursor: pointer;
+
 }
 
 .galery-container .main-image:hover {
@@ -25,12 +26,17 @@
     object-fit: cover;
     object-position: center;
     border-radius: 35px;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow);
     cursor: pointer;
+  
+}
+.galery-container.light .main-image img {
+    border: 5px solid black; 
 }
 
 .galery-container.dark .main-image img {
-    box-shadow: var(--shadow-bright);
+    /* box-shadow: var(--shadow-bright-low); */
+    border: 5px solid var(--gray-loyal); 
 } 
 
 .galery-container .galery {
@@ -45,7 +51,7 @@
 .galery-container .galery .item {
     width: 40px;
     height: 40px;
-    border: 1px solid var(--grayD9);
+    border: 2px solid var(--gray-loyal);
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer !important;
@@ -65,7 +71,7 @@
 @keyframes borderf {
     from {border: 1px solid var(--grayD9); }
     to { 
-        border: 5px solid var(--dark37); 
+        border: 5px solid var(--dark1E); 
         transform: scale(1.3); 
         box-shadow: var(--shadow-lg);
     }
@@ -74,9 +80,9 @@
 @keyframes borderDark {
     from {border: 1px solid var(--grayD9); }
     to { 
-        border: 5px solid var(--pure); 
+        border: 5px solid var(--gray-loyal); 
         transform: scale(1.3); 
-        box-shadow: var(--shadow-bright); 
+        box-shadow: var(--shadow-lg); 
     }
 }
 
@@ -93,9 +99,11 @@
 **********************************/
 
 .galery-modal-mask {
+    z-index: 4;
     background: var(--mask);
     position:fixed;
     top:0;
+    left:0;
     width: 100vw;
     height: 100vh;
     display:flex;
@@ -181,11 +189,13 @@
     font-family: var(--Roboto);
     font-style: normal;
     font-weight: 500;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 20px;
+    line-height: 26px;
     letter-spacing: 0.1em;
     margin-bottom: 0.3rem;
     color: black !important;
+    width: 95%;
+ 
 }
 
 .galery-modal-mask .galery-modal .modal-content .info header p {
@@ -199,7 +209,7 @@
 }
 
 .galery-modal-mask .galery-modal .modal-content .info .description {
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: var(--whiteF5);
     padding: 2rem 1rem;
     font-family: var(--Nunito);

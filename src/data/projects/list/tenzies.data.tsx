@@ -19,7 +19,7 @@ export const TenziesEN: IProjectData = {
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
-        { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+        { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -31,6 +31,7 @@ export const TenziesEN: IProjectData = {
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+            { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
             { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
         ],
@@ -97,7 +98,7 @@ export const TenziesES: IProjectData = {
     highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
-        { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+        { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
     ],
     detail:{
@@ -109,6 +110,7 @@ export const TenziesES: IProjectData = {
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
+            { name: "Bootstrap5", icon:"ri-bootstrap-fill color-purple", type: "icon"},
             { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
         ],
@@ -153,7 +155,7 @@ export const TenziesES: IProjectData = {
                 img:Images.projects.tenzies.img_3,
                 page: "Juego Completado", // name of the page
                 project: "Tenzies", // name of the project
-                description: "cuando todos los dados sean iguales ganaras el juego",
+                description: "cuando todos los dados sean iguales ganarás el juego",
                 id: 4,
             },
         ],
