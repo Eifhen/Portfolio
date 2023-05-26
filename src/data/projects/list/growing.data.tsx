@@ -44,15 +44,16 @@ export const GrowingEN: IProjectData = {
             to those groups, we can move studens from one group to another an so forth.`
         ],
         technologies: [
-            { name: "ASP.NET", icon: Images.tecnologies.asp_icon, type:"image" },
-            { name: "C#", icon: Images.tecnologies.c_icon, type: "image" },
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-            { name: "SendGrid", icon: Images.tecnologies.sendgrid_icon, type: "image" },
-            { name: "Entity Framework", icon: Images.tecnologies.ef_icon, type: "image" },
+            { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "JQuery", icon: Images.tecnologies.jquery_icon, type: "image" },
+            { name: "ASP.NET", icon: Images.tecnologies.asp_icon, type:"image" },
+            { name: "C#", icon: Images.tecnologies.c_icon, type: "image" },
+            { name: "Entity Framework", icon: Images.tecnologies.ef_icon, type: "image" },
+            { name: "SendGrid", icon: Images.tecnologies.sendgrid_icon, type: "image" },
             { name: "SignalR", icon: Images.tecnologies.signalr_icon, type: "image" },
-            { name: "JavaScript", icon: "ri-javascript-fill color-yellow", type: "icon" }
+            { name: "SQL Server", icon: Images.tecnologies.sql_icon, type: "image" },
         ],
         references: [
             {
@@ -62,20 +63,7 @@ export const GrowingEN: IProjectData = {
                 icon: "ri-phone-fill",
             }
         ],
-        liveInfo: [
-            {
-                nombre: "Github",
-                icon: "ri-github-fill",
-                link: "#",
-                type: "icon",
-            },
-            {
-                nombre: "Live Demo",
-                icon: "live-demo",
-                link: "#",
-                type: "icon",
-            }
-        ],
+        liveInfo: [],
         galery: [
             {
                 img:Images.projects.growing.img_1,
@@ -184,15 +172,16 @@ export const GrowingES: IProjectData =  {
 
         ],
         technologies: [
-            { name: "ASP.NET", icon: Images.tecnologies.asp_icon, type:"image" },
-            { name: "C#", icon: Images.tecnologies.c_icon, type: "image" },
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
             { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
-            { name: "SendGrid", icon: Images.tecnologies.sendgrid_icon, type: "image" },
-            { name: "Entity Framework", icon: Images.tecnologies.ef_icon, type: "image" },
+            { name: "JavaScript", icon: Images.tecnologies.javascript_icon, type:"image" },
             { name: "JQuery", icon: Images.tecnologies.jquery_icon, type: "image" },
+            { name: "ASP.NET", icon: Images.tecnologies.asp_icon, type:"image" },
+            { name: "C#", icon: Images.tecnologies.c_icon, type: "image" },
+            { name: "Entity Framework", icon: Images.tecnologies.ef_icon, type: "image" },
+            { name: "SendGrid", icon: Images.tecnologies.sendgrid_icon, type: "image" },
             { name: "SignalR", icon: Images.tecnologies.signalr_icon, type: "image" },
-            { name: "JavaScript", icon: "ri-javascript-fill color-yellow", type: "icon" }
+            { name: "SQL Server", icon: Images.tecnologies.sql_icon, type: "image" },
         ],
         references: [
             {
@@ -202,20 +191,7 @@ export const GrowingES: IProjectData =  {
                 icon: "ri-phone-fill",
             }
         ],
-        liveInfo: [
-            {
-                nombre: "Github",
-                icon: "ri-github-fill",
-                link: "#",
-                type: "icon",
-            },
-            {
-                nombre: "Live Demo",
-                icon: "live-demo",
-                link: "#",
-                type: "icon",
-            }
-        ],
+        liveInfo: [],
         galery: [
             {
                 img:Images.projects.growing.img_1,

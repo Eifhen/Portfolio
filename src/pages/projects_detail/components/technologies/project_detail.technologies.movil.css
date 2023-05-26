@@ -1,0 +1,86 @@
+
+
+@media(max-width: 1100px){
+    .project-detail-page .technologies .container {
+        width: 80vw;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            150px
+            auto
+        ;
+        grid-template-areas: 
+            "header"
+            "technologies_content"
+        ;
+    }
+
+    .project-detail-page .technologies .container .content .technologies {
+        width: 70vw;
+        display:flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .project-detail-page .technologies .container .header h1 {
+    
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 32px;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media(max-width: 720px){
+    .project-detail-page .technologies .container {
+        width: 90vw;
+    }
+
+    .project-detail-page .technologies .container .content .technologies {
+        width: 90vw;
+    }
+
+    .project-detail-page .technologies .container .header h1 {
+
+        font-size: 26px;
+        line-height: 32px;
+
+    }
+}
+
+@media(max-width: 470px){
+    .project-detail-page .technologies .container .header h1 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px !important;
+        line-height: 32px;
+    }
+
+    .project-detail-page .technologies .container .content .technologies {
+        gap: 0.5rem;
+        row-gap: 0.8rem;
+        width: 95vw;
+    }
+
+    .project-detail-page .technologies .container .content .technologies .technologie {
+        padding: 1rem;
+        background: var(--grayE5);
+        border-radius: 35PX;
+        min-width:  0 !important;
+        width: auto !important;
+        height: 46px;
+        display:flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+
+    .project-detail-page .technologies .container .content .technologies .technologie p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}

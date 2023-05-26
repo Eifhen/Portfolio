@@ -28,18 +28,21 @@
     .galery-modal-mask .galery-modal {
         width: 70%;
         flex-direction: column;
+        border-radius: 20px;
+        height: 95vh !important;
+       
     }
 
     .galery-modal-mask .galery-modal .modal-close {
         background-color: white;
         border-radius: 50%;
         font-size: 1.5rem !important;
-        height: 30px;
-        width: 30px;
+        height: 26px;
+        width: 26px;
         display: flex;
         align-items: center;
         justify-content: center;
-        right: 15px !important;
+        right: 10px !important;
         box-shadow: var(--shadow-bright);
     }
 

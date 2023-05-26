@@ -3,12 +3,15 @@
 .project-detail-page .hero {
     grid-area:hero;
     display:flex;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
 }
 
 .project-detail-page .hero .wrapper {
     width: 100%;
     position: relative;
+    z-index:4;
 }
 
 .project-detail-page .hero .container {
@@ -48,9 +51,9 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 24px;
     letter-spacing: 0.1em;
-    width: 90%;
+    width: 80%;
     transition: color 2s ease-in;
 }
 
@@ -230,4 +233,41 @@
 .project-detail-page .hero .main-technologies .technologies .technologie.more {
     background-color: var(--whiteF5) !important;
     color: black !important;
+}
+
+
+
+/***************************
+    Wave
+****************************/
+.project-detail-page .hero .project-detail-hero-wave {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        100px
+        100px
+    ;
+    grid-template-areas: 
+        "blank_space"
+        "featured_project_wave"
+    ;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.project-detail-page .hero .project-detail-hero-wave .t-wave {
+    grid-area: featured_project_wave;
+    display:flex;
+    align-items: flex-end;
+    z-index: 2;
+}
+
+.project-detail-page .hero .project-detail-hero-wave .t-wave > * {
+    width: 100%;
+}
+
+.project-detail-page .hero .project-detail-hero-wave .t-space {
+    grid-area: blank_space;
+    background-color: transparent;
 }

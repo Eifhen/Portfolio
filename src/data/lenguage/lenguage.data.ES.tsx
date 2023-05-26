@@ -42,5 +42,8 @@ export const lenguageDataES:ILenguageData = {
     "projects-intro" : "En esta página encontrarás los proyectos, prácticas y trabajos más relevantes que he realizado.",
     "featured" : "Destacados",
     "other" : "Otros",
-    "main-tech": "Tecnologías principales"
+    "main-tech": "Tecnologías principales",
+    "about-this-project": "Acerca de este projecto",
+    "technologies": "Technologías",
+    "references": "Referencias",
 };

@@ -149,3 +149,34 @@ ul { list-style: none;}
 
 }
 
+/******************************************
+  Text-underline
+*******************************************/
+.underline {
+  width: 80px;
+  height: 12px;
+  border-radius: 50px;
+  position: relative;
+  margin-top: 0.7rem;
+}
+
+.underline:after {
+  content: " ";
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  top:0;
+  right: -20px;
+  border-radius: 50%;
+}
+
+.dark .underline:after,
+.dark .underline {
+  background-color: white;
+}
+
+.light .underline:after,
+.light .underline {
+  background-color: black;
+}
+

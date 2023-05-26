@@ -6,6 +6,7 @@ import './project_detail.hero.movil.css';
 import { A } from '@solidjs/router';
 import translate from '../../../../hooks/translate.hook';
 import Galery from '../../../../components/galery/galery.component';
+import Wave from '../../../../components/wave/wave.component';
 
 
 interface IProjectDetailHero {
@@ -104,6 +105,12 @@ function ProjectDetailHeroDesktop (props:IProjectDetailHeroResponsive) {
                     </div>                   
                 </div>
             </div>
+            <div class="project-detail-hero-wave">
+                <div class="t-wave">
+                    <Wave waveColor="gray" allowTheme={true} theme={props.info.theme} />
+                </div>
+                <div class="t-space"></div>
+            </div>
         </div>
     )
 }
@@ -133,7 +140,7 @@ function ProjectDetailHeroMovil (props:IProjectDetailHeroResponsive) {
     }
 
     return (
-        <div class="hero-movil">
+        <div class={`hero-movil ${props.info.theme.theme}`}>
             <div class="wrapper">
                 <div class="detail-info">
                     <div class="info">
@@ -161,7 +168,7 @@ function ProjectDetailHeroMovil (props:IProjectDetailHeroResponsive) {
                             <For each={props.info.data?.mainTechnologies} fallback={<>error while loading the card</>}>
                                 {(tecnologie, index)=>(
                                     <div class="technologie" title={tecnologie.name} 
-                                        style={{right: `${(index()+1) * 35}px`, "z-index": index()+1}}
+                                        style={{right: `${(index()+1) * 25}px`, "z-index": index()+1}}
                                     >
                                         {
                                             tecnologie.type === "icon" ? 
@@ -178,8 +185,14 @@ function ProjectDetailHeroMovil (props:IProjectDetailHeroResponsive) {
                     </div>
                 </div>
                 <div class="detail-galery">
-
+                    <Galery data={getData()} theme={props.info.theme} />
                 </div>
+            </div>
+            <div class="project-detail-hero-wave">
+                <div class="t-wave">
+                    <Wave waveColor="gray" allowTheme={true} theme={props.info.theme} />
+                </div>
+                <div class="t-space"></div>
             </div>
         </div>
     )

@@ -1,0 +1,120 @@
+
+
+
+.project-detail-page .technologies {
+    grid-area: technologies;
+    
+}
+
+.project-detail-page.light .technologies {
+    background-color: var(--whiteF5);
+}
+
+.project-detail-page.dark .technologies {
+    background-color: var(--dark0F);
+}
+
+
+.project-detail-page .technologies .container {
+    width: 1100px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        150px
+        auto
+    ;
+    grid-template-areas: 
+        "header"
+        "technologies_content"
+    ;
+}
+
+.project-detail-page .technologies .container .header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-detail-page .technologies .container .header h1 {
+    
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: 0.1em;
+}
+
+.project-detail-page .technologies .container .header .underline {
+    margin-top: 0.4rem;
+    width: 80px;
+    height: 15px;
+}
+
+.project-detail-page .technologies .container .header .underline:after {
+    width: 15px;
+    height: 15px;
+    right: -22px;
+}
+
+/************************
+    Technologies
+************************/
+
+.project-detail-page .technologies .container .content {
+    grid-area: technologies_content;
+    
+}
+
+.project-detail-page .technologies .container .content .technologies {
+    width: 50vw;
+    display:flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-detail-page .technologies .container .content .technologies .technologie {
+    padding: 1rem 1rem 1rem 1rem;
+    background: var(--grayE5);
+    border-radius: 35PX;
+    min-width: 140px;
+    height: 46px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.project-detail-page .technologies .container .content .technologies .technologie i {
+    font-size: 24px;
+}
+
+.project-detail-page .technologies .container .content .technologies .technologie .image {
+    height: 24px;
+    width: 24px;
+    overflow: hidden;
+}
+
+.project-detail-page .technologies .container .content .technologies .technologie .image img {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width:100%;
+    display: block;
+}
+
+.project-detail-page .technologies .container .content .technologies .technologie p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+}
+
+
+.project-detail-page.dark .technologies .container .content .technologies .technologie p {
+    color: black;
+}

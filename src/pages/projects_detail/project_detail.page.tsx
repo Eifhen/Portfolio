@@ -3,6 +3,9 @@ import './project_detail.dekstop.css';
 import { ProjectData } from '../../data/projects/project.data';
 import useAplicationContext from '../../context/aplication.context';
 import ProjectDetailHero from './components/hero/project_detail.hero';
+import ProjectDetailAbout from './components/about/project_detail.about';
+import ProjectDetailTechnologies from './components/technologies/project_detail.page.technologies';
+import ProjectDetailReferences from './components/references/project_detail.page.references';
 
 export default function ProjectDetailPage (){
     const params = useParams<{ id:string }>();
@@ -22,9 +25,19 @@ export default function ProjectDetailPage (){
                 theme={ context.themeManager.themeStore } 
             />
        
-            <div class="about"></div>
-            <div class="technologies"></div>
-            <div class="references"></div>
+            <ProjectDetailAbout
+                data={ project()?.detail.about } 
+                theme={ context.themeManager.themeStore } 
+            />
+            
+            <ProjectDetailTechnologies
+                data={ project()?.detail.technologies!}
+            />
+           
+           <ProjectDetailReferences
+                data={ project()?.detail.references! }
+           />
+           
             <div class="other__projects"></div>
         </div>
     )

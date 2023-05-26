@@ -49,5 +49,9 @@ export const lenguageDataEN:ILenguageData = {
     "projects-intro" : "On this page you will find the most relevant projects, practices and work that I have done.",
     "featured" : "Featured",
     "other" : "Other",
-    "main-tech": "Main Technologies"
+    "main-tech": "Main Technologies",
+    "about-this-project": "About This Project",
+    "technologies": "Technologies",
+    "references": "References",
+    
 }

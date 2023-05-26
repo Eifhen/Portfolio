@@ -5,7 +5,7 @@
     grid-template-columns: 100%;
     grid-template-rows: 
         minmax(500px, auto)
-        minmax(100vh, auto)
+        auto
         minmax(500px, auto)
         minmax(400px, auto)
     ;
