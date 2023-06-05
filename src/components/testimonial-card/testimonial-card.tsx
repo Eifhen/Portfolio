@@ -22,7 +22,7 @@ export default function TestimonialCard (props:TestimonialCardProps) {
             </div>
             <div class="testimonial-card-content">
                 <div class="img"> 
-                    <img src={props.data.img} alt={props.data.fullname} elementtiming={""} fetchpriority={"high"} />
+                    <img src={props.data.img} alt={props.data.fullname}  />
                 </div>
                 <div class="title">
                     <h2>{props.data.fullname}</h2>

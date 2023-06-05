@@ -68,13 +68,13 @@ export default function Galery (props:IGalery){
         <>
             <div class={`galery-container ${props.theme.theme}`}>
                 <div ref={btnRef!} onClick={ OpenModal } class="main-image">
-                    <img  src={img()} elementtiming={''} fetchpriority={'high'} />
+                    <img  src={img()}  />
                 </div>
                 <div class="galery">
                     <For each={props.data.detail.galery}>
                         {(item)=>(
                             <div onClick={()=> SelectImage(item) } class="item" classList={{"active":item.id === id()}}>
-                                <img src={item.img} elementtiming={''} fetchpriority={'high'} />
+                                <img src={item.img}  />
                             </div>
                         )}    
                     </For>
@@ -121,7 +121,7 @@ function GaleryModal (props:IGaleryModal) {
                     < i class="ri-close-line"></i>
                 </div>
                 <div class="modal-image">
-                    <img src={props.data.img} alt="" elementtiming={''} fetchpriority={'high'} />
+                    <img src={props.data.img} alt=""  />
                 </div>
                 <div class="modal-content">
                     <div class="info">

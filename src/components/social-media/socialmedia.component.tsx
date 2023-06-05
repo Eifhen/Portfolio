@@ -16,7 +16,7 @@ export default function SocialMedia (props: ISocialMedia){
 
     const RenderItem = (item:ISocialMediaData) => {
         return item.type == "icon" ? <i class={`${item.img}`} /> :
-        <img src={item.img} elementtiming={''} fetchpriority={'high'} />
+        <img src={item.img}  />
     }
 
     return (

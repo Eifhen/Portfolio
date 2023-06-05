@@ -46,7 +46,7 @@ export const ListaDeTareasEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/AppListaDeTareas/",
                 type: "icon",
@@ -116,7 +116,7 @@ export const ListaDeTareasES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/AppListaDeTareas/",
                 type: "icon",

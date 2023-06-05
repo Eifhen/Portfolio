@@ -43,7 +43,7 @@ export const QuizzicalEN:IProjectData =    {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Quizzical/",
                 type: "icon",
@@ -117,7 +117,7 @@ export const QuizzicalES: IProjectData =
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Quizzical/",
                 type: "icon",

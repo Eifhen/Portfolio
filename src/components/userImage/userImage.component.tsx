@@ -28,7 +28,7 @@ function CircleImage (props:IUserImage) {
             <div class={`blanck-circle ${props.type}`}></div>
             <div class="inner-circle">
                 <div class="img-container">
-                    <img src={props.img} alt="image" elementtiming={""} fetchpriority={"high"} />
+                    <img src={props.img} alt="image"  />
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@ function SquareImage (props:IUserImage){
                 <div class="square-line"></div>
             </div>
             <div class="image">
-                <img src={props.img} alt="image" elementtiming={""} fetchpriority={"high"} />
+                <img src={props.img} alt="image"  />
             </div>
         </div>
     )

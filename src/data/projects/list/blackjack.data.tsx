@@ -45,7 +45,7 @@ export const BlackJackEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/AppBlackJack/",
                 type: "icon",
@@ -120,7 +120,7 @@ export const BlackJackES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/AppBlackJack/",
                 type: "icon",

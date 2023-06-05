@@ -41,7 +41,7 @@ export const PathStorageEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/PathStorage---Chrome-Extension/",
                 type: "icon",
@@ -103,7 +103,7 @@ export const PathStorageES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/PathStorage---Chrome-Extension/",
                 type: "icon",

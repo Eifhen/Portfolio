@@ -380,12 +380,11 @@
         font-family: var(--Nunito);
         font-style: normal;
         font-weight: 600;
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 20px;
         letter-spacing: 0.1em;
         color: var(--gray);
         width: 74%;
-      
     }
 
     /*********************************
@@ -410,8 +409,8 @@
 
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 500;
-        font-size: 10px;
+        font-weight: 800;
+        font-size: 12px;
         line-height: 0px;
         letter-spacing: 0.1em;
         
@@ -428,8 +427,8 @@
         font-family: var(--Nunito);
         font-style: normal;
         font-weight: 600;
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 14px;
+        line-height: 14px;
         letter-spacing: 0.1em;
         display:block;
         width:auto;
@@ -461,6 +460,18 @@
         background-color: var(--red);
         position: absolute;
         right:0;
+        animation: liveDemo 640ms ease-in-out;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes liveDemo {
+        from {
+            opacity:1;
+        }
+        to {
+            opacity: 0;
+        }
     }
 
 
@@ -472,7 +483,7 @@
         margin-top: 1.5rem;
         width: 80%;
         height: 50px;
-       
+    
     }
 
     .hero-movil .wrapper .detail-info .main-technologies .technologies .technologie {

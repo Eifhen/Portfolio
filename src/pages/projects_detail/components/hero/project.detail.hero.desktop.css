@@ -130,6 +130,18 @@
     background-color: var(--red);
     position: absolute;
     right:0;
+    animation: liveDemo 640ms ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes liveDemo {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
 }
 
 .project-detail-page .hero .container .info-container .info .live-info .live-item  p {

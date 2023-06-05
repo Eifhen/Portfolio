@@ -64,7 +64,7 @@ function ProjectCardHorizontal(props:IProjectCardData) {
     
     return (
         <A href={props.url? props.url : "#"} class={`project-card ${props.theme?.theme}`}>
-            <img src={props.img} alt="" elementtiming={''} fetchpriority={'high'} />
+            <img src={props.img} alt=""  />
             <div class="mask">
                 <div class="info">
                     <h2 class="title">{ props.title }</h2>
@@ -82,7 +82,7 @@ function ProjectCardHorizontal(props:IProjectCardData) {
                                 {
                                     tecnologie.type === "icon" ? 
                                     <i class={tecnologie.icon}></i>
-                                    : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
+                                    : <img src={tecnologie.icon} alt={tecnologie.name}  />
                                 }
                             </div>
                         )}
@@ -100,7 +100,7 @@ function ProjectCardVertical(props:IProjectCardData){
     return (
         <A href={props.url? props.url : "#"} class={`project-card-vertical ${props.theme?.theme}`}>
             <div class="img_content">
-                <img src={props.img} alt="" elementtiming={""} fetchpriority={"high"} />
+                <img src={props.img} alt=""  />
             </div>
             <div class="project-content">
                 <div class="info">
@@ -116,7 +116,7 @@ function ProjectCardVertical(props:IProjectCardData){
                                     {
                                         tecnologie.type === "icon" ? 
                                         <i class={tecnologie.icon}></i>
-                                        : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
+                                        : <img src={tecnologie.icon} alt={tecnologie.name} />
                                     }
                                 </div>
                             )}

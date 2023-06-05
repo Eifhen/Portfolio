@@ -39,7 +39,7 @@ export const UnitConverterEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Unit-Converter/",
                 type: "icon",
@@ -92,7 +92,7 @@ export const UnitConverterES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Unit-Converter/",
                 type: "icon",

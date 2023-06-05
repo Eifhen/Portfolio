@@ -42,7 +42,7 @@ export const ColorSchemeEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Color-Scheme-Generator/",
                 type: "icon",
@@ -115,7 +115,7 @@ export const ColorSchemeES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Color-Scheme-Generator/",
                 type: "icon",

@@ -37,7 +37,7 @@ function ProjectDetailHeroDesktop (props:IProjectDetailHeroResponsive) {
         if(item.type === "image"){
             return (
                 <div class="info-img">
-                    <img src={item.icon} elementtiming={''} fetchpriority={'high'} />
+                    <img src={item.icon}   />
                 </div>
             )
         }
@@ -93,7 +93,7 @@ function ProjectDetailHeroDesktop (props:IProjectDetailHeroResponsive) {
                                     {
                                         tecnologie.type === "icon" ? 
                                         <i class={tecnologie.icon}></i>
-                                        : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
+                                        : <img src={tecnologie.icon} alt={tecnologie.name}/>
                                     }
                                 </div>
                             )}
@@ -120,7 +120,7 @@ function ProjectDetailHeroMovil (props:IProjectDetailHeroResponsive) {
         if(item.type === "image"){
             return (
                 <div class="info-img">
-                    <img src={item.icon} elementtiming={''} fetchpriority={'high'} />
+                    <img src={item.icon}  />
                 </div>
             )
         }
@@ -172,7 +172,7 @@ function ProjectDetailHeroMovil (props:IProjectDetailHeroResponsive) {
                                         {
                                             tecnologie.type === "icon" ? 
                                             <i class={tecnologie.icon}></i>
-                                            : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
+                                            : <img src={tecnologie.icon} alt={tecnologie.name}  />
                                         }
                                     </div>
                                 )}

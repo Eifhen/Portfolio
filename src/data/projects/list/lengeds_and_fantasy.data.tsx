@@ -41,7 +41,7 @@ export const LegendsAndFantasyEN: IProjectData = {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Legends-And-Fantasy/#/home",
                 type: "icon",
@@ -124,7 +124,7 @@ export const LegendsAndFantasyES: IProjectData = {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Legends-And-Fantasy/#/home",
                 type: "icon",

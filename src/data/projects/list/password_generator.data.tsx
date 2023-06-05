@@ -41,7 +41,7 @@ export const PasswordGeneratorEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Password-Generator/",
                 type: "icon",
@@ -104,7 +104,7 @@ export const PasswordGeneratorES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Password-Generator/",
                 type: "icon",

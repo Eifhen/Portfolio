@@ -44,7 +44,7 @@ export const TenziesEN: IProjectData = {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Tenzies/",
                 type: "icon",
@@ -123,7 +123,7 @@ export const TenziesES: IProjectData = {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Tenzies/",
                 type: "icon",

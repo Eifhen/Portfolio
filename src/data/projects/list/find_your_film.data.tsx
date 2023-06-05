@@ -39,7 +39,7 @@ export const FindYourFilmEN: IProjectData = {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Find-your-film/index.html",
                 type: "icon",
@@ -125,7 +125,7 @@ export const FindYourFilmES: IProjectData = {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Find-your-film/index.html",
                 type: "icon",

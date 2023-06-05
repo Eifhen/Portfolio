@@ -119,7 +119,7 @@ function HobbiesModal (props:IHobbiesModal) {
                         <p>{props.data.description}</p>
                     </div>
                     <div class="image">
-                        <img src={props.data.img} alt="" elementtiming={''} fetchpriority={'high'} />
+                        <img src={props.data.img} alt=""  />
                     </div>
                 </div>
             </div>

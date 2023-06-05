@@ -48,7 +48,7 @@ export const Project03EN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "http://proyect003.000webhostapp.com/Proyect_03/index.php",
                 type: "icon",
@@ -154,7 +154,7 @@ export const Project03ES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "http://proyect003.000webhostapp.com/Proyect_03/index.php",
                 type: "icon",
