@@ -1,13 +1,11 @@
 
-import { Accessor, For, Setter, createEffect, createSignal, onMount } from 'solid-js';
+import { Accessor, For, Setter, createEffect, createSignal, onCleanup, onMount } from 'solid-js';
 import './galery.desktop.css';
 import "./galery.movil.css";
 import { ITheme } from '../../hooks/theme.hook';
 import useHideOnOutsideClick from '../../hooks/outsideClick';
 import { IProjectData, IProjectGalery } from '../../data/projects/project.data.interfaces';
-
-
-
+import { BeforeLeaveEventArgs, useBeforeLeave, useParams } from '@solidjs/router';
 
 interface IGalery {
     data: IProjectData;
@@ -30,6 +28,7 @@ export default function Galery (props:IGalery){
     const [id, setID] = createSignal(0);
     const [count, setCount] = createSignal(0);
     const [modal, setModal] = createSignal(false);
+    const params = useParams<{ id:string }>();
 
     const SelectImage = (item:IProjectGalery) =>{
         const index = images().findIndex(img => img.id == item.id);
@@ -55,6 +54,14 @@ export default function Galery (props:IGalery){
             }
             setID(images()[count()].id);
         }, 6000);
+    })
+
+    createEffect(()=>{
+        if(params.id){
+            setCount(0);
+            setImg(images()[0].img);
+            setID(images()[0].id);
+        }
     })
 
     return (
@@ -102,9 +109,10 @@ function GaleryModal (props:IGaleryModal) {
             ref2:props.btnRef, 
             show:props.state, 
             setShow:props.setState,
-
         }); 
     })
+
+   
 
     return (
         <div class={`galery-modal-mask ${hide()}`}>

@@ -29,6 +29,7 @@
 
     --whiteF5: #f5f5f5;
     --whiteFC: #fcfcfd;
+    --whiteEE: #eeeff1;
     --pure: white;
 
     --blue:#75c0e0;
@@ -54,10 +55,10 @@
     --shadow-bright-lg: 0 1rem 3rem #666 !important;
     --shadow-bright-sm: 0 .5rem 1rem #666 !important;
     --shadow-card: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
-
+    --shadow-card-2: 0.1rem 0.5rem 1rem rgba(0,0,0,.15)!important;;
     --text-shadow:0px 0px 3px black;
     
-    --mask: rgba(50, 72, 88, 0.295);
+    --mask: rgba(41, 41, 41, 0.9);
 
     --happy-monkey: 'Happy Monkey', cursive;
     --great-vibes: 'Great Vibes', cursive;
@@ -138,16 +139,8 @@ ul { list-style: none;}
 .d-none { display: none !important; }
 .d-flex { display: flex !important; }
 
-.tradient {
+.bg-black { background-color: black; }
 
-  height: 40vh;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10rem;
-
-}
 
 /******************************************
   Text-underline
@@ -179,4 +172,181 @@ ul { list-style: none;}
 .light .underline {
   background-color: black;
 }
+
+/******************************************
+  Page Fade
+*******************************************/
+.pageFade {
+  opacity:0;
+  animation: fadeIntroPage  1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+/******************************************
+  General Wave
+*******************************************/
+.general-wave {
+  width: 100%;
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 
+      100px
+      100px
+  ;
+  grid-template-areas: 
+      "blank_space"
+      "featured_project_wave"
+  ;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.general-wave .t-wave {
+  grid-area: featured_project_wave;
+  display:flex;
+  align-items: flex-end;
+  z-index: 1;
+}
+
+.general-wave .t-wave > * {
+  width: 100%;
+}
+
+.general-wave .t-space {
+  grid-area: blank_space;
+  background-color: transparent;
+}
+
+
+/******************************************
+  Button Style
+*******************************************/
+.btn {
+  transition-delay: 400ms !important;
+  transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+}
+
+.dark .btn {
+  background-color: var(--grayDE) !important;
+  color: var(--dark1E) !important;
+}
+
+/******************************************
+  Container
+*******************************************/
+.grid-container {
+  width:  960px;
+  margin: 0 auto;
+}
+
+
+/******************************************
+  Card
+*******************************************/
+.prueba_card {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  cursor:pointer;
+}
+
+.prueba_card .img_content {
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  width: 100%;
+  height: 40%;
+  filter: drop-shadow(var(--shadow)) !important;
+  overflow: hidden;
+}
+
+.prueba_card .img_content img {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
+  object-fit: cover;
+  object-position: center;
+}
+
+.prueba_card .prueba_content {
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  margin: -30px 0 0 0;
+  width: 100%;
+  height: 60%;
+  filter: drop-shadow(var(--shadow)) !important;
+}
+
+.prueba_card .prueba_content .info {
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0rem 0 1rem 1rem;
+  background-color: var(--pure);
+  clip-path: polygon(0% 0%, 100% 18%, 100% 100%, 0% 100%);
+  position: relative;
+}
+
+.prueba_card .prueba_content .info h1 {
+  font-family: var(--Roboto);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  width: 72%;
+}
+
+.prueba_card .prueba_content .info time {
+  border-radius: 50px;
+  padding: 0.2rem;
+  background-color: black;
+  color: white;
+  width: 50%;
+  text-align: center;
+  font-family: var(--Nunito);
+  font-size: 12px;
+  margin-top: 0.3rem;
+}
+
+.prueba_card .prueba_content .info p {
+  font-family: var(--Nunito);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 90%;
+  margin-top: 0.8rem;
+  color: var(--gray);
+}
+
+.prueba_card .prueba_content .info .technologies {
+  width: 56%;
+  height: 44px;
+  background-color: black;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  padding: 1rem;
+  border-bottom-right-radius: 250px;
+  border-top-left-radius: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.2rem;
+}
+
+.prueba_card .prueba_content .info .technologies .item {
+    width: 30px;
+    height: 30px;
+    background-color: var(--gray);
+    border-radius: 50%;
+}
+
 

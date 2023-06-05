@@ -27,10 +27,10 @@ export default function SkillSetTab(props:ISkillSet){
     }
 
     const RenderImg = (item: ISkillData) => {
-        if(item.img){
-            return <img src={item.img} elementtiming={''} fetchpriority={'high'} />
+        if(item.type == "img"){
+            return <img src={item.icon} elementtiming={''} fetchpriority={'high'} />
         }
-        if(item.icon){
+        if(item.type == "icon"){
             return <i class={item.icon} />
         }
         return (<></>)

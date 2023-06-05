@@ -20,7 +20,7 @@ function LayoutContent () {
     const context = useAplicationContext();
     
     return (
-        <div class="layout-page">
+        <div id="layout-page" class="layout-page">
             <div class={`layout-theme ${context.themeManager.themeStore.theme}`}></div>
             <div class={`layout-content ${context.themeManager.themeStore.theme}`}>
                 <header id="main-header" class="header">

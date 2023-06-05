@@ -46,4 +46,8 @@ export const lenguageDataES:ILenguageData = {
     "about-this-project": "Acerca de este projecto",
     "technologies": "Technologías",
     "references": "Referencias",
+    "other-projects": "Otros Projectos",
+    "skills": "Habilidades",
+    "my-main-technologies": "Mis technologías principales",
+    "about-this-portfolio": "Acerca de este Portafolio",
 };

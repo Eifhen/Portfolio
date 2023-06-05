@@ -1,0 +1,43 @@
+.about-page {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        minmax(500px, auto)
+        minmax(300px, auto)
+        minmax(400px, auto)
+        minmax(400px, auto)
+        minmax(70vh, auto)
+        minmax(100vh, auto)
+    ;
+    grid-template-areas: 
+        "hero"
+        "hobbies"
+        "education"
+        "work"
+        "skills"
+        "about_portfolio"
+    ;
+}
+
+@media(max-width: 560px){
+    .about-page {
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            minmax(500px, auto)
+            minmax(300px, auto)
+            minmax(400px, auto)
+            minmax(400px, auto)
+            minmax(70vh, auto)
+            auto
+        ;
+        grid-template-areas: 
+            "hero"
+            "hobbies"
+            "education"
+            "work"
+            "skills"
+            "about_portfolio"
+        ;
+    }
+}

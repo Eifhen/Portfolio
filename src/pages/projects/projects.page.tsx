@@ -11,6 +11,7 @@ export default function ProjectPage () {
     const context = useAplicationContext();
     const featured_projects = () => ProjectData[context.lenguageManager.lenguageStore.lenguage].filter(item => item.highlighted);
     const other_projects = () => ProjectData[context.lenguageManager.lenguageStore.lenguage].filter(item => item.highlighted === false);
+  
     
     return (
         <div id="header" class={`project-page ${context.themeManager.themeStore.theme}`}>

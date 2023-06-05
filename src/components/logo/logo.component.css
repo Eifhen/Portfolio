@@ -46,23 +46,24 @@
 
 @media (max-width: 600px) {
     .logo {
-        width: 84px;
-        height: 63px;
+        width: 100px;
+        height: 80px;
         display:flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+   
     }
     
     .logo svg {
-        width: 45px;
-        height: 33px;
+        width: 50px;
+        height: 38px;
     }
 
     .logo h1 {
         font-style: normal;
         font-weight: 300;
-        font-size: 12px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }

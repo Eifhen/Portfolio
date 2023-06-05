@@ -1,178 +1,135 @@
-
-.project-card-vertical {
+.project-card-vertical{
+    /* width: 300px;
+    height: 400px; */
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
-    z-index: 3;
-    border-radius: 35px;
+    flex-direction: column;
+    cursor:pointer;
+    transition: transform 500ms ease-in-out;
+
 }
 
-.project-card-vertical:hover {
-    opacity: 1;
-}
 
-.project-card-vertical.light:hover .card-info .card-info-container {
-    background-color: var(--grayD9) !important;
-}
-
-.project-card-vertical.dark:hover .card-info .card-info-container {
-    background-color: var(--dark1E) !important;
-}
-
-/***************************
+/*************************
     Image
-**************************/
-.project-card-vertical .card-image {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    background-color: black;
-    height: 100%;
-    width: 40%;
+*************************/
+.project-card-vertical .img_content {
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    width: 100%;
+    height: 40%;
     overflow: hidden;
-    filter: drop-shadow(var(--shadow));
 }
 
-.project-card-vertical.dark .card-image {
-    filter: drop-shadow(var(--shadow-bright-sm));
+.light .project-card-vertical .img_content {
+    filter: drop-shadow(var(--shadow)) !important;
 }
 
-.project-card-vertical.light .card-image {
-    filter: drop-shadow(var(--shadow));
+.dark .project-card-vertical .img_content {
+    filter: drop-shadow(var(--shadow-bright-sm)) !important;
 }
 
-.project-card-vertical .card-image img {
-    clip-path: polygon(0% 0%, 100% 0%, 68% 100%, 0% 100%);
+.project-card-vertical .img_content img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 75%);
     object-fit: cover;
     object-position: center;
-    width: 100%;
-    height: 100%;
-    background-color: black;
- 
 }
+
 
 /***************************
-    Info Container
+INFO
 **************************/
-.project-card-vertical .card-info {
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    background-color: black;
-    height: 100%;
-    width: 60%;
-    overflow: hidden;
-    margin-left: -11.3%;
+.project-card-vertical .project-content {
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin: -30px 0 0 0;
+    width: 100%;
+    height: 60%;
 }
 
-.project-card-vertical.light .card-info {
-    filter: drop-shadow(var(--shadow));
-}
-.project-card-vertical.dark .card-info {
-    filter: drop-shadow(var(--shadow-bright-sm));
+.light .project-card-vertical .project-content {
+    filter: drop-shadow(var(--shadow)) !important;
 }
 
-.project-card-vertical .card-info .card-info-container {
-    clip-path: polygon(21.2% 0%, 100% 0%, 100% 100%, 0% 99.8%);
+.dark .project-card-vertical .project-content {
+    filter: drop-shadow(var(--shadow-bright-sm)) !important;
+}
+
+.project-card-vertical .project-content .info {
     height: 100%;
     width: 100%;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    transition: background-color 500ms ease-in-out;
-}
-
-.project-card-vertical.light .card-info .card-info-container {
-    background-color: white;
-}
-
-.project-card-vertical.dark .card-info .card-info-container {
-    background-color: black;
-}
-
-/***************************
-    Info
-**************************/
-.project-card-vertical .card-info .card-info-container .info {
-    height: 100%;
-    width: 79%;
-    display:flex;
-    flex-direction: column;
     justify-content: center;
-    gap: 1rem;
-    padding: 0 1rem;
+    padding: 0rem 0 1rem 1rem;
+    background-color: var(--pure);
+    clip-path: polygon(0% 0%, 100% 18%, 100% 100%, 0% 100%);
     position: relative;
 }
 
-.project-card-vertical .card-info .card-info-container .info h2 {
+.project-card-vertical .project-content .info h1 {
     font-family: var(--Roboto);
-    font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 38px;
-    letter-spacing: 0.1em;
-    width: 84%;
-}
-
-.project-card-vertical .card-info .card-info-container .info time {
-    padding: 0.5rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-    border-radius: 35px;
-
-    font-family: var(--Nunito);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.1em;
-  
-}
-
-.project-card-vertical.light .card-info .card-info-container .info time {
-    color: white;
-    background-color: black;
-}
-.project-card-vertical.dark .card-info .card-info-container .info time {
-    color: black;
-    background-color: white;
-}
-
-.project-card-vertical .card-info .card-info-container .info p {    
-    font-family: var(--Nunito);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 24px;
-    letter-spacing: 0.1em;
-   
-    width: 80%;
+    width: 72%;
+    color: black;
 }
 
-.project-card-vertical.light .card-info .card-info-container .info p {
-    color: var(--dark37);
+.project-card-vertical .project-content .info time {
+    border-radius: 50px;
+    padding: 0.2rem;
+    background-color: black;
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-family: var(--Nunito);
+    font-size: 12px;
+    letter-spacing: 0.1rem;
+    margin-top: 0.3rem;
 }
 
-.project-card-vertical.dark .card-info .card-info-container .info p {
-    color: var(--whiteF5);
+.project-card-vertical .project-content .info p {
+    font-family: var(--Nunito);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    width: 90%;
+    margin-top: 0.8rem;
+    color: var(--gray);
 }
 
 /***************************
    Technologies
 **************************/
-.project-card-vertical .card-info .card-info-container .info .technologies {
-    position:absolute;
-    bottom: 14px;
-    right: 14px;
-    display:flex;
+.project-card-vertical .project-content .info .technologies {
+    width: 60%;
+    height: 44px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 1rem;
+    border-bottom-right-radius: 250px;
+    border-top-left-radius: 300px;
+    display: flex;
+    align-items: center;
     justify-content: flex-end;
-
+ 
 }
 
-.project-card-vertical .card-info .card-info-container .info .technologies .technologie {
-    width: 40px;
-    height: 40px;
+.project-card-vertical .project-content .info .technologies .technologie {
+    width: 34px;
+    height: 34px;
     background-color: white;
     border-radius: 50px;
     display:flex;
@@ -180,13 +137,12 @@
     justify-content: center;
     font-size: 24px;
     position: absolute;
-    top: -35px !important;
     border: 3px solid var(--dark0F);
     overflow: hidden;
     
 }
 
-.project-card-vertical .card-info .card-info-container .info .technologies .technologie img {
+.project-card-vertical .project-content .info .technologies .technologie img {
     object-fit: contain;
     object-position: center;
     padding: 0.3rem;
@@ -194,7 +150,57 @@
     height: 100%;
 }
 
-.project-card-vertical .card-info .card-info-container .info .technologies .technologie.more {
+.project-card-vertical .project-content .info .technologies .technologie.more {
     background-color: var(--whiteF5) !important;
     color: black !important;
+}
+
+/*************************
+    Hover
+*************************/
+.project-card-vertical:hover {
+    opacity: 1;
+    transform: scale(1.045);
+}
+
+.project-card-vertical:hover .project-content .info {
+    background-color: var(--whiteF5);
+}
+
+/***************************
+   Active
+**************************/
+
+.splide__slide.is-active .project-card-vertical {
+
+}
+
+.splide__slide.is-active .project-card-vertical .img_content {
+    height: 40%;
+}
+.splide__slide.is-active .project-card-vertical .img_content img {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+}
+
+.splide__slide.is-active .project-card-vertical .project-content .info {
+    clip-path: polygon(0% 0%, 100% 14%, 100% 100%, 0% 100%);
+}
+
+.splide__slide.is-active  .project-card-vertical .project-content {
+    margin: -24px 0 0 0;
+    height: 60%;
+}
+
+.splide__slide.is-active  .project-card-vertical .project-content .info h1 {
+    font-size: 28px;
+    line-height: 32px;
+    width: 79%;
+    
+}
+
+.splide__slide.is-active  .project-card-vertical .project-content .info p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 95%;
+    margin-top: 0.5rem;
 }

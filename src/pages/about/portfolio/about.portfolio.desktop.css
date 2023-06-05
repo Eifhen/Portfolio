@@ -1,0 +1,170 @@
+
+
+.about-page .about-portfolio {
+    grid-area: about_portfolio;
+    background-color: var(--whiteEE);
+}
+
+.about-page .about-portfolio .about-portfolio-content {
+    background-color: black;
+    height: 100%;
+}
+
+.about-page .about-portfolio .grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        260px
+        minmax(300px, auto)
+        150px
+    ;
+
+    grid-template-areas: 
+        "title"
+        "info"
+        "links"
+    ;
+
+    width: 850px;
+}
+
+/**************************
+    Title
+***************************/
+.about-page .about-portfolio .grid-container .title {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.about-page .about-portfolio .grid-container .title h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.07em;
+    color: white;
+}
+
+.about-page .about-portfolio .grid-container .title .underline,
+.about-page .about-portfolio .grid-container .title .underline:after {
+    background-color: white;
+    height: 15px;
+}
+
+.about-page .about-portfolio .grid-container .title .underline{
+    margin-top: 0.3rem;
+    width: 150px;
+} 
+
+.about-page .about-portfolio .grid-container .title .underline:after {
+    width: 15px;
+    right: -26px;
+}
+
+
+/**************************
+    Info - Description
+***************************/
+.about-page .about-portfolio .grid-container .info {
+    grid-area: info;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-page .about-portfolio .grid-container .info .description {
+    height: 100%;
+    width: 50%;
+}
+
+.about-page .about-portfolio .grid-container .info .description p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.07em;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+/******************************
+    Info - Technologies
+*******************************/
+
+.about-page .about-portfolio .grid-container .info .technologies {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about-page .about-portfolio .grid-container .info .technologies .item {
+    width: 140px;
+    height: 110px;
+    font-size: 14px;
+    font-family: var(--Nunito);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--whiteF5);
+    gap: 0.5rem;
+
+}
+
+.about-page .about-portfolio .grid-container .info .technologies .item i {
+    font-size: 36px;
+}
+
+.about-page .about-portfolio .grid-container .info .technologies .item img {
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/**************************
+    Links
+***************************/
+.about-page .about-portfolio .grid-container .links {
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.about-page .about-portfolio .grid-container .links .link {
+    border-radius: 50px;
+    width: 200px;
+    height: 50px;   
+    font-size: 16px;
+    font-family: var(--Nunito);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+ 
+}
+
+.about-page .about-portfolio .grid-container .links .link  i {
+    font-size: 36px;
+}
+
+.about-page .about-portfolio .grid-container .links .link img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    object-position: center;
+}

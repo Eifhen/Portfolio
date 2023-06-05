@@ -112,7 +112,7 @@
     line-height: 20px;
     letter-spacing: 0.1rem;
     font-family: var(--Nunito);
-    width: 85%;
+    width: 80%;
     display:grid;
     grid-template-rows: 0fr;    
     transition: grid-template-rows 600ms ease-in, padding 300ms ease-in;

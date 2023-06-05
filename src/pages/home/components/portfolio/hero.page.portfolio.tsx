@@ -6,6 +6,7 @@ import { IProjectData } from '../../../../data/projects/project.data.interfaces'
 import translate from '../../../../hooks/translate.hook';
 import { A } from '@solidjs/router';
 import ProjectCard from '../../../../components/card/projectcard.component';
+import useProjectNameHook from '../../../../hooks/project-name.hook';
 
 
 interface IPortfolio {
@@ -17,7 +18,8 @@ interface IPortfolio {
 
 
 export default function Portfolio (props:IPortfolio) {
-    
+    const urlName = useProjectNameHook();
+
     return (
         <div class={`portfolio ${props.theme.theme}`}>
             <div class="content">
@@ -37,7 +39,7 @@ export default function Portfolio (props:IPortfolio) {
                         <For each={ props.data }>
                             {(item)=>(
                                 <ProjectCard
-                                    url={`/projects/detail/${item.id}`}
+                                    url={`/projects/detail/${item.id}/${urlName(item.title)}`}
                                     type='horizontal'
                                     theme={props.theme}
                                     data={item}

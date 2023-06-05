@@ -7,8 +7,7 @@ export interface IObserveElement<T> {
 
 export default function useObserveElement <T> (props:IObserveElement<T>) {
     const footer = document.querySelector("#main-footer");
-
-  
+ 
     const observer = new IntersectionObserver((entries) => { 
         entries.forEach((entry) => {
             if(entry.isIntersecting){
@@ -24,3 +23,13 @@ export default function useObserveElement <T> (props:IObserveElement<T>) {
         observer.observe(footer);
     }
 }
+
+
+/*
+    EJ de como usar este hook
+
+    // useObserveElement<HTMLAnchorElement>({
+    //     ref1: upButton,
+    // });
+
+*/

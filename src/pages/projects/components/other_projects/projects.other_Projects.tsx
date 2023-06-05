@@ -7,6 +7,7 @@ import './projects.other_projects.desktop.css';
 import './projects.other_projects.movil.css';
 import ProjectCard from "../../../../components/card/projectcard.component";
 import Wave from "../../../../components/wave/wave.component";
+import useProjectNameHook from "../../../../hooks/project-name.hook";
 
 
 interface IOtherProjects {
@@ -17,7 +18,8 @@ interface IOtherProjects {
 
 
 export default function OtherProjects (props:IOtherProjects){
-
+    const urlName = useProjectNameHook();
+    
     return (
         <div class={`other-projects ${props.theme.theme}`}>
             <header>
@@ -31,7 +33,7 @@ export default function OtherProjects (props:IOtherProjects){
                 <For each={ props.data }>
                     {(item)=>(
                         <ProjectCard
-                            url={`detail/${item.id}`}
+                            url={`detail/${item.id}/${urlName(item.title)}`}
                             type='horizontal'
                             theme={props.theme}
                             data={item}

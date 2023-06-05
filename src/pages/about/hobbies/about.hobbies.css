@@ -1,0 +1,8 @@
+
+
+.about-page .about-hobbies {
+    grid-area: hobbies;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -53,5 +53,8 @@ export const lenguageDataEN:ILenguageData = {
     "about-this-project": "About This Project",
     "technologies": "Technologies",
     "references": "References",
-    
+    "other-projects": "Other Projects",
+    "skills": "Skill-Set",
+    "my-main-technologies": "My main technologies",
+    "about-this-portfolio": "About this Portfolio",
 }

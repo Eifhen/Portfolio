@@ -1,0 +1,148 @@
+
+
+@media(max-width: 950px){
+
+    .about-page .about-portfolio .grid-container {
+        grid-template-rows: 
+            260px
+            minmax(600px, auto)
+            150px
+        ;
+    
+        grid-template-areas: 
+            "title"
+            "info"
+            "links"
+        ;
+    
+        width: 90vw;
+    }
+
+    .about-page .about-portfolio .grid-container .info {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .about-page .about-portfolio .grid-container .info .description {
+        width: 60%;
+        height: 70%;
+    }
+
+    .about-page .about-portfolio .grid-container .info .technologies {
+        width: 60%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-page .about-portfolio .grid-container .links {
+        grid-area: links;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+
+@media (max-width: 835px){
+    .about-page .about-portfolio .grid-container .info .description {
+        width: 80%;
+    }
+
+    .about-page .about-portfolio .grid-container .info .technologies {
+        width: 80%;
+    }
+}
+
+@media (max-width: 560px){
+
+   
+    .about-page .about-portfolio .grid-container {
+        grid-template-rows: 
+            150px
+            auto
+            150px
+        ;
+    
+        grid-template-areas: 
+            "title"
+            "info"
+            "links"
+        ;
+    
+        width: 90vw;
+    }
+
+    .about-page .about-portfolio .grid-container .title h1 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.07em;
+        color: white;
+    }
+
+    .about-page .about-portfolio .grid-container .info .description {
+        width: 90%;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .about-page .about-portfolio .grid-container .info .description p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .about-page .about-portfolio .grid-container .info .technologies {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .about-page .about-portfolio .grid-container .info .technologies .item {
+        border-radius: 20px;
+        width: 100px;
+        height: 70px; 
+        font-size: 12px;
+        font-family: var(--Nunito);
+        font-weight: 500;
+        gap: 0.3rem;
+    }
+
+    .about-page .about-portfolio .grid-container .info .technologies .item i {
+        font-size: 24px;
+    }
+
+    .about-page .about-portfolio .grid-container .info .technologies .item img {
+        width: 24px;
+        height: 24px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about-page .about-portfolio .grid-container .links .link {
+        border-radius: 50px;
+        width: 160px;
+        height: 50px;   
+        font-size: 14px;
+        font-family: var(--Nunito);
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+    }
+
+    .about-page .about-portfolio .grid-container .links .link  i {
+        font-size: 24px;
+    }
+    
+    .about-page .about-portfolio .grid-container .links .link img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        object-position: center;
+    }
+}

@@ -16,6 +16,8 @@ export interface ISliderOptions {
     perPage?: number,
     gap?: string,
     startIndex?:number,
+    type?: string;
+    rewind: boolean
 }
 
 export function useSlider(props:ISlider){
@@ -40,10 +42,10 @@ export function useSlider(props:ISlider){
 
 function RenderSlider (props:ISliderOptions, setSlider: Setter<Splide>) {
     setSlider(new Splide(`#${props.slider_id}`, {
-        type: "slider",
+        type: props.type? props.type : "slider",
         perPage: props.perPage,
         perMove: 1,
-        rewind: true,
+        rewind: props.rewind,
         start: props.startIndex != null?  props.startIndex : 1,
         focus: "center",
         gap: props.gap? props.gap: "2rem",

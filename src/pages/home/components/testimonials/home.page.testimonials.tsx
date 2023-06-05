@@ -25,7 +25,7 @@ export default function Testimonials (props:ITestimonials) {
                 </div>
                 <div class="testimonials-carousel">
                     <div class="overflow">
-                        <Carousel options={{slider_id:"slider_testimonials", perPage:3}}>
+                        <Carousel options={{slider_id:"slider_testimonials", perPage:3, rewind: true}}>
                             <For each={props.data}>
                                 {(item)=> (
                                     <CarouselItem>

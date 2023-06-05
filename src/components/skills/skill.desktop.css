@@ -25,7 +25,7 @@
 }
 
 .skillset-container.light .skillset-tab-header {
-    background-color: var(--whiteF5);
+    background-color: var(--grayD9);
 }
 
 .skillset-container.dark .skillset-tab-header {
@@ -87,11 +87,13 @@
 .skillset-container .skillset-tab-content {
     margin-top: 2rem;
     width: 771px;
-    min-height: 486px;
+    min-height: 300px;
     display:flex;
     align-items: flex-start;
+    /* justify-content: center; */
     flex-wrap: wrap;
     gap: 1rem;
+
 }
 
 .skillset-container .skillset-tab-content .skillset-tab-item {
@@ -99,6 +101,7 @@
     width: 241px;
     min-height: 216px;
     padding: 1rem;
+    z-index: 4;
 }
 
 .skillset-container.dark .skillset-tab-content .skillset-tab-item {

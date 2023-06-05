@@ -2,7 +2,7 @@ import './carousel.config.css';
 import '@splidejs/splide/css';
 
 
-import { JSX, onMount } from 'solid-js';
+import { JSX, onCleanup, onMount } from 'solid-js';
 import { ISliderOptions, useSlider } from '../../hooks/slider.hook';
 
 interface CarouselItem {
@@ -17,9 +17,9 @@ interface ICarousel {
 export default function Carousel(props: ICarousel){
     
     useSlider({options:props.options});
-  
+
     return (
-        <section id={props.options.slider_id} class="splide" aria-label="Splide Basic HTML Example">
+    <section id={props.options.slider_id} class="splide" aria-label="Splide Basic HTML Example">
              <div class="splide__arrows">
                 <button class="splide__arrow splide__arrow--prev">
                     <i class="ri-arrow-left-circle-fill"></i>

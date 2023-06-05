@@ -1,0 +1,255 @@
+
+
+.cv-card {
+    height: 180px;
+    width: 450px;
+    position: relative;
+    border-radius: 18px;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        55%
+        45%
+    ;
+
+    grid-template-areas: 
+        "title"
+        "description"
+    ;
+    transition: box-shadow 500ms ease-in-out;
+    z-index: 2;
+}
+
+/* OJO */
+.light .cv-card {
+    background-color: var(--whiteF5);
+    background-color: var(--dark0F);
+}
+
+.dark .cv-card {
+    background-color: var(--dark0F);
+}
+
+.light .cv-card:hover {
+    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-bright-sm);
+}
+
+.dark .cv-card:hover {
+    box-shadow: var(--shadow-bright-sm);
+}
+
+/************************
+    Card Title
+*************************/
+.cv-card .options {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.light .cv-card .options {
+    color: white;
+}
+
+.cv-card .card-title {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+}
+
+.cv-card .card-title a {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: var(--dark11);
+    padding: 0;
+
+    /* truncate text */
+    width: 380px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.cv-card .card-title a:hover {
+    color: var(--blue-royal) !important;
+}
+/* OJO */
+.dark .cv-card .card-title a {
+    color: var(--whiteF5);
+}
+
+.light .cv-card .card-title a {
+    color: var(--whiteF5);
+}
+
+.cv-card .card-title p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: var(--dark0F) ;
+    padding: 0.3rem 0 0.3rem 0;
+
+    /* truncate text */
+    width: 380px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* OJO */
+.dark .cv-card .card-title p {
+    color: var(--grayE5);
+}
+
+.light .cv-card .card-title p {
+    color: var(--grayE5);
+}
+
+.cv-card .card-title time {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    letter-spacing: 0.1em;
+    color: var(--dark37);
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.cv-card .card-title time i {
+    font-size: 20px;
+    margin-right: 0.4rem;
+}
+
+/* OJO */
+.dark .cv-card .card-title time {
+    color: var(--grayD9);
+}
+
+.light .cv-card .card-title time {
+    color: var(--grayD9);
+}
+
+
+
+/************************
+    Card Description
+*************************/
+.cv-card .card-description {
+    grid-area: description;
+    padding: 0rem 1rem 1rem 1rem;
+}
+
+.cv-card .card-description p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: var(--dark37);
+}
+
+
+/* OJO */
+.dark .cv-card .card-description p {
+    color: var(--grayD9);
+}
+
+.light .cv-card .card-description p {
+    color: var(--grayD9);
+}
+
+/**************************************
+    Curriculumn Card Modal
+**************************************/
+.curriculumn-modal-mask {
+    background: var(--mask);
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity:0;
+    z-index: 10;
+
+}
+
+.curriculumn-modal-mask.active {
+    pointer-events: all !important;
+    animation: openModalCurriculumn 500ms ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.curriculumn-modal-mask.inactive {
+    animation: closeModalCurriculumn 500ms ease-in-out;
+    animation-fill-mode: forwards;
+    pointer-events: none !important;
+}
+
+@keyframes openModalCurriculumn {
+    from{ opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes closeModalCurriculumn {
+    from{ opacity: 1; }
+    to { opacity: 0; }
+}
+
+.curriculumn-modal-mask .curriculumn-modal {
+    height: 90vh;
+    width: 70vw;
+    border-radius: 35px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-bright);
+
+}
+
+.curriculumn-modal-mask .curriculumn-modal .modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor:pointer;
+    font-size: 25px;
+    color: var(--pure);
+}
+
+
+.curriculumn-modal-mask .curriculumn-modal .image {
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.curriculumn-modal-mask .curriculumn-modal .image img {
+    display:block;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    border-radius: 35px;
+
+}

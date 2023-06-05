@@ -4,6 +4,7 @@ export interface ImageManager {
     projects: IProjectImageCollector;
     designs: IDesingImageCollector;
     others: IOtherIcons;
+    curriculumn: ICurriculumnCollector;
 }
 
 export interface ITecnologiesIconCollector {
@@ -66,6 +67,11 @@ export interface IDesingImageCollector {
     template01: ImageCollector;
     airbnb_clone: ImageCollector;
 
+}
+
+export interface ICurriculumnCollector {
+    education:ImageCollector;
+    work: ImageCollector;
 }
 
 export interface IOtherIcons {

@@ -10,6 +10,7 @@ import Wave from '../../../../components/wave/wave.component';
 import { IProjectData } from '../../../../data/projects/project.data.interfaces';
 import ProjectCard from '../../../../components/card/projectcard.component';
 import { ILenguage } from '../../../../hooks/lenguage.hook';
+import useProjectNameHook from '../../../../hooks/project-name.hook';
 
 
 
@@ -23,7 +24,8 @@ interface IFeaturedProps {
 
 
 export default function FeaturedProjects (props: IFeaturedProps) {
-
+    const urlName = useProjectNameHook();
+    
     const subtitle = () => {
         if(props.lenguage.lenguage == "ES"){
             return translate("projects");
@@ -40,9 +42,11 @@ export default function FeaturedProjects (props: IFeaturedProps) {
 
     const sliderOptions = {
         slider_id:"slider_featured_projects", 
-        perPage:1, 
+        perPage:3, 
         gap:"2rem",
-        startIndex:0,
+        startIndex: 0,
+        type:"loop",
+        rewind: false,
     }
 
     return (
@@ -61,7 +65,7 @@ export default function FeaturedProjects (props: IFeaturedProps) {
                             {(item)=>(
                                 <CarouselItem>
                                     <ProjectCard 
-                                        url={`detail/${item.id}`}
+                                        url={`detail/${item.id}/${urlName(item.title)}`}
                                         data={item} 
                                         type='vertical' 
                                         theme={props.theme} 

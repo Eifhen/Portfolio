@@ -29,7 +29,7 @@
         width: 70%;
         flex-direction: column;
         border-radius: 20px;
-        height: 95vh !important;
+        height: 70vh !important;
        
     }
 
@@ -49,17 +49,17 @@
     .galery-modal-mask .galery-modal .modal-image {
         order: 1;
         width: 100%;
-        height: 50% !important;
+        height: 60% !important;
     }
 
     .galery-modal-mask .galery-modal .modal-content {
         order:2;
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
 
     .galery-modal-mask .galery-modal .modal-content .info {
-        padding: 2rem 2rem 1rem 2rem !important;
+        padding: 1.5rem 2rem 1rem 2rem !important;
     }
 
     .galery-modal-mask .galery-modal .modal-content .info header {

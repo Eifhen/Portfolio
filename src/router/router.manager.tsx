@@ -8,19 +8,39 @@ import HomePage from '../pages/home/home.page';
 import ProjectPage from '../pages/projects/projects.page';
 import ProjectDetailPage from '../pages/projects_detail/project_detail.page';
 import ErrorPage from '../pages/error/error.page';
+import AboutPage from '../pages/about/about.page';
 
 export default function RouterManager(){
 
+    
     return(
         <Router>
             <Routes>
-                <Route path="" component={ Layout }>
+                <Route path="/" component={ Layout }>
                     <Route path="/" component={ HomePage }/>
-                    <Route path="/test" component={ TestPage }/>
-                    <Route path="/home" component={ HomePage }/>
-                    <Route path="/projects" component={ ProjectPage }/>
-                    <Route path="/projects/detail/:id" component={ ProjectDetailPage }/>
+                </Route>
 
+                <Route path="/home" component={ Layout }>
+                    <Route path="/" component={ HomePage }/>
+                </Route>
+
+                <Route path="/test" component={ Layout }>
+                    <Route path="/" component={ TestPage }/>
+                </Route>
+
+                <Route path="/projects/detail/:id/:project-name" component={ Layout }>
+                    <Route path="/" component={ ProjectDetailPage }/>
+                </Route>
+
+                <Route path="/projects" component={ Layout }>
+                    <Route path="/" component={ ProjectPage }/>
+                </Route>
+
+                <Route path="/about" component={ Layout }>
+                    <Route path="/" component={ AboutPage }/>
+                </Route>
+
+                <Route path="" component={ Layout }>
                     <Route path="*" component = { ErrorPage }/>
                 </Route>
             </Routes>

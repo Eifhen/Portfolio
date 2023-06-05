@@ -36,3 +36,12 @@
 .wave.gray.dark svg {
     fill: var(--dark0F)  !important;
 }
+
+
+.wave.whiteEE svg {
+    fill: var(--whiteEE) !important;
+}
+
+.wave.whiteEE.dark svg {
+    fill: var(--dark0F)  !important;
+}

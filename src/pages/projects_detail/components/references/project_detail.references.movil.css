@@ -1,0 +1,47 @@
+
+@media(max-width: 1100px){
+    .project-detail-page .references .container {
+        width: 80%;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            140px
+            minmax(160px, auto)
+        ;
+        grid-template-areas: 
+            "header"
+            "container"
+        ;
+    }
+}
+
+
+@media(max-width: 720px){
+    .project-detail-page .references .container {
+        width: 90%;
+        margin: 0 auto;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            140px
+            minmax(160px, auto)
+        ;
+        grid-template-areas: 
+            "header"
+            "container"
+        ;
+    }
+
+    .project-detail-page .references .container .header h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+}
+
+@media(max-width: 470px){ 
+    .project-detail-page .references .container .header h1 {
+        font-size: 22px !important;
+        line-height: 32px;
+    }
+}

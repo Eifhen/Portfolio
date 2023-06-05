@@ -2,6 +2,8 @@ import { Accessor, onCleanup, onMount } from 'solid-js';
 import { ITheme } from '../../hooks/theme.hook';
 import './up_btn.component.css';
 import useObserveElement from '../../hooks/intersectionObserver.hook';
+import useGoUpHook from '../../hooks/go-up.hook';
+import ScrollSmooth from '../../hooks/scrollSmooth';
 
 
 
@@ -14,21 +16,10 @@ export default function UpBtn (props:IUpBtnProps) {
     let upButton: HTMLAnchorElement;
 
     onMount(()=> {
-        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                var link = anchor  as HTMLAnchorElement;
-                var reference = link.getAttribute("href");
-                var element = document.querySelector(`${reference}`);
-                element?.scrollIntoView({
-                    behavior: 'smooth'
-                })
-            });
-        });
-
-        useObserveElement<HTMLAnchorElement>({
-            ref1: upButton,
-        });
+        ScrollSmooth();
+        useGoUpHook<HTMLAnchorElement>({
+            btnUpRef: upButton
+        })
     })
 
     return (
@@ -37,3 +28,4 @@ export default function UpBtn (props:IUpBtnProps) {
         </a>
     )
 }
+

@@ -49,7 +49,6 @@ function ProjectDetailHeroDesktop (props:IProjectDetailHeroResponsive) {
     }
 
     const getData = () => {
-        console.log("data =>", props.info.data);
         if(props.info.data){
             return props.info.data;
         }

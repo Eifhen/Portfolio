@@ -1,8 +1,8 @@
 import { ITheme } from '../../hooks/theme.hook';
 import './wave.desktop.css';
 
-interface IWave {
-    waveColor: 'gray' | 'black' | 'white';
+export interface IWave {
+    waveColor: 'gray' | 'black' | 'white' | 'whiteEE';
     theme: ITheme;
     allowTheme: boolean;
 }
@@ -25,3 +25,4 @@ export default function Wave (props:IWave) {
         </div>
     )
 }
+

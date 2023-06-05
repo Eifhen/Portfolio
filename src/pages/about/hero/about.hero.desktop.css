@@ -1,0 +1,64 @@
+
+.about-page .hero {
+    grid-area:hero;
+}
+
+.about-page .hero .grid-container {
+    display: flex;
+}
+
+.about-page .hero .grid-container .description {
+    width: 50%;
+    height: 500px;
+    
+    display:flex;
+    flex-direction: column;
+    padding-top: 4rem;
+    gap: 0.8rem;
+}
+
+/*********************************
+    Header
+**********************************/
+.about-page .hero .grid-container .description header {
+    grid-area: header;
+    padding:0 !important;
+}
+
+.about-page .hero .grid-container .description header h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+}
+
+.about-page .hero .grid-container .description header .underline {
+    margin-top: 0.4rem !important;
+}
+
+.about-page .hero .grid-container .description .info p {
+    margin-top: 1rem;
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+
+.about-page.light .hero .grid-container .description .info p {
+    color: var(--dark37);
+}
+
+/*********************************
+    User Image
+**********************************/
+.about-page .hero .grid-container .user-image {
+    width: 50%;
+    height: 500px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}

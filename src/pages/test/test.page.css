@@ -1,0 +1,50 @@
+.tradient {
+    height: 150vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.tradient .grid-container {
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    row-gap: 0rem;
+}
+
+.test-page {
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        20vh
+        60vh
+        20vh
+    ;
+
+    grid-template-areas: 
+        "header"
+        "container"
+        "footer"
+    ;
+    position: relative;
+}
+
+.test-page .test-header {
+    grid-area: header;
+    background-color: red;
+}
+
+.test-page .test-container {
+    grid-area: container;
+    background-color: yellow;
+    overflow: scroll;
+}
+
+.test-page .test-footer {
+    grid-area: footer;
+    background-color: orange;
+}

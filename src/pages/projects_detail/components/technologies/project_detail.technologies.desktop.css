@@ -3,7 +3,6 @@
 
 .project-detail-page .technologies {
     grid-area: technologies;
-    
 }
 
 .project-detail-page.light .technologies {
@@ -49,7 +48,7 @@
 
 .project-detail-page .technologies .container .header .underline {
     margin-top: 0.4rem;
-    width: 80px;
+    width: 100px;
     height: 15px;
 }
 

@@ -3,7 +3,6 @@
 @media (max-width: 1100px){
     .hobbies {
         width: 80%;
-        padding:0;
     }
 
     .hobbies .content {
@@ -55,7 +54,11 @@
 }
 
 @media (max-width: 600px){ 
-    
+    .hobbies {
+        width: 90%;
+        padding:0;
+    }
+
     .hobbies .content .item {
         width: 100%;
     }
@@ -106,7 +109,7 @@
 
 @media (max-width: 670px){ 
     .hobbies-modal-mask .hobbies-modal {
-        height: 50% !important;
+        height: 80% !important;
         width: 80% !important;
         display:grid;
         grid-template-columns: 100%;
@@ -146,7 +149,7 @@
 
 @media (max-width: 400px){
     .hobbies-modal-mask .hobbies-modal {
-        height: 50% !important;
+        height: 70% !important;
         width: 90% !important;
     }
 }

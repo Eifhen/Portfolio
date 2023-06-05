@@ -99,21 +99,25 @@
 }
 
 .project-page .featured-projects  .content .featured-projects-carousel .splide__slide {
-    width: 960px !important;
-    height: 355px !important;
+    width: 280px !important;
+    height: 400px !important;
     border-radius: 35px;
-   
+
 }
 
 .project-page .featured-projects  .content .featured-projects-carousel .splide__slide.is-active {
-    width: 960px !important;
-    height: 355px !important;
+    width: 320px !important;
+    height: 450px !important;
 }
+
 
 .project-page .featured-projects  .content .featured-projects-carousel .splide__track {
-    height: 500px !important;
+    height: 540px !important;
 }
 
+.project-page .featured-projects  .content .featured-projects-carousel .splide__pagination {
+    bottom: -30px;
+} 
 
 
 /***************************

@@ -55,7 +55,7 @@ export default function ProjectCard(props:IProjectCard){
                 description={props.data.description}
                 mainTechnologies={props.data.mainTechnologies}
             />
-      </Show>
+       </Show>
     );
 }
 
@@ -99,6 +99,41 @@ function ProjectCardHorizontal(props:IProjectCardData) {
 function ProjectCardVertical(props:IProjectCardData){
     return (
         <A href={props.url? props.url : "#"} class={`project-card-vertical ${props.theme?.theme}`}>
+            <div class="img_content">
+                <img src={props.img} alt="" elementtiming={""} fetchpriority={"high"} />
+            </div>
+            <div class="project-content">
+                <div class="info">
+                    <h1>{props.title}</h1>
+                    <time>{props.date}</time>
+                    <p>{props.description}</p>
+                    <div class="technologies">
+                        <For each={props.mainTechnologies} fallback={<>error while loading the card</>}>
+                            {(tecnologie, index)=>(
+                                <div class="technologie" title={tecnologie.name} 
+                                    style={{right: `${(index()+1.5) * 30}px`, "z-index": 2}}
+                                >
+                                    {
+                                        tecnologie.type === "icon" ? 
+                                        <i class={tecnologie.icon}></i>
+                                        : <img src={tecnologie.icon} alt={tecnologie.name} elementtiming={''} fetchpriority={'auto'} />
+                                    }
+                                </div>
+                            )}
+                        </For>
+                        <div class="technologie more" title={translate("more")}>
+                            <i class="ri-add-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </A>
+    )
+}
+
+
+/**
+ *     <A href={props.url? props.url : "#"} class={`project-card-vertical ${props.theme?.theme}`}>
             <div class="card-image">
                 <img src={props.img} alt="" elementtiming={''} fetchpriority={'high'} />
             </div>
@@ -130,8 +165,6 @@ function ProjectCardVertical(props:IProjectCardData){
                 </div>
             </div>
         </A>
-    )
-}
-
-
-
+ * 
+ * 
+ */

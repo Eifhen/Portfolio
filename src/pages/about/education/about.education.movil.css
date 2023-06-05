@@ -1,0 +1,16 @@
+
+
+@media(max-width: 1100px) {
+
+    .about-page .education .grid-container {
+        width: 80vw;
+    }
+
+    .about-page .education .grid-container .content {
+        grid-area: info;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 3rem;
+    }
+}

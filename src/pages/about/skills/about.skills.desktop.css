@@ -1,0 +1,78 @@
+
+
+.about-page .about-skills {
+    grid-area: skills;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        150px
+        min-content
+    ;
+
+    grid-template-areas: 
+        "skills_title"
+        "skills_content"
+    ;
+}
+
+.about-page.light .about-skills {
+    background-color: var(--whiteEE);
+}
+
+.about-page.dark .about-skills {
+    background-color: var(--dark0F);
+}
+
+/**********************
+    Skills Title
+***********************/
+.about-page .about-skills .skills_title {
+    grid-area: skills_title;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-page .about-skills .skills_title h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+}
+
+.about-page .about-skills .skills_title p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+}
+
+.about-page.light .about-skills .skills_title p {
+    color: var(--gray);
+}
+
+.about-page .about-skills .skills_title .underline {
+    width: 110px;
+    height: 16px;
+    margin-top: 0.4rem;
+}
+
+.about-page .about-skills .skills_title .underline:after {
+    content: none;
+ 
+  }
+
+/**********************
+    Skills Content
+***********************/
+.about-page .about-skills .skills_content {
+    grid-area: skills_content;
+  
+}
+
+

@@ -17,7 +17,6 @@ export interface ISkillsData {
 
 export interface ISkillData {
     title: string;
-    img: string;
     icon: string;
     type: "icon" | "img";
     description: string;
@@ -36,56 +35,48 @@ export const SkillsData: ISkillsDataManager = {
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-html5-fill color-orange",
-                    img: ""
                 },
                 {
                     title: "CSS",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-css3-fill color-blue",
-                    img: ""
                 },
                 {
                     title: "Bootstrap",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-bootstrap-fill color-purple",
-                    img: ""
                 },
                 {
                     title: "JavaScript",
-                    type: "icon",
+                    type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.JavaScript
+                    icon: Images.tecnologies.javascript_icon,
                 },
                 {
                     title: "TypeScript",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.TypeScript
+                    icon: Images.tecnologies.typescript_icon,
                 },
                 {
                     title: "React",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-reactjs-line color-react",
-                    img: ""
                 },
                 {
                     title: "SolidJS",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.Solidjs
+                    icon: Images.tecnologies.solidjs_icon,
                 },
                 {
                     title: "Jquery",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.JQUERY_ICON
+                    icon: Images.tecnologies.jquery_icon,
                 },
           
             ]
@@ -98,64 +89,55 @@ export const SkillsData: ISkillsDataManager = {
                     title: "C#",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.C_ICON
+                    icon: Images.tecnologies.c_icon,
                 },
                 {
                     title: "ASP.Net",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.ASP_ICON
+                    icon: Images.tecnologies.asp_icon,
                 },
                 {
                     title: "Entity Framework",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.EF_ICON
+                    icon: Images.tecnologies.ef_icon,
                 },
                 {
                     title: "SignalR.",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.SIGNALR_ICON
+                    icon: Images.tecnologies.signalr_icon,
                 },
                 {
                     title: "SendGrid",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.SENDGRID_ICON
+                    icon: Images.tecnologies.sendgrid_icon,
                 },
                 {
                     title: "PHP",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "ri-github-fill",
-                    img: Images.PHP
+                    icon: Images.tecnologies.php_icon,
                 },
                 {
                     title: "SQL",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.SQL
+                    icon: Images.tecnologies.sql_icon,
                 },
                 {
                     title: "MySql",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.MySql
+                    icon: Images.tecnologies.mysql_icon,
                 },
                 {
                     title: "Git",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-github-fill",
-                    img: ""
                 },        
             ]
         },
@@ -167,15 +149,13 @@ export const SkillsData: ISkillsDataManager = {
                     title: "Figma",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.FigmaBlack
+                    icon: Images.tecnologies.figma_black_icon,
                 },
                 {
                     title: "Canva",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.Canva
+                    icon: Images.tecnologies.canva_icon,
                 },
             ]
         }
@@ -191,57 +171,50 @@ export const SkillsData: ISkillsDataManager = {
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-html5-fill color-orange",
-                    img: ""
                 },
                 {
                     title: "CSS",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-css3-fill color-blue",
-                    img: ""
                 },
                 {
                     title: "Bootstrap",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-bootstrap-fill color-purple",
-                    img: ""
                 },
                 {
                     title: "JavaScript",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "ri-javascript-fill color-yellow",
-                    img: Images.JavaScript
+                    icon: Images.tecnologies.javascript_icon,
                 },
                 {
                     title: "TypeScript",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.TypeScript
+                    icon: Images.tecnologies.typescript_icon,
                 },
                 {
                     title: "React",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-reactjs-line color-react",
-                    img: ""
                 },
                 {
                     title: "SolidJS",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.Solidjs
+                    icon: Images.tecnologies.solidjs_icon,
                 },
                 {
                     title: "Jquery",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.JQUERY_ICON
+                    icon: Images.tecnologies.jquery_icon,
                 },
+          
             ]
         },
         {
@@ -252,66 +225,56 @@ export const SkillsData: ISkillsDataManager = {
                     title: "C#",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.C_ICON
+                    icon: Images.tecnologies.c_icon,
                 },
                 {
                     title: "ASP.Net",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.ASP_ICON
+                    icon: Images.tecnologies.asp_icon,
                 },
                 {
                     title: "Entity Framework",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.EF_ICON
+                    icon: Images.tecnologies.ef_icon,
                 },
                 {
                     title: "SignalR.",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.SIGNALR_ICON
+                    icon: Images.tecnologies.signalr_icon,
                 },
                 {
                     title: "SendGrid",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.SENDGRID_ICON
+                    icon: Images.tecnologies.sendgrid_icon,
                 },
                 {
                     title: "PHP",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "ri-github-fill",
-                    img: Images.PHP
+                    icon: Images.tecnologies.php_icon,
                 },
                 {
                     title: "SQL",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.SQL
+                    icon: Images.tecnologies.sql_icon,
                 },
                 {
                     title: "MySql",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.MySql
+                    icon: Images.tecnologies.mysql_icon,
                 },
                 {
                     title: "Git",
                     type: "icon",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: "ri-github-fill",
-                    img: ""
-                },
-               
+                },        
             ]
         },
         {
@@ -322,15 +285,13 @@ export const SkillsData: ISkillsDataManager = {
                     title: "Figma",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.FigmaBlack
+                    icon: Images.tecnologies.figma_black_icon,
                 },
                 {
                     title: "Canva",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: "",
-                    img: Images.Canva
+                    icon: Images.tecnologies.canva_icon,
                 },
             ]
         }
