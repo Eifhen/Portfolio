@@ -43,10 +43,11 @@ export default function FeaturedProjects (props: IFeaturedProps) {
     const sliderOptions = {
         slider_id:"slider_featured_projects", 
         perPage:3, 
-        gap:"2rem",
         startIndex: 0,
         type:"loop",
         rewind: false,
+        gap:"2rem",
+        movilGap: "2rem",
     }
 
     return (

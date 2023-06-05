@@ -15,6 +15,7 @@ export interface ISliderOptions {
     slider_id:string,
     perPage?: number,
     gap?: string,
+    movilGap?: string,
     startIndex?:number,
     type?: string;
     rewind: boolean
@@ -60,10 +61,11 @@ function RenderSlider (props:ISliderOptions, setSlider: Setter<Splide>) {
             640: {
                 perPage:2,
                 arrows: false,
+                gap: props.movilGap? props.movilGap : props.gap,
             },
             460: {
                 perPage:1,
-                gap: "1rem",
+                gap: props.movilGap? props.movilGap : props.gap,
             }
         }
     }))
