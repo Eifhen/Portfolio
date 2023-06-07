@@ -2,7 +2,14 @@
 
 .about-page .about-portfolio {
     grid-area: about_portfolio;
+}
+
+.about-page.light .about-portfolio {
     background-color: var(--whiteEE);
+}
+
+.about-page.dark .about-portfolio {
+    background-color: var(--dark0F);
 }
 
 .about-page .about-portfolio .about-portfolio-content {

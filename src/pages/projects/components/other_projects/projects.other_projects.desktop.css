@@ -5,11 +5,13 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 
-        200px
-        minmax(700px, auto)
+        auto
+        130px
+        minmax(400px, auto)
         300px
     ;
     grid-template-areas: 
+        "init_wave"
         "header"
         "other_projects"
         "other_project_wave"
@@ -25,6 +27,11 @@
     background-color: var(--whiteF5);
 }
 
+.project-page .other-projects .other-projects-init-wave {
+    grid-area: init_wave;
+
+}
+
 /*******************************
     Title
 ********************************/
@@ -32,7 +39,10 @@
 .project-page .other-projects header {
     grid-area: header;
     display:flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding: 0;
 }
 
 .project-page .other-projects header .title {

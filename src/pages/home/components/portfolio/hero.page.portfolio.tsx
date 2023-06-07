@@ -30,8 +30,8 @@ export default function Portfolio (props:IPortfolio) {
                         <div class="underline"></div>
                     </div>
                     <div class="links">
-                        <A href="#">{translate("see-all-projects")}</A>
-                        <A href="#">{translate("web-designs")}</A>
+                        <A href="/projects">{translate("see-all-projects")}</A>
+                        <A href="/templates">{translate("web-designs")}</A>
                     </div>
                 </div>
                 <div class="projects">

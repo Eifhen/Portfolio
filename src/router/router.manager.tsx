@@ -9,6 +9,8 @@ import ProjectPage from '../pages/projects/projects.page';
 import ProjectDetailPage from '../pages/projects_detail/project_detail.page';
 import ErrorPage from '../pages/error/error.page';
 import AboutPage from '../pages/about/about.page';
+import TemplatesPage from '../pages/templates/templates.page';
+import TemplateDetailPage from '../pages/templates_detail/templates_detail';
 
 export default function RouterManager(){
 
@@ -28,12 +30,20 @@ export default function RouterManager(){
                     <Route path="/" component={ TestPage }/>
                 </Route>
 
+                <Route path="/projects" component={ Layout }>
+                    <Route path="/" component={ ProjectPage }/>
+                </Route>
+
                 <Route path="/projects/detail/:id/:project-name" component={ Layout }>
                     <Route path="/" component={ ProjectDetailPage }/>
                 </Route>
 
-                <Route path="/projects" component={ Layout }>
-                    <Route path="/" component={ ProjectPage }/>
+                <Route path="/templates" component={ Layout }>
+                    <Route path="/" component={ TemplatesPage }/>
+                </Route>
+
+                <Route path="/templates/detail/:id/:template-name" component={ Layout }>
+                    <Route path="/" component={ TemplateDetailPage }/>
                 </Route>
 
                 <Route path="/about" component={ Layout }>

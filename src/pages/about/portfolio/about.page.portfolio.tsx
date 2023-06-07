@@ -16,7 +16,7 @@ export default function AboutPortfolio(props: IAboutPortfolio){
 
     const renderItem = (type:string, icon:string) => {
         if(type == "img"){
-            return <img src={ icon } alt="" elementtiming={''} fetchpriority={'high'} />
+            return <img src={ icon } alt=""  />
         }
         return <i class={ icon }></i>
     }

@@ -11,11 +11,19 @@
     width: 100%;
 }
 
+.wave.reverse {
+    transform: rotate(180deg);
+}
+
 /*********************
     Wave White
 **********************/
 .wave.white svg {
     fill: white !important;
+}
+
+.wave.white.dark svg {
+    fill: var(--dark1E) !important;
 }
 
 /*********************

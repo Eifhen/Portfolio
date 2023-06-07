@@ -1,18 +1,19 @@
-import { Navigate,useBeforeLeave,useParams } from '@solidjs/router';
-import './project_detail.dekstop.css';
-import useAplicationContext from '../../context/aplication.context';
-import ProjectDetailHero from './components/hero/project_detail.hero';
-import ProjectDetailAbout from './components/about/project_detail.about';
-import ProjectDetailTechnologies from './components/technologies/project_detail.page.technologies';
-import ProjectDetailReferences from './components/references/project_detail.page.references';
-import ProjectDetailOtherProjects from './components/other_projects/project_detail.other_projects';
-import useProjectData from '../../hooks/useProjects';
-import { createComputed, createEffect, createSignal } from 'solid-js';
-import { scrollTop } from '../../hooks/scrollSmooth';
+import { Navigate, useBeforeLeave, useParams } from "@solidjs/router";
+import useAplicationContext from "../../context/aplication.context";
+import { createComputed, createEffect, createSignal } from "solid-js";
+import useProjectData from "../../hooks/useProjects";
+import { scrollTop } from "../../hooks/scrollSmooth";
+import ProjectDetailHero from "../projects_detail/components/hero/project_detail.hero";
+import ProjectDetailAbout from "../projects_detail/components/about/project_detail.about";
+import ProjectDetailTechnologies from "../projects_detail/components/technologies/project_detail.page.technologies";
+import ProjectDetailReferences from "../projects_detail/components/references/project_detail.page.references";
+import ProjectDetailOtherProjects from "../projects_detail/components/other_projects/project_detail.other_projects";
+import '../projects_detail/project_detail.dekstop.css';
 
 
-export default function ProjectDetailPage (){
-  
+
+
+export default function TemplateDetailPage () {
     const context = useAplicationContext();
     const params = useParams<{ id:string }>();
     const [lenguage, setLenguage] = createSignal(context.lenguageManager.lenguageStore.lenguage);
@@ -21,7 +22,7 @@ export default function ProjectDetailPage (){
     const {project, other_projects} = useProjectData({
         lenguage,
         number_of_items: 3,
-        type: "projects"
+        type: "designs"
     })
 
     if(project === null || project === undefined) {
@@ -68,7 +69,7 @@ export default function ProjectDetailPage (){
            />
 
             <ProjectDetailOtherProjects 
-                type="projects"
+                type="templates"
                 data={ other_projects() }
                 theme={ context.themeManager.themeStore } 
             />

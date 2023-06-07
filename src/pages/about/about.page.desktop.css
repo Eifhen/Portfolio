@@ -3,7 +3,6 @@
     grid-template-columns: 100%;
     grid-template-rows: 
         minmax(500px, auto)
-        minmax(300px, auto)
         minmax(400px, auto)
         minmax(400px, auto)
         minmax(70vh, auto)
@@ -11,7 +10,6 @@
     ;
     grid-template-areas: 
         "hero"
-        "hobbies"
         "education"
         "work"
         "skills"
@@ -25,7 +23,6 @@
         grid-template-columns: 100%;
         grid-template-rows: 
             minmax(500px, auto)
-            minmax(300px, auto)
             minmax(400px, auto)
             minmax(400px, auto)
             minmax(70vh, auto)
@@ -33,7 +30,6 @@
         ;
         grid-template-areas: 
             "hero"
-            "hobbies"
             "education"
             "work"
             "skills"

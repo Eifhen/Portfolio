@@ -74,21 +74,23 @@ function ProjectCardHorizontal(props:IProjectCardData) {
                     </div>
                 </div>
                 <div class="technologies">
-                    <For each={props.mainTechnologies} fallback={<>error while loading the card</>}>
-                        {(tecnologie, index)=>(
-                            <div class="technologie" title={tecnologie.name} 
-                                style={{right: `${(index()+1) * 30}px`, "z-index": 2}}
-                            >
-                                {
-                                    tecnologie.type === "icon" ? 
-                                    <i class={tecnologie.icon}></i>
-                                    : <img src={tecnologie.icon} alt={tecnologie.name}  />
-                                }
-                            </div>
-                        )}
-                    </For>
-                    <div class="technologie more" title={translate("more")}>
-                        <i class="ri-add-line"></i>
+                    <div class="tech-wrapper">
+                        <For each={props.mainTechnologies} fallback={<>error while loading the card</>}>
+                            {(tecnologie, index)=>(
+                                <div class="technologie" title={tecnologie.name} 
+                                    style={{right: `${(index()+1) * 27}px`, "z-index": 2}}
+                                >
+                                    {
+                                        tecnologie.type === "icon" ? 
+                                        <i class={tecnologie.icon}></i>
+                                        : <img src={tecnologie.icon} alt={tecnologie.name}  />
+                                    }
+                                </div>
+                            )}
+                        </For>
+                        <div class="technologie-more" title={translate("more")}>
+                            <i class="ri-add-line"></i>
+                        </div>
                     </div>
                 </div>
             </div>

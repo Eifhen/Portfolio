@@ -30,8 +30,8 @@
         font-style: normal;
         font-weight: 300;
         font-size: 32px;
-        line-height: 70px;
-    
+        line-height: 40px;
+        margin-bottom: 1rem;
     }
     
     .project-page .header .content .info p {

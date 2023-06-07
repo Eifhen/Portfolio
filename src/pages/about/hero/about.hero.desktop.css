@@ -5,15 +5,15 @@
 
 .about-page .hero .grid-container {
     display: flex;
+  
 }
 
 .about-page .hero .grid-container .description {
     width: 50%;
     height: 500px;
-    
     display:flex;
     flex-direction: column;
-    padding-top: 4rem;
+    padding-top: 4.3rem;
     gap: 0.8rem;
 }
 
@@ -25,11 +25,43 @@
     padding:0 !important;
 }
 
+.about-page .hero .grid-container .description header small {
+    background-color: black;
+    color: white;
+    padding: 0.1rem 0.4rem;
+    width: 130px;
+    display: block;
+    font-family: var(--Nunito);
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.8rem;
+}
+
+.about-page.dark .hero .grid-container .description header small {
+    background-color: var(--pure);
+    color: black;
+}
+
+
+.about-page .hero .grid-container .description header h2 {
+    font-family: var(--Roboto);
+    font-weight: 500;
+    color: var(--gray);
+    line-height: 20px;
+    letter-spacing: 0.1em; 
+    margin-bottom: 0.4rem;
+}
+
+.about-page.dark .hero .grid-container .description header h2 {
+    color: var(--gray);
+}
+
+
 .about-page .hero .grid-container .description header h1 {
     font-family: var(--Roboto);
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 700;
+    font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.1em;
 }
@@ -37,6 +69,7 @@
 .about-page .hero .grid-container .description header .underline {
     margin-top: 0.4rem !important;
 }
+
 
 .about-page .hero .grid-container .description .info p {
     margin-top: 1rem;
@@ -49,8 +82,36 @@
 }
 
 .about-page.light .hero .grid-container .description .info p {
-    color: var(--dark37);
+    color: black !important;
 }
+
+
+.about-page .hero .grid-container .description .offers {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.about-page .hero .grid-container .description .offers .offer-item {
+    width: 33%;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-page .hero .grid-container .description .offers .offer-item i {
+    font-size: 32px;
+}
+
+.about-page .hero .grid-container .description .offers .offer-item span {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+}
+
 
 /*********************************
     User Image

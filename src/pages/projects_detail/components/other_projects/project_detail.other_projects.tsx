@@ -14,6 +14,7 @@ import GeneralWave from "../../../../components/wave/general-wave.component";
 interface IOtherProjects {
     data: IProjectData[];
     theme: ITheme;
+    type: "templates" | "projects";
 }
 
 export default function ProjectDetailOtherProjects(props:IOtherProjects){
@@ -32,7 +33,7 @@ export default function ProjectDetailOtherProjects(props:IOtherProjects){
                     <For each={props.data}>
                      {(item)=>(
                         <ProjectCard
-                            url={`/projects/detail/${item.id}/${urlName(item.title)}`}
+                            url={`/${props.type}/detail/${item.id}/${urlName(item.title)}`}
                             type='horizontal'
                             theme={props.theme}
                             data={item}
@@ -41,7 +42,7 @@ export default function ProjectDetailOtherProjects(props:IOtherProjects){
                     </For>
                 </div>
                 <div class="view__more">
-                    <A class="btn btn-view-more" href="/projects">
+                    <A class="btn btn-view-more" href={`/${props.type}`}>
                         {translate("view-all")}
                     </A>
                 </div>

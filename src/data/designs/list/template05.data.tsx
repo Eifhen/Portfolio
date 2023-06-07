@@ -13,7 +13,7 @@ export const Template05EN: IProjectData =  {
     description: "basic template for the home screen of an application for a water park",
     date: "12 / 09 / 2022",
     img:Images.designs.template05.cover,
-    highlighted: true,
+    highlighted: false,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
@@ -65,7 +65,7 @@ export const Template05ES: IProjectData =  {
     description: "Template básico para la pantalla de inicio de una aplicación para un parque aquatico",
     date: "12 / 09 / 2022",
     img: Images.designs.template05.cover,
-    highlighted: true,
+    highlighted: false,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },

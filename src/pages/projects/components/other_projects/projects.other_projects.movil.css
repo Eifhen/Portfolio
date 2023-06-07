@@ -8,11 +8,13 @@
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 
+            auto
             200px
             minmax(700px, auto)
             200px
         ;
         grid-template-areas: 
+            "init_wave"
             "header"
             "other_projects"
             "other_project_wave"
@@ -34,4 +36,25 @@
         gap: 1rem;
         row-gap: 2rem;
     }
+}
+
+@media(max-width: 600px) {
+    .project-page .other-projects {
+        grid-area: other__projects;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            auto
+            130px
+            minmax(700px, auto)
+            200px
+        ;
+        grid-template-areas: 
+            "init_wave"
+            "header"
+            "other_projects"
+            "other_project_wave"
+        ;
+    }
+
 }

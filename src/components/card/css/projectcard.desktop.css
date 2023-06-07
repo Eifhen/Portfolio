@@ -82,17 +82,18 @@
 }
 
 .project-card .mask .info .date {
-    width: 58%;
-    color:white;
-    padding: 0.3rem;
+    min-width: 100px;
+    max-width: 55%;
+    padding: 0.5rem 0rem;
     border-radius: 50px;
-    background-color: var(--dark11);
+    color:white;
+    background-color: black;
     text-align: center;
     font-style: normal;
-    font-weight: 400;
-    font-size: 11px;
+    font-weight: 800;
+    font-size: 12px;
     line-height: 12px;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     font-family: var(--Roboto);
     box-shadow: var(--shadow);
     transition: background-color 500ms ease-in-out;
@@ -125,21 +126,41 @@
 
 .project-card:hover .mask .info .description {
     grid-template-rows: 1fr;
-    padding: 1rem 0rem;
+    padding: 1rem 0rem 1.5rem 0rem;
 }
 
+/*******************************
+    Technologies
+********************************/
 
 .project-card .mask .technologies {
     position:absolute;
-    bottom: 10px;
-    right: 15px;
+    bottom: 0px;
+    right: 0px;
     display:flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: flex-start;
+    width: 42%;
+    height: 45px;
+    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    background-color: white;
 }
 
-.project-card .mask .technologies .technologie {
-    width: 38px;
-    height: 38px;
+.project-card .mask .technologies .tech-wrapper {
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-right-radius: 35px;
+    width: 90%;
+    height: 100%;
+   
+}
+
+.project-card .mask .technologies .tech-wrapper .technologie {
+    width: 32px;
+    height: 32px;
     background-color: white;
     border-radius: 50px;
     display:flex;
@@ -148,18 +169,28 @@
     font-size: 24px;
     font-weight: normal;
     position: absolute;
-    top: -35px !important;
     border: 3px solid var(--dark1F2);
-    box-shadow: var(--shadow-bright);
 }
 
-.project-card .mask .technologies .technologie img {
+.project-card .mask .technologies .tech-wrapper .technologie img {
     object-fit: cover;
     object-position: center;
     padding: 0.1rem;
 }
 
-.project-card .mask .technologies .technologie.more {
+.project-card .mask .technologies .tech-wrapper .technologie-more {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: normal;
+    position: absolute;
+
+    border: 3px solid var(--dark1F2);
     background-color: var(--pure);
     color: var(--dark37) !important;
+    right: 0;
 }

@@ -11,6 +11,8 @@ import './hero.movil.css';
 import { IServicesData } from '../../../../data/services/services.data';
 import MyServices from '../../../../components/services/services.component';
 import Wave from '../../../../components/wave/wave.component';
+import DownloadCV from '../../../../hooks/download-cv.hook';
+import { A } from '@solidjs/router';
 
 
 interface IHero {
@@ -59,7 +61,7 @@ function HeroDesktop (props: IHero) {
                             <h2>Gabriel Jiménez</h2>
                             <h3 class="job">FullStack Software Developer</h3>
                             <p>{translate('take-a-look')}</p>
-                            <button class="btn btn-download">{translate("download-cv")}</button>
+                            <A href={DownloadCV()} class="btn btn-download">{translate("download-cv")}</A>
                         </div>
                     </div>
                 </div>
@@ -86,11 +88,11 @@ function HeroMovil (props: IHero) {
             <div class="hero-movil-container">
                 <div class="intro">
                 <div class='intro-wrapper'>
-                        <h3>{translate('hi-im').toUpperCase()}</h3>
-                        <h2>Gabriel Jiménez</h2>
-                        <h3 class="job">FullStack Software Developer</h3>
-                        <p>{translate('take-a-look')}</p>
-                        <button class="btn btn-download">{translate("download-cv")}</button>
+                    <h3>{translate('hi-im').toUpperCase()}</h3>
+                    <h2>Gabriel Jiménez</h2>
+                    <h3 class="job">FullStack Software Developer</h3>
+                    <p>{translate('take-a-look')}</p>
+                    <A href={DownloadCV()} class="btn btn-download">{translate("download-cv")}</A>
                 </div>
                 </div>
                 <div class="media">

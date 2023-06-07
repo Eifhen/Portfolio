@@ -8,12 +8,14 @@ import './projects.other_projects.movil.css';
 import ProjectCard from "../../../../components/card/projectcard.component";
 import Wave from "../../../../components/wave/wave.component";
 import useProjectNameHook from "../../../../hooks/project-name.hook";
+import GeneralWave from "../../../../components/wave/general-wave.component";
 
 
 interface IOtherProjects {
     data: IProjectData[];
     theme: ITheme;
     lenguage: ILenguage;
+    title: string;
 }
 
 
@@ -22,10 +24,13 @@ export default function OtherProjects (props:IOtherProjects){
     
     return (
         <div class={`other-projects ${props.theme.theme}`}>
+            <div class="other-projects-init-wave">
+                <GeneralWave reverse={true} waveColor="white" allowTheme={true} theme={props.theme} />
+            </div>
             <header>
                 <div class="title">
                     <p>{ translate("other") }</p>
-                    <h2>{ translate("projects") }</h2>
+                    <h2>{ translate(props.title) }</h2>
                     <div class="underline"></div>
                 </div>
             </header>

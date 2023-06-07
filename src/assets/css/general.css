@@ -122,6 +122,21 @@ ul { list-style: none;}
   background-color: transparent;
 }
 
+small {
+  font-size: 16px;
+}
+
+span {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
 
 /********************************
     Others
@@ -200,6 +215,11 @@ ul { list-style: none;}
   ;
   z-index: 1;
   pointer-events: none;
+  position: relative;
+}
+
+.general-wave.reverse  {
+ transform: rotate(180deg);
 }
 
 .general-wave .t-wave {
@@ -207,6 +227,7 @@ ul { list-style: none;}
   display:flex;
   align-items: flex-end;
   z-index: 1;
+
 }
 
 .general-wave .t-wave > * {
@@ -350,3 +371,10 @@ ul { list-style: none;}
 }
 
 
+.card-container {
+  /* width: 280px !important;
+  height: 400px !important; */
+  border-radius: 35px;
+  width: 320px !important;
+  height: 450px !important;
+}

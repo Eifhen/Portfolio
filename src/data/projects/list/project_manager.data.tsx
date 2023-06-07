@@ -51,7 +51,7 @@ export const ProductManagerEN: IProjectData =  {
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://product-manager3131.netlify.app/home",
+                link: "https://product-manager3131.netlify.app",
                 type: "icon",
             }
         ],
@@ -158,7 +158,7 @@ export const ProductManagerES: IProjectData =  {
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://product-manager3131.netlify.app/home",
+                link: "https://product-manager3131.netlify.app",
                 type: "icon",
             }
         ],

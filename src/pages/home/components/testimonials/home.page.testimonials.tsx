@@ -7,6 +7,7 @@ import './testimonials.desktop.css';
 import './testimonials.movil.css';
 import translate from "../../../../hooks/translate.hook";
 import Wave from '../../../../components/wave/wave.component';
+import { ISliderOptions } from "../../../../hooks/slider.hook";
 
 
 interface ITestimonials {
@@ -15,6 +16,16 @@ interface ITestimonials {
 }
 
 export default function Testimonials (props:ITestimonials) {
+
+    const options: ISliderOptions = {
+        slider_id:"slider_testimonials", 
+        perPage:3, 
+        rewind: true,
+        gap: "3rem",
+        movilGap: "2rem",
+    
+    }
+
     return (
         <div class={`testimonials ${props.theme.theme}`}>
             <div class="content">
@@ -25,7 +36,7 @@ export default function Testimonials (props:ITestimonials) {
                 </div>
                 <div class="testimonials-carousel">
                     <div class="overflow">
-                        <Carousel options={{slider_id:"slider_testimonials", perPage:3, rewind: true}}>
+                        <Carousel options={options}>
                             <For each={props.data}>
                                 {(item)=> (
                                     <CarouselItem>

@@ -18,12 +18,14 @@ export default function ProjectPage () {
             <ProjectHeader />
 
             <FeaturedProjects  
+                title="projects"
                 data={ featured_projects() } 
                 theme={ context.themeManager.themeStore } 
                 lenguage={context.lenguageManager.lenguageStore } 
             />
 
             <OtherProjects 
+                title="projects"
                 data={ other_projects() } 
                 theme={context.themeManager.themeStore} 
                 lenguage={context.lenguageManager.lenguageStore} 

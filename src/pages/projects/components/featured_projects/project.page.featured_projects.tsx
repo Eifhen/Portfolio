@@ -14,13 +14,12 @@ import useProjectNameHook from '../../../../hooks/project-name.hook';
 
 
 
-interface IFeaturedProps {
+export interface IFeaturedProps {
     data: IProjectData[];
     theme: ITheme;
     lenguage: ILenguage;
-    
+    title: string;
 }
-
 
 
 export default function FeaturedProjects (props: IFeaturedProps) {
@@ -28,7 +27,7 @@ export default function FeaturedProjects (props: IFeaturedProps) {
     
     const subtitle = () => {
         if(props.lenguage.lenguage == "ES"){
-            return translate("projects");
+            return translate(props.title);
         }
         return translate("featured");
     }
@@ -37,7 +36,7 @@ export default function FeaturedProjects (props: IFeaturedProps) {
         if(props.lenguage.lenguage == "ES"){
             return translate("featured");
         }
-        return translate("projects");
+        return translate(props.title);
     }
 
     const sliderOptions = {
@@ -76,12 +75,6 @@ export default function FeaturedProjects (props: IFeaturedProps) {
                         </For>
                     </Carousel>
 
-                    <div class="featured-project-wave">
-                        <div class="t-wave">
-                            <Wave waveColor="gray" allowTheme={true} theme={props.theme} />
-                        </div>
-                        <div class="t-space"></div>
-                    </div>
                 </div>
             </div>
         </div>

@@ -57,4 +57,7 @@ export const lenguageDataEN:ILenguageData = {
     "skills": "Skill-Set",
     "my-main-technologies": "My main technologies",
     "about-this-portfolio": "About this Portfolio",
+    "my-templates-&-designs": "My Templates & Designs",
+    "templates-intro": "On this page you will find the most relevant designs and templates that I have made.",
+    "designs": "Designs",
 }

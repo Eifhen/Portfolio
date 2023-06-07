@@ -5,11 +5,12 @@ export interface IWave {
     waveColor: 'gray' | 'black' | 'white' | 'whiteEE';
     theme: ITheme;
     allowTheme: boolean;
+    reverse?: boolean;
 }
 
 export default function Wave (props:IWave) {
     return (
-        <div class={`wave ${props.waveColor}`} classList={{[props.theme.theme]:props.allowTheme}}>
+        <div class={`wave ${props.waveColor}`} classList={{[props.theme.theme]:props.allowTheme, "reverse": props.reverse}}>
             <svg  viewBox="0 0 1200 157" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M-9 60.7618L31.4 71.4618C71.8 81.7618 152.6 103.762 233.4 
                 103.462C314.2 103.762 395 81.7618 475.8 

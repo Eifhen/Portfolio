@@ -2,9 +2,11 @@ import { Accessor } from "solid-js";
 import { ProjectData } from "../data/projects/project.data";
 import { IProjectData } from "../data/projects/project.data.interfaces";
 import { useParams } from "@solidjs/router";
+import { DesignsAndThemplatesData } from "../data/designs/designs.data";
 
 
 interface IUseProjectDataProps{
+    type: "designs" | "projects";
     lenguage: Accessor<string>;
     number_of_items?: number; // numero de items a retornar por la función otherProjects
 }
@@ -18,13 +20,24 @@ interface IUseProjectData {
 export default function useProjectData(props:IUseProjectDataProps) : IUseProjectData{
     const params = useParams<{ id:string }>();
     const number_of_items = props.number_of_items;
-    const data = ()=> ProjectData[props.lenguage()];
+    const data = ()=> getData(props.type, props.lenguage());
     
     return {
         data: ()=> data(),
         project: ()=> getProjectByID(data(), Number(params.id)),
         other_projects: ()=> otherProjects(data(), Number(params.id), number_of_items)
     }
+}
+
+const getData = (type:string, lenguage:string) : Array<IProjectData> => {
+    if(type=="projects"){
+        return ProjectData[lenguage];
+    }
+    if(type=="designs"){
+        return DesignsAndThemplatesData[lenguage];
+    }
+
+    return [];
 }
 
 function getProjectByID(data:IProjectData[], id:number = 0){

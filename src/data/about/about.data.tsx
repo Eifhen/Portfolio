@@ -7,11 +7,23 @@ export interface IAboutDataManagement {
 }
 
 export interface IAboutData {
-    title:string;
-    description: string[];
+    hero: IAboutHero;
     education: IEducationAndWork;
     workExpirience: IEducationAndWork;
     portfolio: IAboutPortfolioData;
+}
+
+export interface IAboutHero {
+    pageTitle: string;
+    title:string;
+    subtitle:string;
+    description: string[];
+    offerts: IAboutHeroOffers[];
+}
+
+export interface IAboutHeroOffers {
+    icon: string;
+    title: string;
 }
 
 export interface IEducationAndWork {
@@ -56,16 +68,31 @@ export interface IAboutPortfolioLinks {
 
 export const AboutData:IAboutDataManagement = {
     EN:{
-        title: "About Me",
-        description: [
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud.`,
-
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud.`,
-        ],
+        hero: {
+            pageTitle: "About Me",
+            subtitle: "Why Hire Me For Your",
+            title: "Next Project",
+            description: [
+                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud.`,
+            ],
+            offerts: [
+                {
+                    title: "Good Design",
+                    icon: "ri-palette-fill",
+                },
+                {
+                    title: "Fine Tuning",
+                    icon: "ri-compasses-2-line",
+                },
+                {
+                    title: "Save Time",
+                    icon: "ri-timer-2-line"
+                }
+            ]
+            
+        },
 
         education: {
             title: "Education",
@@ -189,16 +216,33 @@ export const AboutData:IAboutDataManagement = {
     },
 
     ES: {
-        title: "Acerca de mi",
-        description: [
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud.`,
+        hero: {
+            pageTitle: "Acerca de mi",
+            subtitle: "Por qué contratarme para tu",
+            title: "Próximo Proyecto",
 
-            `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud.`,
-        ],
+            description: [
+                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud.`,
+            ],
+
+            offerts: [
+                {
+                    title: "Buen Diseño",
+                    icon: "ri-palette-fill",
+                },
+                {
+                    title: "Ajuste Fino",
+                    icon: "ri-compasses-2-line",
+                },
+                {
+                    title: "Tiempo",
+                    icon: "ri-timer-2-line"
+                }
+            ]
+            
+        },
 
         education: {
             title: "Educación",
