@@ -42,7 +42,9 @@
 @media(max-width: 600px){
     
     .project-page .featured-projects  .content .featured-projects-carousel .splide__track {
-        height: 650px !important;
+        height: auto !important;
+        padding-top: 2rem;
+       
     }
 
     .project-page .featured-projects  .content .featured-projects-carousel .splide__slide {
