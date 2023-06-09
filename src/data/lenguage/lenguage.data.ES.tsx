@@ -51,7 +51,10 @@ export const lenguageDataES:ILenguageData = {
     "toast-success-msg": "El formulario fue enviado correctamente.",
     "toast-error-msg": "Completa el formulario correctamente.",
     "my-projects" : "Mis Proyectos",
-    "projects-intro" : "En esta página encontrarás los proyectos, prácticas y trabajos más relevantes que he realizado.",
+    "projects-intro" : `
+        En esta página encontrarás los proyectos, prácticas y 
+        trabajos más relevantes que he realizado.
+    `,
     "featured" : "Destacados",
     "other" : "Otros",
     "main-tech": "Tecnologías principales",
@@ -65,7 +68,10 @@ export const lenguageDataES:ILenguageData = {
     "my-technical-skills": "Habilidades Técnicas",
     "about-this-portfolio": "Sobre este Portafolio",
     "my-templates-&-designs": "Mis Diseños y Plantillas",
-    "templates-intro" : "En esta página encontrarás los diseños y templates más relevantes que he realizado.",
+    "templates-intro" : `
+        En esta página encontrarás los diseños y templates 
+        más relevantes que he realizado.
+    `,
     "designs": "Diseños",
     "qualifications": "Qualificaciones",
     "education-and-experience": "Educación & Experiencia",

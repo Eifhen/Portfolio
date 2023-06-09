@@ -14,7 +14,7 @@ export default function TemplateHeader () {
             </div>
             <div class="info">
                 <h2>{translate("my-templates-&-designs")}</h2>
-                <p>{translate("projects-intro")}</p>
+                <p>{translate("templates-intro")}</p>
             </div>
         </div>
     </div>
