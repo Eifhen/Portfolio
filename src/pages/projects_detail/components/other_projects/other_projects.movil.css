@@ -68,3 +68,14 @@
         padding-top: 2rem;
     } 
 }
+
+@media(max-width: 500px){
+    
+    .project-detail-page .other-projects .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .project-detail-page .other-projects .container .header{
+        padding-left: 1rem;
+    }
+}
