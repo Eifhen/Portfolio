@@ -36,7 +36,7 @@
 .home-page .contact .header h2 {
     font-family: var(--Roboto);
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.1em;
@@ -47,9 +47,9 @@
     font-family: var(--Roboto);
     font-style: normal;
     font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
-    letter-spacing: 0.1em;
+    font-size: 50px;
+    line-height: 73px;
+    letter-spacing: 0.5rem;
     color: var(--pure);
 }
 

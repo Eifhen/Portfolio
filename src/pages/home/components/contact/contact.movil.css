@@ -49,6 +49,28 @@
 
 
 @media (max-width: 500px) {
+    .home-page .contact .header h2 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.1em;
+        color: var(--grayD9);
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+    
+    .home-page .contact .header h1 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 53px;
+        letter-spacing: 0.3rem;
+        color: var(--pure);
+    }
+    
 
     /************************
         Contact-Form

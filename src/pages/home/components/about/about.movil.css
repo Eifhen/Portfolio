@@ -23,7 +23,7 @@
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 25px;
+        line-height: 24px;
         letter-spacing: 0.07em;
         color: var(--dark37);
         width: 90%;
@@ -41,6 +41,18 @@
 
     .home-page .about .content .content--info .interests h2 {
         font-size: 16px;
+    }
+
+    .home-page .about .content .content--info .interests p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.07em;
+        color: var(--dark37);
+        width: 90%;
+        margin-bottom: 1.5rem;
     }
 
     .home-page .about .content .content--info .interests .list .list--item .icon {
@@ -69,7 +81,7 @@
         grid-area: about;
         display:flex;
         justify-content: center;
-        height: 600px;
+        height: 700px;
         padding-top: 0rem;
     }
 
@@ -86,8 +98,8 @@
         display:grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 
-            minmax(35%, auto) 
-            minmax(65%, auto)
+            minmax(30%, auto) 
+            minmax(70%, auto)
         ;
         grid-template-areas: 
             "title title"
@@ -165,6 +177,22 @@
         letter-spacing: 0.2em;
         margin-bottom: 1rem;
     }
+
+    .home-page .about-movil .content .interests p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.07em;
+        color: var(--dark37);
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .home-page.dark .about-movil .content .interests p {
+        color: var(--whiteF5);
+    }
     
     .home-page .about-movil .content .interests .list {
         display: flex;
@@ -192,11 +220,14 @@
         height: 30px;
         width: 30px;
         border-radius: 50%;
-        border: 1px solid var(--dark37);
         font-size: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .home-page.dark .about-movil .content .interests .list .list--item .icon {
+        border: 1px solid var(--dark37);
     }
 
     /********************************************
@@ -230,7 +261,7 @@
         grid-template-rows: 
             minmax(250px, auto) 
             minmax(300px, auto)
-            minmax(300px, auto)
+            minmax(400px, auto)
         ;
         grid-template-areas: 
             "title"
@@ -245,9 +276,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding-left: 1rem;
+        padding: 4rem 0 0 1rem;
         z-index: 2;
-
     }
 
     .home-page .about-movil .content .user--image {
@@ -262,10 +292,13 @@
         padding-left: 1rem;
     }
 
-    .home-page .about-movil .content .title p {
+    .home-page .about-movil .content .title p,
+    .home-page .about-movil .content .interests p {
         width: 90%;
     }
-
+    .home-page .about-movil .content .interests p {
+        margin-bottom: 2rem;
+    }
 
     .home-page .about-movil .content .interests .list .list--item h3 {
         font-family: var(--Nunito);
@@ -280,7 +313,6 @@
         height: 40px;
         width: 40px;
         border-radius: 50%;
-        border: 1px solid var(--dark37);
         font-size: 24px;
         display: flex;
         align-items: center;

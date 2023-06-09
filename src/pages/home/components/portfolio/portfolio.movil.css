@@ -97,7 +97,7 @@
     .home-page .portfolio .content {
         grid-template-columns: 100%;
         grid-template-rows: 
-            200px
+            250px
             auto
             50px
         ;
@@ -111,9 +111,10 @@
    
 
     .home-page .portfolio .content .header {
+        height: 100%;
         display: flex;
         flex-direction: column;
-      
+        justify-content: flex-end;
     }
 
     .home-page .portfolio .content .header .links {

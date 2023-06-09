@@ -19,7 +19,18 @@ export const lenguageDataES:ILenguageData = {
     "take-a-look": "Echa un vistazo a mi portafolio y aprende un poco más sobre mi viaje.",
     "download-cv" : "Descargar CV",
     "about-me" : "Acerca de mi",
-    "about-intro" : "Soy un desarrollador de software muy apasionado. \n He centrado mi trabajo en el desarrollo de aplicaciones web, soy un entusiasta de maquetaciones y diseño web.",
+    "about-intro" : `
+        Me describo como un desarrollador de software muy apasionado, 
+        he centrado mi trabajo en el desarrollo y diseño de aplicaciones web. 
+        Soy un entusiasta del diseño y la maquetación web.
+    `,
+    "why-hire-me": `¿Por qué contratarme?`,
+    "offer": ` 
+        Ofresco una solución de excelencia para el desarrollo de tus 
+        proyectos de software, garantizando así un uso responsable del tiempo, 
+        un diseño agradable y un ajuste fino en cada una de las 
+        características de tu proyecto.
+    `,
     "my-interests" : "Cosas que me interesan",
     "see-more": "Ver Más",
     "recent-works": "Trabajos Recientes",
@@ -31,6 +42,7 @@ export const lenguageDataES:ILenguageData = {
     "what-others-say": "Lo que otros dicen de mi",
     "contact-me": "Contáctame",
     "get-in-touch": "Ponte en Contacto",
+    "lets-start-a-project": "¡Comencemos un proyecto juntos!",
     "form-name": "Nombre",
     "form-email": "Email",
     "form-subject": "Asunto",

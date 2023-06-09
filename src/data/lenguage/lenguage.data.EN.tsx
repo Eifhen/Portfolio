@@ -23,10 +23,18 @@ export const lenguageDataEN:ILenguageData = {
     "download-cv" : "Download CV",
     "about-me" : "About Me",
     "about-intro" : `
-        I am a very passionate software developer. \n
-        I have focused my work on the development of web applications. \n 
-        I am an enthusiast of web layouts and design.`,
-
+        I describe myself as a very passionate software developer, 
+        I have focused my work on the development and design of web applications. 
+        I'm a fan of web design and web layout.
+    `,
+    "why-hire-me": `Why hire me?`,
+    "offer": ` 
+        I Offer a solution of excelence for the development 
+        of your software projects, thus guaranteeing
+        a responsible use of time, a pleasant design 
+        and a fine tuning in each of the 
+        characteristics of your project.  
+    `,
     "my-interests" : "My Interests",
     "see-more": "See More",
     "recent-works": "Recent Works",
@@ -37,6 +45,7 @@ export const lenguageDataEN:ILenguageData = {
     "testimonials": "Testimonials",
     "what-others-say": "What others say about me",
     "contact-me": "Contact me",
+    "lets-start-a-project": "¡Let's start a project together!",
     "get-in-touch": "Get in Touch",
     "form-name": "Name",
     "form-email": "Email",

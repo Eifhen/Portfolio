@@ -2,7 +2,7 @@ import { Images } from "../../assets/img/images"
 import { ITestimonialsData } from "./testimonials.data"
 
 /******************************** 
-    Martin Testimonial EN
+    Daniel Pimentel Testimonial EN
 *********************************/
 export const DanielPimentelEN: ITestimonialsData =    {
     img: Images.user.daniel_pimentel_foto,
@@ -24,14 +24,14 @@ export const DanielPimentelEN: ITestimonialsData =    {
             title: "Linkedin",
             type: "icon",
             icon: "ri-linkedin-fill",
-            url: "#"
+            url: "https://www.linkedin.com/in/danielpimentel00"
         },
     ]
 
 }
 
 /******************************** 
-    Martin Testimonial ES
+    Daniel Pimentel Testimonial ES
 *********************************/
 export const DanielPimentelES: ITestimonialsData =  {
     img: Images.user.daniel_pimentel_foto,
@@ -47,13 +47,13 @@ export const DanielPimentelES: ITestimonialsData =  {
             title: "Portfolio",
             type: "icon",
             icon: "ri-external-link-line",
-            url: "https://martinsitobd.netlify.app"
+            url: "https://danielpimentel.netlify.app"
         },
         {
             title: "Linkedin",
             type: "icon",
             icon: "ri-linkedin-fill",
-            url: "https://www.linkedin.com/in/martinsito-brito-diaz-ab4a48213/"
+            url: "https://www.linkedin.com/in/danielpimentel00"
         },
     ]
 } 

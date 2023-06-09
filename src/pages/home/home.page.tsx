@@ -11,6 +11,7 @@ import { ProjectData } from '../../data/projects/project.data';
 import Testimonials from './components/testimonials/home.page.testimonials';
 import { TestimonialsData } from '../../data/testimonials/testimonials.data';
 import Contact from './components/contact/home.page.contact';
+import { AboutData } from '../../data/about/about.data';
 
 
 
@@ -18,10 +19,10 @@ export default function HomePage() {
     const context = useAplicationContext();
     const socialMedia = SocialMediaData;
     const services = ServicesData;
-    const hobbies = HobbiesData;
     const projects = ProjectData;
     const testimonies = TestimonialsData;
-
+    
+    const aboutOffer = ()=> AboutData[context.lenguageManager.lenguageStore.lenguage].hero.offerts;
     const portfolio = ()=> projects[context.lenguageManager.lenguageStore.lenguage].filter(item => item.pin);
     const testimonials = () => testimonies[context.lenguageManager.lenguageStore.lenguage];
 
@@ -38,7 +39,7 @@ export default function HomePage() {
             <About
                 screen={ context.screenWidth }
                 theme={ context.themeManager.themeStore }
-                hobbies={ hobbies[context.lenguageManager.lenguageStore.lenguage] }
+                offer={ aboutOffer() }
             />
 
             <Portfolio

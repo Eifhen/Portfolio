@@ -36,7 +36,14 @@ export const FinanzasPersonalesEN: IProjectData =  {
             { name: "Mysql", icon: Images.tecnologies.mysql_icon, type: "image" },
         ],
         references: [],
-        liveInfo: [],
+        liveInfo: [
+            {
+                nombre: "Github",
+                icon: "ri-github-fill",
+                link: "https://github.com/Eifhen/FinanzasPersonales",
+                type: "icon",
+            },
+        ],
         galery: [
             {
                 img:Images.projects.finanzas_personales.cover,
@@ -124,7 +131,14 @@ export const FinanzasPersonalesES: IProjectData =  {
             { name: "Mysql", icon: Images.tecnologies.mysql_icon, type: "image" },
         ],
         references: [],
-        liveInfo: [],
+        liveInfo: [
+            {
+                nombre: "Github",
+                icon: "ri-github-fill",
+                link: "https://github.com/Eifhen/FinanzasPersonales",
+                type: "icon",
+            },
+        ],
         galery: [
             {
                 img:Images.projects.finanzas_personales.cover,

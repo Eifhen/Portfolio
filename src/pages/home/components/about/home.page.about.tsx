@@ -7,16 +7,17 @@ import translate from '../../../../hooks/translate.hook';
 import './about.desktop.css';
 import './about.movil.css';
 import { A } from '@solidjs/router';
+import { IAboutData, IAboutHeroOffers } from '../../../../data/about/about.data';
 
 
 interface IAbout {
-    hobbies: IHobbiesData[];
+    offer: IAboutHeroOffers[];
     theme: ITheme;
     screen: Accessor<number>;
 }
 
 interface  IAboutSize {
-    hobbies: IHobbiesData[];
+    offer: IAboutHeroOffers[];
     theme: ITheme;
 }
 
@@ -25,9 +26,9 @@ export default function About (props:IAbout) {
     return (
         <Show 
             when={props.screen() >= 660}
-            fallback={ <AboutMovil theme={props.theme} hobbies={props.hobbies} /> }
+            fallback={ <AboutMovil theme={props.theme} offer={props.offer} /> }
         >
-            <AboutDesktop theme={props.theme} hobbies={props.hobbies} />
+            <AboutDesktop theme={props.theme} offer={props.offer} />
         </Show>
     );
 }
@@ -45,9 +46,10 @@ function AboutDesktop (props:IAboutSize) {
                         <p>{ translate("about-intro") }</p>
                     </div>
                     <div class="interests">
-                        <h2>{ translate("my-interests") }</h2>
+                        <h2>{ translate("why-hire-me") }</h2>
+                        <p>{ translate("offer") }</p>
                         <div class="list">
-                            <For each={props.hobbies}>
+                            <For each={props.offer}>
                                 {(item)=>(
                                     <div class="list--item">
                                         <div class="icon">
@@ -80,9 +82,10 @@ function AboutMovil (props:IAboutSize) {
                     <UserImage img={Images.user.foto_pajon} color={props.theme} type="right" />
                 </div>
                 <div class="interests">
-                    <h2>{ translate("my-interests") }</h2>
+                    <h2>{ translate("why-hire-me") }</h2>
+                    <p>{ translate("offer") }</p>
                     <div class="list">
-                        <For each={props.hobbies}>
+                        <For each={props.offer}>
                             {(item)=>(
                                 <div class="list--item">
                                     <div class="icon">

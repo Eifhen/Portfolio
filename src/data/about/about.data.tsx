@@ -80,7 +80,7 @@ export const AboutData:IAboutDataManagement = {
             offerts: [
                 {
                     title: "Good Design",
-                    icon: "ri-palette-fill",
+                    icon: "ri-palette-line",
                 },
                 {
                     title: "Fine Tuning",

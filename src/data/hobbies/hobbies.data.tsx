@@ -42,7 +42,7 @@ export const HobbiesData : IHobbiesDataManager = {
             icon:"ri-suitcase-2-line",
             title:"Travel",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-            img: Images.Travel,
+            img: Images.others.Travel,
         }
     ],
     ES: [
@@ -62,7 +62,7 @@ export const HobbiesData : IHobbiesDataManager = {
             icon:"ri-suitcase-2-line",
             title:"Viajar",
             description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
-            img: Images.Travel,
+            img: Images.others.Travel,
         }
     ]
 }
