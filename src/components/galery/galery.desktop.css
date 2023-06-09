@@ -101,7 +101,7 @@
 **********************************/
 
 .galery-modal-mask {
-    z-index: 4;
+    z-index: 20;
     background: var(--mask);
     position:fixed;
     top:0;
