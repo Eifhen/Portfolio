@@ -66,6 +66,7 @@ function RenderSlider (props:ISliderOptions, setSlider: Setter<Splide>) {
             460: {
                 perPage:1,
                 gap: props.movilGap? props.movilGap : props.gap,
+                interval: 6000,
             }
         }
     }))
