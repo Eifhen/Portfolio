@@ -1,0 +1,180 @@
+/*********************************
+    Big Screen
+**********************************/
+@media(min-width: 2130px){
+    .about-page .qualifications {
+        grid-area: qualifications;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            minmax(200px, auto)
+            minmax(950px, auto)
+        !important;
+        grid-template-areas: 
+            "upper_wave"
+            "info"
+        ;
+    }
+
+    .about-page .qualifications .info  {
+
+        grid-area: info;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            200px
+            700px
+        ;
+        grid-template-areas: 
+            "title"
+            "qualifications"
+        ;
+    }
+
+    .about-page .qualifications .info  header {
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end !important;
+        align-items: flex-start;
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .about-page .qualifications .info .qualification_panel {
+        grid-area: qualifications;
+        display: flex;
+        align-items: center;
+        width: 1100px;
+        margin:0 auto;
+    }
+}
+
+
+/*********************************
+    Normal
+**********************************/
+.about-page .qualifications {
+    grid-area: qualifications;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        minmax(200px, auto)
+        minmax(700px, auto)
+    ;
+    grid-template-areas: 
+        "upper_wave"
+        "info"
+    ;
+}
+
+.about-page .qualifications .upper_wave {
+    grid-area: upper_wave;
+    height: 100%;
+}
+
+
+/*********************************
+    Education Info
+**********************************/
+.about-page .qualifications .info  {
+
+    grid-area: info;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        minmax(200px, auto)
+        700px
+    ;
+    grid-template-areas: 
+        "title"
+        "qualifications"
+    ;
+}
+
+
+/**********************************
+    Title
+***********************************/
+.about-page .qualifications .info  header {
+    grid-area: title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.about-page .qualifications .info  header .title {
+    z-index: 2;
+}
+
+.about-page .qualifications .info  header .title p {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+    color: var(--grayD9);
+}
+
+.about-page .qualifications .info  header .title h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.07em;
+    color: white;
+}
+
+.about-page .qualifications .info  header .title .underline {
+    width: 10vw;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.about-page .qualifications .info  header .title .underline::after {
+    background-color: white;
+}
+
+
+
+/**********************************
+    Qualification Panel
+***********************************/
+.about-page .qualifications .info .qualification_panel {
+    grid-area: qualifications;
+    display: flex;
+    align-items: center;
+    width: 1100px;
+    margin:0 auto;
+   
+}   
+
+.about-page .qualifications .info .qualification_panel .photo {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-page .qualifications .info .qualification_panel .education {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    gap: 3rem;
+    padding: 2rem 0;
+}

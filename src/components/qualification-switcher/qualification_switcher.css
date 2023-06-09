@@ -1,0 +1,108 @@
+/**********************************
+    Selección
+***********************************/
+.qualification_switcher {
+    border-radius: 50px;
+    background-color: var(--dark3A);
+    height: 48px;
+    width: 320px;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1rem 0.3rem;
+ 
+}
+
+/**********************
+    Item
+**********************/
+.qualification_switcher .item {
+    width: 50%;
+    height: 92%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.qualification_switcher .item.active {
+    background-color: black;
+}
+
+/**********************
+    Label
+**********************/
+.qualification_switcher .item h2 {
+    font-family: var(--Nunito);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+    color: var(--gray);
+    
+}
+
+.qualification_switcher .item.active h2 {
+    color: white;
+} 
+
+/**********************
+    ICON
+**********************/
+.qualification_switcher .item i {
+    font-size: 25px;
+    color: var(--gray);
+}
+
+.qualification_switcher .item.active i {
+    color: white;
+}
+
+
+
+/**********************
+    Mobile
+**********************/
+@media(max-width: 1120px){
+    .qualification_switcher {
+        border-radius: 50px;
+        background-color: var(--dark3A);
+        height: 48px;
+        width: 30vw;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.1rem 0.3rem;
+    }
+}
+
+@media(max-width: 900px){
+    .qualification_switcher {
+        width: 40vw;
+    }
+}
+
+@media(max-width: 700px){
+    .qualification_switcher {
+        width: 50vw;
+    }
+}
+
+@media(max-width: 500px){
+    .qualification_switcher {
+        width: 60vw;
+    }
+}
+
+@media(max-width: 420px){
+    .qualification_switcher {
+        width: 80vw;
+    }
+}
+
+

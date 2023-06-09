@@ -87,13 +87,13 @@ function HeroMovil (props: IHero) {
         <div class="hero-movil">
             <div class="hero-movil-container">
                 <div class="intro">
-                <div class='intro-wrapper'>
-                    <h3>{translate('hi-im').toUpperCase()}</h3>
-                    <h2>Gabriel Jiménez</h2>
-                    <h3 class="job">FullStack Software Developer</h3>
-                    <p>{translate('take-a-look')}</p>
-                    <A href={DownloadCV()} class="btn btn-download">{translate("download-cv")}</A>
-                </div>
+                    <div class='intro-wrapper'>
+                        <h3>{translate('hi-im').toUpperCase()}</h3>
+                        <h2>Gabriel Jiménez</h2>
+                        <h3 class="job">FullStack Software Developer</h3>
+                        <p>{translate('take-a-look')}</p>
+                        <A href={DownloadCV()} class="btn btn-download">{translate("download-cv")}</A>
+                    </div>
                 </div>
                 <div class="media">
                     <SocialMedia iconSize="size45" data={props.media} orientation='vertical'/>

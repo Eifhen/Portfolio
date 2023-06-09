@@ -2,6 +2,12 @@
 
 .project-page .featured-projects {
     grid-area: featured__projects;
+    transition-delay: 1s;
+    transition: background-color 1s ease-in-out;
+}
+
+.project-page.dark .featured-projects {
+   background-color: var(--dark1E);
    
 }
 

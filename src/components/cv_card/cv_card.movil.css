@@ -1,8 +1,122 @@
 
 @media(max-width: 800px){
+  
     .curriculumn-modal-mask .curriculumn-modal {
         height: 70vh;
         width: 90vw;
+    }
+}
+
+@media(max-width: 720px){
+    .cv-card {
+        height: auto;
+        width: 90%;
+        position: relative;
+        display:grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            auto
+            auto
+        ;
+    
+        grid-template-areas: 
+            "info"
+            "date"
+        ;
+        transition: box-shadow 500ms ease-in-out;
+        z-index: 2;
+        background-color: black;
+       
+    }
+
+    .cv-card .card-timeline {
+        display: none;
+    }
+
+    
+    .cv-card .card-info {
+        width: 100%;
+        height: 100%;
+        grid-area: info;
+     
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            auto 
+            auto
+        ;
+        grid-template-areas: 
+            "title" 
+            "description"
+        ;
+    }
+
+    .cv-card .card-info .card-title a {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.1em;
+        color: var(--pure);
+        padding: 0;
+        margin-bottom: 0.2rem;
+        /* truncate text */
+        width: 90%;
+        white-space:initial !important;
+       
+    }
+
+    .cv-card .card-info .card-title p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.1em;
+        color: var(--grayD9) ;
+    
+        /* truncate text */
+        width: 80%;
+        white-space:initial !important;
+    }
+    
+    .cv-card .card-description p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /********************
+        Card Date
+    *********************/
+
+    .cv-card .card-date { 
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+    
+    }
+
+    .cv-card .card-date .time {
+        padding: 0;
+        align-items: center ;
+    }
+
+    .cv-card .card-date .time time {
+        justify-content: flex-start;
+        border-radius: 5px;
+        padding-left: 0rem;
+        gap: 0.2rem;
+        background-color: black;
+        color: var(--grayD9);
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .cv-card .card-date time i {
+        padding-bottom: 0.15rem;
+        font-size: 18px;
+        line-height: 18px;
     }
 }
 
@@ -15,58 +129,6 @@
 
 @media (max-width: 490px){
 
-    .cv-card {
-        min-height: 300px;
-        width: 90vw;
-        display:grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 
-            50%
-            50%
-        ;
-    }
-
-    .cv-card .card-title {
-        padding: 1.5rem 1rem 0rem 1rem;
-    }
     
-    .cv-card .card-title a {
-        font-family: var(--Nunito);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 0.1em;
-        color: var(--dark11);
-        padding: 0 0 0.1rem 0;
-        
-        /* truncate text */
-        width: auto !important;
-        white-space: pre-wrap;
-        overflow: initial;
-        text-overflow: ellipsis;
-    }
-    
-    .cv-card .card-title p {
-        font-family: var(--Nunito);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        color: var(--dark1F) ;
-        padding: 0.3rem 0 0.3rem 0;
-    
-        /* truncate text */
-        width: auto !important;
-        white-space: pre-wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    .cv-card .card-title time {
-        margin-top: 0.5rem;
-        font-size: 12px;
-    }
 
 }

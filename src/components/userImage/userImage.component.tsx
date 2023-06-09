@@ -10,6 +10,8 @@ interface IUserImage {
     color:ITheme;
     type: 'right' | 'left' | "square";
     img: string;
+    colorAbsolute?: string;
+    theme?: 'dark' | "light"; 
 }
 
 export default function UserImage(props:IUserImage){
@@ -17,15 +19,21 @@ export default function UserImage(props:IUserImage){
     return (
         <Show when={props.type != "square"} 
               fallback={<SquareImage color={props.color} img={props.img} type={props.type} />}>
-            <CircleImage color={props.color} img={props.img} type={props.type}/>
+            <CircleImage 
+                colorAbsolute={props?.colorAbsolute} 
+                theme={ props.theme} 
+                color={props.color} 
+                img={props.img} 
+                type={props.type}
+            />
         </Show>
     )
 }
 
 function CircleImage (props:IUserImage) {
     return(
-        <div class={`big-circle ${props.color.theme} ${props.type}`}>
-            <div class={`blanck-circle ${props.type}`}></div>
+        <div class={`big-circle ${props.theme ? props.theme : props.color.theme} ${props?.colorAbsolute} ${props.type}`}>
+            <div class={`blanck-circle ${props.type} ${props?.colorAbsolute}`}></div>
             <div class="inner-circle">
                 <div class="img-container">
                     <img src={props.img} alt="image"  />

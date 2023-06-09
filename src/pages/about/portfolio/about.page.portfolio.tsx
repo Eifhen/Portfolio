@@ -14,11 +14,11 @@ interface IAboutPortfolio {
 
 export default function AboutPortfolio(props: IAboutPortfolio){
 
-    const renderItem = (type:string, icon:string) => {
+    const renderItem = (type:string, icon:string, name:string) => {
         if(type == "img"){
-            return <img src={ icon } alt=""  />
+            return <img src={ icon } title={name} alt={name}  />
         }
-        return <i class={ icon }></i>
+        return <i class={ icon } title={name}></i>
     }
 
     return (
@@ -44,7 +44,7 @@ export default function AboutPortfolio(props: IAboutPortfolio){
                             <For each={ props.data.technologies }>
                                 {(item)=>(
                                     <div class="item" title={item.name}>
-                                        { renderItem(item.type, item.icon) }
+                                        { renderItem(item.type, item.icon, item.name) }
                                         <p>{item.name}</p>
                                     </div>
                                 )}
@@ -55,7 +55,7 @@ export default function AboutPortfolio(props: IAboutPortfolio){
                         <For each={props.data.links}>
                            {(item)=>(
                                 <A class="link" href={item.link} target="_blank">
-                                    { renderItem(item.type, item.icon) }
+                                    { renderItem(item.type, item.icon, item.msg) }
                                     <p>{item.msg}</p>
                                 </A>
                            )}

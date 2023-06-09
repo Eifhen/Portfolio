@@ -9,7 +9,7 @@ import { A } from "@solidjs/router";
 
 interface IRenderCV_Card {
     data: IEducationAndWorkItems[];
-    type: "education" | "work";
+    type: "education" | "experience";
 }
 
 interface ICorriculumnModal {
@@ -53,16 +53,30 @@ export default function RenderCorriculumnCards(props: IRenderCV_Card) {
                                 <i class="ri-more-fill"></i>
                             </div>
                         </Show>
-                        <div class="card-title">
-                            <A href={item.assets.link} target="_blank">{item.title}</A>
-                            <p>{item.subtitle}</p>
-                            <time>
-                                <i class="ri-calendar-todo-fill"></i>
-                                {item.date}
-                            </time>
+                        <div class="card-date">
+                            <div class="time">
+                                <time>
+                                    <i class="ri-calendar-todo-fill"></i>
+                                    {item.date}
+                                </time>
+                            </div>
                         </div>
-                        <div class="card-description">
-                            <p>{item.description}</p>
+                        <div class="card-timeline">
+                            <div class="time-circle">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="time-line">
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-title">
+                                <A href={item.assets.link} target="_blank">{item.title}</A>
+                                <p>{item.subtitle}</p>
+                            </div>
+                            <div class="card-description">
+                                <p>{item.description}</p>
+                            </div>
                         </div>
                     </div>
                 )}
@@ -107,7 +121,7 @@ function CorriculumnModal (props:ICorriculumnModal) {
                     < i class="ri-close-line"></i>
                 </div>
                 <div class="image">
-                    <img src={props.img} alt="" elementtiming={''} fetchpriority={'high'} />
+                    <img src={props.img} alt=""  />
                 </div>
             </div>
         </div>

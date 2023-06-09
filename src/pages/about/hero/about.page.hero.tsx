@@ -46,7 +46,6 @@ export default function AboutHero (props:IAboutHero) {
                     <UserImage img={ Images.user.foto_turtle_neck } color={props.theme } type='square' />                
                 </div>
             </div>
-            <GeneralWave waveColor='white' reverse={true} theme={props.theme } allowTheme={true} />
         </div>
     )
 }

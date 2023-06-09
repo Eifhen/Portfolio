@@ -5,7 +5,7 @@
 }
 
 .about-page.light .about-portfolio {
-    background-color: var(--whiteEE);
+    background-color: var(--pure);
 }
 
 .about-page.dark .about-portfolio {
@@ -113,22 +113,31 @@
 .about-page .about-portfolio .grid-container .info .technologies .item {
     width: 140px;
     height: 110px;
-    font-size: 14px;
-    font-family: var(--Nunito);
-    font-weight: 700;
-    letter-spacing: 0.1rem;
+
     display: flex;
     align-items: center;
     border-radius: 35px;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--whiteF5);
+    background-color: var(--dark1E);
     gap: 0.5rem;
 
 }
 
+.about-page .about-portfolio .grid-container .info .technologies .item  p {
+    font-size: 14px;
+    font-family: var(--Nunito);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
 .about-page .about-portfolio .grid-container .info .technologies .item i {
     font-size: 36px;
+}
+
+.about-page .about-portfolio .grid-container .info .technologies .item i[title="GitHub"] {
+    color: white;
 }
 
 .about-page .about-portfolio .grid-container .info .technologies .item img {
@@ -153,10 +162,7 @@
     border-radius: 50px;
     width: 200px;
     height: 50px;   
-    font-size: 16px;
-    font-family: var(--Nunito);
-    font-weight: 700;
-    letter-spacing: 0.1rem;
+ 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,8 +171,17 @@
  
 }
 
+.about-page .about-portfolio .grid-container .links .link p {
+    font-size: 16px;
+    font-family: var(--Nunito);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    color: black;
+}
+
 .about-page .about-portfolio .grid-container .links .link  i {
     font-size: 36px;
+    color: black;
 }
 
 .about-page .about-portfolio .grid-container .links .link img {

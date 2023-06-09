@@ -9,6 +9,12 @@
 
 .wave svg {
     width: 100%;
+    transition: fill 10ms ease-in-out;
+    transition-delay: 15ms;
+}
+
+.dark .wave svg {
+    transition: fill 0.345s ease-in-out;
 }
 
 .wave.reverse {

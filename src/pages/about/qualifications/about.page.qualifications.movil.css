@@ -1,0 +1,148 @@
+
+
+@media(max-width: 1120px){
+
+    .about-page .qualifications .info  {
+        grid-area: info;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            minmax(200px, auto)
+            minmax(700px, auto);
+        ;
+        grid-template-areas: 
+            "title"
+            "qualifications"
+        ;
+    }
+    
+    .about-page .qualifications .info  header {
+        grid-area: title;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+
+    .about-page .qualifications .info .qualification_panel {
+        grid-area: qualifications;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90vw;
+        margin:0 auto;
+
+    }   
+
+    .about-page .qualifications .info .qualification_panel .photo {
+        width: 90%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .about-page .qualifications .info .qualification_panel .education {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y:initial;
+        gap: 3rem;
+        padding: 3rem 0 2rem 0;
+ 
+    }
+
+}
+
+@media(max-width: 1080px){
+    .about-page .qualifications .info  header {
+        width: 50%;
+    }
+}
+
+@media(max-width: 950px){
+    .about-page .qualifications .info  header {
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px){
+    .about-page .qualifications .info .qualification_panel .photo {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    }
+
+    .about-page .qualifications { 
+        grid-template-rows: 
+            150px
+            minmax(700px, auto)
+        ;
+        grid-template-areas: 
+            "upper_wave"
+            "info"
+        ;
+    }
+
+    .about-page .qualifications .info  {
+        grid-area: info;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 
+            minmax(150px, auto)
+            minmax(700px, auto);
+        ;
+        grid-template-areas: 
+            "title"
+            "qualifications"
+        ;
+       
+    }
+    
+    .about-page .qualifications .info  header {
+        justify-content: flex-start;
+    }
+
+    .about-page .qualifications .info  header .title p {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.07em;
+        color: var(--grayD9);
+    }
+    
+    .about-page .qualifications .info  header .title h1 {
+        font-family: var(--Roboto);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.07em;
+        color: white;
+    }
+
+    .about-page .qualifications .info  header .title .underline {
+        width: 20vw;
+        margin-top: 0.5rem;
+    }
+}
+
+@media(max-width: 400px){
+    .about-page .qualifications .info  header {
+        width: 90%;
+    }
+}

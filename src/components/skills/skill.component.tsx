@@ -1,4 +1,4 @@
-import { For, createSignal, onMount } from 'solid-js';
+import { Accessor, For, Setter, createSignal, onMount } from 'solid-js';
 import { ISkillData, ISkillsData } from '../../data/skills/skills.data';
 import { ITheme } from '../../hooks/theme.hook';
 import './skill.desktop.css';
@@ -37,16 +37,12 @@ export default function SkillSetTab(props:ISkillSet){
     }
 
     // transición en las opciones
-    // onMount(()=>{
-    //     setInterval(()=>{
-    //         const total_items = props.data.length;
-    //         if(count() < total_items){
-    //             setCount(count() + 1);
-    //             count() === total_items && setCount(0);
-    //             setSelected(props.data[count()]);
-    //         }
-    //     }, 5000);
-    // })
+    OptionTransition({
+        count,
+        setCount, 
+        setSelected,
+        data: props.data
+    })
 
     return (
         <div class={`skillset-container ${props.theme.theme}`}>
@@ -85,4 +81,25 @@ export default function SkillSetTab(props:ISkillSet){
             </div>
         </div>
     )
+}
+
+
+interface IOptionTransition {
+    count:Accessor<number>;
+    setCount:Setter<number>; 
+    setSelected: Setter<ISkillsData>; 
+    data: ISkillsData[];
+}
+
+function OptionTransition(props:IOptionTransition){
+    onMount(()=>{
+        setInterval(()=>{
+            const total_items = props.data.length;
+            if(props.count() < total_items){
+                props.setCount(props.count() + 1);
+                props.count() === total_items && props.setCount(0);
+                props.setSelected(props.data[props.count()]);
+            }
+        }, 5000);
+    })
 }

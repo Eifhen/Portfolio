@@ -21,7 +21,7 @@
 
 @keyframes projectHeaderThemeLight {
     0% {
-        background-color: var(--dark3A);
+        background-color: var(--dark0F);
     }
     100% {
         background-color: black;
@@ -33,7 +33,7 @@
         background-color: black;
     }
     100% {
-        background-color: var(--dark3A);
+        background-color: var(--dark0F);
     }
 }
 

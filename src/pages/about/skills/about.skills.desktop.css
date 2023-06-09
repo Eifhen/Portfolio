@@ -1,26 +1,35 @@
 
 
+
+
 .about-page .about-skills {
     grid-area: skills;
     display:grid;
     grid-template-columns: 100%;
     grid-template-rows: 
+        minmax(200px, auto)
         150px
         min-content
     ;
 
     grid-template-areas: 
+        "upper_wave"
         "skills_title"
         "skills_content"
     ;
 }
 
 .about-page.light .about-skills {
-    background-color: var(--whiteEE);
+    background-color: var(--pure);
 }
 
 .about-page.dark .about-skills {
     background-color: var(--dark0F);
+}
+
+.about-page .about-skills .upper_wave {
+    grid-area: upper_wave;
+    height: 100%;
 }
 
 /**********************
@@ -28,17 +37,20 @@
 ***********************/
 .about-page .about-skills .skills_title {
     grid-area: skills_title;
+    width: 950px;
+    margin: 0 auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    z-index: 2;
 }
 
 .about-page .about-skills .skills_title h1 {
     font-family: var(--Roboto);
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: 40px;
     line-height: 40px;
     letter-spacing: 0.1em;
 }
@@ -47,7 +59,7 @@
     font-family: var(--Nunito);
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 22px;
     letter-spacing: 0.1em;
 }
@@ -63,16 +75,21 @@
 }
 
 .about-page .about-skills .skills_title .underline:after {
-    content: none;
- 
-  }
+    width: 16px;
+    height: 16px;
+    right: -25px;
+}
 
 /**********************
     Skills Content
 ***********************/
 .about-page .about-skills .skills_content {
+    padding-top: 2rem;
     grid-area: skills_content;
-  
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
 }
 
 

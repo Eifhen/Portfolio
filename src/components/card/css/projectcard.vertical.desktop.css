@@ -59,7 +59,7 @@ INFO
 }
 
 .dark .project-card-vertical .project-content {
-    filter: drop-shadow(var(--shadow-bright-sm)) !important;
+    filter: drop-shadow(var(--shadow-lg)) !important;
 }
 
 .project-card-vertical .project-content .info {
@@ -71,9 +71,17 @@ INFO
     flex-direction: column;
     justify-content: center;
     padding: 0rem 0 1rem 1rem;
-    background-color: var(--pure);
+
     clip-path: polygon(0% 0%, 100% 18%, 100% 100%, 0% 100%);
     position: relative;
+}
+
+.light .project-card-vertical .project-content .info {
+    background-color: var(--pure);
+}
+
+.dark .project-card-vertical .project-content .info {
+    background-color: var(--dark0F);
 }
 
 .project-card-vertical .project-content .info h1 {
@@ -82,20 +90,30 @@ INFO
     font-size: 24px;
     line-height: 24px;
     width: 72%;
-    color: black;
+ 
 }
 
 .project-card-vertical .project-content .info time {
     border-radius: 50px;
     padding: 0.2rem;
-    background-color: black;
-    color: white;
     width: 60%;
     text-align: center;
     font-family: var(--Nunito);
     font-size: 12px;
+    font-weight: 700;
     letter-spacing: 0.1rem;
     margin-top: 0.3rem;
+}
+
+.light .project-card-vertical .project-content .info time {
+    background-color: black;
+    color: white;
+}
+
+.dark .project-card-vertical .project-content .info time {
+    background-color: white;
+    color: black;
+   
 }
 
 .project-card-vertical .project-content .info p {
@@ -105,16 +123,23 @@ INFO
     line-height: 18px;
     width: 90%;
     margin-top: 0.8rem;
+
+}
+
+.light .project-card-vertical .project-content .info p {
     color: var(--gray);
 }
 
+.dark .project-card-vertical .project-content .info p {
+    color: var(--grayD9);
+}
 /***************************
    Technologies
 **************************/
 .project-card-vertical .project-content .info .technologies {
     width: 60%;
     height: 44px;
-    background-color: black;
+  
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -125,6 +150,14 @@ INFO
     align-items: center;
     justify-content: flex-end;
  
+}
+
+.light .project-card-vertical .project-content .info .technologies {
+    background-color: black;
+}
+
+.dark .project-card-vertical .project-content .info .technologies {
+    background-color: white;
 }
 
 .project-card-vertical .project-content .info .technologies .technologie {
@@ -163,8 +196,12 @@ INFO
     transform: scale(1.045);
 }
 
-.project-card-vertical:hover .project-content .info {
+.light .project-card-vertical:hover .project-content .info {
     background-color: var(--whiteF5);
+}
+
+.dark .project-card-vertical:hover .project-content .info {
+    background-color: black;
 }
 
 /***************************

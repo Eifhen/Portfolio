@@ -16,7 +16,7 @@
 }
 
 .project-card.dark {
-    box-shadow: var(--shadow-bright-low);
+    box-shadow: var(--shadow-bright-sm);
 }
 
 .project-card:hover {

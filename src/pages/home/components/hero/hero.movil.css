@@ -139,7 +139,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        z-index: 2;
+        z-index: 4;
         padding-top: 1rem;
     }
 
@@ -169,7 +169,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        z-index: 2;
         padding-top: 1rem;
     
     }
@@ -270,7 +269,6 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        z-index: 2;
     }
 
     .home-page .hero-movil .hero-movil-container .user {

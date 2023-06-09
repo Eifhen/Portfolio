@@ -14,6 +14,7 @@
     justify-content: center;
     border: 19px solid transparent;
     opacity:0;
+    z-index: 2;
 }
 
 .big-circle.light {
@@ -77,6 +78,13 @@
     border-radius: 50%;
     z-index: 2;
 }
+
+/* .big-circle.right .inner-circle {
+   
+    width: 350px;
+    height: 350px;
+   
+} */
 
 .big-circle.light .inner-circle {
     background-color: var(--grayD9);

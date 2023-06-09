@@ -133,7 +133,7 @@ export const AboutData:IAboutDataManagement = {
                         img: Images.curriculumn.education.cover,
                         link: "https://itla.edu.do",
                     },
-                }
+                },
             ]
         },
 
