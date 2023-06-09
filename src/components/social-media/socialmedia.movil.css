@@ -34,8 +34,8 @@
     
 
     .socialmedia-container.size45 .socialmedia-item {
-        width: 40px !important;
-        height: 40px !important;
+        width: 48px !important;
+        height: 48px !important;
     }
 
     .socialmedia-container .socialmedia-item {
@@ -44,7 +44,7 @@
     }
 
     .socialmedia-container.size45 .socialmedia-item i {
-        font-size: 20px !important;
+        font-size: 28px !important;
     }
 
     .socialmedia-container .socialmedia-item i {

@@ -54,8 +54,8 @@
         font-family: var(--Nunito);
         font-style: normal;
         font-weight: 600;
-        font-size: 15px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1em;
         width: 70%;
     }
@@ -90,8 +90,8 @@
 
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
+        font-weight: 700;
+        font-size: 14px;
         line-height: 19px;
         letter-spacing: 0.1em;
     }
@@ -147,7 +147,7 @@
     **********************************/
     .hero-movil .wrapper .detail-info .main-technologies {
         margin-top: 1.5rem;
-        width: 45%;
+        width: 50%;
         height: 60px;
         border-top-right-radius: 50px;
         border-bottom-right-radius: 50px;
@@ -297,8 +297,8 @@
         font-family: var(--Nunito);
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1em;
         color: var(--gray);
         width: 70%;
@@ -334,6 +334,7 @@
 }
 
 @media(max-width: 515px){ 
+
     .hero-movil .wrapper {
         width: 100vw;
         margin:0 auto;
@@ -353,7 +354,6 @@
 
         position: relative;
     }
-
     
     .hero-movil .wrapper .detail-info .info {
         align-self: flex-start;
@@ -369,7 +369,7 @@
         font-family: var(--Roboto);
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
+        font-size: 34px;
         line-height: 36px;
         letter-spacing: 0.1em;
         width: 90%;
@@ -379,12 +379,12 @@
     .hero-movil .wrapper .detail-info .info p {
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 20px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1em;
-        color: var(--gray);
-        width: 74%;
+       
+        width: 96%;
     }
 
     /*********************************
@@ -409,8 +409,8 @@
 
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 800;
-        font-size: 12px;
+        font-weight: 700;
+        font-size: 14px;
         line-height: 0px;
         letter-spacing: 0.1em;
         
@@ -481,9 +481,21 @@
 
     .hero-movil .wrapper .detail-info .main-technologies {
         margin-top: 1.5rem;
-        width: 80%;
+        width: 90%;
         height: 50px;
-    
+    }
+
+    .hero-movil .wrapper .detail-info .main-technologies .title {
+        width: 100%;
+        padding-left: 1.5rem;
+    }
+
+    .hero-movil .wrapper .detail-info .main-technologies  .title h2 {
+        font-family: var(--Nunito);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .hero-movil .wrapper .detail-info .main-technologies .technologies .technologie {

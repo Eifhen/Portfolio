@@ -14,14 +14,12 @@
 }
 
 @media (max-width: 500px) {
-    .project-card { width: 90%; height:200px; padding-bottom: 0;}
+    .project-card { width: 90%; height:270px; padding-bottom: 0;}
     .project-card .mask { padding: 0 0 0 1rem;}
     .project-card .mask .info { padding-bottom: 1rem; height: 100%;}
-    .project-card .mask .info .title { width: 90%; font-size: 22px; line-height: 25px !important;}
-    .project-card .mask .info .date { width: 70%; font-size: 16px;}
-    .project-card .mask .info .description { 
-        font-size: 14px;
-    }
+    .project-card .mask .info .title { width: 90%; font-size: 26px; line-height: 30px !important;}
+    .project-card .mask .info .date {  width: 70%; font-size: 16px; }
+    .project-card .mask .info .description { width: 90%; font-size: 16px; line-height: 24px; }
 
     .project-card:hover .mask .info .description {
         grid-template-rows: 1fr;

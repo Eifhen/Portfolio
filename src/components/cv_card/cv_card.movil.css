@@ -129,6 +129,8 @@
 
 @media (max-width: 490px){
 
-    
+    .cv-card .card-info .card-title a {
+        width: 80%;
+    }
 
 }

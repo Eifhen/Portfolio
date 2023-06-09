@@ -25,7 +25,7 @@
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
-        line-height: 25px;
+        line-height: 30px;
     }
 
     .home-page .testimonials.light .content .header p {
@@ -62,8 +62,8 @@
         font-family: var(--Nunito);
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .home-page .testimonials .content .header h2 {

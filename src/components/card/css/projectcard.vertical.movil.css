@@ -9,7 +9,6 @@
         font-size: 20px;
         line-height: 20px;
         width: 80%;
-        color: black;
     }
 
     .splide__slide.is-active  .project-card-vertical .project-content .info h1 {
@@ -17,6 +16,7 @@
         line-height: 24px;
         width: 80%;   
     }
+
 
     .project-card-vertical .project-content .info time {
         width: 70%;

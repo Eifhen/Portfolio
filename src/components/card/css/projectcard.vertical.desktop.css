@@ -120,10 +120,10 @@ INFO
     font-family: var(--Nunito);
     font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 20px;
     width: 90%;
     margin-top: 0.8rem;
-
+    
 }
 
 .light .project-card-vertical .project-content .info p {
@@ -237,7 +237,7 @@ INFO
 
 .splide__slide.is-active  .project-card-vertical .project-content .info p {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     width: 95%;
     margin-top: 0.5rem;
 }

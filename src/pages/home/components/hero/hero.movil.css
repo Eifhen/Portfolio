@@ -23,8 +23,8 @@
     }
     
     .home-page .hero .container .info .info-wrapper .intro p {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 16px;
+        line-height: 24px;
     }
     
     .home-page .hero .container .info .info-wrapper .intro .btn-download {
@@ -76,9 +76,9 @@
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper h3 {
         font-family: var(--Roboto);
         font-style: normal;
-        font-weight: 200;
+        font-weight: 600;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 24px;
         letter-spacing: 0.3em;
     }
 
@@ -105,11 +105,11 @@
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper p {
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 22px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1em;
-        width: 60%;
+        width: 80%;
     }
 
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper .btn-download {
@@ -188,7 +188,9 @@
         grid-area: hero;
         display: grid;
         grid-template-columns: 25% 35% 40%;
-        grid-template-rows: 250px 300px;
+        grid-template-rows: 
+            minmax(350px, auto) 
+            300px;
         grid-template-areas: 
             "intro intro intro"
             "media user user"
@@ -206,9 +208,9 @@
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper h3 {
         font-family: var(--Roboto);
         font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.3em;
     }
 
@@ -216,7 +218,7 @@
         font-family: var(--Roboto);
         font-style: normal;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 40px;
         letter-spacing: 0.3em;
     }
@@ -225,8 +227,8 @@
         font-family: 'Nunito';
         font-style: normal;
         font-weight: 700;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 18px;
+        line-height: 24px;
         letter-spacing: 0.2em;
         color: var(--gray);
         margin-bottom: 1rem;
@@ -235,11 +237,11 @@
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper p {
         font-family: var(--Nunito);
         font-style: normal;
-        font-weight: 300;
-        font-size: 13px;
-        line-height: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
         letter-spacing: 0.1em;
-        width: 80%;
+        width: 95%;
     }
 
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper .btn-download {
@@ -282,6 +284,19 @@
 
 @media (max-width: 410px) {
 
+    .home-page .hero-movil .hero-movil-container {
+        grid-area: hero;
+        display: grid;
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 
+            minmax(350px, auto) 
+            300px;
+        grid-template-areas: 
+            "intro intro intro"
+            "media user user"
+        ;
+    }
+
     .home-page .hero-movil .hero-movil-container .intro .intro-wrapper {
         width: 90%;
     }
@@ -291,9 +306,12 @@
         display: flex;
         align-items: flex-end;
         justify-content: flex-start;
+        overflow: visible;
     }
 
     .home-page .hero-movil .hero-movil-container .media {
         justify-content: flex-end;
+  
+      
     }
 }

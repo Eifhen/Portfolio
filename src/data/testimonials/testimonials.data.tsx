@@ -1,3 +1,4 @@
+import { DanielPimentelEN, DanielPimentelES } from "./daniel_pimentel.testimonial";
 import { MartinTestimonialEN, MartinTestimonialES } from "./martin.testimonial";
 
 
@@ -32,15 +33,11 @@ export interface ITestimonialLink {
 export const TestimonialsData: ITestimonialManager = {
     EN: [
         MartinTestimonialEN,
-        MartinTestimonialEN,
-        MartinTestimonialEN,
-        MartinTestimonialEN,
+        DanielPimentelEN,
     ],
 
     ES: [
         MartinTestimonialES,
-        MartinTestimonialES,
-        MartinTestimonialES,
-        MartinTestimonialES,
+        DanielPimentelES,
     ]
 }

@@ -1,32 +1,30 @@
 import { Images } from "../../assets/img/images"
 import { ITestimonialsData } from "./testimonials.data"
 
-
 /******************************** 
     Martin Testimonial EN
 *********************************/
-export const MartinTestimonialEN: ITestimonialsData =    {
-    img: Images.user.martin_foto,
-    fullname: "Martinsito Brito Diaz",
+export const DanielPimentelEN: ITestimonialsData =    {
+    img: Images.user.daniel_pimentel_foto,
+    fullname: "Daniel Pimentel",
     info: "Software Developer",
     message: [
-        `Gabriel is an exceptional person, an unparalleled friend, 
-        and an inspiring co-worker. His affable character and 
-        his positive attitude create a warm and welcoming atmosphere 
-        in any situation.`,
+        `As a co-worker, I dare say that Gabriel shows admirable dedication. 
+        He always strives to deliver high quality work, 
+        displaying impressive technical skills.`,
     ],
     links: [
         {
             title: "Portfolio",
             type: "icon",
             icon: "ri-external-link-line",
-            url: "https://martinsitobd.netlify.app"
+            url: "https://danielpimentel.netlify.app"
         },
         {
             title: "Linkedin",
             type: "icon",
             icon: "ri-linkedin-fill",
-            url: "https://www.linkedin.com/in/martinsito-brito-diaz-ab4a48213/"
+            url: "#"
         },
     ]
 
@@ -35,14 +33,14 @@ export const MartinTestimonialEN: ITestimonialsData =    {
 /******************************** 
     Martin Testimonial ES
 *********************************/
-export const MartinTestimonialES: ITestimonialsData =  {
-    img: Images.user.martin_foto,
-    fullname: "Martinsito Brito Diaz",
+export const DanielPimentelES: ITestimonialsData =  {
+    img: Images.user.daniel_pimentel_foto,
+    fullname: "Daniel Pimentel",
     info: "Software Developer",
     message: [
-        `Gabriel es una persona excepcional, un amigo sin igual y un compañero de 
-        trabajo inspirador. Su carácter afable y su actitud positiva crean un 
-        ambiente cálido y acogedor en cualquier situación.`,
+        `Como compañero de trabajo, me atrevo a decir que Gabriel demuestra una dedicación admirable. 
+        Siempre se esfuerza por entregar un trabajo de alta calidad, mostrando habilidades 
+        técnicas impresionantes.`,
     ],
     links: [
         {

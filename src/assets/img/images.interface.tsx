@@ -34,6 +34,7 @@ export interface IUserImagesCollector {
     foto_turtle_neck: string;
     martin_foto: string;
     elian_foto: string;
+    daniel_pimentel_foto: string;
     [key:string]:string
 }
 

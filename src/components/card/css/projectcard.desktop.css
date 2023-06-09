@@ -82,8 +82,7 @@
 }
 
 .project-card .mask .info .date {
-    min-width: 100px;
-    max-width: 55%;
+    width: 55%;
     padding: 0.5rem 0rem;
     border-radius: 50px;
     color:white;

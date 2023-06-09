@@ -57,3 +57,18 @@
         height: 450px !important;
     }
 }
+
+@media(max-width: 400px){ 
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__slide {
+        width: 75vw !important;
+        height: 400px !important;
+        border-radius: 35px;
+    
+    }
+
+    .project-page .featured-projects  .content .featured-projects-carousel .splide__slide.is-active {
+        width: 75vw !important;
+        height: 450px !important;
+    }
+}

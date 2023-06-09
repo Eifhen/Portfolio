@@ -68,10 +68,3 @@
         padding-top: 2rem;
     } 
 }
-
-@media (max-width: 470px){
-    .project-detail-page .other-projects .container .header h1 {
-        font-size: 22px !important;
-        line-height: 32px; 
-    }
-}

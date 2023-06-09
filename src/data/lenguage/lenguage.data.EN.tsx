@@ -32,7 +32,7 @@ export const lenguageDataEN:ILenguageData = {
     "recent-works": "Recent Works",
     "my-portfolio" : "My Portfolio",
     "see-all-projects" : "See All Projects",
-    "web-designs" : "Web Designs",
+    "web-designs" : "See all Designs",
     "view-all": "View All",
     "testimonials": "Testimonials",
     "what-others-say": "What others say about me",

@@ -83,6 +83,10 @@
 }
 
 @media (max-width: 400px){
+    .about-page .about-skills .skills_content {
+        padding-top: 1rem;
+    }
+
     .about-page .about-skills .skills_title {
         grid-area: skills_title;
         width: 90%;
