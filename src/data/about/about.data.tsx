@@ -230,7 +230,7 @@ export const AboutData:IAboutDataManagement = {
             offerts: [
                 {
                     title: "Buen Diseño",
-                    icon: "ri-palette-fill",
+                    icon: "ri-palette-line",
                 },
                 {
                     title: "Ajuste Fino",
