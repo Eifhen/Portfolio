@@ -5,7 +5,9 @@
     .galery-container {
         display:grid;
         grid-template-columns: 345px;
-        grid-template-rows: minmax(230px, auto) 20%;
+        grid-template-rows: 
+            230px 
+            20%;
         grid-template-areas: 
             "mainImage" 
             "galery"
@@ -74,7 +76,10 @@
     .galery-container {
         display:grid;
         grid-template-columns: 300px;
-        grid-template-rows: minmax(200px, auto) 20%;
+        grid-template-rows: 
+            200px
+            20%
+        ;
         grid-template-areas: 
             "mainImage" 
             "galery"

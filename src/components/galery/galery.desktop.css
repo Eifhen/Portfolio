@@ -3,7 +3,9 @@
 .galery-container {
     display:grid;
     grid-template-columns: 415px;
-    grid-template-rows: minmax(271px, auto) 60%;
+    grid-template-rows: 
+        271px 
+        60%;
     grid-template-areas: 
         "mainImage" 
         "galery"
