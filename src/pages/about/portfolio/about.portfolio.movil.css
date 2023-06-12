@@ -26,7 +26,7 @@
 
     .about-page .about-portfolio .grid-container .info .description {
         width: 60%;
-        height: 70%;
+        height: auto;
     }
 
     .about-page .about-portfolio .grid-container .info .technologies {
@@ -45,6 +45,7 @@
         justify-content: flex-end;
         align-items: center;
         gap: 1rem;
+        padding-left: 0rem;
     }
 }
 
@@ -52,10 +53,12 @@
 @media (max-width: 835px){
     .about-page .about-portfolio .grid-container .info .description {
         width: 80%;
+        height: auto;
     }
 
     .about-page .about-portfolio .grid-container .info .technologies {
         width: 80%;
+        height: auto;
     }
 }
 

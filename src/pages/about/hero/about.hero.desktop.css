@@ -10,7 +10,7 @@
 
 .about-page .hero .grid-container .description {
     width: 50%;
-    height: 500px;
+    height: 550px;
     display:flex;
     flex-direction: column;
     padding-top: 4.3rem;
@@ -104,12 +104,13 @@
     font-size: 32px;
 }
 
-.about-page .hero .grid-container .description .offers .offer-item span {
+.about-page .hero .grid-container .description .offers .offer-item pre {
     font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.1em;
+    font-size: 14px;
 }
 
 

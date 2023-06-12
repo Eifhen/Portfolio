@@ -69,7 +69,7 @@ export const lenguageDataES:ILenguageData = {
     "about-this-portfolio": "Sobre este Portafolio",
     "my-templates-&-designs": "Mis Diseños y Plantillas",
     "templates-intro" : `
-        En esta página encontrarás los diseños y templates 
+        En esta página encontrarás los diseños y plantillas 
         más relevantes que he realizado.
     `,
     "designs": "Diseños",

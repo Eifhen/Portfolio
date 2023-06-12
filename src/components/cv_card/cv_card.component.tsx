@@ -55,10 +55,14 @@ export default function RenderCorriculumnCards(props: IRenderCV_Card) {
                         </Show>
                         <div class="card-date">
                             <div class="time">
-                                <time>
-                                    <i class="ri-calendar-todo-fill"></i>
-                                    {item.date}
-                                </time>
+                                <For each={item.date}>
+                                    {(date)=>(
+                                        <time>
+                                            <i class="ri-calendar-todo-fill"></i>
+                                            {date}
+                                        </time>
+                                    )}
+                                </For>
                             </div>
                         </div>
                         <div class="card-timeline">
@@ -71,7 +75,9 @@ export default function RenderCorriculumnCards(props: IRenderCV_Card) {
                         </div>
                         <div class="card-info">
                             <div class="card-title">
-                                <A href={item.assets.link} target="_blank">{item.title}</A>
+                                <A href={item.assets.link} target="_blank" title={item.title}>
+                                    {item.title}
+                                </A>
                                 <p>{item.subtitle}</p>
                             </div>
                             <div class="card-description">

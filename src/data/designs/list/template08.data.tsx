@@ -39,7 +39,7 @@ export const Template08EN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Template08",
                 type: "icon",
@@ -109,7 +109,7 @@ export const Template08ES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/Template08",
                 type: "icon",

@@ -36,7 +36,7 @@ export const AirbnbCloneEN: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/AirBnb",
                 type: "icon",
@@ -93,7 +93,7 @@ export const AirbnbCloneES: IProjectData =  {
                 type: "icon",
             },
             {
-                nombre: "Live Demo",
+                nombre: "Live",
                 icon: "live-demo",
                 link: "https://eifhen.github.io/AirBnb",
                 type: "icon",

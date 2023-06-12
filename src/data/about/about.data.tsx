@@ -33,7 +33,7 @@ export interface IEducationAndWork {
 }
 
 export interface IEducationAndWorkItems {
-    date: string;
+    date: string[];
     title: string;
     subtitle: string;
     description: string;
@@ -73,9 +73,10 @@ export const AboutData:IAboutDataManagement = {
             subtitle: "Why Hire Me For Your",
             title: "Next Project",
             description: [
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud.`,
+                `I am a passionate software developer with high attention to detail. 
+                I offer quality solutions that fit your needs, thus providing software 
+                solutions that have a user-friendly design and a fine tuning in each of 
+                its features, which will contribute to significant time and cost savings.`,
             ],
             offerts: [
                 {
@@ -98,40 +99,52 @@ export const AboutData:IAboutDataManagement = {
             title: "Education",
             subtitle: "My Journey So Far",
             items: [
+                // ITLA
                 {
-                    date: "2016 - 2019",
+                    date: [`2016 - 2019`],
                     title: "Technologist in Software Development",
                     subtitle: "Instituto Tecnológico las Américas (ITLA)",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud.`,
+                    description: `
+                        I am a graduate of the Las Americas Technological Institute, 
+                        I took my subjects between 2016 and 2019. 
+                        As a software development technician I am trained 
+                        for the development and analysis of systems, development and analysis of databases, 
+                        as well as for the development, analysis and software design.
+                    `,
                     assets: {
-                        img: Images.curriculumn.education.cover,
+                        img: Images.curriculumn.itla,
                         link: "https://itla.edu.do",
                     },
                 },
+
+                // Udemy ES6
                 {
-                    date: "2016 - 2019",
-                    title: "Technologist in Software Development",
-                    subtitle: "Instituto Tecnológico las Américas (ITLA)",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud.`,
+                    date: [`01/02/2022`,  `23/02/2022`],
+                    title: "Modern JavaScript: A Guide to Mastering the Language",
+                    subtitle: "Udemy",
+                    description: `
+                        Webpack, Classes, Private Properties, ESNext, Node, Npm, Babel, Hot Reload, CRUD, File Upload and more!
+                    `,
                     assets: {
-                        img: Images.curriculumn.education.cover,
-                        link: "https://itla.edu.do",
+                        img: Images.curriculumn.es6,
+                        link: "https://www.udemy.com/course/javascript-fernando-herrera/learn/lecture/17854154#overview",
                     },
                 },
+                
+                // Scrimba
                 {
-                    date: "2016 - 2019",
-                    title: "Technologist in Software Development",
-                    subtitle: "Instituto Tecnológico las Américas (ITLA)",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud.`,
+                    date: [`07/07/2022`,  `11/01/2023`],
+                    title: "The Frontend Developer Career Path",
+                    subtitle: "Scrimba",
+                    description: `
+                        The Front End Developer Career Path, is a software course made by 
+                        the scrimba platform, the goal of the course is to teach you how to develop web 
+                        applications with modern web technologies such as ReactJs, 
+                        JavaScript ES6, HTML5, CSS3 and others
+                    `,
                     assets: {
-                        img: Images.curriculumn.education.cover,
-                        link: "https://itla.edu.do",
+                        img: Images.curriculumn.scrimba,
+                        link: "https://scrimba.com/learn/frontend",
                     },
                 },
             ]
@@ -142,15 +155,47 @@ export const AboutData:IAboutDataManagement = {
             subtitle: "My Journey So Far",
             items: [
                 {
-                    date: "09-2019",
-                    title: "Web developer internship",
+                    date: [`01/09/2019`, `04/12/2019`],
+                    title: "Web developer (Internship)",
                     subtitle: "Lancer Group",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud.`,
+                    description: `
+                        In September 2019, I was an intern at Lancer Group. In this internship 
+                        I worked on the development of an instance manager for the database of 
+                        different projects of the company`,
                     assets: {
                         img: "#",
                         link: "https://lancergroup.org",
+                    }
+                },
+
+                {
+                    date: [`15/12/2020`, `08/02/2022`],
+                    title: "Web Developer",
+                    subtitle: "Growing Business School",
+                    description: `
+                        In December 2021 I was hired to work on the development of a website, 
+                        an educational platform and a management system (cms) for the 
+                        processes related to the website and the educational platform.
+                    `,
+                    assets: {
+                        img: "#",
+                        link: "/projects/detail/1/Growing-Business-School",
+                    }
+                },
+
+                {
+                    date: [`18/10/2022`, `Currently ..`],
+                    title: "System Engineer Jr.",
+                    subtitle: "Camsoft SRL",
+                    description: `
+                        Currently, I work as a Jr. Software Engineer for Camsoft SRL. 
+                        He worked in the development of Software for the company, using 
+                        technologies such as ASP.Net Core, SQL, Server ReactJS, Developer Extreme, SAS, 
+                        among others.
+                    `,
+                    assets: {
+                        img: "#",
+                        link: "https://camsoft.com.do",
                     }
                 }
             ]
@@ -158,13 +203,28 @@ export const AboutData:IAboutDataManagement = {
 
         portfolio: {
             description: [
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud.`,
+            `
+                I developed this portfolio in my free time, in a period of 3 months,
+                The process was divided into 4 stages, the first stage consisted of the
+                portfolio planning, for this stage I defined which screens
+                the portfolio would be composed of and what type of information should be displayed in them.
+            `,
 
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud.`,
+            `
+                The second stage consisted of the graphic design of the portfolio.
+                For this I used figma, at this stage I designed each of the portfolio screens,
+                both in its mobile version and in its desktop version.
+            `,
+
+            `
+                For the third stage I worked on the development of each of the components
+                Individuals that appear in the portfolio: the different modals (pop-up windows)
+                that appear, the navbar, the footer, the structure and behavior of the day and night modes,
+                as well as the operation of the language change within the application,
+                everything was developed from scratch.
+               
+                For the fourth stage I integrated the components and functionalities that I created in stage three.
+            `,
             ],
             technologies: [
                 {
@@ -222,22 +282,24 @@ export const AboutData:IAboutDataManagement = {
             title: "Próximo Proyecto",
 
             description: [
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud.`,
+                `Soy un desarrollador de software apasionado y con alta atención a los detalles. 
+                Ofrezco soluciones de calidad que se acoplan a tus necesidades, proveyendo así 
+                soluciones de software que cuentan con un diseño amigable al usuario y un 
+                ajuste fino y detallado en cada una de sus características, 
+                que contribuirán a significativos ahorros de tiempo y costo.`,
             ],
 
             offerts: [
                 {
-                    title: "Buen Diseño",
+                    title: `Buen \nDiseño`,
                     icon: "ri-palette-line",
                 },
                 {
-                    title: "Ajuste Fino",
+                    title: "Ajuste \nFino",
                     icon: "ri-compasses-2-line",
                 },
                 {
-                    title: "Tiempo",
+                    title: "Ahorra \nTiempo",
                     icon: "ri-timer-2-line"
                 }
             ]
@@ -248,18 +310,56 @@ export const AboutData:IAboutDataManagement = {
             title: "Educación",
             subtitle: "Mi viaje hasta ahora.",
             items: [
+                // Itla
                 {
-                    date: "2016 - 2019",
+                    date: [`2016 - 2019`],
                     title: "Technologo en Desarrollo de Software",
                     subtitle: "Instituto Tecnológico las Américas (ITLA)",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud.`,
+                    description: `
+                        Soy un egresado del instituto tecnológico las Américas, 
+                        cursé mis asignaturas entre los años 2016 y 2019. 
+                        Como técnico en desarrollo de software estoy capacitado, 
+                        para el desarrollo y análisis de sistemas, desarrollo y análisis de bases de datos, 
+                        así como también para el desarrollo, análisis y diseño de software.
+                    `,
                     assets: {
-                        img: Images.curriculumn.education.cover,
+                        img: Images.curriculumn.itla,
                         link: "https://itla.edu.do",
                     },
-                }
+                },
+
+                // Udemy ES6
+                {
+                    date: [`01/02/2022`,  `23/02/2022`],
+                    title: "JavaScript Moderno: Guía para dominar el lenguaje",
+                    subtitle: "Udemy",
+                    description: `
+                        Webpack, Classes, Private Properties, ESNext, Node, Npm, Babel, Hot Reload, CRUD, File Upload y más
+                    `,
+                    assets: {
+                        img: Images.curriculumn.es6,
+                        link: "https://www.udemy.com/course/javascript-fernando-herrera/learn/lecture/17854154#overview",
+                    },
+                },
+
+                //Scrimba
+                {
+                    date: [`07/07/2022`,  `11/01/2023`],
+                    title: "The Frontend Developer Career Path",
+                    subtitle: "Scrimba",
+                    description: `
+                        La Carrera de Desarrollador Front End, es un curso de software hecho por
+                        la plataforma scrimba, el objetivo del curso es enseñarte a desarrollar 
+                        aplicaciones web con tecnologías web modernas como ReactJs,
+                        JavaScript ES6, HTML5, CSS3 y otros
+                    `,
+                    assets: {
+                        img: Images.curriculumn.scrimba,
+                        link: "https://scrimba.com/learn/frontend",
+                    },
+                },
+
+               
             ]
         },
 
@@ -268,29 +368,78 @@ export const AboutData:IAboutDataManagement = {
             subtitle: "Mi viaje hasta ahora.",
             items: [
                 {
-                    date: "09-2019",
+                    date: [`01/09/2019`, `04/12/2019`],
                     title: "Pasantía Desarrollo Web",
                     subtitle: "Lancer Group",
-                    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud.`,
+                    description: `
+                        En septiembre de 2019, fui pasante en Lancer Group. En esta pasantía trabajé 
+                        en el desarrollo de un administrador de instancias para la base de datos 
+                        de diferentes proyectos de la empresa.
+                    `,
                     assets: {
                         img: "#",
                         link: "https://lancergroup.org",
                     },
+                },
+
+                {
+                    date: [`01/09/2019`, `04/12/2019`],
+                    title: "Desarrollador Web",
+                    subtitle: "Growing Business School",
+                    description: `
+                       En diciembre de 2021 fui contratado para trabajar en el desarrollo de una 
+                       página web, una plataforma educativa y un sistema de administración (cms) 
+                       para los procesos relacionados con la página web y la plataforma educativa.
+                    `,
+                    assets: {
+                        img: "#",
+                        link: "#",
+                    },
+                },
+
+                {
+                    date: [`18/10/2022`, `Currently ..`],
+                    title: "System Engineer Jr.",
+                    subtitle: "Camsoft SRL",
+                    description: `
+                        Actualmente, trabajo como Ingeniero de Software Jr. para Camsoft SRL. 
+                        trabajo en el desarrollo de Software para la empresa, mediante 
+                        tecnologías como ASP.Net Core, SQL, Server ReactJS, 
+                        Developer Extreme, SAS, entre otras.
+                    `,
+                    assets: {
+                        img: "#",
+                        link: "https://camsoft.com.do",
+                    }
                 }
+
             ]
         },
 
         portfolio: {
             description: [
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud.`,
+                `
+                    Desarrollé este portafolio en mi tiempo libre, en un periodo de tiempo de 3 meses, 
+                    el proceso fue dividido en 4 etapas, la primera etapa consistió en la 
+                    planificación del portafolio, para esta etapa definí de cuáles pantallas 
+                    estaría compuesto el portafolio y qué tipo de información debía mostrar en ellas.
+                `,
 
-                `Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud.`,
+                `
+                    La segunda etapa consistió en el diseño gráfico del portafolio. 
+                    Para esto utilicé figma, en esta etapa diseñé cada una de las pantallas del portafolio, 
+                    tanto en su versión móvil como en su versión desktop.
+                `,
+
+                `
+                    Para la tercera etapa trabajé en el desarrollo de cada uno de los componentes 
+                    individuales que aparecen en el portafolio: los diferentes modals (ventanas emergentes) 
+                    que aparecen, el navbar, el footer, la estructura y comportamiento de los modos día y noche, 
+                    así como también el funcionamiento del cambio de idioma al interior de la aplicación, 
+                    todo fue desarrollado desde cero. 
+                    
+                    Para la cuerta etapa integré los componentes y funcionalidades que creé en la etapa tres. 
+                `,
             ],
             
             technologies: [

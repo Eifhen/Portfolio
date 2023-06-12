@@ -71,8 +71,9 @@ export interface IDesingImageCollector {
 }
 
 export interface ICurriculumnCollector {
-    education:ImageCollector;
-    work: ImageCollector;
+    itla: string;
+    scrimba: string;
+    es6: string;
 }
 
 export interface IOtherIcons {

@@ -36,7 +36,7 @@ export default function AboutHero (props:IAboutHero) {
                             {(item)=>(
                                 <div class="offer-item">
                                     <i class={item.icon}></i>
-                                    <span>{item.title}</span>
+                                    <pre>{item.title}</pre>
                                 </div>
                             )}
                         </For>

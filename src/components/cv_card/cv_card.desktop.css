@@ -124,7 +124,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.1em;
-    color: var(--pure);
+    color: var(--grayD9);
 
 }
 
@@ -185,26 +185,27 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 
-        30% 
-        70%
+        minmax(35%, auto) 
+        minmax(65%, auto)
     ;
     grid-template-areas: 
         "time" 
         "other"
     ;
+
 }
 
 .cv-card .card-date .time {
     grid-area: time;
     display: flex;
-    align-items: flex-end;
-    padding-bottom: 0.5rem;
-   
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .cv-card .card-date time {
-    background-color: white;
-    color: black;
+
+    color: var(--grayD9);
     height: 20px;
     width: 140px;
     border-radius: 50px;
@@ -219,6 +220,7 @@
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.1em;
+    padding: 0.3rem 0.3rem 0.3rem 0.5rem;
 }
 
 .cv-card .card-date time i {
