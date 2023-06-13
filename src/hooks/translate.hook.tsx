@@ -14,3 +14,8 @@ export default function translate(key:string) {
     const { lenguageStore } = context.lenguageManager;
     return lenguageStore.lenguage == "EN"? lenguageDataEN[data]: lenguageDataES[data];
 }
+
+export function translateElement(key:string, lan:string){
+    const data = key.toLowerCase();
+    return lan == "EN"? lenguageDataEN[data]: lenguageDataES[data];
+}

@@ -77,4 +77,5 @@ export const lenguageDataES:ILenguageData = {
     "education-and-experience": "Educación & Experiencia",
     "education": "Educación",
     "experience": "Experiencia",
+    "cv-disabled": "Por el momento el cv no está disponible",
 };

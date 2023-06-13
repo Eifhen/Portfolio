@@ -11,6 +11,7 @@ import ErrorPage from '../pages/error/error.page';
 import AboutPage from '../pages/about/about.page';
 import TemplatesPage from '../pages/templates/templates.page';
 import TemplateDetailPage from '../pages/templates_detail/templates_detail';
+import LogoPage from '../pages/test/logo.page';
 
 export default function RouterManager(){
 
@@ -26,9 +27,7 @@ export default function RouterManager(){
                     <Route path="/" component={ HomePage }/>
                 </Route>
 
-                <Route path="/test" component={ Layout }>
-                    <Route path="/" component={ TestPage }/>
-                </Route>
+    
 
                 <Route path="/projects" component={ Layout }>
                     <Route path="/" component={ ProjectPage }/>
@@ -52,6 +51,15 @@ export default function RouterManager(){
 
                 <Route path="" component={ Layout }>
                     <Route path="*" component = { ErrorPage }/>
+                </Route>
+
+                { /* Rutas para pruebas */ }
+                <Route path="/test" component={ Layout }>
+                    <Route path="/" component={ TestPage }/>
+                </Route>
+
+                <Route path="/logo-page" component={ Layout }>
+                    <Route path="/" component={ LogoPage }/>
                 </Route>
             </Routes>
         </Router>

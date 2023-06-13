@@ -23,7 +23,7 @@ export default function SocialMedia (props: ISocialMedia){
         <div class={`socialmedia-container ${props.orientation} ${props.iconSize}`}>
             <For each={props.data}>
                 {(item)=>(
-                    <A href={item.link} title={item.title} class="socialmedia-item">
+                    <A href={item.link} title={item.title} target="_blank" class="socialmedia-item">
                         {RenderItem(item)}
                     </A>
                 )}

@@ -5,14 +5,15 @@ import SocialMedia from '../../../../components/social-media/socialmedia.compone
 import UserImage from '../../../../components/userImage/userImage.component';
 import { ISocialMediaData } from '../../../../data/social-media/social-media.data';
 import { ITheme } from '../../../../hooks/theme.hook';
-import translate from '../../../../hooks/translate.hook';
+import translate, { translateElement } from '../../../../hooks/translate.hook';
 import './hero.desktop.css';
 import './hero.movil.css';
 import { IServicesData } from '../../../../data/services/services.data';
 import MyServices from '../../../../components/services/services.component';
 import Wave from '../../../../components/wave/wave.component';
 import DownloadCV from '../../../../hooks/download-cv.hook';
-import { A } from '@solidjs/router';
+import { A, useNavigate } from '@solidjs/router';
+import useAplicationContext from '../../../../context/aplication.context';
 
 
 interface IHero {
@@ -48,6 +49,7 @@ export default function Hero (props: IHero) {
 }
 
 function HeroDesktop (props: IHero) {
+
     return (
         <div class="hero">
             <div class="container">
@@ -61,7 +63,7 @@ function HeroDesktop (props: IHero) {
                             <h2>Gabriel Jiménez</h2>
                             <h3 class="job">FullStack Software Developer</h3>
                             <p>{translate('take-a-look')}</p>
-                            <A href={DownloadCV()} class="btn btn-download">{translate("download-cv")}</A>
+                            <button  onClick={()=> DownloadCV()} class="btn btn-download">{translate("download-cv")}</button>
                         </div>
                     </div>
                 </div>
@@ -92,7 +94,7 @@ function HeroMovil (props: IHero) {
                         <h2>Gabriel Jiménez</h2>
                         <h3 class="job">FullStack Software Developer</h3>
                         <p>{translate('take-a-look')}</p>
-                        <A href={DownloadCV()} class="btn btn-download">{translate("download-cv")}</A>
+                        <button onClick={()=> DownloadCV()} class="btn btn-download">{translate("download-cv")}</button>
                     </div>
                 </div>
                 <div class="media">

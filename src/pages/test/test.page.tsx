@@ -31,7 +31,7 @@ export default function TestPage() {
                 
                 <div class="prueba_card">
                     <div class="img_content">
-                        <img src={Images.projects.growing.cover} alt="" elementtiming={""} fetchpriority={"high"} />
+                        <img src={Images.projects.growing.cover} />
                     </div>
                     <div class="prueba_content">
                         <div class="info">

@@ -23,7 +23,7 @@ export default function UpBtn (props:IUpBtnProps) {
     })
 
     return (
-        <a href="#navbar" ref={upButton!} class={`up_btn ${props.theme.theme}`} role="button" >
+        <a href="#navbar" ref={upButton!} class={`up_btn `} role="button" >
             <i class="ri-arrow-up-line"></i>
         </a>
     )

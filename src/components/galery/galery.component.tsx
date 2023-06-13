@@ -1,11 +1,11 @@
 
-import { Accessor, For, Setter, createEffect, createSignal, onCleanup, onMount } from 'solid-js';
+import { Accessor, For, Setter, createEffect, createSignal, onMount } from 'solid-js';
 import './galery.desktop.css';
 import "./galery.movil.css";
 import { ITheme } from '../../hooks/theme.hook';
 import useHideOnOutsideClick from '../../hooks/outsideClick';
 import { IProjectData, IProjectGalery } from '../../data/projects/project.data.interfaces';
-import { BeforeLeaveEventArgs, useBeforeLeave, useParams } from '@solidjs/router';
+import { useParams } from '@solidjs/router';
 
 interface IGalery {
     data: IProjectData;

@@ -6,8 +6,9 @@ import './navbar.component.movil.css';
 import ButtonTranslate from "../translate/translate.component";
 import translate from '../../hooks/translate.hook';
 import ButtonTheme from "../theme/theme.component";
-import { Accessor, Show, createEffect, createSignal, onMount } from "solid-js";
+import { Accessor, For, Show, createEffect, createSignal, onMount } from "solid-js";
 import useHideOnOutsideClick from "../../hooks/outsideClick";
+import { RoutesData } from "../../data/routes/routes.data";
 
 interface INavbar {
     color:ITheme;
@@ -40,27 +41,21 @@ export default function Navbar (props:INavbar) {
 
 
 function NavbarDesktop(props:INavbar){
+    const data = RoutesData;
+
     return (
         <nav id="navbar" class={`navbar ${props.color.theme}`}>
             <div class="navbar-brand">
                 <Logo color={props.color} />
             </div>
             <ul class="navbar-menu">
-                <li>
-                    <A activeClass="active" href="/home">{translate("Home")}</A>
-                </li>
-                <li>
-                    <A activeClass="active" href="/projects">{translate("Projects")}</A>
-                </li>
-                <li>
-                    <A activeClass="active" href="/templates">{translate("Designs & Templates")}</A>
-                </li>
-                <li>
-                    <A activeClass="none" href="/home#contact">{translate("Contact")}</A>
-                </li>
-                <li>
-                    <A activeClass="active" href="/about">{translate("About")}</A>
-                </li>
+                <For each={data}>
+                    {(route)=>(
+                        <li>
+                            <A activeClass={route.activeClass} href={route.href}>{translate(route.name)}</A>
+                        </li>
+                    )}
+                </For>
             </ul>
             <div class="navbar-actions">
                 <ButtonTranslate color={props.color}/>
@@ -71,6 +66,7 @@ function NavbarDesktop(props:INavbar){
 }
 
 function NavbarMovil(props:INavbar){
+    const data = RoutesData;
     const [show, setShow] = createSignal<boolean>(false);
     const [hide, setHide] = createSignal<string>('created');
 
@@ -121,21 +117,13 @@ function NavbarMovil(props:INavbar){
                         </div>
                         <div class="container">
                             <ul class="navbar-menu-movil">
-                                <li>
-                                    <A activeClass="active" href="/home">{translate("Home")}</A>
-                                </li>
-                                <li>
-                                    <A activeClass="active" href="/projects">{translate("Projects")}</A>
-                                </li>
-                                <li>
-                                    <A activeClass="active" href="/templates">{translate("Designs & Templates")}</A>
-                                </li>
-                                <li>
-                                    <A activeClass="none" href="/home#contact">{translate("Contact")}</A>
-                                </li>
-                                <li>
-                                    <A activeClass="active" href="/about">{translate("About")}</A>
-                                </li>
+                            <For each={data}>
+                                {(route)=>(
+                                    <li>
+                                        <A activeClass={route.activeClass} href={route.href}>{translate(route.name)}</A>
+                                    </li>
+                                )}
+                            </For>
                             </ul>
                             <div class="navbar-actions">
                                 <ButtonTranslate color={props.color}/>

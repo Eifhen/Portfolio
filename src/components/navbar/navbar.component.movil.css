@@ -74,7 +74,7 @@
 }
 
 .nav-menu-movil-mask .nav-menu-panel-movil.active {
-    animation: displayModal 500ms ease-in-out;
+    animation: displayModal 300ms ease-in-out;
     animation-fill-mode: forwards;
 }
 

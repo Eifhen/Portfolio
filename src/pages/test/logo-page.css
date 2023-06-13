@@ -1,0 +1,53 @@
+
+
+
+
+
+.logo-page {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+
+.logo-page .black-logo {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  70vw;
+    height: 80vh;
+    border-radius: 35px;
+    margin: 0 auto;
+}
+
+.logo-page .white-logo {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.logo-page .logo {
+    height: 204px;
+    width: 313px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-page .logo svg {
+    width: 300px;
+    height: 280px;
+}
+
+.logo-page .logo h1 {
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 86px;
+}

@@ -6,7 +6,7 @@ export default function useGoUpHook<T>(props:IGoUpProps<T>){
 
     const layout = document.getElementById("layout-page")
         layout?.addEventListener("scroll", ()=>{
-
+       
         if(layout.scrollTop >= 550){
             props.btnUpRef.classList.add("d-flex");
         }

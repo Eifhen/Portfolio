@@ -103,14 +103,13 @@
 *******************************/
 
 .about-page .about-portfolio .grid-container .info .technologies {
-    height: 60%;
+    height: 100%;
     width: 30%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
-
 }
 
 .about-page .about-portfolio .grid-container .info .technologies .item {

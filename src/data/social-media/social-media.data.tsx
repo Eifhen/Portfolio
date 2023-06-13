@@ -17,7 +17,7 @@ export const SocialMediaData: ISocialMediaData[] = [
         img:"ri-github-fill",
         type:"icon",
         title: "Github",
-        link:""
+        link:"https://github.com/Eifhen"
     },
     {
         img:"ri-linkedin-line",
@@ -29,7 +29,7 @@ export const SocialMediaData: ISocialMediaData[] = [
         img:"ri-instagram-line",
         type:"icon",
         title: "Instagram",
-        link: "",
+        link: "https://www.instagram.com/jimenezg905/",
     },  
     {
         img:"ri-whatsapp-line",

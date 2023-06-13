@@ -1,6 +1,6 @@
 
 
-@media(max-width: 950px){
+@media(max-width: 1050px){
 
     .about-page .about-portfolio .grid-container {
         grid-template-rows: 
@@ -34,8 +34,9 @@
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        align-content: center;
     }
 
     .about-page .about-portfolio .grid-container .links {
