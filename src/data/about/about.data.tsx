@@ -80,15 +80,15 @@ export const AboutData:IAboutDataManagement = {
             ],
             offerts: [
                 {
-                    title: "Good Design",
+                    title: `Good \nDesign`,
                     icon: "ri-palette-line",
                 },
                 {
-                    title: "Fine Tuning",
+                    title: `Fine \nTuning`,
                     icon: "ri-compasses-2-line",
                 },
                 {
-                    title: "Save Time",
+                    title: `Save \nTime`,
                     icon: "ri-timer-2-line"
                 }
             ]
