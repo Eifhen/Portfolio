@@ -1,6 +1,7 @@
 import useAplicationContext from "../context/aplication.context";
 import { lenguageDataEN, } from "../data/lenguage/lenguage.data.EN";
 import { lenguageDataES } from "../data/lenguage/lenguage.data.ES";
+import useLenguage from "./lenguage.hook";
 
 
 interface ITranslate {
@@ -11,11 +12,12 @@ export default function translate(key:string) {
 
     const data = key.toLowerCase();
     const context = useAplicationContext();
-    const { lenguageStore } = context.lenguageManager;
+    const {lenguageStore} = context.lenguageManager;
     return lenguageStore.lenguage == "EN"? lenguageDataEN[data]: lenguageDataES[data];
 }
 
-export function translateElement(key:string, lan:string){
+export function translateElement(key:string){
     const data = key.toLowerCase();
-    return lan == "EN"? lenguageDataEN[data]: lenguageDataES[data];
+    const {lenguageStore} = useLenguage();
+    return lenguageStore.lenguage == "EN"? lenguageDataEN[data]: lenguageDataES[data];
 }

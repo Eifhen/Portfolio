@@ -33,7 +33,10 @@ export const ServicesData:IServicesData = {
             title:"Web",
             subtitle:"Development",
             icon: "ri-code-s-slash-line",
-            description:"I offer services for the development of web applications, powered by technologies such as React JS, ASP .NET and others.",
+            description: `
+                Development of web applications, powered by technologies 
+                such as React JS, Solid JS, ASP .NET among others.
+            `,
             color: "black",
             state: 'active',
         },
@@ -41,7 +44,10 @@ export const ServicesData:IServicesData = {
             title:"API",
             subtitle: "Development",
             icon: "ri-database-2-fill",
-            description: "Feel free to contact me if you need collaboration with any project where it is necessary to develop API, Rest, Restfull",
+            description: `
+                Development of applications on the backend side, with 
+                technologies such as ASP. Net, Asp.Net Core, Php, C#, APIS Rest/Restful
+            `,
             color: "gray",
             state: 'inactive',
         },
@@ -49,7 +55,10 @@ export const ServicesData:IServicesData = {
             title: "Web",
             subtitle:"Design",
             icon:"ri-palette-fill",
-            description: "You can contact me if you need someone for a layout or web design project of any sort.",
+            description: `
+                Design of user interfaces, web layout, 
+                implementation and creation of templates among others.
+            `,
             color: "white",
             state: 'inactive',
         }
@@ -59,7 +68,10 @@ export const ServicesData:IServicesData = {
             title:"Desarrollo",
             subtitle:"Web",
             icon: "ri-code-s-slash-line",
-            description:"Ofrezco servicios para el desarrollo de aplicaciones web, potenciado con tecnologías como React JS, ASP .NET y otras.",
+            description:`
+                Desarrollo de aplicaciones web, potenciado con tecnologías 
+                como React JS, Solid JS, ASP .NET entre otras.
+            `,
             color: "black",
             state: 'active',
         },
@@ -67,7 +79,10 @@ export const ServicesData:IServicesData = {
             title:"Desarrollo de",
             subtitle: "API's",
             icon: "ri-database-2-fill",
-            description: "No dudes en contactarme si necesitas colaboración con algún proyecto donde sea necesario desarrollar API, Rest, Restful",
+            description: `
+                Desarrollo de aplicaciones del lado del backend, 
+                con tecnologías como ASP. Net, Asp.Net Core, Php, C#, APIS Rest/Restful
+            `,
             color: "gray",
             state: 'inactive',
         },
@@ -75,7 +90,10 @@ export const ServicesData:IServicesData = {
             title: "Diseño",
             subtitle: "Web",
             icon:"ri-palette-fill",
-            description: "Puedes contactarme si necesitas a alguien para un proyecto de maquetación o diseño web de cualquier tipo.",
+            description: `
+                Diseño de interfaces de usuario, maquetación web, implementación y 
+                creación de plantillas entre otros.
+            `,
             color: "white",
             state: 'inactive',
         }
