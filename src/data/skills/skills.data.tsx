@@ -26,6 +26,7 @@ export interface ISkillData {
 export const SkillsData: ISkillsDataManager = {
 
     ES: [
+        // Desarrollo Web
         {
             title: "Desarrollo Web",
             icon: "ri-code-s-slash-fill",
@@ -81,6 +82,8 @@ export const SkillsData: ISkillsDataManager = {
           
             ]
         },
+
+        // Desarrollo Apis
         {
             title: "Desarrollo de API's",
             icon: "ri-database-2-fill",
@@ -93,6 +96,12 @@ export const SkillsData: ISkillsDataManager = {
                 },
                 {
                     title: "ASP.Net",
+                    type: "img",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    icon: Images.tecnologies.asp_icon,
+                },
+                {
+                    title: "ASP.Net Core",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: Images.tecnologies.asp_icon,
@@ -122,16 +131,16 @@ export const SkillsData: ISkillsDataManager = {
                     icon: Images.tecnologies.php_icon,
                 },
                 {
-                    title: "SQL",
-                    type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: Images.tecnologies.sql_icon,
-                },
-                {
                     title: "MySql",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: Images.tecnologies.mysql_icon,
+                },
+                {
+                    title: "SQL Server",
+                    type: "img",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    icon: Images.tecnologies.sql_icon,
                 },
                 {
                     title: "Git",
@@ -141,6 +150,8 @@ export const SkillsData: ISkillsDataManager = {
                 },        
             ]
         },
+
+        // Diseño Web
         {
             title: "Diseño Web",
             icon: "ri-palette-fill",
@@ -162,6 +173,7 @@ export const SkillsData: ISkillsDataManager = {
 
     ],
     EN: [
+          // Desarrollo Web
         {
             title: "Web Development",
             icon: "ri-code-s-slash-fill",
@@ -217,6 +229,8 @@ export const SkillsData: ISkillsDataManager = {
           
             ]
         },
+
+         // Desarrollo Apis
         {
             title: "API Development",
             icon: "ri-database-2-fill",
@@ -229,6 +243,12 @@ export const SkillsData: ISkillsDataManager = {
                 },
                 {
                     title: "ASP.Net",
+                    type: "img",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    icon: Images.tecnologies.asp_icon,
+                },
+                {
+                    title: "ASP.Net Core",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: Images.tecnologies.asp_icon,
@@ -258,16 +278,16 @@ export const SkillsData: ISkillsDataManager = {
                     icon: Images.tecnologies.php_icon,
                 },
                 {
-                    title: "SQL",
-                    type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
-                    icon: Images.tecnologies.sql_icon,
-                },
-                {
                     title: "MySql",
                     type: "img",
                     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
                     icon: Images.tecnologies.mysql_icon,
+                },
+                {
+                    title: "SQL Server",
+                    type: "img",
+                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    icon: Images.tecnologies.sql_icon,
                 },
                 {
                     title: "Git",
@@ -277,6 +297,8 @@ export const SkillsData: ISkillsDataManager = {
                 },        
             ]
         },
+
+        // Diseño Web
         {
             title: "Web Design",
             icon: "ri-palette-fill",

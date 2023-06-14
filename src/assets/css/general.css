@@ -235,7 +235,7 @@ p {
   grid-template-columns: 100%;
   grid-template-rows: 
       100px
-      auto
+      100px
   ;
   grid-template-areas: 
       "blank_space"
@@ -267,6 +267,14 @@ p {
   background-color: transparent;
 }
 
+@media (min-width: 1900px) {
+  .general-wave {
+    grid-template-rows: 
+        100px
+        auto
+    !important;
+  }
+}
 
 /******************************************
   Button Style
