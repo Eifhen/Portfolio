@@ -7,9 +7,9 @@
     grid-template-rows: 
         auto /* hero */
         minmax(50vh, auto) /* about */ 
-        minmax(100vh, max-content) /* portfolio */
-        minmax(100vh, max-content)  /* textimonials */
-        minmax(110vh, auto) /* contact */
+        minmax(50vh, max-content) /* portfolio */
+        minmax(50vh, max-content)  /* textimonials */
+        minmax(80vh, auto) /* contact */
     ;
     grid-template-areas: 
         "hero"

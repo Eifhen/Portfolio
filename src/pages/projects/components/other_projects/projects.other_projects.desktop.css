@@ -16,7 +16,6 @@
         "other_projects"
         "other_project_wave"
     ;
- 
 }
 
 .project-page.dark .other-projects {
@@ -29,7 +28,6 @@
 
 .project-page .other-projects .other-projects-init-wave {
     grid-area: init_wave;
-
 }
 
 /*******************************
@@ -42,7 +40,8 @@
     flex-direction: column;
     justify-content: flex-start;
     position: relative;
-    padding: 0;
+  
+    z-index: 4;
 }
 
 .project-page .other-projects header .title {

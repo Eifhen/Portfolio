@@ -63,7 +63,3 @@ export default function AboutQualifications (props: IAboutQualifications){
         </div>
     )
 }
-
-/*
- 
-*/

@@ -21,7 +21,7 @@
     grid-template-rows: 
         150px
         minmax(350px, auto)
-        minmax(60px, auto)
+        minmax(100px, auto)
     ;
     grid-template-areas: 
         "header"
@@ -98,5 +98,5 @@
     color: white;
     border-radius: 50px;
     cursor: pointer;
-  
+    box-shadow: var(--shadow-bright-md);
 }

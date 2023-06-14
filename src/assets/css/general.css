@@ -55,6 +55,7 @@
     --shadow-bright: 0px 0px 20px 1px #666;
     --shadow-bright-low: 0px 0.5rem 1rem 1px #666;
     --shadow-bright-lg: 0 1rem 3rem #666 !important;
+    --shadow-bright-md: 0 0.3rem 1rem #666 !important;
     --shadow-bright-sm: 0 .5rem 1rem #666 !important;
     --shadow-card: 0px 4px 10px 2px rgba(0, 0, 0, 0.25);
     --shadow-card-2: 0.1rem 0.5rem 1rem rgba(0,0,0,.15)!important;;
@@ -234,7 +235,7 @@ p {
   grid-template-columns: 100%;
   grid-template-rows: 
       100px
-      100px
+      auto
   ;
   grid-template-areas: 
       "blank_space"

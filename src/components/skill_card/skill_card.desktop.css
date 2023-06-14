@@ -1,7 +1,7 @@
 
 
 .skills_card {
-    width: 26%;
+    width: 344px;
     min-height: 650px;
     border-radius: 35px;
   
@@ -17,7 +17,7 @@
         "header"
         "list"
     ;
-  
+    z-index:4;
 }
 
 .light .skills_card {
