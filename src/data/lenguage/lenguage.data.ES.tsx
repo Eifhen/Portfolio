@@ -8,7 +8,7 @@ export const lenguageDataES:ILenguageData = {
     "projects": "Proyectos",
     "designs & templates": "Diseños y Plantillas",
     "contact":"Contacto",
-    "about": "Acerca de mi",
+    "about": "Acerca de mí",
     "menu": "Menú",
     "feel free to explore" : "Sientete libre de explorar",
     "my-services": "Mis Servicios",
@@ -18,7 +18,7 @@ export const lenguageDataES:ILenguageData = {
     "hi-im" : "Hola!, soy ",
     "take-a-look": "Echa un vistazo a mi portafolio y aprende un poco más sobre mi viaje.",
     "download-cv" : "Descargar CV",
-    "about-me" : "Acerca de mi",
+    "about-me" : "Acerca de mí",
     "about-intro" : `
         Me describo como un desarrollador de software muy apasionado, 
         he centrado mi trabajo en el desarrollo y diseño de aplicaciones web. 

@@ -277,7 +277,7 @@ export const AboutData:IAboutDataManagement = {
 
     ES: {
         hero: {
-            pageTitle: "Acerca de mi",
+            pageTitle: "Acerca de mí",
             subtitle: "Por qué contratarme para tu",
             title: "Próximo Proyecto",
 
