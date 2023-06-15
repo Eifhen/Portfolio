@@ -79,7 +79,7 @@ export interface ICurriculumnCollector {
 
 export interface IOtherIcons {
     travel_icon: string;
-
+    portfolio_wallpaper:string;
     [key:string]:string
 }
 
