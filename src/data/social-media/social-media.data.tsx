@@ -23,7 +23,7 @@ export const SocialMediaData: ISocialMediaData[] = [
         img:"ri-linkedin-line",
         type:"icon",
         title: "Linkedin",
-        link: "",
+        link: "https://www.linkedin.com/in/gabriel-jiménez-b07360115/",
     },
     {
         img:"ri-instagram-line",
@@ -35,6 +35,6 @@ export const SocialMediaData: ISocialMediaData[] = [
         img:"ri-whatsapp-line",
         type:"icon",
         title: "Whatsapp",
-        link: "",
+        link: "https://wa.me/8298143523",
     },
 ]
