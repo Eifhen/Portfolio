@@ -1,4 +1,4 @@
-import { Outlet, Route, Router, Routes } from '@solidjs/router';
+import { Navigate, Outlet, Route, Router, Routes } from '@solidjs/router';
 import TestPage from '../pages/test/test.page';
 import 'remixicon/fonts/remixicon.css';
 import '../assets/css/general.css';
@@ -20,14 +20,12 @@ export default function RouterManager(){
         <Router>
             <Routes>
                 <Route path="/" component={ Layout }>
-                    <Route path="/" component={ HomePage }/>
+                    <Navigate href="/home"/>
                 </Route>
 
                 <Route path="/home" component={ Layout }>
                     <Route path="/" component={ HomePage }/>
                 </Route>
-
-    
 
                 <Route path="/projects" component={ Layout }>
                     <Route path="/" component={ ProjectPage }/>

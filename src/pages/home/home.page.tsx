@@ -17,7 +17,7 @@ import { AboutData } from '../../data/about/about.data';
 
 export default function HomePage() {
     const context = useAplicationContext();
-    const socialMedia = SocialMediaData;
+    const socialMedia = context.socialMedia;
     const services = ServicesData;
     const projects = ProjectData;
     const testimonies = TestimonialsData;
@@ -32,7 +32,7 @@ export default function HomePage() {
                 lenguage={ context.lenguageManager.lenguageStore.lenguage } 
                 screen={ context.screenWidth } 
                 services={ services }
-                media={ socialMedia } 
+                media={ socialMedia() } 
                 theme={ context.themeManager.themeStore } 
             />
 

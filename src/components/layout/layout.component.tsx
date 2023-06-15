@@ -31,7 +31,7 @@ function LayoutContent () {
                 </main>
                 <footer id="main-footer" class="footer">
                     <UpBtn theme={ context.themeManager.themeStore } />
-                    <Footer data={ context.socialMedia } />
+                    <Footer data={ context.socialMedia() } />
                 </footer>
             </div>
         </div>

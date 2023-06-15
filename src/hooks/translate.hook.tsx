@@ -9,7 +9,6 @@ interface ITranslate {
 }
 
 export default function translate(key:string) {
-
     const data = key.toLowerCase();
     const context = useAplicationContext();
     const {lenguageStore} = context.lenguageManager;
@@ -20,4 +19,9 @@ export function translateElement(key:string){
     const data = key.toLowerCase();
     const {lenguageStore} = useLenguage();
     return lenguageStore.lenguage == "EN"? lenguageDataEN[data]: lenguageDataES[data];
+}
+
+export function translateWithLan(key:string, lan:string){
+    const data = key.toLowerCase();
+    return lan == "EN"? lenguageDataEN[data]: lenguageDataES[data];
 }

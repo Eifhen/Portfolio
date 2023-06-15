@@ -76,4 +76,5 @@ export const lenguageDataEN:ILenguageData = {
     "education": "Education",
     "experience": "Experience",
     "cv-disabled": "at the moment the cv is not available",
+    "whatsapp-msg": "I am interested in your services",
 }
