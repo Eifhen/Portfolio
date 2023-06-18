@@ -1,4 +1,5 @@
 import { DanielPimentelEN, DanielPimentelES } from "./daniel_pimentel.testimonial";
+import { ElianEN, ElianES } from "./elian.testimonial";
 import { LeuriCastilloEN, LeuriCastilloES } from "./leuri_castillo.testimonial";
 import { MartinTestimonialEN, MartinTestimonialES } from "./martin.testimonial";
 
@@ -36,11 +37,13 @@ export const TestimonialsData: ITestimonialManager = {
         MartinTestimonialEN,
         DanielPimentelEN,
         LeuriCastilloEN,
+        ElianEN,
     ],
 
     ES: [
         MartinTestimonialES,
         DanielPimentelES,
         LeuriCastilloES,
+        ElianES,
     ]
 }
