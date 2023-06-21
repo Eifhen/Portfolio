@@ -5,13 +5,13 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template04 English ]
+    [ Living The Simple Life English ]
 *************************************/
-export const Template04EN: IProjectData =  {
+export const LivingTheSimpleLifeEN: IProjectData =  {
     id: 6,
     pin: true,
-    title: "Template04",
-    description: "basic template for a blog about minimalism.",
+    title: "Living The Simple Life",
+    description: "Basic template for a blog about minimalism.",
     date: "01 / 09 / 2022",
     img:Images.designs.template04.cover,
     highlighted: true,
@@ -33,13 +33,13 @@ export const Template04EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template04",
+                link: "https://github.com/Eifhen/Living-The-Simple-Life",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template04",
+                link: "https://eifhen.github.io/Living-The-Simple-Life",
                 type: "icon",
             }
         ],
@@ -47,28 +47,28 @@ export const Template04EN: IProjectData =  {
             {
                 img:Images.designs.template04.cover,
                 page: "Intro", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template04.img_1,
                 page: "Home Page", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 2,
             },
             {
                 img:Images.designs.template04.img_2,
                 page: "Recent Posts", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 3,
             },
             {
                 img:Images.designs.template04.img_3,
                 page: "About Page", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 4,
             },
@@ -78,12 +78,12 @@ export const Template04EN: IProjectData =  {
 
 
 /************************************
-    [ Template04 Spanish ]
+    [ Living The Simple Life Spanish ]
 *************************************/
-export const Template04ES: IProjectData =  {
+export const LivingTheSimpleLifeES: IProjectData =  {
     id: 6,
     pin: true,
-    title: "Template04",
+    title: "Living The Simple Life",
     description: "Template básico para un blog acerca del minimalismo",
     date: "01 / 09 / 2022",
     img: Images.designs.template04.cover,
@@ -106,13 +106,13 @@ export const Template04ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template04",
+                link: "https://github.com/Eifhen/Living-The-Simple-Life",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template04",
+                link: "https://eifhen.github.io/Living-The-Simple-Life",
                 type: "icon",
             }
         ],
@@ -120,28 +120,28 @@ export const Template04ES: IProjectData =  {
             {
                 img:Images.designs.template04.cover,
                 page: "Intro", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template04.img_1,
                 page: "Página de Inicio", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 2,
             },
             {
                 img:Images.designs.template04.img_2,
                 page: "Publicaciones Recientes", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 3,
             },
             {
                 img:Images.designs.template04.img_3,
                 page: "Acerca de", // name of the page
-                project: "Template04", // name of the project
+                project: "Living The Simple Life", // name of the project
                 description: "",
                 id: 4,
             },

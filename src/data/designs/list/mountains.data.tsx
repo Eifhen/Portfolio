@@ -4,12 +4,12 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template07 English ]
+    [ Mountains English ]
 *************************************/
-export const Template07EN: IProjectData =  {
+export const MountainsEN: IProjectData =  {
     id:3,
     pin: false,
-    title: "Template07",
+    title: "Mountains",
     description: "Basic Blog about my favorite mountains",
     date: "14 / 01 / 2023",
     img:Images.designs.template07.cover,
@@ -34,13 +34,13 @@ export const Template07EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template07",
+                link: "https://github.com/Eifhen/Mountains",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template07",
+                link: "https://eifhen.github.io/Mountains",
                 type: "icon",
             }
         ],
@@ -48,35 +48,35 @@ export const Template07EN: IProjectData =  {
             {
                 img:Images.designs.template07.cover,
                 page: "Hero Section", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template07.img_1,
                 page: "Posts", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 2,
             },
             {
                 img:Images.designs.template07.img_2,
                 page: "Blog Entrie", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 3,
             },
             {
                 img:Images.designs.template07.img_3,
                 page: "Blog Entrie | Content", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 4,
             },
             {
                 img:Images.designs.template07.img_4,
                 page: "Blog Entrie | Footer", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 5,
             },
@@ -86,12 +86,12 @@ export const Template07EN: IProjectData =  {
 
 
 /************************************
-    [ Template07 Spanish ]
+    [ Mountains Spanish ]
 *************************************/
-export const Template07ES: IProjectData =  {
+export const MountainsES: IProjectData =  {
     id: 3,
     pin: false,
-    title: "Template07",
+    title: "Mountains",
     description: "Blog básico acerca de mis montañas favoritas",
     date: "14 / 01 / 2023",
     img: Images.designs.template07.cover,
@@ -116,13 +116,13 @@ export const Template07ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template07",
+                link: "https://github.com/Eifhen/Mountains",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template07",
+                link: "https://eifhen.github.io/Mountains",
                 type: "icon",
             }
         ],
@@ -130,35 +130,35 @@ export const Template07ES: IProjectData =  {
             {
                 img:Images.designs.template07.cover,
                 page: "Hero", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template07.img_1,
                 page: "Publícaciones", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 2,
             },
             {
                 img:Images.designs.template07.img_2,
                 page: "Entradas", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 3,
             },
             {
                 img:Images.designs.template07.img_3,
                 page: "Entradas | Contenido", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 4,
             },
             {
                 img:Images.designs.template07.img_4,
                 page: "Entradas | Pie de Página", // name of the page
-                project: "Template07", // name of the project
+                project: "Mountains", // name of the project
                 description: "",
                 id: 5,
             },

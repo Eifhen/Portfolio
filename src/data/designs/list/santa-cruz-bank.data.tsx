@@ -4,16 +4,16 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template06 English ]
+    [ SantaCruzBank English ]
 *************************************/
-export const Template06EN: IProjectData =  {
-    id: 4,
-    pin: false,
-    title: "Template06",
-    description: "A basic template for a blog",
-    date: "23 / 12 / 2022",
-    img:Images.designs.template06.cover,
-    highlighted: false,
+export const SantaCruzBankEN: IProjectData =  {
+    id:2,
+    pin: true,
+    title: "Santa Cruz Bank",
+    description: "Template about the Santa Cruz Bank",
+    date: "17 / 01 / 2023",
+    img:Images.designs.template08.cover,
+    highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
@@ -22,7 +22,8 @@ export const Template06EN: IProjectData =  {
     detail:{
         about: [                    
             `I made this template as a practice to improve my CSS skills,
-            The page is based on a kind of blog about my journey as software developer`,
+            The page is based on the Santa Cruz bank website
+            in the Dominican Republic.`,
         ],
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
@@ -34,61 +35,55 @@ export const Template06EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template06",
+                link: "https://github.com/Eifhen/SantaCruzBank",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template06",
+                link: "https://eifhen.github.io/SantaCruzBank",
                 type: "icon",
             }
         ],
         galery: [
             {
-                img:Images.designs.template06.cover,
+                img:Images.designs.template08.cover,
                 page: "Hero Section", // name of the page
-                project: "Template06", // name of the project
+                project: "SantaCruzBank", // name of the project
                 description: "",
                 id: 1,
             },
             {
-                img:Images.designs.template06.img_1,
-                page: "Posts", // name of the page
-                project: "Template06", // name of the project
+                img:Images.designs.template08.img_1,
+                page: "Services", // name of the page
+                project: "SantaCruzBank", // name of the project
                 description: "",
                 id: 2,
             },
             {
-                img:Images.designs.template06.img_2,
-                page: "Blog Entrie", // name of the page
-                project: "Template06", // name of the project
+                img:Images.designs.template08.img_2,
+                page: "Recent News", // name of the page
+                project: "SantaCruzBank", // name of the project
                 description: "",
                 id: 3,
             },
-            {
-                img:Images.designs.template06.img_3,
-                page: "Blog Entrie | Content", // name of the page
-                project: "Template06", // name of the project
-                description: "",
-                id: 4,
-            },
+       
         ],
     }
 }
 
 
 /************************************
-    [ Template06 Spanish ]
+    [ SantaCruzBank Spanish ]
 *************************************/
-export const Template06ES: IProjectData =  {
-    id: 4,
-    pin: false,
-    title: "Template06",
-    description: "Template básico para una página tipo blog.",
-    date: "23 / 12 / 2022",
-    img: Images.designs.template06.cover,
-    highlighted: false,
+export const SantaCruzBankES: IProjectData =  {
+    id: 2,
+    pin: true,
+    title: "Banco Santa Cruz",
+    description: "Plantilla web banco Santa Cruz",
+    date: "17 / 01 / 2023",
+    img: Images.designs.template08.cover,
+    highlighted: true,
     mainTechnologies: [
         { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
         { name: "CSS", icon: "ri-css3-fill color-blue", type: "icon" },
@@ -96,8 +91,9 @@ export const Template06ES: IProjectData =  {
     ],
     detail:{
         about: [                    
-            `Hice esta plantilla como una práctica para mejorar mis habilidades de CSS,
-            La página está basada en una especie de blog acerca de mi viaje como software developer.`,
+            `Hice esta plantilla como una práctica para mejorar mis habilidades con CSS,
+            la pagina esta basada en el sitio web del banco Santa Cruz
+            en la República Dominicana.`,
         ],
         technologies: [
             { name: "HTML", icon:"ri-html5-fill color-orange", type: "icon" },
@@ -109,44 +105,37 @@ export const Template06ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template06",
+                link: "https://github.com/Eifhen/SantaCruzBank",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template06",
+                link: "https://eifhen.github.io/SantaCruzBank",
                 type: "icon",
             }
         ],
         galery: [
             {
-                img:Images.designs.template06.cover,
+                img:Images.designs.template08.cover,
                 page: "Hero", // name of the page
-                project: "Template06", // name of the project
+                project: "SantaCruzBank", // name of the project
                 description: "",
                 id: 1,
             },
             {
-                img:Images.designs.template06.img_1,
-                page: "Publícaciones", // name of the page
-                project: "Template06", // name of the project
+                img:Images.designs.template08.img_1,
+                page: "Servicios", // name of the page
+                project: "SantaCruzBank", // name of the project
                 description: "",
                 id: 2,
             },
             {
-                img:Images.designs.template06.img_2,
-                page: "Entradas", // name of the page
-                project: "Template06", // name of the project
+                img:Images.designs.template08.img_2,
+                page: "Noticias Recientes", // name of the page
+                project: "SantaCruzBank", // name of the project
                 description: "",
                 id: 3,
-            },
-            {
-                img:Images.designs.template06.img_3,
-                page: "Entradas | Contenido", // name of the page
-                project: "Template06", // name of the project
-                description: "",
-                id: 4,
             },
         ],
     }

@@ -7,13 +7,13 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template09 English ]
+    [ ScotiaBank English ]
 *************************************/
-export const Template09EN: IProjectData =  {
+export const ScotiaBankEN: IProjectData =  {
     id:1,
     pin: true,
-    title: "Template09",
-    description: "Template website bank scotiabank",
+    title: "ScotiaBank",
+    description: "Template about the ScotiaBank bank",
     date: "26 / 01 / 2023",
     img:Images.designs.template09.cover,
     highlighted: true,
@@ -38,13 +38,13 @@ export const Template09EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template09",
+                link: "https://github.com/Eifhen/ScotiaBank",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template09",
+                link: "https://eifhen.github.io/ScotiaBank",
                 type: "icon",
             }
         ],
@@ -52,49 +52,49 @@ export const Template09EN: IProjectData =  {
             {
                 img:Images.designs.template09.cover,
                 page: "Hero Section", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template09.img_1,
                 page: "Menu", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "Clicking on the menu icon will bring up a modal with all our navigation options.",
                 id: 2,
             },
             {
                 img:Images.designs.template09.img_2,
                 page: "Search Screen", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 3,
             },
             {
                 img:Images.designs.template09.img_3,
                 page: "Comunication Section", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 4,
             },
             {
                 img:Images.designs.template09.img_4,
                 page: "Services Section", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 5,
             },
             {
                 img:Images.designs.template09.img_5,
                 page: "Recent News Section", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 6,
             },
             {
                 img:Images.designs.template09.img_6,
                 page: "Footer", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 7,
             },
@@ -104,13 +104,13 @@ export const Template09EN: IProjectData =  {
 
 
 /************************************
-    [ Template09 Spanish ]
+    [ ScotiaBank Spanish ]
 *************************************/
-export const Template09ES: IProjectData =  {
+export const ScotiaBankES: IProjectData =  {
     id: 1,
     pin: true,
-    title: "Template09",
-    description: "Plantilla web banco ScotiaBank",
+    title: "ScotiaBank",
+    description: "Plantilla web hacerca del banco ScotiaBank",
     date: "26 / 01 / 2023",
     img: Images.designs.template09.cover,
     highlighted: true,
@@ -136,13 +136,13 @@ export const Template09ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template09",
+                link: "https://github.com/Eifhen/ScotiaBank",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template09",
+                link: "https://eifhen.github.io/ScotiaBank",
                 type: "icon",
             }
         ],
@@ -150,49 +150,49 @@ export const Template09ES: IProjectData =  {
             {
                 img:Images.designs.template09.cover,
                 page: "Hero Section", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template09.img_1,
                 page: "Menú", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "Al hacer clic en el icono de menu aparecera un modal con todas nuestras opciones de navegación.",
                 id: 2,
             },
             {
                 img:Images.designs.template09.img_2,
                 page: "Pantalla de búsqueda", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 3,
             },
             {
                 img:Images.designs.template09.img_3,
                 page: "Seccion de Comunicación", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 4,
             },
             {
                 img:Images.designs.template09.img_4,
                 page: "Seccion de Servicios", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 5,
             },
             {
                 img:Images.designs.template09.img_5,
                 page: "Noticias Destacadas", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 6,
             },
             {
                 img:Images.designs.template09.img_6,
                 page: "Pie de Página", // name of the page
-                project: "Template09", // name of the project
+                project: "ScotiaBank", // name of the project
                 description: "",
                 id: 7,
             },

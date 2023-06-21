@@ -4,13 +4,13 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template05 English ]
+    [ ParqueSplash English ]
 *************************************/
-export const Template05EN: IProjectData =  {
+export const ParqueSplashEN: IProjectData =  {
     id: 5,
     pin: true,
-    title: "Template05",
-    description: "basic template for the home screen of an application for a water park",
+    title: "ParqueSplash",
+    description: "Basic template for the home screen of an application for a water park",
     date: "12 / 09 / 2022",
     img:Images.designs.template05.cover,
     highlighted: false,
@@ -32,13 +32,13 @@ export const Template05EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template05",
+                link: "https://github.com/Eifhen/ParqueSplash",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template05",
+                link: "https://eifhen.github.io/ParqueSplash",
                 type: "icon",
             }
         ],
@@ -46,7 +46,7 @@ export const Template05EN: IProjectData =  {
             {
                 img:Images.designs.template05.cover,
                 page: "ParqueSplash", // name of the page
-                project: "Template05", // name of the project
+                project: "ParqueSplash", // name of the project
                 description: "",
                 id: 1,
             },
@@ -56,12 +56,12 @@ export const Template05EN: IProjectData =  {
 
 
 /************************************
-    [ Template05 Spanish ]
+    [ ParqueSplash Spanish ]
 *************************************/
-export const Template05ES: IProjectData =  {
+export const ParqueSplashES: IProjectData =  {
     id: 5,
     pin: true,
-    title: "Template05",
+    title: "ParqueSplash",
     description: "Template básico para la pantalla de inicio de una aplicación para un parque aquatico",
     date: "12 / 09 / 2022",
     img: Images.designs.template05.cover,
@@ -84,13 +84,13 @@ export const Template05ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template05",
+                link: "https://github.com/Eifhen/ParqueSplash",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template05",
+                link: "https://eifhen.github.io/ParqueSplash",
                 type: "icon",
             }
         ],
@@ -98,7 +98,7 @@ export const Template05ES: IProjectData =  {
             {
                 img:Images.designs.template05.cover,
                 page: "ParqueSplash", // name of the page
-                project: "Template05", // name of the project
+                project: "ParqueSplash", // name of the project
                 description: "",
                 id: 1,
             },

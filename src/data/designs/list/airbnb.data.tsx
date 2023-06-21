@@ -11,7 +11,7 @@ export const AirbnbCloneEN: IProjectData =  {
     id: 10,
     pin: true,
     title: "Airbnb Clone",
-    description: "basic Airbnb inspired design ",
+    description: "Basic Airbnb inspired design ",
     date: "25 / 05 / 2022",
     img:Images.designs.airbnb_clone.cover,
     highlighted: true,

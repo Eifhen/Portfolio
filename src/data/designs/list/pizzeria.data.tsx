@@ -5,12 +5,12 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template03 English ]
+    [ Pizzeria English ]
 *************************************/
-export const Template03EN: IProjectData =  {
+export const PizzeriaEN: IProjectData =  {
     id: 7,
     pin: false,
-    title: "Template03",
+    title: "Pizzeria",
     description: "Basic design of a page about a pizzeria",
     date: "23 / 08 / 2022",
     img:Images.designs.template03.cover,
@@ -33,13 +33,13 @@ export const Template03EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template03",
+                link: "https://github.com/Eifhen/Pizzeria",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template03",
+                link: "https://eifhen.github.io/Pizzeria",
                 type: "icon",
             }
         ],
@@ -47,14 +47,14 @@ export const Template03EN: IProjectData =  {
             {
                 img:Images.designs.template03.cover,
                 page: "Header of the page", // name of the page
-                project: "Template03", // name of the project
+                project: "Pizzeria", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template03.img_1,
                 page: "Body of the page", // name of the page
-                project: "Template03", // name of the project
+                project: "Pizzeria", // name of the project
                 description: "",
                 id: 2,
             },
@@ -63,12 +63,12 @@ export const Template03EN: IProjectData =  {
 }
 
 /************************************
-    [ Template03 Spanish ]
+    [ Pizzeria Spanish ]
 *************************************/
-export const Template03ES: IProjectData =  {
+export const PizzeriaES: IProjectData =  {
     id: 7,
     pin: false,
-    title: "Template03",
+    title: "Pizzería",
     description: "Diseño básico de una página web acerca de una pizzería.",
     date: "01 / 09 / 2022",
     img: Images.designs.template03.cover,
@@ -91,13 +91,13 @@ export const Template03ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template03",
+                link: "https://github.com/Eifhen/Pizzeria",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template03",
+                link: "https://eifhen.github.io/Pizzeria",
                 type: "icon",
             }
         ],
@@ -105,14 +105,14 @@ export const Template03ES: IProjectData =  {
             {
                 img:Images.designs.template03.cover,
                 page: "Header of the page", // name of the page
-                project: "Template03", // name of the project
+                project: "Pizzeria", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template03.img_1,
                 page: "Body of the page", // name of the page
-                project: "Template03", // name of the project
+                project: "Pizzeria", // name of the project
                 description: "",
                 id: 2,
             },

@@ -5,12 +5,12 @@ import { IProjectData } from "../../projects/project.data.interfaces"
 
 
 /************************************
-    [ Template02 English ]
+    [ MyFavoriteCity English ]
 *************************************/
-export const Template02EN: IProjectData =  {
+export const MyFavoriteCityEN: IProjectData =  {
     id: 8,
     pin: false,
-    title: "Template02",
+    title: "My Favorite City",
     description: "Basic design of a web about my favorite city.",
     date: "16 / 08 / 2022",
     img:Images.designs.template02.cover,
@@ -33,13 +33,13 @@ export const Template02EN: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template02",
+                link: "https://github.com/Eifhen/MyFavoriteCity",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template02",
+                link: "https://eifhen.github.io/MyFavoriteCity/",
                 type: "icon",
             }
         ],
@@ -47,35 +47,35 @@ export const Template02EN: IProjectData =  {
             {
                 img:Images.designs.template02.cover,
                 page: "Hero", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template02.img_1,
                 page: "Navegation Options", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "in this section you can select any of the options to move to the section where that city is discussed",
                 id: 2,
             },
             {
                 img:Images.designs.template02.img_2,
                 page: "The Notre-Dame Cathedral", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "In this section i talk about the amazing Notre-Dame Cathedral",
                 id: 3,
             },
             {
                 img:Images.designs.template02.img_3,
                 page: "The Eiffel Tower", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "In this section i talk about the Eiffel Tower.",
                 id: 4,
             },
             {
-                img:Images.designs.template02.img_3,
+                img:Images.designs.template02.img_4,
                 page: "The Museum of louvre", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "In this section i talk about the Museum of louvre.",
                 id: 5,
             },
@@ -84,12 +84,12 @@ export const Template02EN: IProjectData =  {
 }
 
 /************************************
-    [ Template02 Spanish ]
+    [ MyFavoriteCity Spanish ]
 *************************************/
-export const Template02ES: IProjectData =  {
+export const MyFavoriteCityES: IProjectData =  {
     id: 8,
     pin: false,
-    title: "Template02",
+    title: "Mi Ciudad Favorita",
     description: "Diseño básico sobre una web acerca de mi ciudad favorita.",
     date: "16 / 08 / 2022",
     img: Images.designs.template02.cover,
@@ -112,13 +112,13 @@ export const Template02ES: IProjectData =  {
             {
                 nombre: "Github",
                 icon: "ri-github-fill",
-                link: "https://github.com/Eifhen/Template02",
+                link: "https://github.com/Eifhen/MyFavoriteCity",
                 type: "icon",
             },
             {
                 nombre: "Live",
                 icon: "live-demo",
-                link: "https://eifhen.github.io/Template02",
+                link: "https://eifhen.github.io/MyFavoriteCity",
                 type: "icon",
             }
         ],
@@ -126,35 +126,35 @@ export const Template02ES: IProjectData =  {
             {
                 img:Images.designs.template02.cover,
                 page: "Hero", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template02.img_1,
                 page: "Opciones de Navegación", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "en esta sección puede seleccionar cualquiera de las opciones disponibles para pasar a la sección donde se habla de esa ciudad en concreto.",
                 id: 2,
             },
             {
                 img:Images.designs.template02.img_2,
                 page: "La Catedral de Notre-Dame", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "En esta sección hablamos sobre la increible catedral de Notre-Dame.",
                 id: 3,
             },
             {
                 img:Images.designs.template02.img_3,
                 page: "La Eiffel Tower", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "En esta sección hablamos sobre la torre Eiffel.",
                 id: 4,
             },
             {
-                img:Images.designs.template02.img_3,
+                img:Images.designs.template02.img_4,
                 page: "El Museo de louvre", // name of the page
-                project: "Template02", // name of the project
+                project: "MyFavoriteCity", // name of the project
                 description: "En está sección hablamos sobre el museo de louvre.",
                 id: 5,
             },

@@ -1,14 +1,14 @@
 import { IProjectData, IProjectDataManager } from "../projects/project.data.interfaces"
 import { AirbnbCloneEN, AirbnbCloneES } from "./list/airbnb.data"
 import { Template01EN, Template01ES } from "./list/template01.data"
-import { Template02EN, Template02ES } from "./list/template02.data"
-import { Template03EN, Template03ES } from "./list/template03.data"
-import { Template04EN, Template04ES } from "./list/template04.data"
-import { Template05EN, Template05ES } from "./list/template05.data"
-import { Template06EN, Template06ES } from "./list/template06.data"
-import { Template07EN, Template07ES } from "./list/template07.data"
-import { Template08EN, Template08ES } from "./list/template08.data"
-import { Template09EN, Template09ES } from "./list/template09.data"
+import { MyFavoriteCityEN, MyFavoriteCityES } from "./list/myfavoritecity.data"
+import { PizzeriaEN, PizzeriaES } from "./list/pizzeria.data"
+import { LivingTheSimpleLifeEN, LivingTheSimpleLifeES } from "./list/living-the-simple-life.data"
+import { ParqueSplashEN, ParqueSplashES } from "./list/parque-splash.data"
+import { BasicBlogEN, BasicBlogES } from "./list/basic-blog.data"
+import { MountainsEN, MountainsES } from "./list/mountains.data"
+import { SantaCruzBankEN, SantaCruzBankES } from "./list/santa-cruz-bank.data"
+import { ScotiaBankEN, ScotiaBankES } from "./list/scotia-bank.data"
 
 const empty_obj:IProjectData = {
     id:0,
@@ -30,27 +30,27 @@ const empty_obj:IProjectData = {
 
 export const DesignsAndThemplatesData: IProjectDataManager = {
     EN: [
-        Template09EN,
-        Template08EN,
-        Template07EN,
-        Template06EN,
-        Template05EN,
-        Template04EN,
-        Template03EN,
-        Template02EN,
+        ScotiaBankEN,
+        SantaCruzBankEN,
+        MountainsEN,
+        BasicBlogEN,
+        ParqueSplashEN,
+        LivingTheSimpleLifeEN,
+        PizzeriaEN,
+        MyFavoriteCityEN,
         Template01EN,
         AirbnbCloneEN,
         
     ], 
     ES:[
-        Template09ES,
-        Template08ES,
-        Template07ES,
-        Template06ES,
-        Template05ES,
-        Template04ES,
-        Template03ES,
-        Template02ES,
+        ScotiaBankES,
+        SantaCruzBankES,
+        MountainsES,
+        BasicBlogES,
+        ParqueSplashES,
+        LivingTheSimpleLifeES,
+        PizzeriaES,
+        MyFavoriteCityES,
         Template01ES,
         AirbnbCloneES
 
