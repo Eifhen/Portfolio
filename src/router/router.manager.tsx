@@ -19,9 +19,6 @@ export default function RouterManager(){
     return(
         <Router>
             <Routes>
-                <Route path="/" component={ Layout }>
-                    <Navigate href="/home"/>
-                </Route>
 
                 <Route path="/home" component={ Layout }>
                     <Route path="/" component={ HomePage }/>
