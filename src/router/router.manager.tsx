@@ -19,7 +19,10 @@ export default function RouterManager(){
     return(
         <Router>
             <Routes>
-
+                <Route path="/" component={ Layout }>
+                    <Route path="/" component={ HomePage }/>
+                </Route>
+                
                 <Route path="/home" component={ Layout }>
                     <Route path="/" component={ HomePage }/>
                 </Route>
