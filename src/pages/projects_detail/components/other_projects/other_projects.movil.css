@@ -61,11 +61,12 @@
     }
 
     .project-detail-page .other-projects .container .projects {
-        row-gap: 1rem;
+        row-gap: 1.5rem !important;
         gap: 1rem;
         justify-content: center;
         padding-bottom: 3rem;
-        padding-top: 2rem;
+        padding-top: 3rem;
+        
     } 
 }
 

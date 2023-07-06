@@ -92,8 +92,12 @@
         color: white;
     }
 
+    .about-page .about-portfolio .grid-container .info {
+        gap: 0.5rem;
+    }
+
     .about-page .about-portfolio .grid-container .info .description {
-        width: 90%;
+        width: 94%;
         height: auto;
         padding-bottom: 1rem;
     }
@@ -107,12 +111,14 @@
     .about-page .about-portfolio .grid-container .info .technologies {
         width: 100%;
         justify-content: center;
+        gap: 0.7rem;
+        row-gap: 1rem;
     }
 
     .about-page .about-portfolio .grid-container .info .technologies .item {
         border-radius: 20px;
         width: 100px;
-        height: 70px; 
+        height: 84px; 
         gap: 0.3rem;
     }
 

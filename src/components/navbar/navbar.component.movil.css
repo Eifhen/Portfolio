@@ -69,17 +69,17 @@
 }
 
 .nav-menu-movil-mask.inactive {
-    animation: hideMask 700ms ease-in-out;
+    animation: hideMask 500ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .nav-menu-movil-mask .nav-menu-panel-movil.active {
-    animation: displayModal 300ms ease-in-out;
+    animation: displayModal 200ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .nav-menu-movil-mask .nav-menu-panel-movil.inactive {
-    animation: hideModal 300ms ease-out;
+    animation: hideModal 200ms ease-out;
     animation-fill-mode: forwards;
 }
 
@@ -192,14 +192,14 @@
 .nav-menu-movil-mask .nav-menu-panel-movil.inactive .header,
 .nav-menu-movil-mask .nav-menu-panel-movil.inactive .footer {
     opacity:0;
-    transition: opacity 100ms ease-in-out;
+    transition: opacity 50ms ease-in-out;
 }
 
 .nav-menu-movil-mask .nav-menu-panel-movil.active .container .navbar-menu-movil,
 .nav-menu-movil-mask .nav-menu-panel-movil.active .container .navbar-actions,
 .nav-menu-movil-mask .nav-menu-panel-movil.active .header,
 .nav-menu-movil-mask .nav-menu-panel-movil.active .footer {
-    animation: showText 1.2s ease-in-out;
+    animation: showText 500ms ease-in-out;
     animation-fill-mode: forwards;
 }
 

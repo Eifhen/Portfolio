@@ -100,30 +100,6 @@ button:hover {
 
 ul { list-style: none;} 
 
-::-webkit-scrollbar-thumb {
-  background: var(--pure) !important;
-  border-radius: 50px;
-  border: 2px solid black;
-}
-
-::-webkit-scrollbar {
-    width: 10px;
-    padding:0 3px 3px 10px !important;
-    z-index: 10;
-    background-color: black;
-}
-
-::-webkit-scrollbar-button {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-track-piece {
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-corner {
-  background-color: transparent;
-}
 
 small {
   font-size: 16px;
@@ -413,4 +389,41 @@ p {
   border-radius: 35px;
   width: 320px !important;
   height: 450px !important;
+}
+
+/***************************************
+  ScrollBar
+****************************************/
+
+::-webkit-scrollbar-thumb {
+  background: var(--pure) !important;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    padding:0 3px 3px 10px !important;
+    z-index: 10;
+    background-color: black;
+}
+
+::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+
+@media(max-width: 500px){
+  ::-webkit-scrollbar {
+    display:none;
+  }
+  
 }

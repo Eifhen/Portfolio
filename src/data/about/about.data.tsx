@@ -188,10 +188,10 @@ export const AboutData:IAboutDataManagement = {
                     title: "System Engineer Jr.",
                     subtitle: "Camsoft SRL",
                     description: `
-                        Currently, I work as a Jr. Software Engineer for Camsoft SRL. 
-                        He worked in the development of Software for the company, using 
-                        technologies such as ASP.Net Core, SQL, Server ReactJS, Developer Extreme, SAS, 
-                        among others.
+                        Currently, I work as a Jr. Software Engineer for Camsoft SRL, 
+                        I work in the development of Software for the company, 
+                        using technologies such as ASP.Net Core, SQL, Server ReactJS, 
+                        Developer Extreme, SAS, among others.
                     `,
                     assets: {
                         img: "#",
@@ -402,7 +402,7 @@ export const AboutData:IAboutDataManagement = {
                     title: "System Engineer Jr.",
                     subtitle: "Camsoft SRL",
                     description: `
-                        Actualmente, trabajo como Ingeniero de Software Jr. para Camsoft SRL. 
+                        Actualmente, trabajo como Ingeniero de Software Jr. para Camsoft SRL, 
                         trabajo en el desarrollo de Software para la empresa, mediante 
                         tecnologías como ASP.Net Core, SQL, Server ReactJS, 
                         Developer Extreme, SAS, entre otras.
