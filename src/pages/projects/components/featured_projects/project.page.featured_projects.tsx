@@ -46,7 +46,7 @@ export default function FeaturedProjects (props: IFeaturedProps) {
         type:"loop",
         rewind: false,
         gap:"2rem",
-        movilGap: "2rem",
+        movilGap: "1.5rem",
     }
 
     return (
