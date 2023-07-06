@@ -39,7 +39,7 @@ export const lenguageDataEN:ILenguageData = {
     "see-more": "See More",
     "recent-works": "Recent Works",
     "my-portfolio" : "My Portfolio",
-    "see-all-projects" : "See All Projects",
+    "see-all-projects" : "See all Projects",
     "web-designs" : "See all Designs",
     "view-all": "View All",
     "testimonials": "Testimonials",
