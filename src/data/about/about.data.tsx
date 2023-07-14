@@ -73,10 +73,12 @@ export const AboutData:IAboutDataManagement = {
             subtitle: "Why Hire Me For Your",
             title: "Next Project",
             description: [
-                `I am a passionate software developer with high attention to detail. 
-                I offer quality solutions that fit your needs, thus providing software 
-                solutions that have a user-friendly design and a fine tuning in each of 
-                its features, which will contribute to significant time and cost savings.`,
+                `
+                    I'm a passionate software developer with great attention to detail. 
+                    I offer quality solutions that fit your needs, thus providing software 
+                    solutions that have a friendly design and a fine tuning in 
+                    each of its features.
+                `,
             ],
             offerts: [
                 {
@@ -285,8 +287,7 @@ export const AboutData:IAboutDataManagement = {
                 `Soy un desarrollador de software apasionado y con alta atención a los detalles. 
                 Ofrezco soluciones de calidad que se acoplan a tus necesidades, proveyendo así 
                 soluciones de software que cuentan con un diseño amigable al usuario y un 
-                ajuste fino y detallado en cada una de sus características, 
-                que contribuirán a significativos ahorros de tiempo y costo.`,
+                ajuste fino y detallado en cada una de sus características.`,
             ],
 
             offerts: [
