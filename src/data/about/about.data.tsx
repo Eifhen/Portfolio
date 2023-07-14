@@ -454,7 +454,7 @@ export const AboutData:IAboutDataManagement = {
                 `,
 
                 `
-                    Para la cuerta etapa integré los componentes y funcionalidades 
+                    Para la cuarta etapa integré los componentes y funcionalidades 
                     que creé en la etapa tres y di los ajustes finales a la aplicación. 
                 `
             ],
