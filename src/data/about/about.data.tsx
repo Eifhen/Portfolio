@@ -214,8 +214,10 @@ export const AboutData:IAboutDataManagement = {
 
             `
                 The second stage consisted of the graphic design of the portfolio.
-                For this I used figma, at this stage I designed each of the portfolio screens,
-                both in its mobile version and in its desktop version.
+                For this I used figma, at this stage I designed each screen of the portfolio, 
+                both in its mobile version and in its desktop version from scratch without 
+                using any templates on any of the screens and on any of the components, 
+                the design of all the components and screens was drawn from my own imagination.
             `,
 
             `
@@ -223,10 +225,13 @@ export const AboutData:IAboutDataManagement = {
                 Individuals that appear in the portfolio: the different modals (pop-up windows)
                 that appear, the navbar, the footer, the structure and behavior of the day and night modes,
                 as well as the operation of the language change within the application,
-                everything was developed from scratch.
-               
-                For the fourth stage I integrated the components and functionalities that I created in stage three.
+                everything was developed from scratch.                
             `,
+
+            `
+                For the fourth stage, I integrated the components and features that I created 
+                in stage three and gave the final adjustments to the application.
+            `
             ],
             technologies: [
                 {
@@ -429,7 +434,10 @@ export const AboutData:IAboutDataManagement = {
                 `
                     La segunda etapa consistió en el diseño gráfico del portafolio. 
                     Para esto utilicé figma, en esta etapa diseñé cada una de las pantallas del portafolio, 
-                    tanto en su versión móvil como en su versión desktop.
+                    tanto en su versión móvil como en su versión desktop desde 0 
+                    sin utilizar ninguna plantilla en ninguna de las pantallas y 
+                    en ninguno de los componentes, el diseño de todos los componentes 
+                    y pantallas fue extraido de mi propia imaginación.
                 `,
 
                 `
@@ -438,9 +446,12 @@ export const AboutData:IAboutDataManagement = {
                     que aparecen, el navbar, el footer, la estructura y comportamiento de los modos día y noche, 
                     así como también el funcionamiento del cambio de idioma al interior de la aplicación, 
                     todo fue desarrollado desde cero. 
-                    
-                    Para la cuerta etapa integré los componentes y funcionalidades que creé en la etapa tres. 
                 `,
+
+                `
+                    Para la cuerta etapa integré los componentes y funcionalidades 
+                    que creé en la etapa tres y di los ajustes finales a la aplicación. 
+                `
             ],
             
             technologies: [
