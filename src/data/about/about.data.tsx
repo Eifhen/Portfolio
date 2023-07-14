@@ -206,26 +206,27 @@ export const AboutData:IAboutDataManagement = {
         portfolio: {
             description: [
             `
-                I developed this portfolio in my free time, in a period of 3 months,
-                The process was divided into 4 stages, the first stage consisted of the
-                portfolio planning, for this stage I defined which screens
-                the portfolio would be composed of and what type of information should be displayed in them.
+                I developed this portfolio in my free time over a period of 3 months. 
+                The process was divided into 4 stages. The first stage involved planning 
+                the portfolio, where I defined the screens that would compose 
+                the portfolio and the type of information they should display.
             `,
 
             `
-                The second stage consisted of the graphic design of the portfolio.
-                For this I used figma, at this stage I designed each screen of the portfolio, 
-                both in its mobile version and in its desktop version from scratch without 
-                using any templates on any of the screens and on any of the components, 
-                the design of all the components and screens was drawn from my own imagination.
+                The second stage consisted of the graphic design of the portfolio. 
+                I used Figma for this stage, where I designed each of the portfolio 
+                screens from scratch, both for mobile and desktop versions. 
+                I did not use any templates for any of the screens or components. 
+                The design of all the components and screens was created from my 
+                own imagination.
             `,
 
             `
-                For the third stage I worked on the development of each of the components
-                Individuals that appear in the portfolio: the different modals (pop-up windows)
-                that appear, the navbar, the footer, the structure and behavior of the day and night modes,
-                as well as the operation of the language change within the application,
-                everything was developed from scratch.                
+                For the third stage, I worked on developing each of the individual 
+                components that appear in the portfolio: the different modals, 
+                the navbar, the footer, the structure and behavior of the light 
+                and dark modes, as well as the functionality of language switching 
+                within the application. Everything was developed from scratch.                
             `,
 
             `
@@ -425,27 +426,31 @@ export const AboutData:IAboutDataManagement = {
         portfolio: {
             description: [
                 `
-                    Desarrollé este portafolio en mi tiempo libre, en un periodo de tiempo de 3 meses, 
-                    el proceso fue dividido en 4 etapas, la primera etapa consistió en la 
-                    planificación del portafolio, para esta etapa definí de cuáles pantallas 
-                    estaría compuesto el portafolio y qué tipo de información debía mostrar en ellas.
+                    Desarrollé este portafolio durante mi tiempo libre, 
+                    en un periodo de 3 meses. El proceso se dividió en 4 etapas. 
+                    En la primera etapa, me enfoqué en la planificación del portafolio, 
+                    donde definí las pantallas que compondrían el portafolio y qué tipo
+                    de información deberían mostrar.
                 `,
 
                 `
-                    La segunda etapa consistió en el diseño gráfico del portafolio. 
-                    Para esto utilicé figma, en esta etapa diseñé cada una de las pantallas del portafolio, 
-                    tanto en su versión móvil como en su versión desktop desde 0 
-                    sin utilizar ninguna plantilla en ninguna de las pantallas y 
-                    en ninguno de los componentes, el diseño de todos los componentes 
-                    y pantallas fue extraido de mi propia imaginación.
+                    En la segunda etapa, me enfoqué en el diseño gráfico del portafolio. 
+                    Para ello, utilicé Figma y diseñé cada una de las pantallas del 
+                    portafolio desde cero, tanto en su versión móvil como en su versión
+                    de escritorio. No utilicé plantillas en ninguna de las pantallas 
+                    ni en ninguno de los componentes. Todo el diseño de los 
+                    componentes y pantallas fue creado por mí, basado en mi 
+                    propia imaginación.
                 `,
 
                 `
-                    Para la tercera etapa trabajé en el desarrollo de cada uno de los componentes 
-                    individuales que aparecen en el portafolio: los diferentes modals (ventanas emergentes) 
-                    que aparecen, el navbar, el footer, la estructura y comportamiento de los modos día y noche, 
-                    así como también el funcionamiento del cambio de idioma al interior de la aplicación, 
-                    todo fue desarrollado desde cero. 
+                    En la tercera etapa, me enfoqué en el desarrollo de cada uno de los 
+                    componentes individuales que se muestran en el portafolio. 
+                    Esto incluye los diferentes modales (ventanas emergentes), 
+                    la barra de navegación (navbar), el pie de página (footer), 
+                    la estructura y el comportamiento de los modos claro y oscuro, 
+                    así como la funcionalidad de cambio de idioma dentro de la aplicación. 
+                    Todo fue desarrollado desde cero.
                 `,
 
                 `
