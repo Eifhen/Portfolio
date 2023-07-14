@@ -271,7 +271,7 @@ export const AboutData:IAboutDataManagement = {
                     msg: "See in Figma",
                     type: "img",
                     icon: Images.tecnologies.figma_icon,
-                    link: "https://www.figma.com/proto/wImSICR5whpii9ZkQZihZe/Portafolio-2?page-id=0%3A1&node-id=139-1850&starting-point-node-id=23%3A770",
+                    link: "https://www.figma.com/proto/wImSICR5whpii9ZkQZihZe/Portafolio-2?type=design&node-id=1258-2116&t=3xjSth9ek1zeRjJZ-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1258%3A2116",
                 },
                 {
                     msg: "See on Github",
@@ -497,7 +497,7 @@ export const AboutData:IAboutDataManagement = {
                     msg: "Ver en Figma",
                     type: "img",
                     icon: Images.tecnologies.figma_icon,
-                    link: "https://www.figma.com/proto/wImSICR5whpii9ZkQZihZe/Portafolio-2?page-id=0%3A1&node-id=139-1850&starting-point-node-id=23%3A770",
+                    link: "https://www.figma.com/proto/wImSICR5whpii9ZkQZihZe/Portafolio-2?type=design&node-id=1258-2116&t=3xjSth9ek1zeRjJZ-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1258%3A2116",
                 },
                 {
                     msg: "Ver en Github",
