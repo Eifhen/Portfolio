@@ -12,53 +12,29 @@ import AboutPage from '../pages/about/about.page';
 import TemplatesPage from '../pages/templates/templates.page';
 import TemplateDetailPage from '../pages/templates_detail/templates_detail';
 import LogoPage from '../pages/test/logo.page';
+import { onRouteChange } from '../hooks/scrollSmooth';
+import { onMount } from 'solid-js';
 
 export default function RouterManager(){
-
-    
     return(
         <Router>
             <Routes>
-                <Route path="/" component={ Layout }>
-                    <Route path="/" component={ HomePage }/>
-                </Route>
-                
-                <Route path="/home" component={ Layout }>
-                    <Route path="/" component={ HomePage }/>
-                </Route>
-
-                <Route path="/projects" component={ Layout }>
-                    <Route path="/" component={ ProjectPage }/>
-                </Route>
-
-                <Route path="/projects/detail/:id/:project-name" component={ Layout }>
-                    <Route path="/" component={ ProjectDetailPage }/>
-                </Route>
-
-                <Route path="/templates" component={ Layout }>
-                    <Route path="/" component={ TemplatesPage }/>
-                </Route>
-
-                <Route path="/templates/detail/:id/:template-name" component={ Layout }>
-                    <Route path="/" component={ TemplateDetailPage }/>
-                </Route>
-
-                <Route path="/about" component={ Layout }>
-                    <Route path="/" component={ AboutPage }/>
-                </Route>
-
                 <Route path="" component={ Layout }>
+                    <Route path="/" component={ HomePage }/>
+                    <Route path="/home" component={ HomePage }/>
+                    <Route path="/projects" component={ ProjectPage } />
+                    <Route path="/projects/detail/:id/:project-name" component={ ProjectDetailPage } />                    
+                    <Route path="/templates" component={ TemplatesPage } />
+                    <Route path="/templates/detail/:id/:template-name" component={ TemplateDetailPage } />
+                    <Route path="/about" component={ AboutPage } />
+
+                    { /* Rutas para pruebas */ }
+                    <Route path="/test" component={ TestPage } />
+                    <Route path="/logo-page" component={ LogoPage } />
+
+                    {/* Error 404 Page */}
                     <Route path="*" component = { ErrorPage }/>
-                </Route>
-
-                { /* Rutas para pruebas */ }
-                <Route path="/test" component={ Layout }>
-                    <Route path="/" component={ TestPage }/>
-                </Route>
-
-                <Route path="/logo-page" component={ Layout }>
-                    <Route path="/" component={ LogoPage }/>
-                </Route>
+                </Route>      
             </Routes>
         </Router>
     );

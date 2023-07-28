@@ -1,5 +1,5 @@
 
-import { Accessor, For, Setter, createEffect, createSignal, onMount } from 'solid-js';
+import { Accessor, For, Setter, createEffect, createSignal, onCleanup, onMount } from 'solid-js';
 import './galery.desktop.css';
 import "./galery.movil.css";
 import { ITheme } from '../../hooks/theme.hook';
@@ -21,6 +21,7 @@ interface IGaleryModal {
 
 export default function Galery (props:IGalery){
 
+    let interval: any = null;
     let btnRef:HTMLDivElement;
     const images= () :IProjectGalery[]  => props.data.detail.galery; 
     const [selected ,setSelected] = createSignal({} as IProjectGalery);
@@ -45,7 +46,7 @@ export default function Galery (props:IGalery){
     onMount(()=>{
         setImg(images()[count()].img)
         setID(images()[count()].id);
-        setInterval(()=>{
+        interval = setInterval(()=>{
             const total_items = images().length;
             if(count() < total_items){
                 setCount(count() + 1);
@@ -54,6 +55,12 @@ export default function Galery (props:IGalery){
             }
             setID(images()[count()].id);
         }, 6000);
+    })
+
+    onCleanup(()=>{
+        if(interval != null || interval != undefined){
+            clearInterval(interval);
+        }
     })
 
     createEffect(()=>{

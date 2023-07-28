@@ -5,6 +5,8 @@ import './layout.component.css';
 import useScreenWidth from "../../hooks/screenWidth.hook";
 import Footer from "../footer/footer.component";
 import UpBtn from "../up-btn/up_btn.component";
+import { onMount } from "solid-js";
+import { onRouteChange } from "../../hooks/scrollSmooth";
 
 
 
@@ -18,7 +20,8 @@ export default function Layout () {
 
 function LayoutContent () {
     const context = useAplicationContext();
-    
+    onMount(()=>{ onRouteChange(); });
+
     return (
         <div id="layout-page" class="layout-page">
             <div class={`layout-theme ${context.themeManager.themeStore.theme}`}></div>

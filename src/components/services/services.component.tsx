@@ -89,9 +89,6 @@ function ServicesMovil (props:IPropsService){
             })
             return service;
         });
-
-        console.log("selected =>", selected().state);
-        props.serviceData[props.data.lenguage].map(sd => console.log("sd =>", sd));
     }
 
     return (

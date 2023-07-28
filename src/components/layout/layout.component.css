@@ -1,11 +1,30 @@
 
 
+#root { transition:  background-color 1s ease-in-out; }
+#root.light { background-color: white; }
+#root.dark { 
+    animation: rootColor 2s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rootColor {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: black; 
+    }
+}
+
 
 .layout-page {
     position:relative;
     overflow-x: hidden;
     opacity: 0;
-    animation: fadeIntroPage  1s ease-in;
+}
+
+.layout-fadeInPage {
+    animation: fadeIntroPage  0.9s ease-in;
     animation-fill-mode: forwards;
 }
 
