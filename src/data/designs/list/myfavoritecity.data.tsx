@@ -134,7 +134,7 @@ export const MyFavoriteCityES: IProjectData =  {
                 img:Images.designs.template02.img_1,
                 page: "Opciones de Navegación", // name of the page
                 project: "MyFavoriteCity", // name of the project
-                description: "en esta sección puede seleccionar cualquiera de las opciones disponibles para pasar a la sección donde se habla de esa ciudad en concreto.",
+                description: "En esta sección puede seleccionar cualquiera de las opciones disponibles para pasar a la sección donde se habla de esa ciudad en concreto.",
                 id: 2,
             },
             {
@@ -155,7 +155,7 @@ export const MyFavoriteCityES: IProjectData =  {
                 img:Images.designs.template02.img_4,
                 page: "El Museo de louvre", // name of the page
                 project: "MyFavoriteCity", // name of the project
-                description: "En está sección hablamos sobre el museo de louvre.",
+                description: "En esta sección hablamos sobre el museo de louvre.",
                 id: 5,
             },
         ],

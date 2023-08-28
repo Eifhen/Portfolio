@@ -110,7 +110,7 @@ export const ScotiaBankES: IProjectData =  {
     id: 1,
     pin: true,
     title: "ScotiaBank",
-    description: "Plantilla web hacerca del banco ScotiaBank",
+    description: "Plantilla web acerca del banco ScotiaBank",
     date: "26 / 01 / 2023",
     img: Images.designs.template09.cover,
     highlighted: true,
@@ -122,7 +122,7 @@ export const ScotiaBankES: IProjectData =  {
     detail:{
         about: [                    
             `Hice esta plantilla como una práctica para mejorar mis habilidades con CSS,
-            la pagina esta basada en el sitio web del banco scotiabank
+            la página está basada en el sitio web del banco scotiabank
             en la República Dominicana.`,
 
         ],
@@ -158,7 +158,7 @@ export const ScotiaBankES: IProjectData =  {
                 img:Images.designs.template09.img_1,
                 page: "Menú", // name of the page
                 project: "ScotiaBank", // name of the project
-                description: "Al hacer clic en el icono de menu aparecera un modal con todas nuestras opciones de navegación.",
+                description: "Al hacer clic en el icono de menu aparecerá un modal con todas nuestras opciones de navegación.",
                 id: 2,
             },
             {
@@ -170,14 +170,14 @@ export const ScotiaBankES: IProjectData =  {
             },
             {
                 img:Images.designs.template09.img_3,
-                page: "Seccion de Comunicación", // name of the page
+                page: "Sección de Comunicación", // name of the page
                 project: "ScotiaBank", // name of the project
                 description: "",
                 id: 4,
             },
             {
                 img:Images.designs.template09.img_4,
-                page: "Seccion de Servicios", // name of the page
+                page: "Sección de Servicios", // name of the page
                 project: "ScotiaBank", // name of the project
                 description: "",
                 id: 5,

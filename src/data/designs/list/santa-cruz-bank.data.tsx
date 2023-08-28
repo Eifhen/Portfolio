@@ -92,7 +92,7 @@ export const SantaCruzBankES: IProjectData =  {
     detail:{
         about: [                    
             `Hice esta plantilla como una práctica para mejorar mis habilidades con CSS,
-            la pagina esta basada en el sitio web del banco Santa Cruz
+            la página está basada en el sitio web del banco Santa Cruz
             en la República Dominicana.`,
         ],
         technologies: [

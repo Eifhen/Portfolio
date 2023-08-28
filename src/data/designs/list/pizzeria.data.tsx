@@ -104,14 +104,14 @@ export const PizzeriaES: IProjectData =  {
         galery: [
             {
                 img:Images.designs.template03.cover,
-                page: "Header of the page", // name of the page
+                page: "Encabezado de la página", // name of the page
                 project: "Pizzeria", // name of the project
                 description: "",
                 id: 1,
             },
             {
                 img:Images.designs.template03.img_1,
-                page: "Body of the page", // name of the page
+                page: "Cuerpo de la página", // name of the page
                 project: "Pizzeria", // name of the project
                 description: "",
                 id: 2,

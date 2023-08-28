@@ -62,7 +62,7 @@ export const ParqueSplashES: IProjectData =  {
     id: 5,
     pin: true,
     title: "ParqueSplash",
-    description: "Template básico para la pantalla de inicio de una aplicación para un parque aquatico",
+    description: "Template básico para la pantalla de inicio de una aplicación para un parque acuático",
     date: "12 / 09 / 2022",
     img: Images.designs.template05.cover,
     highlighted: false,
