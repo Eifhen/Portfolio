@@ -74,11 +74,10 @@ export const AboutData:IAboutDataManagement = {
             title: "Next Project",
             description: [
                 `
-                    As a passionate software developer, I stand out for my meticulous attention 
-                    to detail. My focus is on providing high-quality solutions that fit your 
-                    requirements perfectly. My goal is to create software that is not only 
-                    functional but also user-friendly, with a precise and detailed refinement 
-                    in each of its features to deliver an exceptional experience.
+                    As a passionate developer, I stand out for my meticulous attention to detail. 
+                    I offer high-quality solutions that align with your needs, featuring user-friendly
+                    design and fine-tuned refinement in every feature. 
+                    The aim is an exceptional experience.
                 `,
             ],
             offerts: [
@@ -291,10 +290,10 @@ export const AboutData:IAboutDataManagement = {
             title: "Próximo Proyecto",
 
             description: [
-                `Como apasionado desarrollador, destaco por mi atención meticulosa a los detalles. 
-                Ofrezco soluciones de alta calidad, adaptadas a tus necesidades,
-                con un diseño amigable y un ajuste detallado en cada característica. 
-                El objetivo es una experiencia excepcional.`,
+                `Como apasionado desarrollador, me destaco por mi atención meticulosa a los detalles. 
+                Ofrezco soluciones de alta calidad que se alinean con tus necesidades, proporcionando 
+                software amigable para el usuario con características finamente ajustadas y detalladas. 
+                El objetivo es brindar una experiencia de usuario excepcional.`,
             ],
 
             offerts: [
