@@ -291,12 +291,10 @@ export const AboutData:IAboutDataManagement = {
             title: "Próximo Proyecto",
 
             description: [
-                `Como apasionado desarrollador de software, me distingo por mi 
-                atención minuciosa a los detalles. Mi enfoque se centra en proporcionar 
-                soluciones de alta calidad que se adapten perfectamente a tus requisitos. 
-                Mi objetivo es crear software que no solo sea funcional, sino también amigable 
-                para el usuario, con un ajuste fino y detallado en cada una de sus características 
-                para brindarte una experiencia excepcional.`,
+                `Como apasionado desarrollador, destaco por mi atención meticulosa a los detalles. 
+                Ofrezco soluciones de alta calidad, adaptadas a tus necesidades,
+                con un diseño amigable y un ajuste detallado en cada característica. 
+                El objetivo es una experiencia excepcional.`,
             ],
 
             offerts: [
