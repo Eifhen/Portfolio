@@ -120,6 +120,7 @@ p {
 /********************************
     Others
 ********************************/
+.pointer { cursor: pointer; }
 
 .d-none { display:none !important; }
 
