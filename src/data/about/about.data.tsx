@@ -74,10 +74,11 @@ export const AboutData:IAboutDataManagement = {
             title: "Next Project",
             description: [
                 `
-                    I'm a passionate software developer with great attention to detail. 
-                    I offer quality solutions that fit your needs, thus providing software 
-                    solutions that have a friendly design and a fine tuning in 
-                    each of its features.
+                    As a passionate software developer, I stand out for my meticulous attention 
+                    to detail. My focus is on providing high-quality solutions that fit your 
+                    requirements perfectly. My goal is to create software that is not only 
+                    functional but also user-friendly, with a precise and detailed refinement 
+                    in each of its features to deliver an exceptional experience.
                 `,
             ],
             offerts: [
@@ -290,10 +291,12 @@ export const AboutData:IAboutDataManagement = {
             title: "Próximo Proyecto",
 
             description: [
-                `Soy un desarrollador de software apasionado y con alta atención a los detalles. 
-                Ofrezco soluciones de calidad que se acoplan a tus necesidades, proveyendo así 
-                soluciones de software que cuentan con un diseño amigable al usuario y un 
-                ajuste fino y detallado en cada una de sus características.`,
+                `Como apasionado desarrollador de software, me distingo por mi 
+                atención minuciosa a los detalles. Mi enfoque se centra en proporcionar 
+                soluciones de alta calidad que se adapten perfectamente a tus requisitos. 
+                Mi objetivo es crear software que no solo sea funcional, sino también amigable 
+                para el usuario, con un ajuste fino y detallado en cada una de sus características 
+                para brindarte una experiencia excepcional.`,
             ],
 
             offerts: [

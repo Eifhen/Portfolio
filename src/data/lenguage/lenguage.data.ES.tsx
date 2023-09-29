@@ -26,7 +26,7 @@ export const lenguageDataES:ILenguageData = {
     `,
     "why-hire-me": `¿Por qué contratarme?`,
     "offer": ` 
-        Ofresco una solución de excelencia para el desarrollo de tus 
+        Ofrezco una solución de excelencia para el desarrollo de tus 
         proyectos de software, garantizando así un uso responsable del tiempo, 
         un diseño agradable y un ajuste fino en cada una de las 
         características de tu proyecto.
