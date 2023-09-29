@@ -77,10 +77,6 @@ function NavbarMovil(props:INavbar){
     const OpenMenu = () => setShow(true);
     const HideMenu = () => setShow(false);
 
-    useOnRouteChange(()=>{
-        HideMenu();
-    });
-
     onMount(()=>{
         useHideOnOutsideClick<HTMLUListElement, HTMLDivElement>({
             ref1:modalRef, 
