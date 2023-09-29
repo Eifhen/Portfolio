@@ -9,6 +9,7 @@ import ButtonTheme from "../theme/theme.component";
 import { Accessor, For, Show, createEffect, createSignal, onMount } from "solid-js";
 import useHideOnOutsideClick from "../../hooks/outsideClick";
 import { RoutesData } from "../../data/routes/routes.data";
+import useOnRouteChange from "../../hooks/useOnRouteChange.hook";
 
 interface INavbar {
     color:ITheme;
@@ -75,6 +76,10 @@ function NavbarMovil(props:INavbar){
     
     const OpenMenu = () => setShow(true);
     const HideMenu = () => setShow(false);
+
+    useOnRouteChange(()=>{
+        HideMenu();
+    });
 
     onMount(()=>{
         useHideOnOutsideClick<HTMLUListElement, HTMLDivElement>({
