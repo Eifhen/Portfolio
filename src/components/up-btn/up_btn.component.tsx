@@ -1,12 +1,8 @@
-import { Accessor, onCleanup, onMount } from 'solid-js';
+import { onMount } from 'solid-js';
 import { ITheme } from '../../hooks/theme.hook';
 import './up_btn.component.css';
-import useObserveElement from '../../hooks/intersectionObserver.hook';
 import useGoUpHook from '../../hooks/go-up.hook';
 import ScrollSmooth from '../../hooks/scrollSmooth';
-
-
-
 
 interface IUpBtnProps {
     theme: ITheme;

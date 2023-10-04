@@ -2,11 +2,10 @@ import { Outlet } from "@solidjs/router"
 import useAplicationContext, { AplicationContextProvider } from "../../context/aplication.context"
 import Navbar from "../navbar/navbar.component"
 import './layout.component.css';
-import useScreenWidth from "../../hooks/screenWidth.hook";
 import Footer from "../footer/footer.component";
 import UpBtn from "../up-btn/up_btn.component";
 import { onMount } from "solid-js";
-import { onRouteChange } from "../../hooks/scrollSmooth";
+import useLayoutFade from "../../hooks/useLayoutFade.hook";
 
 
 
@@ -20,7 +19,7 @@ export default function Layout () {
 
 function LayoutContent () {
     const context = useAplicationContext();
-    onMount(()=>{ onRouteChange(); });
+    onMount(()=>{ useLayoutFade(); });
 
     return (
         <div id="layout-page" class="layout-page">

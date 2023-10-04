@@ -9,7 +9,7 @@ import ButtonTheme from "../theme/theme.component";
 import { Accessor, For, Show, createEffect, createSignal, onMount } from "solid-js";
 import useHideOnOutsideClick from "../../hooks/outsideClick";
 import { RoutesData } from "../../data/routes/routes.data";
-import useOnRouteChange from "../../hooks/useOnRouteChange.hook";
+import onRouteChange from "../../hooks/onRouteChange.hook";
 
 interface INavbar {
     color:ITheme;
@@ -43,7 +43,6 @@ export default function Navbar (props:INavbar) {
 
 function NavbarDesktop(props:INavbar){
     const data = RoutesData;
-
     return (
         <nav id="navbar" class={`navbar ${props.color.theme}`}>
             <div class="navbar-brand">
@@ -83,7 +82,6 @@ function NavbarMovil(props:INavbar){
             ref2:btnRef, 
             show, 
             setShow,
-
         }); 
     })
 
@@ -95,6 +93,8 @@ function NavbarMovil(props:INavbar){
             setHide("inactive");
         }
     })
+
+    onRouteChange(()=>{ HideMenu(); })
 
     return (
         <div id="navbar" class="navbar-movil">
