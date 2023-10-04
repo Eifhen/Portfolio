@@ -69,7 +69,7 @@
 }
 
 .nav-menu-movil-mask.inactive {
-    animation: hideMask 500ms ease-in-out;
+    animation: hideMask 0ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
