@@ -69,17 +69,17 @@
 }
 
 .nav-menu-movil-mask.inactive {
-    animation: hideMask 0ms ease-in-out;
+    animation: hideMask 100ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .nav-menu-movil-mask .nav-menu-panel-movil.active {
-    animation: displayModal 200ms ease-in-out;
+    animation: displayModal 100ms ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .nav-menu-movil-mask .nav-menu-panel-movil.inactive {
-    animation: hideModal 200ms ease-out;
+    animation: hideModal 100ms ease-out;
     animation-fill-mode: forwards;
 }
 
