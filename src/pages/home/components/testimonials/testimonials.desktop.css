@@ -133,9 +133,11 @@
 
 .home-page .testimonials .content .testimonials-carousel .overflow .testimonial-wave .t-wave > * {
     width: 100%;
+    
 }
 
 .home-page .testimonials .content .testimonials-carousel .overflow .testimonial-wave .t-space{
     grid-area: blank_space;
     background-color: black;
+    margin-bottom: -10px;
 }
