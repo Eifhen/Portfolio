@@ -52,7 +52,7 @@ export const lenguageDataEN:ILenguageData = {
     "form-subject": "Subject",
     "form-message": "Message",
     "send-message": "Send Message",
-    "toast-success-msg": "The form was sent successfully",
+    "toast-success-msg": "The form was send successfully",
     "toast-error-msg": "Fill in the form data correctly",
     "my-projects" : "My Projects",
     "projects-intro" : "On this page you will find the most relevant projects, practices and work that I have done.",
