@@ -114,7 +114,6 @@ export const FinanzasPersonalesES: IProjectData =  {
         { name: "PHP", icon: Images.tecnologies.php_icon, type: "image" },
         { name: "Mysql", icon: Images.tecnologies.mysql_icon, type: "image" },
         { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
-        
     ],
     detail:{
         about: [                    

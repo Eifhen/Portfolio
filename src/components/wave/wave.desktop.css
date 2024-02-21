@@ -9,17 +9,19 @@
 
 .wave svg {
     width: 100%;
-    transition: fill 10ms ease-in-out;
-    transition-delay: 15ms;
+    /* transition: fill 10ms ease-in-out;
+    transition-delay: 15ms; */
 }
 
+/* 
 .dark .wave svg {
     transition: fill 0.345s ease-in-out;
-}
+} */
 
 .wave.reverse {
     transform: rotate(180deg);
 }
+
 
 /*********************
     Wave White
@@ -51,7 +53,6 @@
     fill: var(--dark0F)  !important;
 }
 
-
 .wave.whiteEE svg {
     fill: var(--whiteEE) !important;
 }
@@ -59,3 +60,65 @@
 .wave.whiteEE.dark svg {
     fill: var(--dark0F)  !important;
 }
+
+
+/******************************************
+  General Wave
+*******************************************/
+.general-wave {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 
+        100px
+        100px
+    ;
+    grid-template-areas: 
+        "blank_space"
+        "featured_project_wave"
+    ;
+    z-index: 1;
+    pointer-events: none;
+    position: relative;
+}
+  
+.general-wave.reverse  {
+    transform: rotate(180deg);
+}
+
+.general-wave .t-wave {
+    grid-area: featured_project_wave;
+    display:flex;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.general-wave .t-wave > * {
+    width: 100%;
+}
+
+.general-wave.reverse .t-wave .wave.light svg {
+    transition: fill 44.5ms ease-in-out;
+    transition-delay: 2ms;
+}
+
+.general-wave.reverse .t-wave .wave.dark svg {
+    transition: fill 0.3s ease-in-out;
+    transition-delay: 2ms;
+}
+
+
+.general-wave .t-space {
+    grid-area: blank_space;
+    background-color: transparent;
+}
+
+@media (min-width: 1900px) {
+    .general-wave {
+        grid-template-rows: 
+            100px
+            auto
+        !important;
+    }
+}
+  

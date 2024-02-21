@@ -13,6 +13,7 @@ import { ProductManagerEN, ProductManagerES } from "./list/project_manager.data"
 import { QuizzicalEN, QuizzicalES } from "./list/quizzical.data";
 import { TenziesEN, TenziesES } from "./list/tenzies.data";
 import { UnitConverterEN, UnitConverterES } from "./list/unit_converter.data";
+import { WriteLineEN, WriteLineES } from "./list/writeline.data";
 import { IProjectData, IProjectDataManager } from "./project.data.interfaces";
 
 
@@ -50,25 +51,25 @@ export const ProjectData: IProjectDataManager = {
         UnitConverterEN,
         PathStorageEN,
         PasswordGeneratorEN,
-        FinanzasPersonalesEN
-        
+        FinanzasPersonalesEN,
+        WriteLineEN,
     ], 
     ES:[
-        GrowingES,
-        ProductManagerES,
-        QuizzicalES,
-        TenziesES,
-        FindYourFilmES,
-        Project03ES,
-        ListaDeTareasES,
-        Camsoft03ES,
-        BlackJackES,
-        LegendsAndFantasyES,
-        ColorSchemeES,
-        UnitConverterES,
-        PathStorageES,
-        PasswordGeneratorES,
-        FinanzasPersonalesES,
-
+        GrowingES,            // id 01
+        ProductManagerES,     // id 02 
+        QuizzicalES,          // id 03
+        TenziesES,            // id 04
+        FindYourFilmES,       // id 05
+        Project03ES,          // id 06
+        ListaDeTareasES,      // id 07
+        Camsoft03ES,          // id 08
+        BlackJackES,          // id 09
+        LegendsAndFantasyES,  // id 10
+        ColorSchemeES,        // id 11
+        UnitConverterES,      // id 12
+        PathStorageES,        // id 13
+        PasswordGeneratorES,  // id 14
+        FinanzasPersonalesES, // id 15
+        WriteLineES,          // id 16
     ],
 }

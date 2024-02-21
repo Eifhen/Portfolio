@@ -80,7 +80,7 @@ export default function Galery (props:IGalery){
                 <div class="galery">
                     <For each={props.data.detail.galery}>
                         {(item)=>(
-                            <div onClick={()=> SelectImage(item) } class="item" classList={{"active":item.id === id()}}>
+                            <div onDblClick={ OpenModal } onClick={()=> SelectImage(item) } class="item" classList={{"active":item.id === id()}}>
                                 <img src={item.img}  />
                             </div>
                         )}    

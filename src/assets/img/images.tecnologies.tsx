@@ -20,6 +20,11 @@ import Solidjs from '../icons/solidjs.png';
 import PHP from '../icons/php.png';
 import GSAP from '../icons/gsap-greensock.svg';
 import WebPack from '../icons/webpack.png';
+import ExpressJS from '../icons/express-js.png';
+import MongooseJS from '../icons/mongoose-logo.png';
+import SocketIO from '../icons/socket-io-logo.png';
+import MongoDB from '../icons/mongodb.svg';
+import NodeJS from '../icons/node_js.png';
 
 
 export const tecnologies: ITecnologiesIconCollector = {
@@ -40,4 +45,9 @@ export const tecnologies: ITecnologiesIconCollector = {
     php_icon: PHP,
     gsap_icon: GSAP,
     webpack_icon: WebPack,
+    mongodb_icon: MongoDB,
+    socket_io_icon: SocketIO,
+    express_js_icon: ExpressJS,
+    mongoose_icon: MongooseJS,
+    nodejs_icon: NodeJS,
 };

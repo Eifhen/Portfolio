@@ -126,6 +126,27 @@ import FinanzasMonthlyRecords from '../img/projects/finanzas_personales/finanzas
 import FinanzasRecordDetail from '../img/projects/finanzas_personales/finanzas.record_detail.png';
 import FinanzasIncomeDetail from '../img/projects/finanzas_personales/finanzas.income_detail.png';
 
+/***************************************
+    Writeline
+****************************************/
+import WriteLineHome from '../img/projects/writeline/writeline_home.png';
+import WriteLineSingupEmpty from '../img/projects/writeline/writeline_signup_empty.png';
+import WriteLineSignupFull from '../img/projects/writeline/writeline_signup_full.png';
+import WriteLineLogin from '../img/projects/writeline/writeline_login.png';
+import WriteLineChatPage from '../img/projects/writeline/writeline_chat.png';
+import WriteLineChatFindingFriends from '../img/projects/writeline/writeline_chat_finding_friends.png';
+import WriteLineChatEmojis from '../img/projects/writeline/writeline_chat_emojis.png';
+import WriteLineConfigUser from '../img/projects/writeline/writeline_config_user.png';
+import WriteLineConfigPassword from '../img/projects/writeline/writeline_config_password.png';
+import WriteLineProfile from '../img/projects/writeline/writeline_profile.png';
+import WriteLineNewGroup from '../img/projects/writeline/writeline_new_group.png';
+import WriteLineGroupPanel from '../img/projects/writeline/writeline_group_panel.png';
+import WriteLineGroupInfo from '../img/projects/writeline/writeline_group_info.png';
+import WriteLineGroupAddContact from '../img/projects/writeline/writeline_group_add_contact.png';
+import WriteLineLogOut from '../img/projects/writeline/writeline_logout.png';
+import WritelineError404 from '../img/projects/writeline/writeline_error404.png';
+
+
 
 export const projects:IProjectImageCollector = {
     growing: {
@@ -224,5 +245,23 @@ export const projects:IProjectImageCollector = {
         img_4: FinanzasMonthlyRecords,
         img_5: FinanzasRecordDetail,
         img_6: FinanzasIncomeDetail,
+    },
+    writeline : {
+        cover: WriteLineHome,
+        img_1: WriteLineSingupEmpty,
+        img_2: WriteLineSignupFull,
+        img_3: WriteLineLogin,
+        img_4: WriteLineChatPage,
+        img_5: WriteLineChatFindingFriends, 
+        img_6: WriteLineChatEmojis,
+        img_7: WriteLineConfigUser,
+        img_8: WriteLineConfigPassword,
+        img_9: WriteLineProfile,
+        img_10: WriteLineNewGroup,
+        img_11: WriteLineGroupPanel, 
+        img_12: WriteLineGroupInfo,
+        img_13: WriteLineGroupAddContact,
+        img_14: WriteLineLogOut,
+        img_15: WritelineError404,
     }
 }

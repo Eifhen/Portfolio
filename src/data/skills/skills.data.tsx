@@ -1,8 +1,5 @@
 import { Images } from "../../assets/img/images";
 
-
-
-
 export interface ISkillsDataManager {
     ES: ISkillsData[];
     EN: ISkillsData[];
@@ -24,7 +21,6 @@ export interface ISkillData {
 
 
 export const SkillsData: ISkillsDataManager = {
-
     ES: [
         // Desarrollo Web
         {
@@ -34,49 +30,49 @@ export const SkillsData: ISkillsDataManager = {
                 {
                     title: "HTML",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-html5-fill color-orange",
                 },
                 {
                     title: "CSS",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-css3-fill color-blue",
                 },
                 {
                     title: "Bootstrap",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-bootstrap-fill color-purple",
                 },
                 {
                     title: "JavaScript",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.javascript_icon,
                 },
                 {
                     title: "TypeScript",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.typescript_icon,
                 },
                 {
                     title: "React",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-reactjs-line color-react",
                 },
                 {
                     title: "SolidJS",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.solidjs_icon,
                 },
                 {
                     title: "Jquery",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.jquery_icon,
                 },
           
@@ -91,61 +87,91 @@ export const SkillsData: ISkillsDataManager = {
                 {
                     title: "C#",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.c_icon,
                 },
                 {
                     title: "ASP.Net",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.asp_icon,
                 },
                 {
                     title: "ASP.Net Core",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.asp_icon,
                 },
                 {
                     title: "Entity Framework",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.ef_icon,
                 },
                 {
                     title: "SignalR.",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.signalr_icon,
                 },
                 {
                     title: "SendGrid",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.sendgrid_icon,
                 },
                 {
                     title: "PHP",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.php_icon,
                 },
                 {
                     title: "MySql",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.mysql_icon,
                 },
                 {
                     title: "SQL Server",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.sql_icon,
                 },
                 {
+                    title: "MongooseJS",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.mongoose_icon,
+                },              
+                {
+                    title: "ExpressJS",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.express_js_icon,
+                }, 
+                {
+                    title: "MongoDB",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.mongodb_icon,
+                }, 
+                {
+                    title: "Socket.IO",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.socket_io_icon,
+                }, 
+                {
+                    title: "NodeJS",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.nodejs_icon,
+                }, 
+                {
                     title: "Git",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-github-fill",
                 },        
             ]
@@ -159,13 +185,13 @@ export const SkillsData: ISkillsDataManager = {
                 {
                     title: "Figma",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.figma_black_icon,
                 },
                 {
                     title: "Canva",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.canva_icon,
                 },
             ]
@@ -181,49 +207,49 @@ export const SkillsData: ISkillsDataManager = {
                 {
                     title: "HTML",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-html5-fill color-orange",
                 },
                 {
                     title: "CSS",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-css3-fill color-blue",
                 },
                 {
                     title: "Bootstrap",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-bootstrap-fill color-purple",
                 },
                 {
                     title: "JavaScript",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.javascript_icon,
                 },
                 {
                     title: "TypeScript",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.typescript_icon,
                 },
                 {
                     title: "React",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-reactjs-line color-react",
                 },
                 {
                     title: "SolidJS",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.solidjs_icon,
                 },
                 {
                     title: "Jquery",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.jquery_icon,
                 },
           
@@ -238,63 +264,93 @@ export const SkillsData: ISkillsDataManager = {
                 {
                     title: "C#",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.c_icon,
                 },
                 {
                     title: "ASP.Net",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.asp_icon,
                 },
                 {
                     title: "ASP.Net Core",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.asp_icon,
                 },
                 {
                     title: "Entity Framework",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.ef_icon,
                 },
                 {
                     title: "SignalR.",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.signalr_icon,
                 },
                 {
                     title: "SendGrid",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.sendgrid_icon,
                 },
                 {
                     title: "PHP",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.php_icon,
                 },
                 {
                     title: "MySql",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.mysql_icon,
                 },
                 {
                     title: "SQL Server",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.sql_icon,
                 },
                 {
+                    title: "MongooseJS",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.mongoose_icon,
+                },              
+                {
+                    title: "ExpressJS",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.express_js_icon,
+                }, 
+                {
+                    title: "MongoDB",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.mongodb_icon,
+                }, 
+                {
+                    title: "Socket.IO",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.socket_io_icon,
+                }, 
+                {
+                    title: "NodeJS",
+                    type: "img",
+                    description: "",
+                    icon: Images.tecnologies.nodejs_icon,
+                }, 
+                {
                     title: "Git",
                     type: "icon",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: "ri-github-fill",
-                },        
+                },  
             ]
         },
 
@@ -306,17 +362,16 @@ export const SkillsData: ISkillsDataManager = {
                 {
                     title: "Figma",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.figma_black_icon,
                 },
                 {
                     title: "Canva",
                     type: "img",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer",
+                    description: "",
                     icon: Images.tecnologies.canva_icon,
                 },
             ]
         }
     ]
-
 }

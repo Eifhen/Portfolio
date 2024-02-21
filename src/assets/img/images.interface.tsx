@@ -25,7 +25,11 @@ export interface ITecnologiesIconCollector {
     php_icon: string;
     gsap_icon: string;
     webpack_icon: string;
-
+    mongodb_icon: string,
+    socket_io_icon: string,
+    express_js_icon: string,
+    mongoose_icon: string,
+    nodejs_icon:string,
     [key:string]:string
 }
 
@@ -54,7 +58,8 @@ export interface IProjectImageCollector {
     unit_converter: ImageCollector;
     pathstorage: ImageCollector;
     password_generator: ImageCollector;
-    finanzas_personales: ImageCollector
+    finanzas_personales: ImageCollector;
+    writeline: ImageCollector;
 }
 
 export interface IDesingImageCollector {
@@ -95,5 +100,11 @@ export interface ImageCollector {
     img_8?:string | undefined;
     img_9?:string | undefined;
     img_10?:string | undefined;
+    img_11?:string | undefined;
+    img_12?:string | undefined;
+    img_13?:string | undefined;
+    img_14?:string | undefined;
+    img_15?:string | undefined; 
+    img_16?:string | undefined;
     [key:string]:string | undefined;
 }

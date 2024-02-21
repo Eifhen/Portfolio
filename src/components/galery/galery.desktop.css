@@ -49,6 +49,8 @@
     justify-content: flex-end;
     gap: 0.5rem;
     padding-right: 1rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .galery-container .galery .item {
@@ -58,7 +60,8 @@
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer !important;
-    transition: border 500ms ease-in-out
+    transition: border 500ms ease-in-out;
+    margin-top: 0.1rem;
 }
 
 .galery-container .galery .item.active {

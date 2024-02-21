@@ -3,7 +3,7 @@
 #root { transition:  background-color 1s ease-in-out; }
 #root.light { background-color: white; }
 #root.dark { 
-    animation: rootColor 2s ease-in;
+    /* animation: rootColor 2s ease-in; */
     animation-fill-mode: forwards;
 }
 
