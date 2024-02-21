@@ -100,7 +100,7 @@
     }
     100% {
         width: calc(100vw*2);
-        height: calc(100vh*3);
+        height: calc(100vh*2.5);
     }
 }
 

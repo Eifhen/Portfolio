@@ -98,8 +98,8 @@
 }
 
 .general-wave.reverse .t-wave .wave.light svg {
-    transition: fill 44.5ms ease-in-out;
-    transition-delay: 2ms;
+    transition: fill 10ms ease-in-out;
+    transition-delay: 5.9ms;
 }
 
 .general-wave.reverse .t-wave .wave.dark svg {
