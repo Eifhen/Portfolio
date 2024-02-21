@@ -95,7 +95,7 @@ a, button {
 
 a:hover,
 button:hover {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 
 ul { list-style: none;} 
@@ -206,13 +206,17 @@ p {
   Button Style
 *******************************************/
 .btn {
-  transition-delay: 400ms !important;
-  transition: background-color 1s ease-in-out, color 500ms ease-in-out;
+  transition: 
+    background-color 1s ease-in-out 400ms, 
+    color 500ms ease-in-out 400ms,
+    opacity 0.3s ease-in-out
+  ;
 }
 
 .dark .btn {
-  background-color: var(--grayDE) !important;
+  background-color: var(--pure) !important;
   color: var(--dark1E) !important;
+  box-shadow: var(--shadow-bright-md);
 }
 
 /******************************************
@@ -374,5 +378,4 @@ p {
   ::-webkit-scrollbar {
     display:none;
   }
-  
 }

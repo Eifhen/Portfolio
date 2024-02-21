@@ -22,7 +22,7 @@
     grid-template-rows: 
         180px
         auto
-        50px
+        80px
     ;
     grid-template-areas: 
         "header"
