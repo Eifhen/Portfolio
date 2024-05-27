@@ -145,6 +145,7 @@ import WriteLineGroupInfo from '../img/projects/writeline/writeline_group_info.p
 import WriteLineGroupAddContact from '../img/projects/writeline/writeline_group_add_contact.png';
 import WriteLineLogOut from '../img/projects/writeline/writeline_logout.png';
 import WritelineError404 from '../img/projects/writeline/writeline_error404.png';
+import CleanAPI from '../img/projects/cleanAPI/CleanAPI.png';
 
 
 
@@ -263,5 +264,8 @@ export const projects:IProjectImageCollector = {
         img_13: WriteLineGroupAddContact,
         img_14: WriteLineLogOut,
         img_15: WritelineError404,
+    },
+    cleanAPI: {
+        cover: CleanAPI
     }
 }

@@ -1,5 +1,6 @@
 import { BlackJackEN, BlackJackES } from "./list/blackjack.data";
 import { Camsoft03EN, Camsoft03ES } from "./list/camsoft03.data";
+import { cleanAPIEN, cleanAPIES } from "./list/cleanAPI.data";
 import { ColorSchemeEN, ColorSchemeES } from "./list/color_scheme.data";
 import { FinanzasPersonalesEN, FinanzasPersonalesES } from "./list/finanzas_personales.data";
 import { FindYourFilmEN, FindYourFilmES } from "./list/find_your_film.data";
@@ -53,6 +54,7 @@ export const ProjectData: IProjectDataManager = {
         PasswordGeneratorEN,
         FinanzasPersonalesEN,
         WriteLineEN,
+        cleanAPIEN,
     ], 
     ES:[
         GrowingES,            // id 01
@@ -71,5 +73,6 @@ export const ProjectData: IProjectDataManager = {
         PasswordGeneratorES,  // id 14
         FinanzasPersonalesES, // id 15
         WriteLineES,          // id 16
+        cleanAPIES,           // id 17
     ],
 }

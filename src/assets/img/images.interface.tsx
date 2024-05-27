@@ -60,6 +60,7 @@ export interface IProjectImageCollector {
     password_generator: ImageCollector;
     finanzas_personales: ImageCollector;
     writeline: ImageCollector;
+    cleanAPI: ImageCollector;
 }
 
 export interface IDesingImageCollector {
