@@ -59,7 +59,7 @@ export const lenguageDataES:ILenguageData = {
     "other" : "Otros",
     "main-tech": "Tecnologías principales",
     "about-this-project": "Acerca de este proyecto",
-    "technologies": "Technologías",
+    "technologies": "Tecnologías",
     "references": "Referencias",
     "other-projects": "Otros Projectos",
     "skills": "Habilidades",
