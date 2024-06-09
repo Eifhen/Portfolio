@@ -24,8 +24,9 @@ export const WriteLineEN: IProjectData = {
       my skills with Node.js and React. It ended up being a great learning experience as I was able to 
       improve my knowledge of websockets and non-relational databases like MongoDB.`,
 
-      `The application features various functionalities, such as user registration, image handling, 
-      authentication, real-time messaging via websockets, creation of group chat/rooms, among other features.`
+      `The application features various functionalities, such as user registration, image management through the services 
+      provided by the cloudinary API, authentication, real-time messaging via websockets, 
+      creation of group chat/rooms, among other features.`
     ],
     technologies:  [
       { name: "MongooseJS", icon: Images.tecnologies.mongoose_icon, type: "image" },
@@ -35,6 +36,7 @@ export const WriteLineEN: IProjectData = {
       { name: "NodeJS", icon: Images.tecnologies.nodejs_icon, type: "image" },
       { name: "TypeScript", icon: Images.tecnologies.typescript_icon, type: "image" },
       { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
+      { name: "Cloudinary", icon: Images.tecnologies.cloudinary_icon, type: "image" }
     ],
     references: [],
     liveInfo: [
@@ -193,9 +195,9 @@ export const WriteLineES: IProjectData = {
       de gran aprendizaje, ya que pude perfeccionar mis conocimientos acerca de websockets y bases de datos
       no relacionales como MongoDB.`,
 
-      `La aplicación cuenta con varias funcionalidades, tales como el registro de usuarios, el manejo de imágenes,
-      autenticación, envío de mensajes en tiempo real mediante websockets, creación salas/chats grupales, entre otras
-      características.`
+      `La aplicación cuenta con varias funcionalidades, tales como el registro de usuarios, el manejo de imágenes mediante 
+      los servicios prestados por parte de la API de cloudinary, autenticación, envío de mensajes en tiempo real 
+      mediante websockets, creación salas/chats grupales, entre otras características.`
     ],
     technologies:  [
       { name: "MongooseJS", icon: Images.tecnologies.mongoose_icon, type: "image" },
@@ -205,6 +207,7 @@ export const WriteLineES: IProjectData = {
       { name: "NodeJS", icon: Images.tecnologies.nodejs_icon, type: "image" },
       { name: "TypeScript", icon: Images.tecnologies.typescript_icon, type: "image" },
       { name: "React", icon: "ri-reactjs-fill color-react", type: "icon" },
+      { name: "Cloudinary", icon: Images.tecnologies.cloudinary_icon, type: "image" }
     ],
     references: [],
     liveInfo: [

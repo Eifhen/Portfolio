@@ -30,6 +30,7 @@ export interface ITecnologiesIconCollector {
     express_js_icon: string,
     mongoose_icon: string,
     nodejs_icon:string,
+    cloudinary_icon:string,
     [key:string]:string
 }
 

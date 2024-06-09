@@ -25,7 +25,7 @@ import MongooseJS from '../icons/mongoose-logo.png';
 import SocketIO from '../icons/socket-io-logo.png';
 import MongoDB from '../icons/mongodb.svg';
 import NodeJS from '../icons/node_js.png';
-
+import Cloudinary from '../icons/cloudinary.jpg';
 
 export const tecnologies: ITecnologiesIconCollector = {
     asp_icon: ASP_ICON,
@@ -50,4 +50,5 @@ export const tecnologies: ITecnologiesIconCollector = {
     express_js_icon: ExpressJS,
     mongoose_icon: MongooseJS,
     nodejs_icon: NodeJS,
+    cloudinary_icon: Cloudinary
 };
