@@ -157,16 +157,18 @@ export const AboutData:IAboutDataManagement = {
             subtitle: "My Journey So Far",
             items: [
                 {
-                    date: [`01/09/2019`, `04/12/2019`],
-                    title: "Web developer (Internship)",
-                    subtitle: "Lancer Group",
+                    date: [`18/10/2022`, `Currently ..`],
+                    title: "System Engineer Jr.",
+                    subtitle: "Camsoft SRL",
                     description: `
-                        In September 2019, I was an intern at Lancer Group. In this internship 
-                        I worked on the development of an instance manager for the database of 
-                        different projects of the company`,
+                        Currently, I work as a Jr. Software Engineer for Camsoft SRL, 
+                        I work in the development of Software for the company, 
+                        using technologies such as ASP.Net Core, SQL, Server ReactJS, 
+                        Developer Extreme, SAS, among others.
+                    `,
                     assets: {
                         img: "#",
-                        link: "https://lancergroup.org",
+                        link: "https://camsoft.com.do",
                     }
                 },
 
@@ -186,20 +188,18 @@ export const AboutData:IAboutDataManagement = {
                 },
 
                 {
-                    date: [`18/10/2022`, `Currently ..`],
-                    title: "System Engineer Jr.",
-                    subtitle: "Camsoft SRL",
+                    date: [`01/09/2019`, `04/12/2019`],
+                    title: "Web developer (Internship)",
+                    subtitle: "Lancer Group",
                     description: `
-                        Currently, I work as a Jr. Software Engineer for Camsoft SRL, 
-                        I work in the development of Software for the company, 
-                        using technologies such as ASP.Net Core, SQL, Server ReactJS, 
-                        Developer Extreme, SAS, among others.
-                    `,
+                        In September 2019, I was an intern at Lancer Group. In this internship 
+                        I worked on the development of an instance manager for the database of 
+                        different projects of the company`,
                     assets: {
                         img: "#",
-                        link: "https://camsoft.com.do",
+                        link: "https://lancergroup.org",
                     }
-                }
+                },
             ]
         },
 
@@ -375,36 +375,6 @@ export const AboutData:IAboutDataManagement = {
             subtitle: "Mi viaje hasta ahora.",
             items: [
                 {
-                    date: [`01/09/2019`, `04/12/2019`],
-                    title: "Pasantía Desarrollo Web",
-                    subtitle: "Lancer Group",
-                    description: `
-                        En septiembre de 2019, fui pasante en Lancer Group. En esta pasantía trabajé 
-                        en el desarrollo de un administrador de instancias para la base de datos 
-                        de diferentes proyectos de la empresa.
-                    `,
-                    assets: {
-                        img: "#",
-                        link: "https://lancergroup.org",
-                    },
-                },
-
-                {
-                    date: [`01/09/2019`, `04/12/2019`],
-                    title: "Desarrollador Web",
-                    subtitle: "Growing Business School",
-                    description: `
-                       En diciembre de 2021 fui contratado para trabajar en el desarrollo de una 
-                       página web, una plataforma educativa y un sistema de administración (cms) 
-                       para los procesos relacionados con la página web y la plataforma educativa.
-                    `,
-                    assets: {
-                        img: "#",
-                        link: "#",
-                    },
-                },
-
-                {
                     date: [`18/10/2022`, `Currently ..`],
                     title: "System Engineer Jr.",
                     subtitle: "Camsoft SRL",
@@ -418,8 +388,37 @@ export const AboutData:IAboutDataManagement = {
                         img: "#",
                         link: "https://camsoft.com.do",
                     }
-                }
+                },
 
+                {
+                    date: [`15/12/2020`, `08/02/2022`],
+                    title: "Desarrollador Web",
+                    subtitle: "Growing Business School",
+                    description: `
+                        En diciembre de 2021 fui contratado para trabajar en el desarrollo de una 
+                        página web, una plataforma educativa y un sistema de administración (cms) 
+                        para los procesos relacionados con la página web y la plataforma educativa.
+                    `,
+                    assets: {
+                        img: "#",
+                        link: "/projects/detail/1/Growing-Business-School",
+                    },
+                },
+
+                {
+                    date: [`01/09/2019`, `04/12/2019`],
+                    title: "Pasantía Desarrollo Web",
+                    subtitle: "Lancer Group",
+                    description: `
+                        En septiembre de 2019, fui pasante en Lancer Group. En esta pasantía trabajé 
+                        en el desarrollo de un administrador de instancias para la base de datos 
+                        de diferentes proyectos de la empresa.
+                    `,
+                    assets: {
+                        img: "#",
+                        link: "https://lancergroup.org",
+                    },
+                },
             ]
         },
 
