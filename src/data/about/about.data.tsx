@@ -178,7 +178,7 @@ export const AboutData:IAboutDataManagement = {
                         In December 2021 I was hired to work on the development of a website, 
                         an educational platform and a management system (cms) for the 
                         processes related to the website and the educational platform.
-                    `,
+                    `, 
                     assets: {
                         img: "#",
                         link: "/projects/detail/1/Growing-Business-School",
